@@ -1,0 +1,57 @@
+&ACCESS RVO1
+&PARAM EDITMASK = *
+DEF AbreGarra()
+   IF (OperarVazio==FALSE) THEN
+      SWITCH AbreGarraOp
+         CASE 1
+            ;AvancaCilindro
+            FechaGarra1 = FALSE
+            FechaGarra2 = FALSE
+            FechaGarra3 = FALSE
+            ;RecuaCilindro
+            AbreGarra1 = TRUE
+            AbreGarra2 = TRUE
+            AbreGarra3 = TRUE
+            ;CilindroRecuado
+            WAIT FOR  ( SensorGarraAberta1 )
+            WAIT FOR  ( SensorGarraAberta2 )
+            WAIT FOR  ( SensorGarraAberta3 )
+         CASE 2
+            ;AvancaCilindro
+            FechaGarra4 = FALSE
+            FechaGarra5 = FALSE
+            FechaGarra6 = FALSE
+            ;RecuaCilindro
+            AbreGarra4 = TRUE
+            AbreGarra5 = TRUE
+            AbreGarra6 = TRUE
+            ;CilindroRecuado
+            WAIT FOR  ( SensorGarraAberta4 )
+            WAIT FOR  ( SensorGarraAberta5 )
+            WAIT FOR  ( SensorGarraAberta6 )
+         DEFAULT
+            ;AvancaCilindro
+            FechaGarra1 = FALSE
+            FechaGarra2 = FALSE
+            FechaGarra3 = FALSE
+            FechaGarra4 = FALSE
+            FechaGarra5 = FALSE
+            FechaGarra6 = FALSE
+            ;RecuaCilindro
+            AbreGarra1 = TRUE
+            AbreGarra2 = TRUE
+            AbreGarra3 = TRUE
+            AbreGarra4 = TRUE
+            AbreGarra5 = TRUE
+            AbreGarra6 = TRUE
+            ;CilindroRecuado
+            WAIT FOR  ( SensorGarraAberta1 )
+            WAIT FOR  ( SensorGarraAberta2 )
+            WAIT FOR  ( SensorGarraAberta3 )
+            WAIT FOR  ( SensorGarraAberta4 )
+            WAIT FOR  ( SensorGarraAberta5 )
+            WAIT FOR  ( SensorGarraAberta6 )
+      ENDSWITCH
+      WAIT SEC 1
+   ENDIF
+END
