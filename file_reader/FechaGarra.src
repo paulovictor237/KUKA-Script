@@ -4,302 +4,407 @@ DEF FechaGarra( )
    IF (OperarVazio==FALSE) THEN
       SWITCH AbreGarraOp
          CASE 0
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
+            Ava_Cil_2_Gar_1 = FALSE
+            Rec_Cil_2_Gar_1 = TRUE
+
+            Ava_Cil_2_Gar_2 = FALSE
+            Rec_Cil_2_Gar_2 = TRUE
+
+            Ava_Cil_2_Gar_3 = FALSE
+            Rec_Cil_2_Gar_3 = TRUE
+
+            Ava_Cil_2_Gar_4 = FALSE
+            Rec_Cil_2_Gar_4 = TRUE
+
+            Ava_Cil_2_Gar_5 = FALSE
+            Rec_Cil_2_Gar_5 = TRUE
+
+            Ava_Cil_2_Gar_6 = FALSE
+            Rec_Cil_2_Gar_6 = TRUE
+
+            WAIT FOR ( Cil_2_Gar_1_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_2_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_3_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_4_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_5_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_6_Ava == FALSE )
+            WAIT SEC 0.5
          CASE 1
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
+            Ava_Cil_1_Gar_1 = FALSE
+            Rec_Cil_1_Gar_1 = TRUE
+
+            Ava_Cil_1_Gar_2 = FALSE
+            Rec_Cil_1_Gar_2 = TRUE
+
+            Ava_Cil_1_Gar_3 = FALSE
+            Rec_Cil_1_Gar_3 = TRUE
+
+            Ava_Cil_1_Gar_4 = FALSE
+            Rec_Cil_1_Gar_4 = TRUE
+
+            Ava_Cil_1_Gar_5 = FALSE
+            Rec_Cil_1_Gar_5 = TRUE
+
+            Ava_Cil_1_Gar_6 = FALSE
+            Rec_Cil_1_Gar_6 = TRUE
+
+            WAIT FOR ( Cil_1_Gar_1_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_2_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_3_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_4_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_5_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_6_Ava == FALSE )
+            WAIT SEC 0.5
          CASE 32
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
+            Ava_Cil_2_Gar_1 = FALSE
+            Rec_Cil_2_Gar_1 = TRUE
+
+            Ava_Cil_2_Gar_2 = FALSE
+            Rec_Cil_2_Gar_2 = TRUE
+
+            Ava_Cil_2_Gar_3 = FALSE
+            Rec_Cil_2_Gar_3 = TRUE
+
+            Ava_Cil_2_Gar_4 = FALSE
+            Rec_Cil_2_Gar_4 = TRUE
+
+            Ava_Cil_2_Gar_5 = FALSE
+            Rec_Cil_2_Gar_5 = TRUE
+
+            Ava_Cil_2_Gar_6 = FALSE
+            Rec_Cil_2_Gar_6 = TRUE
+
+            Ava_Cil_1_Gar_1 = FALSE
+            Rec_Cil_1_Gar_1 = TRUE
+
+            Ava_Cil_1_Gar_2 = FALSE
+            Rec_Cil_1_Gar_2 = TRUE
+
+            Ava_Cil_1_Gar_3 = FALSE
+            Rec_Cil_1_Gar_3 = TRUE
+
+            Ava_Cil_1_Gar_4 = FALSE
+            Rec_Cil_1_Gar_4 = TRUE
+
+            Ava_Cil_1_Gar_5 = FALSE
+            Rec_Cil_1_Gar_5 = TRUE
+
+            Ava_Cil_1_Gar_6 = FALSE
+            Rec_Cil_1_Gar_6 = TRUE
+
+            WAIT FOR ( Cil_2_Gar_1_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_2_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_3_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_4_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_5_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_6_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_1_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_2_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_3_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_4_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_5_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_6_Ava == FALSE )
+            WAIT SEC 0.5
          CASE 61
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
+            Ava_Cil_1_Gar_1 = FALSE
+            Rec_Cil_1_Gar_1 = TRUE
+
+            Ava_Cil_1_Gar_2 = FALSE
+            Rec_Cil_1_Gar_2 = TRUE
+
+            Ava_Cil_1_Gar_3 = FALSE
+            Rec_Cil_1_Gar_3 = TRUE
+
+            Ava_Cil_1_Gar_4 = FALSE
+            Rec_Cil_1_Gar_4 = TRUE
+
+            Ava_Cil_1_Gar_5 = FALSE
+            Rec_Cil_1_Gar_5 = TRUE
+
+            Ava_Cil_1_Gar_6 = FALSE
+            Rec_Cil_1_Gar_6 = TRUE
+
+            Ava_Cil_2_Gar_1 = FALSE
+            Rec_Cil_2_Gar_1 = TRUE
+
+            Ava_Cil_2_Gar_2 = FALSE
+            Rec_Cil_2_Gar_2 = TRUE
+
+            Ava_Cil_2_Gar_3 = FALSE
+            Rec_Cil_2_Gar_3 = TRUE
+
+            Ava_Cil_2_Gar_4 = FALSE
+            Rec_Cil_2_Gar_4 = TRUE
+
+            Ava_Cil_2_Gar_5 = FALSE
+            Rec_Cil_2_Gar_5 = TRUE
+
+            Ava_Cil_2_Gar_6 = FALSE
+            Rec_Cil_2_Gar_6 = TRUE
+
+            WAIT FOR ( Cil_1_Gar_1_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_2_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_3_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_4_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_5_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_6_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_1_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_2_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_3_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_4_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_5_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_6_Ava == FALSE )
+            WAIT SEC 0.5
          CASE 192
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
+            Ava_Cil_1_Gar_1 = FALSE
+            Rec_Cil_1_Gar_1 = TRUE
+
+            Ava_Cil_1_Gar_2 = FALSE
+            Rec_Cil_1_Gar_2 = TRUE
+
+            Ava_Cil_1_Gar_3 = FALSE
+            Rec_Cil_1_Gar_3 = TRUE
+
+            Ava_Cil_1_Gar_4 = FALSE
+            Rec_Cil_1_Gar_4 = TRUE
+
+            Ava_Cil_1_Gar_5 = FALSE
+            Rec_Cil_1_Gar_5 = TRUE
+
+            Ava_Cil_1_Gar_6 = FALSE
+            Rec_Cil_1_Gar_6 = TRUE
+
+            Ava_Cil_2_Gar_1 = FALSE
+            Rec_Cil_2_Gar_1 = TRUE
+
+            Ava_Cil_2_Gar_2 = FALSE
+            Rec_Cil_2_Gar_2 = TRUE
+
+            Ava_Cil_2_Gar_3 = FALSE
+            Rec_Cil_2_Gar_3 = TRUE
+
+            Ava_Cil_2_Gar_4 = FALSE
+            Rec_Cil_2_Gar_4 = TRUE
+
+            Ava_Cil_2_Gar_5 = FALSE
+            Rec_Cil_2_Gar_5 = TRUE
+
+            Ava_Cil_2_Gar_6 = FALSE
+            Rec_Cil_2_Gar_6 = TRUE
+
+            WAIT FOR ( Cil_1_Gar_1_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_2_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_3_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_4_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_5_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_6_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_1_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_2_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_3_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_4_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_5_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_6_Ava == FALSE )
+            WAIT SEC 0.5
          CASE 171
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
+            Ava_Cil_2_Gar_1 = FALSE
+            Rec_Cil_2_Gar_1 = TRUE
+
+            Ava_Cil_2_Gar_2 = FALSE
+            Rec_Cil_2_Gar_2 = TRUE
+
+            Ava_Cil_2_Gar_3 = FALSE
+            Rec_Cil_2_Gar_3 = TRUE
+
+            Ava_Cil_2_Gar_4 = FALSE
+            Rec_Cil_2_Gar_4 = TRUE
+
+            Ava_Cil_2_Gar_5 = FALSE
+            Rec_Cil_2_Gar_5 = TRUE
+
+            Ava_Cil_2_Gar_6 = FALSE
+            Rec_Cil_2_Gar_6 = TRUE
+
+            Ava_Cil_1_Gar_1 = FALSE
+            Rec_Cil_1_Gar_1 = TRUE
+
+            Ava_Cil_1_Gar_2 = FALSE
+            Rec_Cil_1_Gar_2 = TRUE
+
+            Ava_Cil_1_Gar_3 = FALSE
+            Rec_Cil_1_Gar_3 = TRUE
+
+            Ava_Cil_1_Gar_4 = FALSE
+            Rec_Cil_1_Gar_4 = TRUE
+
+            Ava_Cil_1_Gar_5 = FALSE
+            Rec_Cil_1_Gar_5 = TRUE
+
+            Ava_Cil_1_Gar_6 = FALSE
+            Rec_Cil_1_Gar_6 = TRUE
+
+            WAIT FOR ( Cil_2_Gar_1_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_2_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_3_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_4_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_5_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_6_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_1_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_2_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_3_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_4_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_5_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_6_Ava == FALSE )
+            WAIT SEC 0.5
          CASE 172
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
+            Ava_Cil_1_Gar_1 = FALSE
+            Rec_Cil_1_Gar_1 = TRUE
+
+            Ava_Cil_1_Gar_2 = FALSE
+            Rec_Cil_1_Gar_2 = TRUE
+
+            Ava_Cil_1_Gar_3 = FALSE
+            Rec_Cil_1_Gar_3 = TRUE
+
+            Ava_Cil_1_Gar_4 = FALSE
+            Rec_Cil_1_Gar_4 = TRUE
+
+            Ava_Cil_1_Gar_5 = FALSE
+            Rec_Cil_1_Gar_5 = TRUE
+
+            Ava_Cil_1_Gar_6 = FALSE
+            Rec_Cil_1_Gar_6 = TRUE
+
+            Ava_Cil_2_Gar_1 = FALSE
+            Rec_Cil_2_Gar_1 = TRUE
+
+            Ava_Cil_2_Gar_2 = FALSE
+            Rec_Cil_2_Gar_2 = TRUE
+
+            Ava_Cil_2_Gar_3 = FALSE
+            Rec_Cil_2_Gar_3 = TRUE
+
+            Ava_Cil_2_Gar_4 = FALSE
+            Rec_Cil_2_Gar_4 = TRUE
+
+            Ava_Cil_2_Gar_5 = FALSE
+            Rec_Cil_2_Gar_5 = TRUE
+
+            Ava_Cil_2_Gar_6 = FALSE
+            Rec_Cil_2_Gar_6 = TRUE
+
+            WAIT FOR ( Cil_1_Gar_1_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_2_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_3_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_4_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_5_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_6_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_1_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_2_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_3_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_4_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_5_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_6_Ava == FALSE )
+            WAIT SEC 0.5
          CASE 3
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
+            Ava_Cil_1_Gar_1 = FALSE
+            Rec_Cil_1_Gar_1 = TRUE
+
+            Ava_Cil_1_Gar_2 = FALSE
+            Rec_Cil_1_Gar_2 = TRUE
+
+            Ava_Cil_1_Gar_3 = FALSE
+            Rec_Cil_1_Gar_3 = TRUE
+
+            Ava_Cil_1_Gar_4 = FALSE
+            Rec_Cil_1_Gar_4 = TRUE
+
+            Ava_Cil_1_Gar_5 = FALSE
+            Rec_Cil_1_Gar_5 = TRUE
+
+            Ava_Cil_1_Gar_6 = FALSE
+            Rec_Cil_1_Gar_6 = TRUE
+
+            Ava_Cil_2_Gar_1 = FALSE
+            Rec_Cil_2_Gar_1 = TRUE
+
+            Ava_Cil_2_Gar_2 = FALSE
+            Rec_Cil_2_Gar_2 = TRUE
+
+            Ava_Cil_2_Gar_3 = FALSE
+            Rec_Cil_2_Gar_3 = TRUE
+
+            Ava_Cil_2_Gar_4 = FALSE
+            Rec_Cil_2_Gar_4 = TRUE
+
+            Ava_Cil_2_Gar_5 = FALSE
+            Rec_Cil_2_Gar_5 = TRUE
+
+            Ava_Cil_2_Gar_6 = FALSE
+            Rec_Cil_2_Gar_6 = TRUE
+
+            WAIT FOR ( Cil_1_Gar_1_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_2_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_3_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_4_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_5_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_6_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_1_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_2_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_3_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_4_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_5_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_6_Ava == FALSE )
+            WAIT SEC 0.5
          CASE 4
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
-            AvancaCilindroVALOR = VALOR
-            RecuaCilindroVALOR = TRUE
-            WAIT FOR  ( SensorCilindroVALOR )
+            Ava_Cil_2_Gar_1 = FALSE
+            Rec_Cil_2_Gar_1 = TRUE
+
+            Ava_Cil_2_Gar_2 = FALSE
+            Rec_Cil_2_Gar_2 = TRUE
+
+            Ava_Cil_2_Gar_3 = FALSE
+            Rec_Cil_2_Gar_3 = TRUE
+
+            Ava_Cil_2_Gar_4 = FALSE
+            Rec_Cil_2_Gar_4 = TRUE
+
+            Ava_Cil_2_Gar_5 = FALSE
+            Rec_Cil_2_Gar_5 = TRUE
+
+            Ava_Cil_2_Gar_6 = FALSE
+            Rec_Cil_2_Gar_6 = TRUE
+
+            Ava_Cil_1_Gar_1 = FALSE
+            Rec_Cil_1_Gar_1 = TRUE
+
+            Ava_Cil_1_Gar_2 = FALSE
+            Rec_Cil_1_Gar_2 = TRUE
+
+            Ava_Cil_1_Gar_3 = FALSE
+            Rec_Cil_1_Gar_3 = TRUE
+
+            Ava_Cil_1_Gar_4 = FALSE
+            Rec_Cil_1_Gar_4 = TRUE
+
+            Ava_Cil_1_Gar_5 = FALSE
+            Rec_Cil_1_Gar_5 = TRUE
+
+            Ava_Cil_1_Gar_6 = FALSE
+            Rec_Cil_1_Gar_6 = TRUE
+
+            WAIT FOR ( Cil_2_Gar_1_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_2_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_3_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_4_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_5_Ava == FALSE )
+            WAIT FOR ( Cil_2_Gar_6_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_1_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_2_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_3_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_4_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_5_Ava == FALSE )
+            WAIT FOR ( Cil_1_Gar_6_Ava == FALSE )
+            WAIT SEC 0.5
       ENDSWITCH
       WAIT SEC 1
    ENDIF

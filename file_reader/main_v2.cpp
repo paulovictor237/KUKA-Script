@@ -54,140 +54,122 @@ public:
   std::string valor;
 public:
   void atribuir(std::string entrada){
-    avanca=split_string(entrada,"[^0-9]+",1);
+    std::string numero=split_string(entrada,"[^0-9]+",1);
     valor=split_string(entrada,"[=]+",1);
-    if (avanca == "200" ){
-      avanca = "VALOR";
-      recua = "VALOR";
-      SensorAvanca = "VALOR";
-      SensorRecua = "VALOR";
-      valor = "VALOR";
+    if (numero == "200" ){
+      avanca = "Abre_Gar_Triplo_Lado_A";
+      recua = "Fecha_Gar_Triplo_Lado_A";
+      SensorAvanca = "Cil_Comp_Triplo_A_Ava";
+      SensorRecua = "Cil_Comp_Triplo_A_Rec";
+    }
+    else if (numero == "201" ){
+      avanca = "Abre_Gar_Triplo_Lado_B";
+      recua = "Fecha_Gar_Triplo_Lado_B";
+      SensorAvanca = "Cil_Comp_Triplo_B_Ava";
+      SensorRecua = "Cil_Comp_Triplo_B_Rec";
+    }
+    else if (numero == "202" ){
+      avanca = "Ava_Comp_Indiv_Gar_1";
+      recua = "Rec_Comp_Indiv_Gar_1";
+      SensorAvanca = "Cil_Comp_Indiv_Gr_1_Ava";
+      SensorRecua = "Cil_Comp_Indiv_Gr_1_Rec";
+    }
+    else if (numero == "203" ){
+      avanca = "Ava_Comp_Indiv_Gar_3";
+      recua = "Rec_Comp_Indiv_Gar_3";
+      SensorAvanca = "Cil_Comp_Indiv_Gr_3_Ava";
+      SensorRecua = "Cil_Comp_Indiv_Gr_3_Rec";
+    }
+    else if (numero == "204" ){
+      avanca = "Ava_Comp_Indiv_Gar_4";
+      recua = "Rec_Comp_Indiv_Gar_4";
+      SensorAvanca = "Cil_Comp_Indiv_Gr_4_Ava";
+      SensorRecua = "Cil_Comp_Indiv_Gr_4_Rec";
       }
-    else if (avanca == "201" ){
-      avanca = "VALOR";
-      recua = "VALOR";
-      SensorAvanca = "VALOR";
-      SensorRecua = "VALOR";
-      valor = "VALOR";
+    else if (numero == "205" ){
+      avanca = "Ava_Comp_Indiv_Gar_6";
+      recua = "Rec_Comp_Indiv_Gar_6";
+      SensorAvanca = "Cil_Comp_Indiv_Gr_6_Ava";
+      SensorRecua = "Cil_Comp_Indiv_Gr_6_Rec";
       }
-    else if (avanca == "202" ){
-      avanca = "VALOR";
-      recua = "VALOR";
-      SensorAvanca = "VALOR";
-      SensorRecua = "VALOR";
-      valor = "VALOR";
+    else if (numero == "302" ){
+      avanca = "Ava_Cil_2_Gar_1";
+      recua = "Rec_Cil_2_Gar_1";
+      SensorAvanca = "Cil_2_Gar_1_Ava";
+      SensorRecua =  "";
       }
-    else if (avanca == "203" ){
-      avanca = "VALOR";
-      recua = "VALOR";
-      SensorAvanca = "VALOR";
-      SensorRecua = "VALOR";
-      valor = "VALOR";
+    else if (numero == "304" ){
+      avanca = "Ava_Cil_2_Gar_2";
+      recua = "Rec_Cil_2_Gar_2";
+      SensorAvanca = "Cil_2_Gar_2_Ava";
+      SensorRecua =  "";
       }
-    else if (avanca == "204" ){
-      avanca = "VALOR";
-      recua = "VALOR";
-      SensorAvanca = "VALOR";
-      SensorRecua = "VALOR";
-      valor = "VALOR";
+    else if (numero == "306" ){
+      avanca = "Ava_Cil_2_Gar_3";
+      recua = "Rec_Cil_2_Gar_3";
+      SensorAvanca = "Cil_2_Gar_3_Ava";
+      SensorRecua =  "";
       }
-    else if (avanca == "205" ){
-      avanca = "VALOR";
-      recua = "VALOR";
-      SensorAvanca = "VALOR";
-      SensorRecua = "VALOR";
-      valor = "VALOR";
+    else if (numero == "308" ){
+      avanca = "Ava_Cil_2_Gar_4";
+      recua = "Rec_Cil_2_Gar_4";
+      SensorAvanca = "Cil_2_Gar_4_Ava";
+      SensorRecua =  "";
       }
-    else if (avanca == "302" ){
-      avanca = "VALOR";
-      recua = "VALOR";
-      SensorAvanca = "VALOR";
-      SensorRecua = "VALOR";
-      valor = "VALOR";
+    else if (numero == "310" ){
+      avanca = "Ava_Cil_2_Gar_5";
+      recua = "Rec_Cil_2_Gar_5";
+      SensorAvanca = "Cil_2_Gar_5_Ava";
+      SensorRecua =  "";
       }
-    else if (avanca == "304" ){
-      avanca = "VALOR";
-      recua = "VALOR";
-      SensorAvanca = "VALOR";
-      SensorRecua = "VALOR";
-      valor = "VALOR";
+    else if (numero == "312" ){
+      avanca = "Ava_Cil_2_Gar_6";
+      recua = "Rec_Cil_2_Gar_6";
+      SensorAvanca = "Cil_2_Gar_6_Ava";
+      SensorRecua =  "";
       }
-    else if (avanca == "306" ){
-      avanca = "VALOR";
-      recua = "VALOR";
-      SensorAvanca = "VALOR";
-      SensorRecua = "VALOR";
-      valor = "VALOR";
+    else if (numero == "301" ){
+      avanca = "Ava_Cil_1_Gar_1";
+      recua = "Rec_Cil_1_Gar_1";
+      SensorAvanca = "Cil_1_Gar_1_Ava";
+      SensorRecua =  "";
       }
-    else if (avanca == "308" ){
-      avanca = "VALOR";
-      recua = "VALOR";
-      SensorAvanca = "VALOR";
-      SensorRecua = "VALOR";
-      valor = "VALOR";
+    else if (numero == "303" ){
+      avanca = "Ava_Cil_1_Gar_2";
+      recua = "Rec_Cil_1_Gar_2";
+      SensorAvanca = "Cil_1_Gar_2_Ava";
+      SensorRecua =  "";
       }
-    else if (avanca == "310" ){
-      avanca = "VALOR";
-      recua = "VALOR";
-      SensorAvanca = "VALOR";
-      SensorRecua = "VALOR";
-      valor = "VALOR";
+    else if (numero == "305" ){
+      avanca = "Ava_Cil_1_Gar_3";
+      recua = "Rec_Cil_1_Gar_3";
+      SensorAvanca = "Cil_1_Gar_3_Ava";
+      SensorRecua =  "";
       }
-    else if (avanca == "312" ){
-      avanca = "VALOR";
-      recua = "VALOR";
-      SensorAvanca = "VALOR";
-      SensorRecua = "VALOR";
-      valor = "VALOR";
+    else if (numero == "307" ){
+      avanca = "Ava_Cil_1_Gar_4";
+      recua = "Rec_Cil_1_Gar_4";
+      SensorAvanca = "Cil_1_Gar_4_Ava";
+      SensorRecua =  "";
       }
-    else if (avanca == "301" ){
-      avanca = "VALOR";
-      recua = "VALOR";
-      SensorAvanca = "VALOR";
-      SensorRecua = "VALOR";
-      valor = "VALOR";
+    else if (numero == "309" ){
+      avanca = "Ava_Cil_1_Gar_5";
+      recua = "Rec_Cil_1_Gar_5";
+      SensorAvanca = "Cil_1_Gar_5_Ava";
+      SensorRecua =  "";
       }
-    else if (avanca == "303" ){
-      avanca = "VALOR";
-      recua = "VALOR";
-      SensorAvanca = "VALOR";
-      SensorRecua = "VALOR";
-      valor = "VALOR";
-      }
-    else if (avanca == "305" ){
-      avanca = "VALOR";
-      recua = "VALOR";
-      SensorAvanca = "VALOR";
-      SensorRecua = "VALOR";
-      valor = "VALOR";
-      }
-    else if (avanca == "307" ){
-      avanca = "VALOR";
-      recua = "VALOR";
-      SensorAvanca = "VALOR";
-      SensorRecua = "VALOR";
-      valor = "VALOR";
-      }
-    else if (avanca == "309" ){
-      avanca = "VALOR";
-      recua = "VALOR";
-      SensorAvanca = "VALOR";
-      SensorRecua = "VALOR";
-      valor = "VALOR";
-      }
-    else if (avanca == "311" ){
-      avanca = "VALOR";
-      recua = "VALOR";
-      SensorAvanca = "VALOR";
-      SensorRecua = "VALOR";
-      valor = "VALOR";
+    else if (numero == "311" ){
+      avanca = "Ava_Cil_1_Gar_6";
+      recua = "Rec_Cil_1_Gar_6";
+      SensorAvanca = "Cil_1_Gar_6_Ava";
+      SensorRecua =  "";
       }
     return;
   }
   void imprime(std::ofstream &ofs){
-    ofs<<"            AvancaCilindro"<<avanca<<" = " << valor<< endl;
-    ofs<<"            RecuaCilindro"<<recua<<" = " << (!valor.find("T")?"FALSE":"TRUE") << endl;
-    ofs<<"            WAIT FOR  ( "<<"SensorCilindro"<<SensorAvanca<<" )"<< endl;
+    ofs<<"            "<<avanca<<" = " << valor<< endl;
+    ofs<<"            "<<recua<<" = " << (!valor.find("T")?"FALSE":"TRUE") << endl;
+    ofs << endl;
     return;
   }
 };
@@ -198,6 +180,8 @@ void tudo(std::ifstream &inFile,std::fstream &signal,std::vector<std::string> &V
   signal<<";"<<name<<endl;
   class Cilindro cilindro;
   std::string entrada;
+  int valor;
+  vector<string> waitfor;
   while (!inFile.eof())
   {
     getline(inFile,entrada);
@@ -213,15 +197,32 @@ void tudo(std::ifstream &inFile,std::fstream &signal,std::vector<std::string> &V
         }
         if(entrada.find("$OUT") !=std::string::npos)
         {
-          cilindro.atribuir(entrada);
-          cilindro.imprime(ofs);
-          if(std::find(VectorOut.begin(), VectorOut.end(),cilindro.avanca)== VectorOut.end())
-          {
-            VectorOut.push_back(cilindro.avanca);
-            signal<<"SIGNAL Cilindro"<<cilindro.avanca<<" "<<split_string(entrada,"[=]+",0)<<endl;
-          } 
+          valor=std::stoi(split_string(entrada,"[^0-9]+",1));
+          if(valor>150){
+            cilindro.atribuir(entrada);
+            cilindro.imprime(ofs);
+            if(cilindro.SensorAvanca.size()>0){
+              cilindro.SensorAvanca+=" == ";
+              cilindro.SensorAvanca+=(!cilindro.valor.find("T")?"TRUE":"FALSE");
+              waitfor.push_back(cilindro.SensorAvanca);
+            }
+            if(cilindro.SensorRecua.size()>0){
+              cilindro.SensorRecua+= " == ";
+              cilindro.SensorRecua+=(!cilindro.valor.find("T")?"FALSE":"TRUE");
+              waitfor.push_back(cilindro.SensorRecua);
+            }
+            if(std::find(VectorOut.begin(), VectorOut.end(),cilindro.avanca)== VectorOut.end())
+            {
+              VectorOut.push_back(cilindro.avanca);
+              signal<<"SIGNAL Cilindro"<<cilindro.avanca<<" "<<split_string(entrada,"[=]+",0)<<endl;
+            } 
+          }
         }
       }
+      //  WAIT FOR  ( SensorGarraAberta1 )
+      for (auto &outt : waitfor)ofs<<"            WAIT FOR ( "<<outt<<" )" << endl;
+      ofs<<"            WAIT SEC 0.5"<< endl;
+      waitfor.clear();
     }
   }
   sufixo(ofs);
