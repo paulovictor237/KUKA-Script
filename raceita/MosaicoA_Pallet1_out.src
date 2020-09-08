@@ -1,0 +1,92 @@
+DEF TMatriz( )
+MatrizPontos[1,0].IndexacaoVH = FALSE
+MatrizPontos[1,0].NumCaixas = 0
+MatrizPontos[1,0].ConfGarraPick = 0
+MatrizPontos[1,0].PickOp = 0
+MatrizPontos[1,0].FechaGarraOp = 0
+MatrizPontos[1,0].AbreGarraOp = 0
+MatrizPontos[1,0].SkipGoHome = FALSE
+MatrizPontos[1,0].SkipSobeRelativo = FALSE
+MatrizPontos[1,0].PlacePos = 0
+
+MatrizPontos[1,1].IndexacaoVH = False
+MatrizPontos[1,1].NumCaixas = 3
+MatrizPontos[1,1].ConfGarraPick = 11
+MatrizPontos[1,1].PickOp = 2
+MatrizPontos[1,1].FechaGarraOp = 0
+MatrizPontos[1,1].AbreGarraOp = 11
+MatrizPontos[1,1].SkipGoHome = True
+MatrizPontos[1,1].SkipSobeRelativo = False
+MatrizPontos[1,1].PlacePos = 1
+
+MatrizPontos[1,2].IndexacaoVH = False
+MatrizPontos[1,2].NumCaixas = 3
+MatrizPontos[1,2].ConfGarraPick = 11
+MatrizPontos[1,2].PickOp = 2
+MatrizPontos[1,2].FechaGarraOp = 0
+MatrizPontos[1,2].AbreGarraOp = 12
+MatrizPontos[1,2].SkipGoHome = False
+MatrizPontos[1,2].SkipSobeRelativo = False
+MatrizPontos[1,2].PlacePos = 1
+
+MatrizPontos[1,3].IndexacaoVH = False
+MatrizPontos[1,3].NumCaixas = 2
+MatrizPontos[1,3].ConfGarraPick = 11
+MatrizPontos[1,3].PickOp = 1
+MatrizPontos[1,3].FechaGarraOp = 1
+MatrizPontos[1,3].AbreGarraOp = 2
+MatrizPontos[1,3].SkipGoHome = False
+MatrizPontos[1,3].SkipSobeRelativo = False
+MatrizPontos[1,3].PlacePos = 3
+
+MatrizPontos[1,4].IndexacaoVH = False
+MatrizPontos[1,4].NumCaixas = 4
+MatrizPontos[1,4].ConfGarraPick = 11
+MatrizPontos[1,4].PickOp = 2
+MatrizPontos[1,4].FechaGarraOp = 0
+MatrizPontos[1,4].AbreGarraOp = 1
+MatrizPontos[1,4].SkipGoHome = False
+MatrizPontos[1,4].SkipSobeRelativo = False
+MatrizPontos[1,4].PlacePos = 4
+
+MatrizPontos[1,5].IndexacaoVH = False
+MatrizPontos[1,5].NumCaixas = 3
+MatrizPontos[1,5].ConfGarraPick = 11
+MatrizPontos[1,5].PickOp = 2
+MatrizPontos[1,5].FechaGarraOp = 0
+MatrizPontos[1,5].AbreGarraOp = 11
+MatrizPontos[1,5].SkipGoHome = True
+MatrizPontos[1,5].SkipSobeRelativo = False
+MatrizPontos[1,5].PlacePos = 1
+
+MatrizPontos[1,6].IndexacaoVH = False
+MatrizPontos[1,6].NumCaixas = 3
+MatrizPontos[1,6].ConfGarraPick = 11
+MatrizPontos[1,6].PickOp = 2
+MatrizPontos[1,6].FechaGarraOp = 0
+MatrizPontos[1,6].AbreGarraOp = 12
+MatrizPontos[1,6].SkipGoHome = False
+MatrizPontos[1,6].SkipSobeRelativo = False
+MatrizPontos[1,6].PlacePos = 1
+
+MatrizPontos[1,7].IndexacaoVH = False
+MatrizPontos[1,7].NumCaixas = 2
+MatrizPontos[1,7].ConfGarraPick = 11
+MatrizPontos[1,7].PickOp = 1
+MatrizPontos[1,7].FechaGarraOp = 1
+MatrizPontos[1,7].AbreGarraOp = 2
+MatrizPontos[1,7].SkipGoHome = False
+MatrizPontos[1,7].SkipSobeRelativo = False
+MatrizPontos[1,7].PlacePos = 3
+
+MatrizPontos[1,8].IndexacaoVH = False
+MatrizPontos[1,8].NumCaixas = 4
+MatrizPontos[1,8].ConfGarraPick = 11
+MatrizPontos[1,8].PickOp = 1
+MatrizPontos[1,8].FechaGarraOp = 1
+MatrizPontos[1,8].AbreGarraOp = 2
+MatrizPontos[1,8].SkipGoHome = False
+MatrizPontos[1,8].SkipSobeRelativo = False
+MatrizPontos[1,8].PlacePos = 4
+
+END

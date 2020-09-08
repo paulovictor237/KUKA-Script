@@ -4,613 +4,1765 @@ DEF ConfGarra( )
    IF (OperarVazio==FALSE) THEN
       SWITCH AbreGarraOp
          CASE 11
-            Cilindro200 = FALSE
-            Cilindro201 = TRUE
-            Cilindro202 = FALSE
-            Cilindro203 = TRUE
-            Cilindro204 = FALSE
-            Cilindro205 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 21
-            Cilindro200 = TRUE
-            Cilindro201 = TRUE
-            Cilindro202 = FALSE
-            Cilindro203 = FALSE
-            Cilindro204 = FALSE
-            Cilindro205 = FALSE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 101
-            Cilindro200 = FALSE
-            Cilindro201 = FALSE
-            Cilindro202 = TRUE
-            Cilindro203 = FALSE
-            Cilindro204 = FALSE
-            Cilindro205 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 102
-            Cilindro200 = FALSE
-            Cilindro201 = FALSE
-            Cilindro202 = TRUE
-            Cilindro203 = FALSE
-            Cilindro204 = FALSE
-            Cilindro205 = TRUE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 121
-            Cilindro200 = TRUE
-            Cilindro201 = TRUE
-            Cilindro202 = FALSE
-            Cilindro203 = FALSE
-            Cilindro204 = FALSE
-            Cilindro205 = FALSE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 122
-            Cilindro200 = TRUE
-            Cilindro201 = TRUE
-            Cilindro202 = TRUE
-            Cilindro203 = FALSE
-            Cilindro204 = FALSE
-            Cilindro205 = TRUE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 31
-            Cilindro200 = TRUE
-            Cilindro201 = TRUE
-            Cilindro202 = FALSE
-            Cilindro203 = FALSE
-            Cilindro204 = FALSE
-            Cilindro205 = FALSE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 32
-            Cilindro200 = TRUE
-            Cilindro201 = TRUE
-            Cilindro202 = FALSE
-            Cilindro203 = FALSE
-            Cilindro204 = FALSE
-            Cilindro205 = FALSE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 111
-            Cilindro200 = TRUE
-            Cilindro201 = TRUE
-            Cilindro202 = FALSE
-            Cilindro203 = FALSE
-            Cilindro204 = FALSE
-            Cilindro205 = FALSE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 112
-            Cilindro200 = TRUE
-            Cilindro201 = FALSE
-            Cilindro202 = FALSE
-            Cilindro203 = FALSE
-            Cilindro204 = FALSE
-            Cilindro205 = FALSE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 161
-            Cilindro200 = TRUE
-            Cilindro201 = FALSE
-            Cilindro202 = FALSE
-            Cilindro203 = FALSE
-            Cilindro204 = FALSE
-            Cilindro205 = FALSE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 162
-            Cilindro200 = TRUE
-            Cilindro201 = TRUE
-            Cilindro202 = FALSE
-            Cilindro203 = FALSE
-            Cilindro204 = FALSE
-            Cilindro205 = TRUE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 61
-            Cilindro200 = TRUE
-            Cilindro201 = TRUE
-            Cilindro202 = TRUE
-            Cilindro203 = FALSE
-            Cilindro204 = FALSE
-            Cilindro205 = TRUE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 62
-            Cilindro200 = TRUE
-            Cilindro201 = TRUE
-            Cilindro202 = TRUE
-            Cilindro203 = FALSE
-            Cilindro204 = FALSE
-            Cilindro205 = TRUE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 191
-            Cilindro200 = TRUE
-            Cilindro201 = TRUE
-            Cilindro202 = FALSE
-            Cilindro203 = FALSE
-            Cilindro204 = FALSE
-            Cilindro205 = FALSE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 192
-            Cilindro200 = TRUE
-            Cilindro201 = TRUE
-            Cilindro202 = FALSE
-            Cilindro203 = FALSE
-            Cilindro204 = FALSE
-            Cilindro205 = FALSE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 81
-            Cilindro200 = TRUE
-            Cilindro201 = TRUE
-            Cilindro202 = FALSE
-            Cilindro203 = FALSE
-            Cilindro204 = FALSE
-            Cilindro205 = TRUE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 82
-            Cilindro200 = FALSE
-            Cilindro201 = FALSE
-            Cilindro202 = FALSE
-            Cilindro203 = TRUE
-            Cilindro204 = TRUE
-            Cilindro205 = FALSE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 91
-            Cilindro200 = FALSE
-            Cilindro201 = FALSE
-            Cilindro202 = FALSE
-            Cilindro203 = TRUE
-            Cilindro204 = TRUE
-            Cilindro205 = FALSE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 92
-            Cilindro200 = TRUE
-            Cilindro201 = TRUE
-            Cilindro202 = FALSE
-            Cilindro203 = FALSE
-            Cilindro204 = FALSE
-            Cilindro205 = TRUE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 151
-            Cilindro200 = TRUE
-            Cilindro201 = TRUE
-            Cilindro202 = TRUE
-            Cilindro203 = FALSE
-            Cilindro204 = FALSE
-            Cilindro205 = TRUE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 141
-            Cilindro200 = FALSE
-            Cilindro201 = FALSE
-            Cilindro202 = FALSE
-            Cilindro203 = FALSE
-            Cilindro204 = FALSE
-            Cilindro205 = FALSE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 142
-            Cilindro200 = FALSE
-            Cilindro201 = FALSE
-            Cilindro202 = FALSE
-            Cilindro203 = FALSE
-            Cilindro204 = FALSE
-            Cilindro205 = FALSE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 171
-            Cilindro200 = TRUE
-            Cilindro201 = TRUE
-            Cilindro202 = TRUE
-            Cilindro203 = FALSE
-            Cilindro204 = FALSE
-            Cilindro205 = FALSE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 172
-            Cilindro200 = FALSE
-            Cilindro201 = FALSE
-            Cilindro202 = TRUE
-            Cilindro203 = FALSE
-            Cilindro204 = FALSE
-            Cilindro205 = TRUE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 173
-            Cilindro200 = FALSE
-            Cilindro201 = FALSE
-            Cilindro202 = TRUE
-            Cilindro203 = FALSE
-            Cilindro204 = FALSE
-            Cilindro205 = TRUE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 71
-            Cilindro200 = FALSE
-            Cilindro201 = FALSE
-            Cilindro202 = FALSE
-            Cilindro203 = TRUE
-            Cilindro204 = TRUE
-            Cilindro205 = FALSE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 72
-            Cilindro200 = FALSE
-            Cilindro201 = FALSE
-            Cilindro202 = TRUE
-            Cilindro203 = FALSE
-            Cilindro204 = TRUE
-            Cilindro205 = FALSE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 73
-            Cilindro200 = FALSE
-            Cilindro201 = FALSE
-            Cilindro202 = TRUE
-            Cilindro203 = TRUE
-            Cilindro204 = TRUE
-            Cilindro205 = TRUE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 51
-            Cilindro200 = FALSE
-            Cilindro201 = FALSE
-            Cilindro202 = TRUE
-            Cilindro203 = TRUE
-            Cilindro204 = TRUE
-            Cilindro205 = TRUE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 131
-            Cilindro200 = FALSE
-            Cilindro201 = FALSE
-            Cilindro202 = TRUE
-            Cilindro203 = TRUE
-            Cilindro204 = TRUE
-            Cilindro205 = TRUE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
          CASE 181
-            Cilindro200 = FALSE
-            Cilindro201 = TRUE
-            Cilindro202 = FALSE
-            Cilindro203 = FALSE
-            Cilindro204 = FALSE
-            Cilindro205 = FALSE
-            Cilindro301 = TRUE
-            Cilindro303 = TRUE
-            Cilindro305 = TRUE
-            Cilindro307 = TRUE
-            Cilindro309 = TRUE
-            Cilindro311 = TRUE
-            Cilindro302 = TRUE
-            Cilindro304 = TRUE
-            Cilindro306 = TRUE
-            Cilindro308 = TRUE
-            Cilindro310 = TRUE
-            Cilindro312 = TRUE
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
+            AvancaCilindroVALOR = VALOR
+            RecuaCilindroVALOR = TRUE
+            WAIT FOR  ( SensorCilindroVALOR )
       ENDSWITCH
       WAIT SEC 1
    ENDIF

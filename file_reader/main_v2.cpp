@@ -35,22 +35,169 @@ void prefixo(std::ofstream &ofs,std::string name){
   ofs << "DEF "<< name <<"( )" << endl;
   ofs << "   IF (OperarVazio==FALSE) THEN" << endl;
   ofs << "      SWITCH AbreGarra"<<"Op" << endl;
-  
+  return;
 }
 void sufixo(std::ofstream &ofs){
   ofs << "      ENDSWITCH" << endl;
   ofs << "      WAIT SEC 1" << endl;
   ofs << "   ENDIF" << endl;
   ofs << "END";
+  return;
 }
+
+class Cilindro{
+public:
+  std::string avanca;
+  std::string recua;
+  std::string SensorAvanca;
+  std::string SensorRecua;
+  std::string valor;
+public:
+  void atribuir(std::string entrada){
+    avanca=split_string(entrada,"[^0-9]+",1);
+    valor=split_string(entrada,"[=]+",1);
+    if (avanca == "200" ){
+      avanca = "VALOR";
+      recua = "VALOR";
+      SensorAvanca = "VALOR";
+      SensorRecua = "VALOR";
+      valor = "VALOR";
+      }
+    else if (avanca == "201" ){
+      avanca = "VALOR";
+      recua = "VALOR";
+      SensorAvanca = "VALOR";
+      SensorRecua = "VALOR";
+      valor = "VALOR";
+      }
+    else if (avanca == "202" ){
+      avanca = "VALOR";
+      recua = "VALOR";
+      SensorAvanca = "VALOR";
+      SensorRecua = "VALOR";
+      valor = "VALOR";
+      }
+    else if (avanca == "203" ){
+      avanca = "VALOR";
+      recua = "VALOR";
+      SensorAvanca = "VALOR";
+      SensorRecua = "VALOR";
+      valor = "VALOR";
+      }
+    else if (avanca == "204" ){
+      avanca = "VALOR";
+      recua = "VALOR";
+      SensorAvanca = "VALOR";
+      SensorRecua = "VALOR";
+      valor = "VALOR";
+      }
+    else if (avanca == "205" ){
+      avanca = "VALOR";
+      recua = "VALOR";
+      SensorAvanca = "VALOR";
+      SensorRecua = "VALOR";
+      valor = "VALOR";
+      }
+    else if (avanca == "302" ){
+      avanca = "VALOR";
+      recua = "VALOR";
+      SensorAvanca = "VALOR";
+      SensorRecua = "VALOR";
+      valor = "VALOR";
+      }
+    else if (avanca == "304" ){
+      avanca = "VALOR";
+      recua = "VALOR";
+      SensorAvanca = "VALOR";
+      SensorRecua = "VALOR";
+      valor = "VALOR";
+      }
+    else if (avanca == "306" ){
+      avanca = "VALOR";
+      recua = "VALOR";
+      SensorAvanca = "VALOR";
+      SensorRecua = "VALOR";
+      valor = "VALOR";
+      }
+    else if (avanca == "308" ){
+      avanca = "VALOR";
+      recua = "VALOR";
+      SensorAvanca = "VALOR";
+      SensorRecua = "VALOR";
+      valor = "VALOR";
+      }
+    else if (avanca == "310" ){
+      avanca = "VALOR";
+      recua = "VALOR";
+      SensorAvanca = "VALOR";
+      SensorRecua = "VALOR";
+      valor = "VALOR";
+      }
+    else if (avanca == "312" ){
+      avanca = "VALOR";
+      recua = "VALOR";
+      SensorAvanca = "VALOR";
+      SensorRecua = "VALOR";
+      valor = "VALOR";
+      }
+    else if (avanca == "301" ){
+      avanca = "VALOR";
+      recua = "VALOR";
+      SensorAvanca = "VALOR";
+      SensorRecua = "VALOR";
+      valor = "VALOR";
+      }
+    else if (avanca == "303" ){
+      avanca = "VALOR";
+      recua = "VALOR";
+      SensorAvanca = "VALOR";
+      SensorRecua = "VALOR";
+      valor = "VALOR";
+      }
+    else if (avanca == "305" ){
+      avanca = "VALOR";
+      recua = "VALOR";
+      SensorAvanca = "VALOR";
+      SensorRecua = "VALOR";
+      valor = "VALOR";
+      }
+    else if (avanca == "307" ){
+      avanca = "VALOR";
+      recua = "VALOR";
+      SensorAvanca = "VALOR";
+      SensorRecua = "VALOR";
+      valor = "VALOR";
+      }
+    else if (avanca == "309" ){
+      avanca = "VALOR";
+      recua = "VALOR";
+      SensorAvanca = "VALOR";
+      SensorRecua = "VALOR";
+      valor = "VALOR";
+      }
+    else if (avanca == "311" ){
+      avanca = "VALOR";
+      recua = "VALOR";
+      SensorAvanca = "VALOR";
+      SensorRecua = "VALOR";
+      valor = "VALOR";
+      }
+    return;
+  }
+  void imprime(std::ofstream &ofs){
+    ofs<<"            AvancaCilindro"<<avanca<<" = " << valor<< endl;
+    ofs<<"            RecuaCilindro"<<recua<<" = " << (!valor.find("T")?"FALSE":"TRUE") << endl;
+    ofs<<"            WAIT FOR  ( "<<"SensorCilindro"<<SensorAvanca<<" )"<< endl;
+    return;
+  }
+};
 
 void tudo(std::ifstream &inFile,std::fstream &signal,std::vector<std::string> &VectorOut,std::string name){
   std::ofstream ofs (name+".src", std::ofstream::out);
   prefixo(ofs,name);
   signal<<";"<<name<<endl;
+  class Cilindro cilindro;
   std::string entrada;
-  std::string split1;
-  std::string split2;
   while (!inFile.eof())
   {
     getline(inFile,entrada);
@@ -66,13 +213,12 @@ void tudo(std::ifstream &inFile,std::fstream &signal,std::vector<std::string> &V
         }
         if(entrada.find("$OUT") !=std::string::npos)
         {
-          split1=split_string(entrada,"[^0-9]+",1);
-          split2=split_string(entrada,"[=]+",1);
-          ofs<<"            "<<"Cilindro"<<split1<<" = " << split2<< endl;
-          if(std::find(VectorOut.begin(), VectorOut.end(),entrada)== VectorOut.end())
+          cilindro.atribuir(entrada);
+          cilindro.imprime(ofs);
+          if(std::find(VectorOut.begin(), VectorOut.end(),cilindro.avanca)== VectorOut.end())
           {
-            VectorOut.push_back(entrada);
-            signal<<"SIGNAL Cilindro"<<split1<<" "<<split_string(entrada,"[=]+",0)<<endl;
+            VectorOut.push_back(cilindro.avanca);
+            signal<<"SIGNAL Cilindro"<<cilindro.avanca<<" "<<split_string(entrada,"[=]+",0)<<endl;
           } 
         }
       }
@@ -80,6 +226,7 @@ void tudo(std::ifstream &inFile,std::fstream &signal,std::vector<std::string> &V
   }
   sufixo(ofs);
   ofs.close();
+  return;
 }
 
 int main(int argc, char **argv)
