@@ -34,7 +34,7 @@ void prefixo(std::ofstream &ofs,std::string name){
   ofs << "&PARAM EDITMASK = *" << endl;
   ofs << "DEF "<< name <<"( )" << endl;
   ofs << "   IF (OperarVazio==FALSE) THEN" << endl;
-  ofs << "      SWITCH AbreGarra"<<"Op" << endl;
+  ofs << "      SWITCH "<< name <<"Op" << endl;
   return;
 }
 void sufixo(std::ofstream &ofs){
