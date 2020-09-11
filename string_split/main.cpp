@@ -26,9 +26,9 @@ vector<string> split_string(std::string tokenString,string delim){
 int main()
 {
   // string a ser separada
-  string tokenString { "$OUT[301]=TRUE" };
+  string tokenString { "DECL E6POS XP61={X 392.37941,Y 496.91666,Z 990.17278,A -90,B 0,C 180,S 2,T 2,E1 0,E2 0,E3 0,E4 0,E5 0,E6 0}" };
 
-  vector<string> tokens=split_string(tokenString,"[=]+");
+  vector<string> tokens=split_string(tokenString,"[,]");
 
   int i=0;
   for (const string& token: tokens){
