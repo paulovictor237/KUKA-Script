@@ -6,7 +6,7 @@
 // BIBLIOTECAS C++
 
 // COMPILAR
-// g++ *.cpp -o z_peve -std=c++11 && ./z_peve 
+// g++ *.cpp -o executavel -std=c++11 && ./executavel 
 
 #include <iostream>
 #include <fstream>

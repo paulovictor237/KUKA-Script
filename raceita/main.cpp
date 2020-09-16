@@ -6,7 +6,7 @@
 // BIBLIOTECAS C++
 
 // COMPILAR
-// g++ *.cpp -o pv_lindo -std=c++11 && ./pv_lindo 
+// g++ *.cpp -o executavel -std=c++11 && ./executavel 
 
 #include <iostream>
 #include <fstream>

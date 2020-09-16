@@ -6,7 +6,7 @@
 // BIBLIOTECAS C++
 
 // COMPILAR
-// g++ *.cpp -o z_peve -std=c++11 && ./z_peve 
+// g++ *.cpp -o executavel -std=c++11 && ./executavel 
 // g++ *.cpp -o executavel -std=c++11 && ./executavel MosaicoA_Pallet1.dat 4
 
 

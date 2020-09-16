@@ -1,0 +1,82 @@
+DEF TReceita()
+;FOLD Produto A
+  StrReceita[Produto_A].OffsetProduto.X = 0
+  StrReceita[Produto_A].OffsetProduto.Y = 0
+  StrReceita[Produto_A].OffsetProduto.Z = 0
+  StrReceita[Produto_A].OffsetProduto.A = 0
+  StrReceita[Produto_A].OffsetProduto.B = 0
+  StrReceita[Produto_A].OffsetProduto.C = 0
+  StrReceita[Produto_A].Pick_E_1_P_1 = Pick_A_E_1_P_1
+  StrReceita[Produto_A].Pick_E_1_P_2 = Pick_A_E_1_P_2
+  StrReceita[Produto_A].Pick_E_1_P_3 = Pick_A_E_1_P_3
+  StrReceita[Produto_A].Pick_E_2_P_1 = Pick_A_E_2_P_1
+  StrReceita[Produto_A].Pick_E_2_P_2 = Pick_A_E_2_P_2
+  StrReceita[Produto_A].Pick_E_2_P_3 = Pick_A_E_2_P_3
+  StrReceita[Produto_A].PlacesCamada = 0
+  StrReceita[Produto_A].AlturaCaixa = 0
+  StrReceita[Produto_A].Camadas = 3
+  StrReceitaLayer[Produto_A,1] = 1
+  StrReceitaLayer[Produto_A,2] = 1
+  StrReceitaLayer[Produto_A,3] = 1
+;ENDFOLD
+;FOLD Produto B
+  StrReceita[Produto_B].OffsetProduto.X = 0
+  StrReceita[Produto_B].OffsetProduto.Y = 0
+  StrReceita[Produto_B].OffsetProduto.Z = 0
+  StrReceita[Produto_B].OffsetProduto.A = 0
+  StrReceita[Produto_B].OffsetProduto.B = 0
+  StrReceita[Produto_B].OffsetProduto.C = 0
+  StrReceita[Produto_B].Pick_E_1_P_1 = Pick_B_E_1_P_1
+  StrReceita[Produto_B].Pick_E_1_P_2 = Pick_B_E_1_P_2
+  StrReceita[Produto_B].Pick_E_1_P_3 = Pick_B_E_1_P_3
+  StrReceita[Produto_B].Pick_E_2_P_1 = Pick_B_E_2_P_1
+  StrReceita[Produto_B].Pick_E_2_P_2 = Pick_B_E_2_P_2
+  StrReceita[Produto_B].Pick_E_2_P_3 = Pick_B_E_2_P_3
+  StrReceita[Produto_B].PlacesCamada = 0
+  StrReceita[Produto_B].AlturaCaixa = 0
+  StrReceita[Produto_B].Camadas = 3
+  StrReceitaLayer[Produto_B,1] = 1
+  StrReceitaLayer[Produto_B,2] = 1
+  StrReceitaLayer[Produto_B,3] = 1
+;ENDFOLD
+;FOLD Produto C
+  StrReceita[Produto_C].OffsetProduto.X = 0
+  StrReceita[Produto_C].OffsetProduto.Y = 0
+  StrReceita[Produto_C].OffsetProduto.Z = 0
+  StrReceita[Produto_C].OffsetProduto.A = 0
+  StrReceita[Produto_C].OffsetProduto.B = 0
+  StrReceita[Produto_C].OffsetProduto.C = 0
+  StrReceita[Produto_C].Pick_E_1_P_1 = Pick_C_E_1_P_1
+  StrReceita[Produto_C].Pick_E_1_P_2 = Pick_C_E_1_P_2
+  StrReceita[Produto_C].Pick_E_1_P_3 = Pick_C_E_1_P_3
+  StrReceita[Produto_C].Pick_E_2_P_1 = Pick_C_E_2_P_1
+  StrReceita[Produto_C].Pick_E_2_P_2 = Pick_C_E_2_P_2
+  StrReceita[Produto_C].Pick_E_2_P_3 = Pick_C_E_2_P_3
+  StrReceita[Produto_C].PlacesCamada = 0
+  StrReceita[Produto_C].AlturaCaixa = 0
+  StrReceita[Produto_C].Camadas = 3
+  StrReceitaLayer[Produto_C,1] = 1
+  StrReceitaLayer[Produto_C,2] = 1
+  StrReceitaLayer[Produto_C,3] = 1
+;ENDFOLD
+;FOLD Produto D
+  StrReceita[Produto_D].OffsetProduto.X = 0
+  StrReceita[Produto_D].OffsetProduto.Y = 0
+  StrReceita[Produto_D].OffsetProduto.Z = 0
+  StrReceita[Produto_D].OffsetProduto.A = 0
+  StrReceita[Produto_D].OffsetProduto.B = 0
+  StrReceita[Produto_D].OffsetProduto.C = 0
+  StrReceita[Produto_D].Pick_E_1_P_1 = Pick_D_E_1_P_1
+  StrReceita[Produto_D].Pick_E_1_P_2 = Pick_D_E_1_P_2
+  StrReceita[Produto_D].Pick_E_1_P_3 = Pick_D_E_1_P_3
+  StrReceita[Produto_D].Pick_E_2_P_1 = Pick_D_E_2_P_1
+  StrReceita[Produto_D].Pick_E_2_P_2 = Pick_D_E_2_P_2
+  StrReceita[Produto_D].Pick_E_2_P_3 = Pick_D_E_2_P_3
+  StrReceita[Produto_D].PlacesCamada = 0
+  StrReceita[Produto_D].AlturaCaixa = 0
+  StrReceita[Produto_D].Camadas = 3
+  StrReceitaLayer[Produto_D,1] = 1
+  StrReceitaLayer[Produto_D,2] = 1
+  StrReceitaLayer[Produto_D,3] = 1
+;ENDFOLD
+END 
