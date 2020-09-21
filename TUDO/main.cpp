@@ -20,6 +20,7 @@
 using namespace std;
 
 #include "matriz_pontos.h"
+#include "receita.h"
 #include "configdat.h"
 #include "receita.h"
 #include "comum.h"
@@ -79,7 +80,7 @@ int main(int argc, char **argv)
   init_all();
   // ## Garra
   // cria todos os out de garra
-  garra_exe(My_Job_src,config.config_garra);
+  garra_exe(My_Job_src);
   My_Job_src.clear();
   My_Job_src.seekg(0);
   // ## TMatriz -> cria a matriz dat e src

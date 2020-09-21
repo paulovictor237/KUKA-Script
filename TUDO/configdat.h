@@ -5,7 +5,6 @@
 class Config{
 public:
 
-std::vector<std::string> config_garra;
 std::vector<std::string> ENUM_RECEITA;
 
 // ;---------- StrPallet[MaxPallets] ----------

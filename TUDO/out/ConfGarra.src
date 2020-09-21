@@ -2563,6 +2563,14 @@ DEF ConfGarra( )
             WAIT FOR ( Cil_2_Gar_5_Ava == TRUE )
             WAIT FOR ( Cil_2_Gar_6_Ava == TRUE )
             WAIT SEC 0.5
+         CASE 0
+            WAIT SEC 0.5
+         CASE 1
+            WAIT SEC 0.5
+         CASE 2
+            WAIT SEC 0.5
+         CASE 3
+            WAIT SEC 0.5
       ENDSWITCH
       WAIT SEC 1
    ENDIF

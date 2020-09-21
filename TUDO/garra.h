@@ -23,7 +23,7 @@ public:
   void imprime(std::ofstream &ofs);
 };
 
-int garra_exe(std::ifstream &My_Job_src,std::vector<std::string> &config_garra);
+int garra_exe(std::ifstream &My_Job_src);
 
 
 #endif

@@ -133,7 +133,7 @@ void mapear(std::vector<class Cilindro> &cilindro){
   return;
 }
 
-int garra_exe(std::ifstream &My_Job_src,std::vector<std::string> &config_garra)
+int garra_exe(std::ifstream &My_Job_src)
 {
 //+-------------------------------------------------------------------------------+
   // variaveis

@@ -4,6 +4,21 @@ CONST INT Pallet_2 = 2
 ;ENDFOLD
 
 ;FOLD ENUM RECEITA
+CONST INT Prdt_51Aero1 = 1
+CONST INT Prdt_21Aero1 = 2
+CONST INT Prdt_111CC = 3
+CONST INT Prdt_171KitKat1 = 4
+CONST INT Prdt_211KitKat1 = 5
+CONST INT Prdt_220KitKat1 = 6
+CONST INT Prdt_240All1 = 7
+CONST INT Prdt_300All1 = 8
+CONST INT Prdt_320BP1 = 9
+CONST INT Prdt_330BP1 = 10
+CONST INT Prdt_370BP1 = 11
+CONST INT Prdt_360BP1 = 12
+CONST INT Prdt_340BP1 = 13
+CONST INT Prdt_51Aero2 = 14
+CONST INT Prdt_21Aero2 = 15
 ;ENDFOLD
 
 ;FOLD STR
@@ -11,14 +26,14 @@ CONST INT Pallet_2 = 2
 CONST INT MaxPallets=2
 DECL GLOBAL DefPallet StrPallet[2];[MaxPallets]
 ;---------- StrReceita[MaxReceitas] ----------
-CONST INT MaxReceitas=0
+CONST INT MaxReceitas=15
 CONST INT MaxCamadas=8
-DECL GLOBAL DefStrReceita StrReceita[0];[MaxReceitas]
-INT  StrReceitaLayer[0,8];[MaxReceitas,MaxCamadas]
+DECL GLOBAL DefStrReceita StrReceita[15];[MaxReceitas]
+INT  StrReceitaLayer[15,8];[MaxReceitas,MaxCamadas]
 ;---------- MatrizPontos[MaxMatrizI,MaxMatrizJ,MaxMatrizK] ----------
 CONST INT MaxMatrizI=2;[numero de pallets por receita]
-CONST INT MaxMatrizJ=0;[acompanha o MaxReceitas]
-CONST INT MaxMatrizK=0;[numero Maximo de Pontos]
-DECL GLOBAL DefMatriz MatrizPontos[2,0,0];[MaxMatrizI,MaxMatrizJ,MaxMatrizK]
+CONST INT MaxMatrizJ=15;[acompanha o MaxReceitas]
+CONST INT MaxMatrizK=4;[numero Maximo de Pontos]
+DECL GLOBAL DefMatriz MatrizPontos[2,15,4];[MaxMatrizI,MaxMatrizJ,MaxMatrizK]
 ;ENDFOLD
 

@@ -405,6 +405,8 @@ DEF FechaGarra( )
             WAIT FOR ( Cil_1_Gar_5_Ava == FALSE )
             WAIT FOR ( Cil_1_Gar_6_Ava == FALSE )
             WAIT SEC 0.5
+         CASE 0
+            WAIT SEC 0.5
       ENDSWITCH
       WAIT SEC 1
    ENDIF

@@ -1,5 +1,5 @@
-#ifndef pallet_h
-#define pallet_h
+#ifndef receita_h
+#define receita_h
 
 // std::string split_string(std::string tokenString,std::string delim,int saida);
 int pick(std::ifstream &My_Job_dat,std::fstream &TReceita_dat);

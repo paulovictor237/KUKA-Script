@@ -613,6 +613,8 @@ DEF AbreGarra( )
             WAIT FOR ( Cil_1_Gar_2_Ava == TRUE )
             WAIT FOR ( Cil_1_Gar_1_Ava == TRUE )
             WAIT SEC 0.5
+         CASE 0
+            WAIT SEC 0.5
       ENDSWITCH
       WAIT SEC 1
    ENDIF
