@@ -1,0 +1,2 @@
+g++ *.cpp -o translator -std=c++11
+./translator MosaicoA_Pallete1 receita_1

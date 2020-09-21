@@ -1,0 +1,41 @@
+&ACCESS RVO1
+&PARAM EDITMASK = *
+DEF ConfGarra( )
+   IF (OperarVazio==FALSE) THEN
+      SWITCH ConfGarraOp
+         CASE 0
+             = TRUE
+             = FALSE
+
+             = FALSE
+             = TRUE
+
+            WAIT SEC 0.5
+         CASE 1
+             = TRUE
+             = FALSE
+
+             = FALSE
+             = TRUE
+
+            WAIT SEC 0.5
+         CASE 2
+             = FALSE
+             = TRUE
+
+             = FALSE
+             = TRUE
+
+            WAIT SEC 0.5
+         CASE 3
+             = FALSE
+             = TRUE
+
+             = FALSE
+             = TRUE
+
+            WAIT SEC 0.5
+      ENDSWITCH
+      WAIT SEC 1
+   ENDIF
+END

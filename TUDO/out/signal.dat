@@ -1,0 +1,6 @@
+DEF signal( )
+;ConfGarra
+SIGNAL Cilindro $OUT[151]
+;AbreGarra
+;FechaGarra
+END

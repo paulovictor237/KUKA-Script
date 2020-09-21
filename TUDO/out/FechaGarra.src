@@ -1,0 +1,14 @@
+&ACCESS RVO1
+&PARAM EDITMASK = *
+DEF FechaGarra( )
+   IF (OperarVazio==FALSE) THEN
+      SWITCH FechaGarraOp
+         CASE 0
+             = TRUE
+             = FALSE
+
+            WAIT SEC 0.5
+      ENDSWITCH
+      WAIT SEC 1
+   ENDIF
+END
