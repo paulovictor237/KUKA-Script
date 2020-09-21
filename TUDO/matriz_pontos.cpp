@@ -20,7 +20,7 @@ int matriz_pontos_str(std::ifstream &My_Job_src,std::fstream &TMatriz_src,std::s
 
   std::string entrada="";
 
-  TMatriz_src << ";FOLD " << produto << endl;
+  TMatriz_src << ";FOLD " <<pallet<<" "<< produto << endl;
 
   while(entrada.find("END")!=0){
     getline(My_Job_src,entrada);
@@ -67,6 +67,7 @@ int matriz_pontos_dat(std::ifstream &My_Job_dat,std::fstream &TMatriz_dat,std::s
   std::string entrada;
   std::string posicao;
   int tipo_place=1;
+  int NumPontos=0;
   int contador=1;
 
   TMatriz_dat << ";FOLD " <<pallet<<" "<< produto << endl;
@@ -97,6 +98,7 @@ int matriz_pontos_dat(std::ifstream &My_Job_dat,std::fstream &TMatriz_dat,std::s
               TMatriz_dat<<"Place";
               tipo_place=1;
               contador++;
+              NumPontos++;
               break;
           }
           TMatriz_dat<<" = "<<posicao<<(tipo_place==1?"\n":"")<<endl; 
@@ -105,5 +107,5 @@ int matriz_pontos_dat(std::ifstream &My_Job_dat,std::fstream &TMatriz_dat,std::s
     }
   }
   TMatriz_dat << ";ENDFOLD \n" << endl;
-  return 0;
+  return NumPontos;
 }

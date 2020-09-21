@@ -20,6 +20,7 @@
 using namespace std;
 
 #include "matriz_pontos.h"
+#include "configdat.h"
 #include "receita.h"
 #include "comum.h"
 #include "garra.h"
@@ -30,6 +31,8 @@ std::fstream TMatriz_src ("out/TMatriz.src",std::ofstream::out | std::ofstream::
 std::fstream TMatriz_dat ("out/TMatriz.dat",std::ofstream::out | std::ofstream::trunc);
 std::fstream TPallet_src ("out/TPallet.src",std::ofstream::out | std::ofstream::trunc);
 std::fstream TPallet_dat ("out/TPallet.dat",std::ofstream::out | std::ofstream::trunc);
+
+std::fstream config_dat("out/config.dat",std::ofstream::out | std::ofstream::trunc);
 
 void init_all(void){
   prefixo(TReceita_src,"TReceita",false);
@@ -49,14 +52,18 @@ void end_all(void){
   sufixo(TPallet_dat,true);
 }
 
-int Camadas=8;
+int MaxCamadas=8;
+int MaxPallets=2;
 
 int main(int argc, char **argv)
 {
 //+-------------------------------------------------------------------------------+
   // variaveis
+  int MaxMatrizK;
+  int PlacesCamada;
   std::vector<class Receita> receitas;
   class Receita aux_receita("A");
+  class Config config;
   std::string pallet;
   std::string produto;
   std::string entrada;
@@ -72,7 +79,7 @@ int main(int argc, char **argv)
   init_all();
   // ## Garra
   // cria todos os out de garra
-  garra_exe(My_Job_src);
+  garra_exe(My_Job_src,config.config_garra);
   My_Job_src.clear();
   My_Job_src.seekg(0);
   // ## TMatriz -> cria a matriz dat e src
@@ -97,35 +104,32 @@ int main(int argc, char **argv)
       produto=split_string(entrada,"[_()]+",2);//produto
       entrada=split_string(entrada,"[ ()]+",1);//produto
       cout << entrada << endl;
-      aux_receita.nome = produto;
-      aux_receita.PlacesCamada=matriz_pontos_str(My_Job_src,TMatriz_src,pallet,produto);
-      matriz_pontos_dat(My_Job_dat,TMatriz_dat,pallet,produto,entrada);
-      receitas.push_back(aux_receita);
+      PlacesCamada=matriz_pontos_str(My_Job_src,TMatriz_src,pallet,produto);
+      MaxMatrizK=matriz_pontos_dat(My_Job_dat,TMatriz_dat,pallet,produto,entrada);
+      config.MaxMatrizK=MaxMatrizK>config.MaxMatrizK?MaxMatrizK:config.MaxMatrizK;
+      if(std::find(config.ENUM_RECEITA.begin(), config.ENUM_RECEITA.end(),produto) == config.ENUM_RECEITA.end())
+      {
+        // ## TPallet -> cria o receita src e dat
+        // coloca as testeiras e os pallets
+        config.ENUM_RECEITA.push_back(produto);
+        aux_receita.nome = produto;
+        aux_receita.PlacesCamada=PlacesCamada;
+        receitas.push_back(aux_receita);
+        config.MaxReceitas++;
+        config.MaxMatrizJ++;
+      } 
+      
 
     }
   }
-  for (auto &outt : receitas)outt.imprime(TReceita_src,Camadas);
- 
-  // ## TPallet -> cria o receita src e dat
-  // coloca as testeiras e os pallets
-
-  // ## Extras
-  // Imprime os valores 
-  // ;---------- StrPallet[MaxPallets] ----------
-  // CONST INT MaxPallets=2
-  // DECL GLOBAL DefPallet StrPallet[2];[MaxPallets]
-  // ;---------- StrReceita[MaxReceitas] ----------
-  // CONST INT MaxReceitas=21 ; 21
-  // CONST INT MaxCamadas=12 ; 8
-  // DECL GLOBAL DefStrReceita StrReceita[21];[MaxReceitas]
-  // INT  StrReceitaLayer[21,12];[MaxReceitas,MaxCamadas]
-  // ;---------- MatrizPontos[MaxMatrizI,MaxMatrizJ,MaxMatrizK] ----------
-  // CONST INT MaxMatrizI=2  ;[numero de pallets por receita]
-  // CONST INT MaxMatrizJ=21 ;[acompanha o MaxReceitas]
-  // CONST INT MaxMatrizK=25 ;[numero Maximo de Pontos]
-  // DECL GLOBAL DefMatriz MatrizPontos[2,21,25];[MaxMatrizI,MaxMatrizJ,MaxMatrizK]
-
+  config.MaxCamadas=MaxCamadas;
+  config.MaxPallets=MaxPallets;
+  config.MaxMatrizI=MaxPallets;
+  config.imprime(config_dat);
+  for (auto &outt : receitas)outt.imprime(TReceita_src,MaxCamadas);
+  pick(My_Job_dat,TReceita_dat);
   end_all();
+  config_dat.close();
   TReceita_dat.close();
   TReceita_src.close();
   TMatriz_dat.close();

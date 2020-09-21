@@ -1,0 +1,20 @@
+| nmr | Cilindro Avanca | Cilindro Recua | Sensor Avanca | Sensor Recua |
+|  ----  |  ----  |  ----  |  ----  |  ----  |
+| 200 | Abre_Gar_Triplo_Lado_A | Fecha_Gar_Triplo_Lado_A | Cil_Comp_Triplo_A_Ava | Cil_Comp_Triplo_A_Rec |
+| 201 | Abre_Gar_Triplo_Lado_B | Fecha_Gar_Triplo_Lado_B | Cil_Comp_Triplo_B_Ava | Cil_Comp_Triplo_B_Rec |
+| 202 | Ava_Comp_Indiv_Gar_1 | Rec_Comp_Indiv_Gar_1 | Cil_Comp_Indiv_Gr_1_Ava | Cil_Comp_Indiv_Gr_1_Rec |
+| 203 | Ava_Comp_Indiv_Gar_3 | Rec_Comp_Indiv_Gar_3 | Cil_Comp_Indiv_Gr_3_Ava | Cil_Comp_Indiv_Gr_3_Rec |
+| 204 | Ava_Comp_Indiv_Gar_4 | Rec_Comp_Indiv_Gar_4 | Cil_Comp_Indiv_Gr_4_Ava | Cil_Comp_Indiv_Gr_4_Rec |
+| 205 | Ava_Comp_Indiv_Gar_6 | Rec_Comp_Indiv_Gar_6 | Cil_Comp_Indiv_Gr_6_Ava | Cil_Comp_Indiv_Gr_6_Rec |
+| 302 | Ava_Cil_2_Gar_1 | Rec_Cil_2_Gar_1 | Cil_2_Gar_1_Ava | X |
+| 304 | Ava_Cil_2_Gar_2 | Rec_Cil_2_Gar_2 | Cil_2_Gar_2_Ava | X |
+| 306 | Ava_Cil_2_Gar_3 | Rec_Cil_2_Gar_3 | Cil_2_Gar_3_Ava | X |
+| 308 | Ava_Cil_2_Gar_4 | Rec_Cil_2_Gar_4 | Cil_2_Gar_4_Ava | X |
+| 310 | Ava_Cil_2_Gar_5 | Rec_Cil_2_Gar_5 | Cil_2_Gar_5_Ava | X |
+| 312 | Ava_Cil_2_Gar_6 | Rec_Cil_2_Gar_6 | Cil_2_Gar_6_Ava | X |
+| 301 | Ava_Cil_1_Gar_1 | Rec_Cil_1_Gar_1 | Cil_1_Gar_1_Ava | X |
+| 303 | Ava_Cil_1_Gar_2 | Rec_Cil_1_Gar_2 | Cil_1_Gar_2_Ava | X |
+| 305 | Ava_Cil_1_Gar_3 | Rec_Cil_1_Gar_3 | Cil_1_Gar_3_Ava | X |
+| 307 | Ava_Cil_1_Gar_4 | Rec_Cil_1_Gar_4 | Cil_1_Gar_4_Ava | X |
+| 309 | Ava_Cil_1_Gar_5 | Rec_Cil_1_Gar_5 | Cil_1_Gar_5_Ava | X |
+| 311 | Ava_Cil_1_Gar_6 | Rec_Cil_1_Gar_6 | Cil_1_Gar_6_Ava | X |

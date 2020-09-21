@@ -45,34 +45,40 @@ ofs<<";ENDFOLD" << endl;
 return;
 }
 
-int pick(std::ifstream &My_Job_src,std::fstream &TReceita_dat,std::string produto)
+int pick(std::ifstream &My_Job_dat,std::fstream &TReceita_dat)
 {
-  My_Job_src.clear();
-  My_Job_src.seekg(0);
-  // variaveis
-  int contador=0;
+  My_Job_dat.clear();
+  My_Job_dat.seekg(0);
+  // prefixo(ofs,name);
   std::string entrada;
-  std::string Prdt_pick;
+  std::string posicao;
+  std::string PickName;
+  int tipo_place=1;
+  int NumPontos=0;
+  int contador=1;
 
-  while (!My_Job_src.eof())
+  TReceita_dat << ";FOLD PICK" << endl;
+  while (!My_Job_dat.eof())
   {
-    getline(My_Job_src,entrada);
-    if (!My_Job_src.good())break;
-    if(entrada.find("DEF Pick") !=std::string::npos && entrada.find(produto) !=std::string::npos)
-    {
-      getline(My_Job_src,entrada);
-      Prdt_pick=split_string(entrada,"[_()]+",1);
-      while(entrada.find("END")!=0)
+    getline(My_Job_dat,entrada);
+    if (!My_Job_dat.good())break;
+    
+    if(entrada.find("Data for Pick") !=std::string::npos){
+      PickName=split_string(entrada,"[ |\r\n|\r|\n]",3);
+      TReceita_dat<<";"<<PickName<<endl;
+      while(entrada.find("ENDDAT") ==std::string::npos)
       {
-        getline(My_Job_src,entrada);
-        if(My_Job_src.eof())break;
-        if(entrada.find("$OUT") !=std::string::npos)
+        getline(My_Job_dat,entrada);
+        if(entrada.find("E6POS") !=std::string::npos && entrada.find(PickName) !=std::string::npos)
         {
-
+          // cout << entrada<<endl;
+          posicao=split_string(entrada,"[=]+",1);
+          TReceita_dat<<"E6POS "<<PickName<<" = "<<posicao<<endl;
         }
       }
+      TReceita_dat<<endl;
     }
   }
-
-  return 0;
+  TReceita_dat << ";ENDFOLD \n" << endl;
+  return NumPontos;
 }
