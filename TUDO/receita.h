@@ -2,9 +2,9 @@
 #define receita_h
 
 // std::string split_string(std::string tokenString,std::string delim,int saida);
-int pick(std::ifstream &My_Job_dat,std::fstream &TReceita_dat);
-void prefixo(std::fstream &ofs,std::string name,bool dat);
-void sufixo(std::fstream &ofs,bool dat);
+int pick(std::ifstream &My_Job_dat,std::ofstream &TReceita_dat);
+void prefixo(std::ofstream &ofs,std::string name,bool dat);
+void sufixo(std::ofstream &ofs,bool dat);
 void init(void);
 void end(void);
 
@@ -16,7 +16,7 @@ public:
   int layers=3;
 public:
   Receita(std::string nome);
-  void imprime(std::fstream &ofs,int Camadas);
+  void imprime(std::ofstream &ofs,int Camadas);
 };
 
 #endif

@@ -12,7 +12,7 @@ using namespace std;
 #include "comum.h"
 #include "configdat.h"
 
-void Config::imprime(std::fstream &config_dat){
+void Config::imprime(std::ofstream &config_dat){
   config_dat<<";FOLD ENUM Pallet"<<endl; 
   for (int i=0;i<MaxPallets;i++)config_dat<< "CONST INT Pallet_"<<i+1<<" = "<<i+1<<endl;
   config_dat<<";ENDFOLD\n"<<endl; 
@@ -39,5 +39,23 @@ void Config::imprime(std::fstream &config_dat){
   config_dat<<"CONST INT MaxMatrizK="<<MaxMatrizK<<";[numero Maximo de Pontos]"<<endl;
   config_dat<<"DECL GLOBAL DefMatriz MatrizPontos["<<MaxMatrizI<<","<<MaxMatrizJ<<","<<MaxMatrizK<<"];[MaxMatrizI,MaxMatrizJ,MaxMatrizK]"<<endl;
   config_dat<<";ENDFOLD\n"<<endl;
+}
+
+void Config::cout_print(void){
+  cout <<  "+--------------- Rotina config.dat ---------------+" << endl;
+  cout <<  "===================================" << endl;
+  cout<<"CONST INT MaxPallets="<<MaxPallets<<endl;
+  cout<<"StrPallet[MaxPallets]"<<endl;
+  cout <<  "===================================" << endl;
+  cout<<"CONST INT MaxReceitas="<<MaxReceitas<<endl;
+  cout<<"CONST INT MaxCamadas="<<MaxCamadas<<endl;
+  cout<<"StrReceita[MaxReceitas]"<<endl;
+  cout<<"StrReceitaLayer[MaxReceitas,MaxCamadas]"<<endl;
+  cout <<  "===================================" << endl;
+  cout<<"CONST INT MaxMatrizI="<<MaxMatrizI<<";[numero de pallets por receita]"<<endl;
+  cout<<"CONST INT MaxMatrizJ="<<MaxMatrizJ<<";[acompanha o MaxReceitas]"<<endl;
+  cout<<"CONST INT MaxMatrizK="<<MaxMatrizK<<";[numero Maximo de Pontos]"<<endl;
+  cout<<"MatrizPontos[MaxMatrizI,MaxMatrizJ,MaxMatrizK]"<<endl;
+  cout <<  "===================================" << endl;
 }
 

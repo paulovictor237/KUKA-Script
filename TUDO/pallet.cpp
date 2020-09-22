@@ -12,7 +12,7 @@ using namespace std;
 #include "comum.h"
 #include "pallet.h"
 
-void data_tool(std::ifstream &My_Job_src,std::fstream &TPallet_src){
+void data_tool(std::ifstream &My_Job_src,std::ofstream &TPallet_src){
   int bases=0;
   int tools=0;
   My_Job_src.clear();
@@ -37,8 +37,8 @@ void data_tool(std::ifstream &My_Job_src,std::fstream &TPallet_src){
   cout << "numero de bases: " << tools << endl;
 }
 
-void pallet_src(std::ifstream &My_Job_src,std::fstream &TPallet_src,int MaxPallets){
-  cout <<  "+------- Rotina Pallet -------+" << endl;  
+void pallet_src(std::ifstream &My_Job_src,std::ofstream &TPallet_src,int MaxPallets){
+  cout <<  "+--------------- Rotina Pallet ---------------+" << endl;  
   int i=1;
   int j=1;
 

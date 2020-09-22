@@ -1,8 +1,8 @@
-//+-------------------------------------------------------------------------------+
+//+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 //             ╔══════════════════════════════════════════════════╗
 //             ║  Copyright (C) 2020 Paulo Victor Duarte          ║
 //             ╚══════════════════════════════════════════════════╝
-//+-------------------------------------------------------------------------------+
+//+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 // BIBLIOTECAS C++
 
 // COMPILAR
@@ -27,14 +27,14 @@ using namespace std;
 #include "comum.h"
 #include "garra.h"
 
-std::fstream TReceita_src("out/TReceita.src",std::ofstream::out | std::ofstream::trunc);
-std::fstream TReceita_dat("out/TReceita.dat",std::ofstream::out | std::ofstream::trunc);
-std::fstream TMatriz_src ("out/TMatriz.src",std::ofstream::out | std::ofstream::trunc);
-std::fstream TMatriz_dat ("out/TMatriz.dat",std::ofstream::out | std::ofstream::trunc);
-std::fstream TPallet_src ("out/TPallet.src",std::ofstream::out | std::ofstream::trunc);
-std::fstream TPallet_dat ("out/TPallet.dat",std::ofstream::out | std::ofstream::trunc);
+std::ofstream TReceita_src("out/TReceita.src",std::ofstream::out);
+std::ofstream TReceita_dat("out/TReceita.dat",std::ofstream::out);
+std::ofstream TMatriz_src ("out/TMatriz.src", std::ofstream::out);
+std::ofstream TMatriz_dat ("out/TMatriz.dat", std::ofstream::out);
+std::ofstream TPallet_src ("out/TPallet.src", std::ofstream::out);
+std::ofstream TPallet_dat ("out/TPallet.dat", std::ofstream::out);
 
-std::fstream config_dat("out/config.dat",std::ofstream::out | std::ofstream::trunc);
+std::ofstream config_dat("out/config.dat", std::ofstream::out);
 
 void init_all(void){
   prefixo(TReceita_src,"TReceita",false);
@@ -59,10 +59,13 @@ int MaxPallets=2;
 
 int main(int argc, char **argv)
 {
-//+-------------------------------------------------------------------------------+
+//+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
   // variaveis
   int MaxMatrizK;
   int PlacesCamada;
+  int contador_src;
+  int contador_dat;
+  int NumLayers;
   std::vector<class Receita> receitas;
   class Receita aux_receita("A");
   class Config config;
@@ -92,7 +95,7 @@ int main(int argc, char **argv)
 
   // ## TReceita -> cria o Receita src e dat
   // antes de imprimir (PlacesCamada/layers)
-  cout <<  "+------- Rotina Receitas -------+" << endl;
+  cout <<  "+--------------- Rotina Receitas ---------------+" << endl;
   cout << "=========================" << endl;
   while (!My_Job_src.eof())
   {
@@ -107,9 +110,12 @@ int main(int argc, char **argv)
       pallet=split_string(entrada,"[_()]+",1);//pallet
       produto=split_string(entrada,"[_()]+",2);//produto
       entrada=split_string(entrada,"[ ()]+",1);//produto
-      PlacesCamada=matriz_pontos_str(My_Job_src,TMatriz_src,pallet,produto);
-      MaxMatrizK=matriz_pontos_dat(My_Job_dat,TMatriz_dat,pallet,produto,entrada);
+      contador_src =matriz_pontos_str(My_Job_src,TMatriz_src,pallet,produto,NumLayers);
+      contador_dat =matriz_pontos_dat(My_Job_dat,TMatriz_dat,pallet,produto,entrada);
+      PlacesCamada = contador_dat/NumLayers;
+      MaxMatrizK = contador_dat;
       cout << "NumPlaces/NumLayers: " << PlacesCamada<< endl;
+      if(contador_src!=contador_dat) cout << "\033[1;31m" <<  "ERROR: " << "NumPlaces SRC != NumPlaces DAT" << "\033[0m"<<endl;
       config.MaxMatrizK=MaxMatrizK>config.MaxMatrizK?MaxMatrizK:config.MaxMatrizK;
       if(std::find(config.ENUM_RECEITA.begin(), config.ENUM_RECEITA.end(),produto) == config.ENUM_RECEITA.end())
       {
@@ -125,15 +131,14 @@ int main(int argc, char **argv)
       cout << "=========================" << endl; 
     }
   }
-  cout <<  "+------- Rotina config.dat -------+" << endl;
+  pallet_src(My_Job_src,TPallet_src,MaxPallets);
+  pick(My_Job_dat,TReceita_dat);
   config.MaxCamadas=MaxCamadas;
   config.MaxPallets=MaxPallets;
   config.MaxMatrizI=MaxPallets;
   config.imprime(config_dat);
+  config.cout_print();
   for (auto &outt : receitas)outt.imprime(TReceita_src,MaxCamadas);
-  pick(My_Job_dat,TReceita_dat);
-  pallet_src(My_Job_src,TPallet_src,MaxPallets);
-
 
   end_all();
   config_dat.close();

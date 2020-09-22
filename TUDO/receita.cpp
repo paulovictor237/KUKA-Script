@@ -13,11 +13,11 @@ using namespace std;
 #include "receita.h"
 
 
-void prefixo(std::fstream &ofs,std::string name,bool dat){
+void prefixo(std::ofstream &ofs,std::string name,bool dat){
   ofs << (dat?"DEFDAT ":"DEF ") << name << (dat?"":"()") << endl;
   return;
 }
-void sufixo(std::fstream &ofs,bool dat){
+void sufixo(std::ofstream &ofs,bool dat){
   ofs << (dat?"ENDDAT":"END ");
   return;
 }
@@ -25,7 +25,7 @@ void sufixo(std::fstream &ofs,bool dat){
 Receita::Receita(std::string nome){
 this->nome=nome;
 }
-void Receita::imprime(std::fstream &ofs,int Camadas){
+void Receita::imprime(std::ofstream &ofs,int Camadas){
   std::stringstream aux;
   ofs<<";FOLD Produto "<< nome << endl;
   ofs<<"  StrReceita[Prdt_"<< nome << "].OffsetProduto.X = 0"<< endl;
@@ -45,9 +45,9 @@ void Receita::imprime(std::fstream &ofs,int Camadas){
   return;
 }
 
-int pick(std::ifstream &My_Job_dat,std::fstream &TReceita_dat)
+int pick(std::ifstream &My_Job_dat,std::ofstream &TReceita_dat)
 {
-  cout <<  "+------- Rotina Pick -------+" << endl;
+  cout <<  "+--------------- Rotina Pick ---------------+" << endl;
   //error
   bool ERROR_pick=true;
 

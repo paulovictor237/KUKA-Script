@@ -12,13 +12,13 @@ using namespace std;
 #include "comum.h"
 # include "matriz_pontos.h"
 
-int matriz_pontos_str(std::ifstream &My_Job_src,std::fstream &TMatriz_src,std::string pallet,std::string produto)
+int matriz_pontos_str(std::ifstream &My_Job_src,std::ofstream &TMatriz_src,std::string pallet,std::string produto,int &NumLayers)
 {
   //erros
   bool ERROR_NumLayers=true;
   // variaveis  
   int contador=0;
-  int NumLayers=1;
+  NumLayers=1;
 
   std::string entrada="";
 
@@ -63,10 +63,10 @@ int matriz_pontos_str(std::ifstream &My_Job_src,std::fstream &TMatriz_src,std::s
   // // cout << "Numero de pontos: " << contador << endl;
   if(ERROR_NumLayers) cout << "\033[1;31m" <<  "ERROR: " << "NumLayers" << "\033[0m"<<endl;
   cout << "NumPlaces SRC: " << contador<< endl;
-  return contador/NumLayers;
+  return contador;
 }
 
-int matriz_pontos_dat(std::ifstream &My_Job_dat,std::fstream &TMatriz_dat,std::string pallet,std::string produto,std::string produto_cmplt)
+int matriz_pontos_dat(std::ifstream &My_Job_dat,std::ofstream &TMatriz_dat,std::string pallet,std::string produto,std::string produto_cmplt)
 {
   My_Job_dat.clear();
   My_Job_dat.seekg(0);
@@ -76,6 +76,10 @@ int matriz_pontos_dat(std::ifstream &My_Job_dat,std::fstream &TMatriz_dat,std::s
   int tipo_place=1;
   int NumPontos=0;
   int contador=1;
+
+  int Confere=0;
+  int ConfereINT;
+  double ConfereDOUBLE;
 
   TMatriz_dat << ";FOLD " <<pallet<<" "<< produto << endl;
   while (!My_Job_dat.eof())
@@ -89,6 +93,7 @@ int matriz_pontos_dat(std::ifstream &My_Job_dat,std::fstream &TMatriz_dat,std::s
         getline(My_Job_dat,entrada);
         if(entrada.find("E6POS") !=std::string::npos)
         {
+          Confere++;
           posicao=split_string(entrada,"[=]+",1);
           TMatriz_dat<<"E6POS ";
           TMatriz_dat<<pallet<<"_"<<produto<<"_"<<contador<<"_";
@@ -113,6 +118,9 @@ int matriz_pontos_dat(std::ifstream &My_Job_dat,std::fstream &TMatriz_dat,std::s
       }
     }
   }
+  ConfereINT = Confere/3;
+  ConfereDOUBLE = Confere*1.0/3;//(double)10/(double)3;
+  if(ConfereDOUBLE!=ConfereINT) cout << "\033[1;31m" <<  "ERROR: " << "Pontos incompletos" << "\033[0m"<<endl;
   TMatriz_dat << ";ENDFOLD \n" << endl;
   cout << "NumPlaces DAT: " << NumPontos<< endl;
   return NumPontos;
