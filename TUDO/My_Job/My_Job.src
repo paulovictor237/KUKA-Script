@@ -475,15 +475,6 @@ ENDIF
 ; Axis5 [-40 150] Rot [deg] (KR 180 R3200 PA : A5)
 ; Axis6 [-350 350] Rot [deg] (KR 180 R3200 PA : A6)
 ;endfold
-;fold RobRoot, Tools and Bases used
-; $ROBROOT = {x 0,y 0,z 0,a 0,b 0,c 0}
-; BASE_DATA[1] = {x -146.408,y -2681.991,z -822.545,a 0,b 0,c 0}
-; BASE_DATA[2] = {x -146.408,y 1400.659,z -837.242,a 0,b 0,c 0}
-; BASE_DATA[3] = {x 1273.688,y -630.658,z -549.545,a 0,b 0,c 0}
-; BASE_DATA[4] = {x 1273.688,y 616.142,z -554.945,a 0,b 0,c 0}
-; TOOL_DATA[1] = {x 0,y 0,z 0,a 0,b 0,c 0}
-; TOOL_DATA[3] = {x 275.619,y -15.47,z 310.364,a 0,b 0,c 180}
-;endfold
 ;fold HomePositions
 ;endfold
 HALT

@@ -20,6 +20,7 @@
 using namespace std;
 
 #include "matriz_pontos.h"
+#include "pallet.h"
 #include "receita.h"
 #include "configdat.h"
 #include "receita.h"
@@ -129,6 +130,9 @@ int main(int argc, char **argv)
   config.imprime(config_dat);
   for (auto &outt : receitas)outt.imprime(TReceita_src,MaxCamadas);
   pick(My_Job_dat,TReceita_dat);
+  pallet_src(My_Job_src,TPallet_src,MaxPallets);
+
+
   end_all();
   config_dat.close();
   TReceita_dat.close();

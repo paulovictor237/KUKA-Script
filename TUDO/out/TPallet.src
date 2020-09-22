@@ -1,2 +1,54 @@
 DEF TPallet()
+    ;FOLD RobRoot, Tools and Bases used
+       ; $ROBROOT = {x 0,y 0,z 0,a 0,b 0,c 0}
+       ; BASE_DATA[1] = {x -874.43,y -1399.074,z -106.8,a 0,b 0,c 0}
+       ; BASE_DATA[2] = {x -874.43,y 2400.926,z -106.8,a 0,b 0,c 0}
+       ; BASE_DATA[3] = {x 648.495,y -1967.367,z 508.2,a 0,b 0,c 0}
+       ; TOOL_DATA[1] = {x 0,y 0,z 0,a 0,b 0,c 0}
+    ;ENDFOLD
+
+    ;FOLD Iniciar Opcoes de Pallet
+       StrPallet[1].BasePoint=BASE_DATA[1]
+       StrPallet[2].BasePoint=BASE_DATA[2]
+    ;ENDFOLD
+
+    ;FOLD Iniciar Opcoes de Esteira
+       BaseEsteira1 = BASE_DATA[3]
+       BaseEsteira2 = BASE_DATA[4]
+    ;ENDFOLD
+
+    ;FOLD OffSetPallet
+       StrPallet[1].OffSetPallet.X = 0
+       StrPallet[1].OffSetPallet.Y = 0
+       StrPallet[1].OffSetPallet.Z = 0
+       StrPallet[1].OffSetPallet.A = 0
+       StrPallet[1].OffSetPallet.B = 0
+       StrPallet[1].OffSetPallet.C = 0
+
+       StrPallet[2].OffSetPallet.X = 0
+       StrPallet[2].OffSetPallet.Y = 0
+       StrPallet[2].OffSetPallet.Z = 0
+       StrPallet[2].OffSetPallet.A = 0
+       StrPallet[2].OffSetPallet.B = 0
+       StrPallet[2].OffSetPallet.C = 0
+
+    ;ENDFOLD
+
+    ;FOLD OffsetEsteira
+       OffsetEsteira1.X = 0
+       OffsetEsteira1.Y = 0
+       OffsetEsteira1.Z = 0
+       OffsetEsteira1.A = 0
+       OffsetEsteira1.B = 0
+       OffsetEsteira1.C = 0
+
+       OffsetEsteira2.X = 0
+       OffsetEsteira2.Y = 0
+       OffsetEsteira2.Z = 0
+       OffsetEsteira2.A = 0
+       OffsetEsteira2.B = 0
+       OffsetEsteira2.C = 0
+
+    ;ENDFOLD
+
 END 
