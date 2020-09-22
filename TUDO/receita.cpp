@@ -26,27 +26,31 @@ Receita::Receita(std::string nome){
 this->nome=nome;
 }
 void Receita::imprime(std::fstream &ofs,int Camadas){
-std::stringstream aux;
-ofs<<";FOLD Produto "<< nome << endl;
-ofs<<"  StrReceita[Prdt_"<< nome << "].OffsetProduto.X = 0"<< endl;
-ofs<<"  StrReceita[Prdt_"<< nome << "].OffsetProduto.Y = 0"<< endl;
-ofs<<"  StrReceita[Prdt_"<< nome << "].OffsetProduto.Z = 0"<< endl;
-ofs<<"  StrReceita[Prdt_"<< nome << "].OffsetProduto.A = 0"<< endl;
-ofs<<"  StrReceita[Prdt_"<< nome << "].OffsetProduto.B = 0"<< endl;
-ofs<<"  StrReceita[Prdt_"<< nome << "].OffsetProduto.C = 0"<< endl;
+  std::stringstream aux;
+  ofs<<";FOLD Produto "<< nome << endl;
+  ofs<<"  StrReceita[Prdt_"<< nome << "].OffsetProduto.X = 0"<< endl;
+  ofs<<"  StrReceita[Prdt_"<< nome << "].OffsetProduto.Y = 0"<< endl;
+  ofs<<"  StrReceita[Prdt_"<< nome << "].OffsetProduto.Z = 0"<< endl;
+  ofs<<"  StrReceita[Prdt_"<< nome << "].OffsetProduto.A = 0"<< endl;
+  ofs<<"  StrReceita[Prdt_"<< nome << "].OffsetProduto.B = 0"<< endl;
+  ofs<<"  StrReceita[Prdt_"<< nome << "].OffsetProduto.C = 0"<< endl;
 
-ofs<<"  StrReceita[Prdt_"<< nome << "].AlturaCaixa = 0" << endl;
-ofs<<"  StrReceita[Prdt_"<< nome << "].PlacesCamada = " << PlacesCamada << endl;
-ofs<<"  StrReceita[Prdt_"<< nome << "].Camadas = "<< Camadas << endl;
-for (int i=0;i<Camadas;i++){
-    ofs<<"  StrReceitaLayer[Prdt_"<< nome <<","<<i+1<<"] = 1" << endl;
-}
-ofs<<";ENDFOLD" << endl;
-return;
+  ofs<<"  StrReceita[Prdt_"<< nome << "].AlturaCaixa = 0" << endl;
+  ofs<<"  StrReceita[Prdt_"<< nome << "].PlacesCamada = " << PlacesCamada << endl;
+  ofs<<"  StrReceita[Prdt_"<< nome << "].Camadas = "<< Camadas << endl;
+  for (int i=0;i<Camadas;i++){
+      ofs<<"  StrReceitaLayer[Prdt_"<< nome <<","<<i+1<<"] = 1" << endl;
+  }
+  ofs<<";ENDFOLD" << endl;
+  return;
 }
 
 int pick(std::ifstream &My_Job_dat,std::fstream &TReceita_dat)
 {
+  cout <<  "+------- Rotina Pick -------+" << endl;
+  //error
+  bool ERROR_pick=true;
+
   My_Job_dat.clear();
   My_Job_dat.seekg(0);
   // prefixo(ofs,name);
@@ -64,6 +68,7 @@ int pick(std::ifstream &My_Job_dat,std::fstream &TReceita_dat)
     if (!My_Job_dat.good())break;
     
     if(entrada.find("Data for Pick") !=std::string::npos){
+      ERROR_pick=true;
       PickName=split_string(entrada,"[ |\r\n|\r|\n]",3);
       TReceita_dat<<";"<<PickName<<endl;
       while(entrada.find("ENDDAT") ==std::string::npos)
@@ -71,11 +76,14 @@ int pick(std::ifstream &My_Job_dat,std::fstream &TReceita_dat)
         getline(My_Job_dat,entrada);
         if(entrada.find("E6POS") !=std::string::npos && entrada.find(PickName) !=std::string::npos)
         {
+          ERROR_pick=false;
+          cout << "Pick encontrado: " << PickName <<endl;
           // cout << entrada<<endl;
           posicao=split_string(entrada,"[=]+",1);
           TReceita_dat<<"E6POS "<<PickName<<" = "<<posicao<<endl;
         }
       }
+      if(ERROR_pick) cout << "\033[1;31m" <<  "ERROR: " << PickName << "\033[0m"<<endl;
       TReceita_dat<<endl;
     }
   }

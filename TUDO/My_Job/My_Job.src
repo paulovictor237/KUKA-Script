@@ -5397,6 +5397,8 @@ SET_CD_PARAMS (0)
 LIN  XP16  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; NumLayers 2;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: NumLayers 2
+;ENDFOLD
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 3
@@ -5453,6 +5455,8 @@ SET_CD_PARAMS (0)
 LIN  XP21  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; NumLayers 2;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: NumLayers 2
+;ENDFOLD
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 3
@@ -5571,6 +5575,8 @@ SET_CD_PARAMS (0)
 LIN  XP7  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; NumLayers 2;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: NumLayers 2
+;ENDFOLD
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 4
@@ -5627,6 +5633,8 @@ SET_CD_PARAMS (0)
 LIN  XP10  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; NumLayers 2;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: NumLayers 2
+;ENDFOLD
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 4
@@ -5800,6 +5808,8 @@ SET_CD_PARAMS (0)
 LIN  XP65  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; NumLayers 2;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: NumLayers 2
+;ENDFOLD
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 3
@@ -5856,6 +5866,8 @@ SET_CD_PARAMS (0)
 LIN  XP68  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; NumLayers 2;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: NumLayers 2
+;ENDFOLD
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 3
@@ -5974,6 +5986,8 @@ SET_CD_PARAMS (0)
 LIN  XP53  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; NumLayers 2;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: NumLayers 2
+;ENDFOLD
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 3
@@ -6030,6 +6044,8 @@ SET_CD_PARAMS (0)
 LIN  XP56  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; NumLayers 2;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: NumLayers 2
+;ENDFOLD
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 3
@@ -6086,6 +6102,8 @@ SET_CD_PARAMS (0)
 LIN  XP59  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; NumLayers 2;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: NumLayers 2
+;ENDFOLD
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 3
@@ -6387,6 +6405,8 @@ SET_CD_PARAMS (0)
 LIN  XP44  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; NumLayers 2;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: NumLayers 2
+;ENDFOLD
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 4
@@ -6443,6 +6463,8 @@ SET_CD_PARAMS (0)
 LIN  XP47  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; NumLayers 2;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: NumLayers 2
+;ENDFOLD
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 4
@@ -6614,6 +6636,8 @@ SET_CD_PARAMS (0)
 LIN  XP145  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; NumLayers 2;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: NumLayers 2
+;ENDFOLD
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 2
@@ -6670,6 +6694,8 @@ SET_CD_PARAMS (0)
 LIN  XP148  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; NumLayers 2;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: NumLayers 2
+;ENDFOLD
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 2
@@ -6795,6 +6821,8 @@ SET_CD_PARAMS (0)
 LIN  XP136  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; NumLayers 2;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: NumLayers 2
+;ENDFOLD
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 5
@@ -6851,6 +6879,8 @@ SET_CD_PARAMS (0)
 LIN  XP139  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; NumLayers 2;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: NumLayers 2
+;ENDFOLD
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 5
@@ -6969,6 +6999,8 @@ SET_CD_PARAMS (0)
 LIN  XP120  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; NumLayers 2;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: NumLayers 2
+;ENDFOLD
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 4
@@ -7025,6 +7057,8 @@ SET_CD_PARAMS (0)
 LIN  XP123  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; NumLayers 2;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: NumLayers 2
+;ENDFOLD
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 4
@@ -7081,6 +7115,8 @@ SET_CD_PARAMS (0)
 LIN  XP126  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; NumLayers 2;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: NumLayers 2
+;ENDFOLD
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 4
@@ -7780,6 +7816,8 @@ SET_CD_PARAMS (0)
 LIN  XP95  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; NumLayers 2;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: NumLayers 2
+;ENDFOLD
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 3
@@ -7836,6 +7874,8 @@ SET_CD_PARAMS (0)
 LIN  XP97  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; NumLayers 2;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: NumLayers 2
+;ENDFOLD
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 3
@@ -7954,6 +7994,8 @@ SET_CD_PARAMS (0)
 LIN  XP104  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; NumLayers 2;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: NumLayers 2
+;ENDFOLD
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 3
@@ -8072,6 +8114,8 @@ SET_CD_PARAMS (0)
 LIN  XP82  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; NumLayers 2;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: NumLayers 2
+;ENDFOLD
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 3
@@ -8252,6 +8296,8 @@ SET_CD_PARAMS (0)
 LIN  XP110  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; NumLayers 2;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: NumLayers 2
+;ENDFOLD
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 1
@@ -8960,6 +9006,8 @@ SET_CD_PARAMS (0)
 LIN  XP27  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; NumLayers 2;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: NumLayers 2
+;ENDFOLD
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 3
@@ -9016,6 +9064,8 @@ SET_CD_PARAMS (0)
 LIN  XP30  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; NumLayers 2;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: NumLayers 2
+;ENDFOLD
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 3
@@ -9134,6 +9184,8 @@ SET_CD_PARAMS (0)
 LIN  XP35  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; NumLayers 2;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: NumLayers 2
+;ENDFOLD
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 4
@@ -9190,6 +9242,8 @@ SET_CD_PARAMS (0)
 LIN  XP38  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; NumLayers 2;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: NumLayers 2
+;ENDFOLD
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 4

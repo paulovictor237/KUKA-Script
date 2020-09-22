@@ -14,6 +14,8 @@ using namespace std;
 
 int matriz_pontos_str(std::ifstream &My_Job_src,std::fstream &TMatriz_src,std::string pallet,std::string produto)
 {
+  //erros
+  bool ERROR_NumLayers=true;
   // variaveis  
   int contador=0;
   int NumLayers=1;
@@ -21,15 +23,19 @@ int matriz_pontos_str(std::ifstream &My_Job_src,std::fstream &TMatriz_src,std::s
   std::string entrada="";
 
   TMatriz_src << ";FOLD " <<pallet<<" "<< produto << endl;
+  cout << "Pallet:  " << pallet << endl;
+  cout << "Produto: " << produto << endl;
 
   while(entrada.find("END")!=0){
     getline(My_Job_src,entrada);
     if (!My_Job_src.good())break;
 
-    if(entrada.find("NumLayers") !=std::string::npos)
+    if(entrada.find("NumLayers") !=std::string::npos && ERROR_NumLayers==true)
     {
+      ERROR_NumLayers=false;
       NumLayers=std::stoi(split_string(entrada,"[^0-9]+",1));
-      // cout << "NumLayers: "<< NumLayers << endl;
+      cout <<"NumLayers: "<<NumLayers << endl;
+      
     }
 
     if(entrada.find("PontoPlace") !=std::string::npos)
@@ -55,7 +61,8 @@ int matriz_pontos_str(std::ifstream &My_Job_src,std::fstream &TMatriz_src,std::s
   }
   TMatriz_src << ";ENDFOLD \n" << endl;
   // // cout << "Numero de pontos: " << contador << endl;
-
+  if(ERROR_NumLayers) cout << "\033[1;31m" <<  "ERROR: " << "NumLayers" << "\033[0m"<<endl;
+  cout << "NumPlaces SRC: " << contador<< endl;
   return contador/NumLayers;
 }
 
@@ -107,5 +114,6 @@ int matriz_pontos_dat(std::ifstream &My_Job_dat,std::fstream &TMatriz_dat,std::s
     }
   }
   TMatriz_dat << ";ENDFOLD \n" << endl;
+  cout << "NumPlaces DAT: " << NumPontos<< endl;
   return NumPontos;
 }

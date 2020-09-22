@@ -49,7 +49,6 @@ void Cilindro::imprime(std::ofstream &ofs){
 class Cilindro atribuir(std::vector<class Cilindro> Vcilindro,std::string entrada){
   for (class Cilindro out : Vcilindro){
     if(entrada.find(out.numero) !=std::string::npos){
-      out.valor=split_string(entrada,"[=]+",1);
       return out;
     }
   }
@@ -58,18 +57,20 @@ class Cilindro atribuir(std::vector<class Cilindro> Vcilindro,std::string entrad
   return out;
 }
 
-void tudo(std::ifstream &My_Job_src,std::vector<class Cilindro> &Vcilindro,std::string name){
+int tudo(std::ifstream &My_Job_src,std::vector<class Cilindro> &Vcilindro,std::string name){
   std::ofstream ofs ("out/"+name+".src", std::ofstream::out);
   prefixo(ofs,name);
   class Cilindro cilindro;
   std::string entrada;
   std::string numero;
+  int contador=0;
   vector<string> waitfor;
   while (!My_Job_src.eof())
   {
     getline(My_Job_src,entrada);
     if(entrada.find("DEF "+name) !=std::string::npos)
     {
+      contador++;
       ofs << "         " << "CASE " << split_string(entrada,"[^0-9]+",1) << endl;
       while(entrada.find("END")!=0)
       {
@@ -80,17 +81,18 @@ void tudo(std::ifstream &My_Job_src,std::vector<class Cilindro> &Vcilindro,std::
         {
           cilindro=atribuir(Vcilindro,entrada);
           if(cilindro.numero!="ERROR"){
+            cilindro.valor=split_string(entrada,"[=]+",1); // ?"TRUE":"FALSE"
             cilindro.imprime(ofs);
-          if(cilindro.SensorAvanca!="X"){
-            cilindro.SensorAvanca+=" == ";
-            cilindro.SensorAvanca+=(!cilindro.valor.find("T")?"TRUE":"FALSE");
-            waitfor.push_back(cilindro.SensorAvanca);
-          }
-          if(cilindro.SensorRecua!="X"){
-            cilindro.SensorRecua+= " == ";
-            cilindro.SensorRecua+=(!cilindro.valor.find("T")?"FALSE":"TRUE");
-            waitfor.push_back(cilindro.SensorRecua);
-          }
+            if(cilindro.SensorAvanca!="X"){
+              cilindro.SensorAvanca+=" == ";
+              cilindro.SensorAvanca+=(!cilindro.valor.find("T")?"TRUE":"FALSE");
+              waitfor.push_back(cilindro.SensorAvanca);
+            }
+            if(cilindro.SensorRecua!="X"){
+              cilindro.SensorRecua+= " == ";
+              cilindro.SensorRecua+=(!cilindro.valor.find("T")?"FALSE":"TRUE");
+              waitfor.push_back(cilindro.SensorRecua);
+            }
           }
         }
       }
@@ -102,7 +104,7 @@ void tudo(std::ifstream &My_Job_src,std::vector<class Cilindro> &Vcilindro,std::
   }
   sufixo(ofs);
   ofs.close();
-  return;
+  return contador;
 }
 void mapear(std::vector<class Cilindro> &cilindro){
 
@@ -137,6 +139,7 @@ int garra_exe(std::ifstream &My_Job_src)
 {
 //+-------------------------------------------------------------------------------+
   // variaveis
+  cout <<  "+------- Rotina Garra -------+" << endl;
   int contador=0;
   std::string entrada;
   std::stringstream entrada2;
@@ -151,15 +154,18 @@ int garra_exe(std::ifstream &My_Job_src)
   }
   std::vector<class Cilindro> cilindro;
   mapear(cilindro);
-  tudo(My_Job_src,cilindro,"ConfGarra");
   My_Job_src.clear();
   My_Job_src.seekg(0);
-  tudo(My_Job_src,cilindro,"AbreGarra");
+  contador = tudo(My_Job_src,cilindro,"ConfGarra");
+  cout << "Numero de ConfGarra: " << contador << endl;
   My_Job_src.clear();
   My_Job_src.seekg(0);
-  tudo(My_Job_src,cilindro,"FechaGarra");
-
-  cout << "FINALIZADO GARRAS" << endl;
+  contador = tudo(My_Job_src,cilindro,"AbreGarra");
+  cout << "Numero de AbreGarra: " << contador << endl;
+  My_Job_src.clear();
+  My_Job_src.seekg(0);
+  contador = tudo(My_Job_src,cilindro,"FechaGarra");
+  cout << "Numero de FechaGarra: " << contador << endl;
   return 0;
 }
 

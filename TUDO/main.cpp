@@ -92,7 +92,8 @@ int main(int argc, char **argv)
 
   // ## TReceita -> cria o Receita src e dat
   // antes de imprimir (PlacesCamada/layers)
-  
+  cout <<  "+------- Rotina Receitas -------+" << endl;
+  cout << "=========================" << endl;
   while (!My_Job_src.eof())
   {
     getline(My_Job_src,entrada);
@@ -102,12 +103,13 @@ int main(int argc, char **argv)
     }
     if(entrada.find("DEF Mtrz") !=std::string::npos)
     {
+      cout << entrada << endl;
       pallet=split_string(entrada,"[_()]+",1);//pallet
       produto=split_string(entrada,"[_()]+",2);//produto
       entrada=split_string(entrada,"[ ()]+",1);//produto
-      cout << entrada << endl;
       PlacesCamada=matriz_pontos_str(My_Job_src,TMatriz_src,pallet,produto);
       MaxMatrizK=matriz_pontos_dat(My_Job_dat,TMatriz_dat,pallet,produto,entrada);
+      cout << "NumPlaces/NumLayers: " << PlacesCamada<< endl;
       config.MaxMatrizK=MaxMatrizK>config.MaxMatrizK?MaxMatrizK:config.MaxMatrizK;
       if(std::find(config.ENUM_RECEITA.begin(), config.ENUM_RECEITA.end(),produto) == config.ENUM_RECEITA.end())
       {
@@ -119,11 +121,11 @@ int main(int argc, char **argv)
         receitas.push_back(aux_receita);
         config.MaxReceitas++;
         config.MaxMatrizJ++;
-      } 
-      
-
+      }
+      cout << "=========================" << endl; 
     }
   }
+  cout <<  "+------- Rotina config.dat -------+" << endl;
   config.MaxCamadas=MaxCamadas;
   config.MaxPallets=MaxPallets;
   config.MaxMatrizI=MaxPallets;

@@ -13,6 +13,8 @@ using namespace std;
 #include "pallet.h"
 
 void data_tool(std::ifstream &My_Job_src,std::fstream &TPallet_src){
+  int bases=0;
+  int tools=0;
   My_Job_src.clear();
   My_Job_src.seekg(0);
   std::string entrada;
@@ -23,16 +25,20 @@ void data_tool(std::ifstream &My_Job_src,std::fstream &TPallet_src){
       getline(My_Job_src,entrada);
       while(entrada.find("endfold")==std::string::npos)
       {
+        if(entrada.find("BASE_DATA")!=std::string::npos)bases++;
+        if(entrada.find("TOOL_DATA")!=std::string::npos)tools++;
         TPallet_src<<"       "<<entrada << endl;
         getline(My_Job_src,entrada);
       }
       break;
       }
   }
-
+  cout << "numero de bases: " << bases << endl;
+  cout << "numero de bases: " << tools << endl;
 }
 
 void pallet_src(std::ifstream &My_Job_src,std::fstream &TPallet_src,int MaxPallets){
+  cout <<  "+------- Rotina Pallet -------+" << endl;  
   int i=1;
   int j=1;
 
