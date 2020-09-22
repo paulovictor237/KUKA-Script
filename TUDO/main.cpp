@@ -54,12 +54,26 @@ void end_all(void){
   sufixo(TPallet_dat,true);
 }
 
-int MaxCamadas=8;
 int MaxPallets=2;
+int MaxCamadas=8;
 
 int main(int argc, char **argv)
 {
 //+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+  system("clear");
+  // system("cls");
+  cout << "\033[1;44m" <<  "╔═══════════════════════════════════════════════════════╗" << "\033[0m"<<endl;
+  cout << "\033[1;44m" <<  "║                   PROGRAMA INICIADO                   ║" << "\033[0m"<<endl;
+  cout << "\033[1;44m" <<  "╚═══════════════════════════════════════════════════════╝" << "\033[0m"<<endl;
+  
+  cout << "Valores de inicializacao" << endl; 
+  if(argc==3){
+    MaxPallets=atoi(argv[1]);
+    MaxCamadas=atoi(argv[2]);
+  }
+  cout << "MaxPallets = " << MaxPallets << endl;
+  cout << "MaxCamadas = " << MaxCamadas << endl;
+  
   // variaveis
   int MaxMatrizK;
   int PlacesCamada;
