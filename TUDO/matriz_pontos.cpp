@@ -12,6 +12,27 @@ using namespace std;
 #include "comum.h"
 # include "matriz_pontos.h"
 
+int OffsetPlace(std::ofstream &TMatriz_src,std::string pallet,std::string produto,int contador)
+{
+  TMatriz_src<<";FOLD OffsetPlace " << endl;
+  TMatriz_src<<"MatrizPontos[Pallet_"<<pallet[1]<<",Prdt_"<<produto << "," << contador << "].";
+  TMatriz_src<<"OffsetPlace.X = 0"<< endl;
+  TMatriz_src<<"MatrizPontos[Pallet_"<<pallet[1]<<",Prdt_"<<produto << "," << contador << "].";
+  TMatriz_src<<"OffsetPlace.Y = 0"<< endl;
+  TMatriz_src<<"MatrizPontos[Pallet_"<<pallet[1]<<",Prdt_"<<produto << "," << contador << "].";
+  TMatriz_src<<"OffsetPlace.Z = 0"<< endl;
+  TMatriz_src<<"MatrizPontos[Pallet_"<<pallet[1]<<",Prdt_"<<produto << "," << contador << "].";
+  TMatriz_src<<"OffsetPlace.A = 0"<< endl;
+  TMatriz_src<<"MatrizPontos[Pallet_"<<pallet[1]<<",Prdt_"<<produto << "," << contador << "].";
+  TMatriz_src<<"OffsetPlace.B = 0"<< endl;
+  TMatriz_src<<"MatrizPontos[Pallet_"<<pallet[1]<<",Prdt_"<<produto << "," << contador << "].";
+  TMatriz_src<<"OffsetPlace.C = 0"<< endl;
+  TMatriz_src<<";ENDFOLD" << endl;
+  return 0;
+}
+
+
+
 int matriz_pontos_str(std::ifstream &My_Job_src,std::ofstream &TMatriz_src,std::string pallet,std::string produto,int &NumLayers)
 {
   //erros
@@ -22,7 +43,7 @@ int matriz_pontos_str(std::ifstream &My_Job_src,std::ofstream &TMatriz_src,std::
 
   std::string entrada="";
 
-  TMatriz_src << ";FOLD " <<pallet<<" "<< produto << endl;
+  TMatriz_src << ";FOLD Pallet " <<pallet[1]<<" - Produto "<< produto << endl;
   cout << "Pallet:  " << pallet << endl;
   cout << "Produto: " << produto << endl;
 
@@ -41,6 +62,7 @@ int matriz_pontos_str(std::ifstream &My_Job_src,std::ofstream &TMatriz_src,std::
     if(entrada.find("PontoPlace") !=std::string::npos)
     {
       contador++;
+      TMatriz_src<<";FOLD PLACE " << contador << endl;
       getline(My_Job_src,entrada);
       getline(My_Job_src,entrada);
       while(entrada.find("FOLD")==std::string::npos){
@@ -54,6 +76,8 @@ int matriz_pontos_str(std::ifstream &My_Job_src,std::ofstream &TMatriz_src,std::
       TMatriz_src<<"App2Place = "<<pallet<<"_"<<produto<<"_"<<contador<<"_"<<"App2"<<endl;
       TMatriz_src<<"MatrizPontos[Pallet_"<<pallet[1]<<",Prdt_"<<produto << "," << contador << "].";
       TMatriz_src<<"Place = "<<pallet<<"_"<<produto<<"_"<<contador<<"_"<<"Place"<<endl;
+      OffsetPlace(TMatriz_src,pallet,produto,contador);
+      TMatriz_src<<";ENDFOLD" << endl;
       TMatriz_src<< endl;
       // ofs << "MatrizPontos[1," << contador << "]." << IndexacaoVH << endl;
     }
