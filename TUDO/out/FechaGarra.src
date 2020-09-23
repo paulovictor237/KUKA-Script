@@ -28,7 +28,6 @@ DEF FechaGarra( )
             WAIT FOR ( Cil_2_Gar_4_Ava == FALSE )
             WAIT FOR ( Cil_2_Gar_5_Ava == FALSE )
             WAIT FOR ( Cil_2_Gar_6_Ava == FALSE )
-            WAIT SEC 0.5
          CASE 1
             Ava_Cil_1_Gar_1 = FALSE
             Rec_Cil_1_Gar_1 = TRUE
@@ -54,7 +53,6 @@ DEF FechaGarra( )
             WAIT FOR ( Cil_1_Gar_4_Ava == FALSE )
             WAIT FOR ( Cil_1_Gar_5_Ava == FALSE )
             WAIT FOR ( Cil_1_Gar_6_Ava == FALSE )
-            WAIT SEC 0.5
          CASE 32
             Ava_Cil_2_Gar_1 = FALSE
             Rec_Cil_2_Gar_1 = TRUE
@@ -104,7 +102,6 @@ DEF FechaGarra( )
             WAIT FOR ( Cil_1_Gar_4_Ava == FALSE )
             WAIT FOR ( Cil_1_Gar_5_Ava == FALSE )
             WAIT FOR ( Cil_1_Gar_6_Ava == FALSE )
-            WAIT SEC 0.5
          CASE 61
             Ava_Cil_1_Gar_1 = FALSE
             Rec_Cil_1_Gar_1 = TRUE
@@ -154,7 +151,6 @@ DEF FechaGarra( )
             WAIT FOR ( Cil_2_Gar_4_Ava == FALSE )
             WAIT FOR ( Cil_2_Gar_5_Ava == FALSE )
             WAIT FOR ( Cil_2_Gar_6_Ava == FALSE )
-            WAIT SEC 0.5
          CASE 192
             Ava_Cil_1_Gar_1 = FALSE
             Rec_Cil_1_Gar_1 = TRUE
@@ -204,7 +200,6 @@ DEF FechaGarra( )
             WAIT FOR ( Cil_2_Gar_4_Ava == FALSE )
             WAIT FOR ( Cil_2_Gar_5_Ava == FALSE )
             WAIT FOR ( Cil_2_Gar_6_Ava == FALSE )
-            WAIT SEC 0.5
          CASE 171
             Ava_Cil_2_Gar_1 = FALSE
             Rec_Cil_2_Gar_1 = TRUE
@@ -254,7 +249,6 @@ DEF FechaGarra( )
             WAIT FOR ( Cil_1_Gar_4_Ava == FALSE )
             WAIT FOR ( Cil_1_Gar_5_Ava == FALSE )
             WAIT FOR ( Cil_1_Gar_6_Ava == FALSE )
-            WAIT SEC 0.5
          CASE 172
             Ava_Cil_1_Gar_1 = FALSE
             Rec_Cil_1_Gar_1 = TRUE
@@ -304,7 +298,6 @@ DEF FechaGarra( )
             WAIT FOR ( Cil_2_Gar_4_Ava == FALSE )
             WAIT FOR ( Cil_2_Gar_5_Ava == FALSE )
             WAIT FOR ( Cil_2_Gar_6_Ava == FALSE )
-            WAIT SEC 0.5
          CASE 3
             Ava_Cil_1_Gar_1 = FALSE
             Rec_Cil_1_Gar_1 = TRUE
@@ -354,7 +347,6 @@ DEF FechaGarra( )
             WAIT FOR ( Cil_2_Gar_4_Ava == FALSE )
             WAIT FOR ( Cil_2_Gar_5_Ava == FALSE )
             WAIT FOR ( Cil_2_Gar_6_Ava == FALSE )
-            WAIT SEC 0.5
          CASE 4
             Ava_Cil_2_Gar_1 = FALSE
             Rec_Cil_2_Gar_1 = TRUE
@@ -404,9 +396,7 @@ DEF FechaGarra( )
             WAIT FOR ( Cil_1_Gar_4_Ava == FALSE )
             WAIT FOR ( Cil_1_Gar_5_Ava == FALSE )
             WAIT FOR ( Cil_1_Gar_6_Ava == FALSE )
-            WAIT SEC 0.5
          CASE 0
-            WAIT SEC 0.5
       ENDSWITCH
       WAIT SEC 1
    ENDIF

@@ -58,6 +58,8 @@ class Cilindro atribuir(std::vector<class Cilindro> Vcilindro,std::string entrad
 }
 
 int tudo(std::ifstream &My_Job_src,std::vector<class Cilindro> &Vcilindro,std::string name){
+  My_Job_src.clear();
+  My_Job_src.seekg(0);
   std::ofstream ofs ("out/"+name+".src", std::ofstream::out);
   prefixo(ofs,name);
   class Cilindro cilindro;
@@ -98,7 +100,7 @@ int tudo(std::ifstream &My_Job_src,std::vector<class Cilindro> &Vcilindro,std::s
       }
       //  WAIT FOR  ( SensorGarraAberta1 )
       for (auto &outt : waitfor)ofs<<"            WAIT FOR ( "<<outt<<" )" << endl;
-      ofs<<"            WAIT SEC 0.5"<< endl;
+      // ofs<<"            WAIT SEC 0.5"<< endl;
       waitfor.clear();
     }
   }
@@ -135,6 +137,64 @@ void mapear(std::vector<class Cilindro> &cilindro){
   return;
 }
 
+int GarraNoWait(std::ifstream &My_Job_src,std::vector<class Cilindro> &Vcilindro,std::string name){
+  My_Job_src.clear();
+  My_Job_src.seekg(0);
+  std::ofstream ConfGarra_NoWait("out/"+name+"_NoWait.src", std::ofstream::out);
+  std::ofstream ConfGarra_Wait ("out/"+name+"_Wait.src",  std::ofstream::out);
+  prefixo(ConfGarra_NoWait,name+"_NoWait");
+  prefixo(ConfGarra_Wait,name+"_Wait");
+
+  class Cilindro cilindro;
+  std::string entrada;
+  std::string numero;
+  int contador=0;
+  vector<string> waitfor;
+  while (!My_Job_src.eof())
+  {
+    getline(My_Job_src,entrada);
+    if(entrada.find("DEF "+name) !=std::string::npos)
+    {
+      contador++;
+      ConfGarra_NoWait << "         " << "CASE " << split_string(entrada,"[^0-9]+",1) << endl;
+      ConfGarra_Wait   << "         " << "CASE " << split_string(entrada,"[^0-9]+",1) << endl;
+      while(entrada.find("END")!=0)
+      {
+        getline(My_Job_src,entrada);
+        if(My_Job_src.eof())break;
+
+        if(entrada.find("$OUT") !=std::string::npos)
+        {
+          cilindro=atribuir(Vcilindro,entrada);
+          if(cilindro.numero!="ERROR"){
+            cilindro.valor=split_string(entrada,"[=]+",1); // ?"TRUE":"FALSE"
+            cilindro.imprime(ConfGarra_NoWait);
+            if(cilindro.SensorAvanca!="X"){
+              cilindro.SensorAvanca+=" == ";
+              cilindro.SensorAvanca+=(!cilindro.valor.find("T")?"TRUE":"FALSE");
+              waitfor.push_back(cilindro.SensorAvanca);
+            }
+            if(cilindro.SensorRecua!="X"){
+              cilindro.SensorRecua+= " == ";
+              cilindro.SensorRecua+=(!cilindro.valor.find("T")?"FALSE":"TRUE");
+              waitfor.push_back(cilindro.SensorRecua);
+            }
+          }
+        }
+      }
+      //  WAIT FOR  ( SensorGarraAberta1 )
+      for (auto &outt : waitfor)ConfGarra_Wait<<"            WAIT FOR ( "<<outt<<" )" << endl;
+      // ConfGarra_Wait<<"            WAIT SEC 0.5"<< endl;
+      waitfor.clear();
+    }
+  }
+  sufixo(ConfGarra_NoWait); 
+  sufixo(ConfGarra_Wait);
+  ConfGarra_NoWait.close();
+  ConfGarra_Wait.close();
+  return contador;
+}
+
 int garra_exe(std::ifstream &My_Job_src)
 {
 //+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -154,18 +214,14 @@ int garra_exe(std::ifstream &My_Job_src)
   }
   std::vector<class Cilindro> cilindro;
   mapear(cilindro);
-  My_Job_src.clear();
-  My_Job_src.seekg(0);
+  GarraNoWait(My_Job_src,cilindro,"ConfGarra");
   contador = tudo(My_Job_src,cilindro,"ConfGarra");
   cout << "Numero de ConfGarra: " << contador << endl;
-  My_Job_src.clear();
-  My_Job_src.seekg(0);
   contador = tudo(My_Job_src,cilindro,"AbreGarra");
   cout << "Numero de AbreGarra: " << contador << endl;
-  My_Job_src.clear();
-  My_Job_src.seekg(0);
   contador = tudo(My_Job_src,cilindro,"FechaGarra");
   cout << "Numero de FechaGarra: " << contador << endl;
   return 0;
 }
+
 
