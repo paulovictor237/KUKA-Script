@@ -1,8 +1,6 @@
-&ACCESS RVO1
-&PARAM EDITMASK = *
 DEF ConfGarra_NoWait( )
    IF (OperarVazio==FALSE) THEN
-      SWITCH ConfGarra_NoWaitOp
+      SWITCH ConfGarraOp
          CASE 11
             Abre_Gar_Triplo_Lado_A = FALSE
             Fecha_Gar_Triplo_Lado_A = TRUE

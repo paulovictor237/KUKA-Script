@@ -1,5 +1,3 @@
-&ACCESS RVO1
-&PARAM EDITMASK = *
 DEF AbreGarra( )
    IF (OperarVazio==FALSE) THEN
       SWITCH AbreGarraOp

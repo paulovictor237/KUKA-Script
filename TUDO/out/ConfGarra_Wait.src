@@ -1,8 +1,6 @@
-&ACCESS RVO1
-&PARAM EDITMASK = *
 DEF ConfGarra_Wait( )
    IF (OperarVazio==FALSE) THEN
-      SWITCH ConfGarra_WaitOp
+      SWITCH ConfGarraOp
          CASE 11
             WAIT FOR ( Cil_Comp_Triplo_A_Ava == FALSE )
             WAIT FOR ( Cil_Comp_Triplo_A_Rec == TRUE )

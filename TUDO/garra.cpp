@@ -23,12 +23,10 @@ using namespace std;
 #include "comum.h"
 
 
-void prefixo(std::ofstream &ofs,std::string name){
-  ofs << "&ACCESS RVO1" << endl;
-  ofs << "&PARAM EDITMASK = *" << endl;
+void prefixo(std::ofstream &ofs,std::string name,std::string SWITCH){
   ofs << "DEF "<< name <<"( )" << endl;
   ofs << "   IF (OperarVazio==FALSE) THEN" << endl;
-  ofs << "      SWITCH "<< name <<"Op" << endl;
+  ofs << "      SWITCH "<< SWITCH <<"Op" << endl;
   return;
 }
 void sufixo(std::ofstream &ofs){
@@ -61,7 +59,7 @@ int tudo(std::ifstream &My_Job_src,std::vector<class Cilindro> &Vcilindro,std::s
   My_Job_src.clear();
   My_Job_src.seekg(0);
   std::ofstream ofs ("out/"+name+".src", std::ofstream::out);
-  prefixo(ofs,name);
+  prefixo(ofs,name,name);
   class Cilindro cilindro;
   std::string entrada;
   std::string numero;
@@ -142,8 +140,8 @@ int GarraNoWait(std::ifstream &My_Job_src,std::vector<class Cilindro> &Vcilindro
   My_Job_src.seekg(0);
   std::ofstream ConfGarra_NoWait("out/"+name+"_NoWait.src", std::ofstream::out);
   std::ofstream ConfGarra_Wait ("out/"+name+"_Wait.src",  std::ofstream::out);
-  prefixo(ConfGarra_NoWait,name+"_NoWait");
-  prefixo(ConfGarra_Wait,name+"_Wait");
+  prefixo(ConfGarra_NoWait,name+"_NoWait",name);
+  prefixo(ConfGarra_Wait,name+"_Wait",name);
 
   class Cilindro cilindro;
   std::string entrada;
