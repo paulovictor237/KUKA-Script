@@ -62,6 +62,9 @@ void end_all(void){
 int MaxPallets=2;
 int MaxCamadas=12;
 
+int AlturaCaixa = 0;
+int Camadas = 0;
+
 int main(int argc, char **argv)
 {
 //+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -131,12 +134,12 @@ int main(int argc, char **argv)
       entrada=split_string(entrada,"[ ()]+",1);//produto
       if(pallet[1]=='1')
       {
-        contador_src =matriz_pontos_str(My_Job_src,Aux1TMatriz_src,pallet,produto,NumLayers);
+        contador_src =matriz_pontos_str(My_Job_src,Aux1TMatriz_src,pallet,produto,NumLayers,AlturaCaixa,Camadas);
         contador_dat =matriz_pontos_dat(My_Job_dat,Aux1TMatriz_dat,pallet,produto,entrada);
       }
       else
       {
-        contador_src =matriz_pontos_str(My_Job_src,Aux2TMatriz_src,pallet,produto,NumLayers);
+        contador_src =matriz_pontos_str(My_Job_src,Aux2TMatriz_src,pallet,produto,NumLayers,AlturaCaixa,Camadas);
         contador_dat =matriz_pontos_dat(My_Job_dat,Aux2TMatriz_dat,pallet,produto,entrada);
       }
       PlacesCamada = contador_dat/NumLayers;
@@ -150,6 +153,8 @@ int main(int argc, char **argv)
         // coloca as testeiras e os pallets
         config.ENUM_RECEITA.push_back(produto);
         aux_receita.nome = produto;
+        aux_receita.AlturaCaixa = AlturaCaixa;
+        aux_receita.Camadas = Camadas;
         aux_receita.PlacesCamada=PlacesCamada;
         receitas.push_back(aux_receita);
         config.MaxReceitas++;
@@ -173,7 +178,7 @@ int main(int argc, char **argv)
   config.MaxMatrizI=MaxPallets;
   config.imprime(config_dat);
   config.cout_print();
-  for (auto &outt : receitas)outt.imprime(TReceita_src,MaxCamadas);
+  for (auto &outt : receitas)outt.imprime(TReceita_src);
 
   end_all();
   config_dat.close();

@@ -25,7 +25,7 @@ void sufixo(std::ofstream &ofs,bool dat){
 Receita::Receita(std::string nome){
 this->nome=nome;
 }
-void Receita::imprime(std::ofstream &ofs,int Camadas){
+void Receita::imprime(std::ofstream &ofs){
   std::stringstream aux;
   ofs<<";FOLD Produto "<< nome << endl;
   ofs<<"  StrReceita[Prdt_"<< nome << "].OffsetProduto.X = 0"<< endl;
@@ -35,7 +35,7 @@ void Receita::imprime(std::ofstream &ofs,int Camadas){
   ofs<<"  StrReceita[Prdt_"<< nome << "].OffsetProduto.B = 0"<< endl;
   ofs<<"  StrReceita[Prdt_"<< nome << "].OffsetProduto.C = 0"<< endl;
 
-  ofs<<"  StrReceita[Prdt_"<< nome << "].AlturaCaixa = 0" << endl;
+  ofs<<"  StrReceita[Prdt_"<< nome << "].AlturaCaixa = "<<AlturaCaixa << endl;
   ofs<<"  StrReceita[Prdt_"<< nome << "].PlacesCamada = " << PlacesCamada << endl;
   ofs<<"  StrReceita[Prdt_"<< nome << "].Camadas = "<< Camadas << endl;
   for (int i=0;i<Camadas;i++){

@@ -13,10 +13,11 @@ public:
   std::string nome;
   int PlacesCamada=0;
   int AlturaCaixa = 0;
+  int Camadas = 0;
   int layers=3;
 public:
   Receita(std::string nome);
-  void imprime(std::ofstream &ofs,int Camadas);
+  void imprime(std::ofstream &ofs);
 };
 
 #endif

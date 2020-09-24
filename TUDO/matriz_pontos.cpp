@@ -33,13 +33,19 @@ int OffsetPlace(std::ofstream &TMatriz_src,std::string pallet,std::string produt
 
 
 
-int matriz_pontos_str(std::ifstream &My_Job_src,std::ofstream &TMatriz_src,std::string pallet,std::string produto,int &NumLayers)
+int matriz_pontos_str(std::ifstream &My_Job_src,std::ofstream &TMatriz_src,std::string pallet,std::string produto,int &NumLayers,int &AlturaCaixa,int &Camadas)
 {
   //erros
   bool ERROR_NumLayers=true;
-  // variaveis  
-  int contador=0;
+  bool ERROR_AlturaCaixa=true;
+  bool ERROR_Camadas=true;
+  //outras
+  //int NumLayers = 2;
   NumLayers=1;
+  AlturaCaixa = 0;
+  Camadas = 12;
+  // variaveis  
+  int contador=0;;
 
   std::string entrada="";
 
@@ -55,8 +61,19 @@ int matriz_pontos_str(std::ifstream &My_Job_src,std::ofstream &TMatriz_src,std::
     {
       ERROR_NumLayers=false;
       NumLayers=std::stoi(split_string(entrada,"[^0-9]+",1));
-      cout <<"NumLayers: "<<NumLayers << endl;
-      
+      // cout <<"NumLayers: "<<NumLayers << endl;
+    }
+    if(entrada.find("AlturaCaixa") !=std::string::npos && ERROR_AlturaCaixa==true)
+    {
+      ERROR_AlturaCaixa=false;
+      AlturaCaixa=std::stoi(split_string(entrada,"[^0-9]+",1));
+      // cout <<"AlturaCaixa: "<<AlturaCaixa << endl;
+    }
+    if(entrada.find("Camadas") !=std::string::npos && ERROR_Camadas==true)
+    {
+      ERROR_Camadas=false;
+      Camadas=std::stoi(split_string(entrada,"[^0-9]+",1));
+      // cout <<"Camadas: "<<Camadas << endl;
     }
 
     if(entrada.find("PontoPlace") !=std::string::npos)
@@ -100,8 +117,24 @@ int matriz_pontos_str(std::ifstream &My_Job_src,std::ofstream &TMatriz_src,std::
   TMatriz_src << endl;
   //FOLD Layer
 
-  if(ERROR_NumLayers) cout << "\033[1;31m" <<  "ERROR: " << "NumLayers" << "\033[0m"<<endl;
+  if(ERROR_AlturaCaixa){
+    cout << "\033[1;31m" <<  "ERROR: " << "AlturaCaixa" << "\033[0m"<<endl;
+  }else{
+    cout << "AlturaCaixa: " << AlturaCaixa<< endl;
+  }
+  if(ERROR_Camadas){
+    cout << "\033[1;31m" <<  "ERROR: " << "Camadas" << "\033[0m"<<endl;
+  }else{
+    cout << "Camadas: " << Camadas<< endl;
+  }
+  if(ERROR_NumLayers){
+    cout << "\033[1;31m" <<  "ERROR: " << "NumLayers" << "\033[0m"<<endl;
+  }else{
+    cout <<"NumLayers: "<<NumLayers << endl;
+    // cout << "NumPlaces/NumLayers: " << contador/NumLayers<< endl;
+  }
   cout << "NumPlaces SRC: " << contador<< endl;
+  
   return contador;
 }
 
