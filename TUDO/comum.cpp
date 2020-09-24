@@ -20,3 +20,18 @@ std::string split_string(std::string tokenString,string delim,int saida){
   for (auto token_it = tokens_begin; token_it != tokens_end; token_it++)tokens.push_back(*token_it);
   return tokens[saida];
 }
+
+int copy_file(std::ofstream &out,std::string in1,std::string in2)
+{
+  std::ifstream Pallet1 (in1);
+  std::ifstream Pallet2 (in2);
+  out << ";FOLD PALLET 1" << endl;
+  out << Pallet1.rdbuf();
+  out << ";ENDFOLD" << endl;
+  out << ";FOLD PALLET 2" << endl;
+  out << Pallet2.rdbuf();
+  out << ";ENDFOLD" << endl;
+  Pallet1.close();
+  Pallet2.close();
+  return 0;
+}
