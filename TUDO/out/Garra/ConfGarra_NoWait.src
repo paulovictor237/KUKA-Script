@@ -44,17 +44,17 @@ DEF ConfGarra_NoWait( )
             Abre_Gar_Triplo_Lado_B = FALSE
             Fecha_Gar_Triplo_Lado_B = TRUE
 
-            Ava_Comp_Indiv_Gar_1 = TRUE
-            Rec_Comp_Indiv_Gar_1 = FALSE
+            Abre_Comp_Indiv_Gar_1 = TRUE
+            Fecha_Comp_Indiv_Gar_1 = FALSE
 
-            Ava_Comp_Indiv_Gar_3 = TRUE
-            Rec_Comp_Indiv_Gar_3 = FALSE
+            Abre_Comp_Indiv_Gar_3 = TRUE
+            Fecha_Comp_Indiv_Gar_3 = FALSE
 
-            Ava_Comp_Indiv_Gar_4 = TRUE
-            Rec_Comp_Indiv_Gar_4 = FALSE
+            Abre_Comp_Indiv_Gar_4 = TRUE
+            Fecha_Comp_Indiv_Gar_4 = FALSE
 
-            Ava_Comp_Indiv_Gar_6 = TRUE
-            Rec_Comp_Indiv_Gar_6 = FALSE
+            Abre_Comp_Indiv_Gar_6 = TRUE
+            Fecha_Comp_Indiv_Gar_6 = FALSE
 
          CASE 1
             Ava_Cil_1_Gar_1 = FALSE
@@ -99,17 +99,17 @@ DEF ConfGarra_NoWait( )
             Abre_Gar_Triplo_Lado_B = TRUE
             Fecha_Gar_Triplo_Lado_B = FALSE
 
-            Ava_Comp_Indiv_Gar_1 = TRUE
-            Rec_Comp_Indiv_Gar_1 = FALSE
+            Abre_Comp_Indiv_Gar_1 = TRUE
+            Fecha_Comp_Indiv_Gar_1 = FALSE
 
-            Ava_Comp_Indiv_Gar_3 = TRUE
-            Rec_Comp_Indiv_Gar_3 = FALSE
+            Abre_Comp_Indiv_Gar_3 = TRUE
+            Fecha_Comp_Indiv_Gar_3 = FALSE
 
-            Ava_Comp_Indiv_Gar_4 = TRUE
-            Rec_Comp_Indiv_Gar_4 = FALSE
+            Abre_Comp_Indiv_Gar_4 = TRUE
+            Fecha_Comp_Indiv_Gar_4 = FALSE
 
-            Ava_Comp_Indiv_Gar_6 = FALSE
-            Rec_Comp_Indiv_Gar_6 = TRUE
+            Abre_Comp_Indiv_Gar_6 = FALSE
+            Fecha_Comp_Indiv_Gar_6 = TRUE
 
          CASE 2
             Ava_Cil_1_Gar_1 = TRUE
@@ -154,17 +154,17 @@ DEF ConfGarra_NoWait( )
             Abre_Gar_Triplo_Lado_B = FALSE
             Fecha_Gar_Triplo_Lado_B = TRUE
 
-            Ava_Comp_Indiv_Gar_1 = TRUE
-            Rec_Comp_Indiv_Gar_1 = FALSE
+            Abre_Comp_Indiv_Gar_1 = TRUE
+            Fecha_Comp_Indiv_Gar_1 = FALSE
 
-            Ava_Comp_Indiv_Gar_3 = TRUE
-            Rec_Comp_Indiv_Gar_3 = FALSE
+            Abre_Comp_Indiv_Gar_3 = TRUE
+            Fecha_Comp_Indiv_Gar_3 = FALSE
 
-            Ava_Comp_Indiv_Gar_4 = TRUE
-            Rec_Comp_Indiv_Gar_4 = FALSE
+            Abre_Comp_Indiv_Gar_4 = TRUE
+            Fecha_Comp_Indiv_Gar_4 = FALSE
 
-            Ava_Comp_Indiv_Gar_6 = TRUE
-            Rec_Comp_Indiv_Gar_6 = FALSE
+            Abre_Comp_Indiv_Gar_6 = TRUE
+            Fecha_Comp_Indiv_Gar_6 = FALSE
 
          CASE 3
             Ava_Cil_1_Gar_1 = TRUE
@@ -209,17 +209,17 @@ DEF ConfGarra_NoWait( )
             Abre_Gar_Triplo_Lado_B = TRUE
             Fecha_Gar_Triplo_Lado_B = FALSE
 
-            Ava_Comp_Indiv_Gar_1 = TRUE
-            Rec_Comp_Indiv_Gar_1 = FALSE
+            Abre_Comp_Indiv_Gar_1 = TRUE
+            Fecha_Comp_Indiv_Gar_1 = FALSE
 
-            Ava_Comp_Indiv_Gar_3 = FALSE
-            Rec_Comp_Indiv_Gar_3 = TRUE
+            Abre_Comp_Indiv_Gar_3 = FALSE
+            Fecha_Comp_Indiv_Gar_3 = TRUE
 
-            Ava_Comp_Indiv_Gar_4 = FALSE
-            Rec_Comp_Indiv_Gar_4 = TRUE
+            Abre_Comp_Indiv_Gar_4 = FALSE
+            Fecha_Comp_Indiv_Gar_4 = TRUE
 
-            Ava_Comp_Indiv_Gar_6 = TRUE
-            Rec_Comp_Indiv_Gar_6 = FALSE
+            Abre_Comp_Indiv_Gar_6 = TRUE
+            Fecha_Comp_Indiv_Gar_6 = FALSE
 
          CASE 4
             Ava_Cil_1_Gar_1 = TRUE
@@ -264,17 +264,17 @@ DEF ConfGarra_NoWait( )
             Abre_Gar_Triplo_Lado_B = TRUE
             Fecha_Gar_Triplo_Lado_B = FALSE
 
-            Ava_Comp_Indiv_Gar_1 = TRUE
-            Rec_Comp_Indiv_Gar_1 = FALSE
+            Abre_Comp_Indiv_Gar_1 = TRUE
+            Fecha_Comp_Indiv_Gar_1 = FALSE
 
-            Ava_Comp_Indiv_Gar_3 = FALSE
-            Rec_Comp_Indiv_Gar_3 = TRUE
+            Abre_Comp_Indiv_Gar_3 = FALSE
+            Fecha_Comp_Indiv_Gar_3 = TRUE
 
-            Ava_Comp_Indiv_Gar_4 = FALSE
-            Rec_Comp_Indiv_Gar_4 = TRUE
+            Abre_Comp_Indiv_Gar_4 = FALSE
+            Fecha_Comp_Indiv_Gar_4 = TRUE
 
-            Ava_Comp_Indiv_Gar_6 = TRUE
-            Rec_Comp_Indiv_Gar_6 = FALSE
+            Abre_Comp_Indiv_Gar_6 = TRUE
+            Fecha_Comp_Indiv_Gar_6 = FALSE
 
       ENDSWITCH
       WAIT SEC 1

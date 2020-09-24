@@ -14,7 +14,7 @@ using namespace std;
 
 
 void prefixo(std::ofstream &ofs,std::string name,bool dat){
-  ofs << (dat?"DEFDAT ":"DEF ") << name << (dat?"":"()") << endl;
+  ofs << (dat?"DEFDAT ":"DEF ") << name << (dat?" PUBLIC":"()") << endl;
   return;
 }
 void sufixo(std::ofstream &ofs,bool dat){
@@ -61,7 +61,7 @@ int pick(std::ifstream &My_Job_dat,std::ofstream &TReceita_dat)
   int NumPontos=0;
   int contador=1;
 
-  TReceita_dat << ";FOLD PICK" << endl;
+  TReceita_dat << ";FOLD OPCOES DE PICK" << endl;
   while (!My_Job_dat.eof())
   {
     getline(My_Job_dat,entrada);
@@ -80,7 +80,7 @@ int pick(std::ifstream &My_Job_dat,std::ofstream &TReceita_dat)
           cout << "Pick encontrado: " << PickName <<endl;
           // cout << entrada<<endl;
           posicao=split_string(entrada,"[=]+",1);
-          TReceita_dat<<"E6POS "<<PickName<<" = "<<posicao<<endl;
+          TReceita_dat<<"GLOBAL E6POS "<<PickName<<" = "<<posicao<<endl;
         }
       }
       if(ERROR_pick) cout << "<span style=\"color:red\">**ERROR: " << PickName << "**</span>"<<endl;

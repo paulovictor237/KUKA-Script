@@ -44,17 +44,17 @@ DEF ConfGarra( )
             Abre_Gar_Triplo_Lado_B = FALSE
             Fecha_Gar_Triplo_Lado_B = TRUE
 
-            Ava_Comp_Indiv_Gar_1 = TRUE
-            Rec_Comp_Indiv_Gar_1 = FALSE
+            Abre_Comp_Indiv_Gar_1 = TRUE
+            Fecha_Comp_Indiv_Gar_1 = FALSE
 
-            Ava_Comp_Indiv_Gar_3 = TRUE
-            Rec_Comp_Indiv_Gar_3 = FALSE
+            Abre_Comp_Indiv_Gar_3 = TRUE
+            Fecha_Comp_Indiv_Gar_3 = FALSE
 
-            Ava_Comp_Indiv_Gar_4 = TRUE
-            Rec_Comp_Indiv_Gar_4 = FALSE
+            Abre_Comp_Indiv_Gar_4 = TRUE
+            Fecha_Comp_Indiv_Gar_4 = FALSE
 
-            Ava_Comp_Indiv_Gar_6 = TRUE
-            Rec_Comp_Indiv_Gar_6 = FALSE
+            Abre_Comp_Indiv_Gar_6 = TRUE
+            Fecha_Comp_Indiv_Gar_6 = FALSE
 
             WAIT FOR ( Cil_1_Gar_1_Ava == FALSE )
             WAIT FOR ( Cil_1_Gar_1_Rec == TRUE )
@@ -63,11 +63,8 @@ DEF ConfGarra( )
             WAIT FOR ( Cil_1_Gar_5_Ava == FALSE )
             WAIT FOR ( Cil_1_Gar_5_Rec == TRUE )
             WAIT FOR ( Cil_2_Gar_1_Ava == FALSE )
-            WAIT FOR ( Cil_2_Gar_1_Rec == TRUE )
             WAIT FOR ( Cil_2_Gar_3_Ava == FALSE )
-            WAIT FOR ( Cil_2_Gar_3_Rec == TRUE )
             WAIT FOR ( Cil_2_Gar_5_Ava == FALSE )
-            WAIT FOR ( Cil_2_Gar_5_Rec == TRUE )
             WAIT FOR ( Cil_1_Gar_2_Ava == TRUE )
             WAIT FOR ( Cil_1_Gar_2_Rec == FALSE )
             WAIT FOR ( Cil_1_Gar_4_Ava == TRUE )
@@ -75,23 +72,20 @@ DEF ConfGarra( )
             WAIT FOR ( Cil_1_Gar_6_Ava == TRUE )
             WAIT FOR ( Cil_1_Gar_6_Rec == FALSE )
             WAIT FOR ( Cil_2_Gar_2_Ava == TRUE )
-            WAIT FOR ( Cil_2_Gar_2_Rec == FALSE )
             WAIT FOR ( Cil_2_Gar_4_Ava == TRUE )
-            WAIT FOR ( Cil_2_Gar_4_Rec == FALSE )
             WAIT FOR ( Cil_2_Gar_6_Ava == TRUE )
-            WAIT FOR ( Cil_2_Gar_6_Rec == FALSE )
-            WAIT FOR ( Cil_Comp_Triplo_A_Ava == FALSE )
-            WAIT FOR ( Cil_Comp_Triplo_A_Rec == TRUE )
-            WAIT FOR ( Cil_Comp_Triplo_B_Ava == FALSE )
-            WAIT FOR ( Cil_Comp_Triplo_B_Rec == TRUE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_1_Ava == TRUE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_1_Rec == FALSE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_3_Ava == TRUE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_3_Rec == FALSE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_4_Ava == TRUE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_4_Rec == FALSE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_6_Ava == TRUE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_6_Rec == FALSE )
+            WAIT FOR ( Cil_Comp_Triplo_A_Aber == FALSE )
+            WAIT FOR ( Cil_Comp_Triplo_A_Fech == TRUE )
+            WAIT FOR ( Cil_Comp_Triplo_B_Aber == FALSE )
+            WAIT FOR ( Cil_Comp_Triplo_B_Fech == TRUE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_1_Aber == TRUE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_1_Fech == FALSE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_3_Aber == TRUE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_3_Fech == FALSE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_4_Aber == TRUE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_4_Fech == FALSE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_6_Aber == TRUE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_6_Fech == FALSE )
          CASE 1
             Ava_Cil_1_Gar_1 = FALSE
             Rec_Cil_1_Gar_1 = TRUE
@@ -135,17 +129,17 @@ DEF ConfGarra( )
             Abre_Gar_Triplo_Lado_B = TRUE
             Fecha_Gar_Triplo_Lado_B = FALSE
 
-            Ava_Comp_Indiv_Gar_1 = TRUE
-            Rec_Comp_Indiv_Gar_1 = FALSE
+            Abre_Comp_Indiv_Gar_1 = TRUE
+            Fecha_Comp_Indiv_Gar_1 = FALSE
 
-            Ava_Comp_Indiv_Gar_3 = TRUE
-            Rec_Comp_Indiv_Gar_3 = FALSE
+            Abre_Comp_Indiv_Gar_3 = TRUE
+            Fecha_Comp_Indiv_Gar_3 = FALSE
 
-            Ava_Comp_Indiv_Gar_4 = TRUE
-            Rec_Comp_Indiv_Gar_4 = FALSE
+            Abre_Comp_Indiv_Gar_4 = TRUE
+            Fecha_Comp_Indiv_Gar_4 = FALSE
 
-            Ava_Comp_Indiv_Gar_6 = FALSE
-            Rec_Comp_Indiv_Gar_6 = TRUE
+            Abre_Comp_Indiv_Gar_6 = FALSE
+            Fecha_Comp_Indiv_Gar_6 = TRUE
 
             WAIT FOR ( Cil_1_Gar_1_Ava == FALSE )
             WAIT FOR ( Cil_1_Gar_1_Rec == TRUE )
@@ -154,11 +148,8 @@ DEF ConfGarra( )
             WAIT FOR ( Cil_1_Gar_5_Ava == FALSE )
             WAIT FOR ( Cil_1_Gar_5_Rec == TRUE )
             WAIT FOR ( Cil_2_Gar_1_Ava == FALSE )
-            WAIT FOR ( Cil_2_Gar_1_Rec == TRUE )
             WAIT FOR ( Cil_2_Gar_3_Ava == FALSE )
-            WAIT FOR ( Cil_2_Gar_3_Rec == TRUE )
             WAIT FOR ( Cil_2_Gar_5_Ava == FALSE )
-            WAIT FOR ( Cil_2_Gar_5_Rec == TRUE )
             WAIT FOR ( Cil_1_Gar_2_Ava == TRUE )
             WAIT FOR ( Cil_1_Gar_2_Rec == FALSE )
             WAIT FOR ( Cil_1_Gar_4_Ava == TRUE )
@@ -166,23 +157,20 @@ DEF ConfGarra( )
             WAIT FOR ( Cil_1_Gar_6_Ava == TRUE )
             WAIT FOR ( Cil_1_Gar_6_Rec == FALSE )
             WAIT FOR ( Cil_2_Gar_2_Ava == TRUE )
-            WAIT FOR ( Cil_2_Gar_2_Rec == FALSE )
             WAIT FOR ( Cil_2_Gar_4_Ava == TRUE )
-            WAIT FOR ( Cil_2_Gar_4_Rec == FALSE )
             WAIT FOR ( Cil_2_Gar_6_Ava == TRUE )
-            WAIT FOR ( Cil_2_Gar_6_Rec == FALSE )
-            WAIT FOR ( Cil_Comp_Triplo_A_Ava == FALSE )
-            WAIT FOR ( Cil_Comp_Triplo_A_Rec == TRUE )
-            WAIT FOR ( Cil_Comp_Triplo_B_Ava == TRUE )
-            WAIT FOR ( Cil_Comp_Triplo_B_Rec == FALSE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_1_Ava == TRUE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_1_Rec == FALSE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_3_Ava == TRUE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_3_Rec == FALSE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_4_Ava == TRUE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_4_Rec == FALSE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_6_Ava == FALSE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_6_Rec == TRUE )
+            WAIT FOR ( Cil_Comp_Triplo_A_Aber == FALSE )
+            WAIT FOR ( Cil_Comp_Triplo_A_Fech == TRUE )
+            WAIT FOR ( Cil_Comp_Triplo_B_Aber == TRUE )
+            WAIT FOR ( Cil_Comp_Triplo_B_Fech == FALSE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_1_Aber == TRUE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_1_Fech == FALSE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_3_Aber == TRUE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_3_Fech == FALSE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_4_Aber == TRUE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_4_Fech == FALSE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_6_Aber == FALSE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_6_Fech == TRUE )
          CASE 2
             Ava_Cil_1_Gar_1 = TRUE
             Rec_Cil_1_Gar_1 = FALSE
@@ -226,17 +214,17 @@ DEF ConfGarra( )
             Abre_Gar_Triplo_Lado_B = FALSE
             Fecha_Gar_Triplo_Lado_B = TRUE
 
-            Ava_Comp_Indiv_Gar_1 = TRUE
-            Rec_Comp_Indiv_Gar_1 = FALSE
+            Abre_Comp_Indiv_Gar_1 = TRUE
+            Fecha_Comp_Indiv_Gar_1 = FALSE
 
-            Ava_Comp_Indiv_Gar_3 = TRUE
-            Rec_Comp_Indiv_Gar_3 = FALSE
+            Abre_Comp_Indiv_Gar_3 = TRUE
+            Fecha_Comp_Indiv_Gar_3 = FALSE
 
-            Ava_Comp_Indiv_Gar_4 = TRUE
-            Rec_Comp_Indiv_Gar_4 = FALSE
+            Abre_Comp_Indiv_Gar_4 = TRUE
+            Fecha_Comp_Indiv_Gar_4 = FALSE
 
-            Ava_Comp_Indiv_Gar_6 = TRUE
-            Rec_Comp_Indiv_Gar_6 = FALSE
+            Abre_Comp_Indiv_Gar_6 = TRUE
+            Fecha_Comp_Indiv_Gar_6 = FALSE
 
             WAIT FOR ( Cil_1_Gar_1_Ava == TRUE )
             WAIT FOR ( Cil_1_Gar_1_Rec == FALSE )
@@ -245,11 +233,8 @@ DEF ConfGarra( )
             WAIT FOR ( Cil_1_Gar_5_Ava == TRUE )
             WAIT FOR ( Cil_1_Gar_5_Rec == FALSE )
             WAIT FOR ( Cil_2_Gar_1_Ava == TRUE )
-            WAIT FOR ( Cil_2_Gar_1_Rec == FALSE )
             WAIT FOR ( Cil_2_Gar_3_Ava == TRUE )
-            WAIT FOR ( Cil_2_Gar_3_Rec == FALSE )
             WAIT FOR ( Cil_2_Gar_5_Ava == TRUE )
-            WAIT FOR ( Cil_2_Gar_5_Rec == FALSE )
             WAIT FOR ( Cil_1_Gar_2_Ava == TRUE )
             WAIT FOR ( Cil_1_Gar_2_Rec == FALSE )
             WAIT FOR ( Cil_1_Gar_4_Ava == TRUE )
@@ -257,23 +242,20 @@ DEF ConfGarra( )
             WAIT FOR ( Cil_1_Gar_6_Ava == TRUE )
             WAIT FOR ( Cil_1_Gar_6_Rec == FALSE )
             WAIT FOR ( Cil_2_Gar_2_Ava == TRUE )
-            WAIT FOR ( Cil_2_Gar_2_Rec == FALSE )
             WAIT FOR ( Cil_2_Gar_4_Ava == TRUE )
-            WAIT FOR ( Cil_2_Gar_4_Rec == FALSE )
             WAIT FOR ( Cil_2_Gar_6_Ava == TRUE )
-            WAIT FOR ( Cil_2_Gar_6_Rec == FALSE )
-            WAIT FOR ( Cil_Comp_Triplo_A_Ava == FALSE )
-            WAIT FOR ( Cil_Comp_Triplo_A_Rec == TRUE )
-            WAIT FOR ( Cil_Comp_Triplo_B_Ava == FALSE )
-            WAIT FOR ( Cil_Comp_Triplo_B_Rec == TRUE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_1_Ava == TRUE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_1_Rec == FALSE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_3_Ava == TRUE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_3_Rec == FALSE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_4_Ava == TRUE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_4_Rec == FALSE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_6_Ava == TRUE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_6_Rec == FALSE )
+            WAIT FOR ( Cil_Comp_Triplo_A_Aber == FALSE )
+            WAIT FOR ( Cil_Comp_Triplo_A_Fech == TRUE )
+            WAIT FOR ( Cil_Comp_Triplo_B_Aber == FALSE )
+            WAIT FOR ( Cil_Comp_Triplo_B_Fech == TRUE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_1_Aber == TRUE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_1_Fech == FALSE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_3_Aber == TRUE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_3_Fech == FALSE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_4_Aber == TRUE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_4_Fech == FALSE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_6_Aber == TRUE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_6_Fech == FALSE )
          CASE 3
             Ava_Cil_1_Gar_1 = TRUE
             Rec_Cil_1_Gar_1 = FALSE
@@ -317,17 +299,17 @@ DEF ConfGarra( )
             Abre_Gar_Triplo_Lado_B = TRUE
             Fecha_Gar_Triplo_Lado_B = FALSE
 
-            Ava_Comp_Indiv_Gar_1 = TRUE
-            Rec_Comp_Indiv_Gar_1 = FALSE
+            Abre_Comp_Indiv_Gar_1 = TRUE
+            Fecha_Comp_Indiv_Gar_1 = FALSE
 
-            Ava_Comp_Indiv_Gar_3 = FALSE
-            Rec_Comp_Indiv_Gar_3 = TRUE
+            Abre_Comp_Indiv_Gar_3 = FALSE
+            Fecha_Comp_Indiv_Gar_3 = TRUE
 
-            Ava_Comp_Indiv_Gar_4 = FALSE
-            Rec_Comp_Indiv_Gar_4 = TRUE
+            Abre_Comp_Indiv_Gar_4 = FALSE
+            Fecha_Comp_Indiv_Gar_4 = TRUE
 
-            Ava_Comp_Indiv_Gar_6 = TRUE
-            Rec_Comp_Indiv_Gar_6 = FALSE
+            Abre_Comp_Indiv_Gar_6 = TRUE
+            Fecha_Comp_Indiv_Gar_6 = FALSE
 
             WAIT FOR ( Cil_1_Gar_1_Ava == TRUE )
             WAIT FOR ( Cil_1_Gar_1_Rec == FALSE )
@@ -336,11 +318,8 @@ DEF ConfGarra( )
             WAIT FOR ( Cil_1_Gar_5_Ava == TRUE )
             WAIT FOR ( Cil_1_Gar_5_Rec == FALSE )
             WAIT FOR ( Cil_2_Gar_1_Ava == TRUE )
-            WAIT FOR ( Cil_2_Gar_1_Rec == FALSE )
             WAIT FOR ( Cil_2_Gar_3_Ava == TRUE )
-            WAIT FOR ( Cil_2_Gar_3_Rec == FALSE )
             WAIT FOR ( Cil_2_Gar_5_Ava == TRUE )
-            WAIT FOR ( Cil_2_Gar_5_Rec == FALSE )
             WAIT FOR ( Cil_1_Gar_2_Ava == TRUE )
             WAIT FOR ( Cil_1_Gar_2_Rec == FALSE )
             WAIT FOR ( Cil_1_Gar_4_Ava == TRUE )
@@ -348,23 +327,20 @@ DEF ConfGarra( )
             WAIT FOR ( Cil_1_Gar_6_Ava == TRUE )
             WAIT FOR ( Cil_1_Gar_6_Rec == FALSE )
             WAIT FOR ( Cil_2_Gar_2_Ava == TRUE )
-            WAIT FOR ( Cil_2_Gar_2_Rec == FALSE )
             WAIT FOR ( Cil_2_Gar_4_Ava == TRUE )
-            WAIT FOR ( Cil_2_Gar_4_Rec == FALSE )
             WAIT FOR ( Cil_2_Gar_6_Ava == TRUE )
-            WAIT FOR ( Cil_2_Gar_6_Rec == FALSE )
-            WAIT FOR ( Cil_Comp_Triplo_A_Ava == TRUE )
-            WAIT FOR ( Cil_Comp_Triplo_A_Rec == FALSE )
-            WAIT FOR ( Cil_Comp_Triplo_B_Ava == TRUE )
-            WAIT FOR ( Cil_Comp_Triplo_B_Rec == FALSE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_1_Ava == TRUE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_1_Rec == FALSE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_3_Ava == FALSE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_3_Rec == TRUE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_4_Ava == FALSE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_4_Rec == TRUE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_6_Ava == TRUE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_6_Rec == FALSE )
+            WAIT FOR ( Cil_Comp_Triplo_A_Aber == TRUE )
+            WAIT FOR ( Cil_Comp_Triplo_A_Fech == FALSE )
+            WAIT FOR ( Cil_Comp_Triplo_B_Aber == TRUE )
+            WAIT FOR ( Cil_Comp_Triplo_B_Fech == FALSE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_1_Aber == TRUE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_1_Fech == FALSE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_3_Aber == FALSE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_3_Fech == TRUE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_4_Aber == FALSE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_4_Fech == TRUE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_6_Aber == TRUE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_6_Fech == FALSE )
          CASE 4
             Ava_Cil_1_Gar_1 = TRUE
             Rec_Cil_1_Gar_1 = FALSE
@@ -408,17 +384,17 @@ DEF ConfGarra( )
             Abre_Gar_Triplo_Lado_B = TRUE
             Fecha_Gar_Triplo_Lado_B = FALSE
 
-            Ava_Comp_Indiv_Gar_1 = TRUE
-            Rec_Comp_Indiv_Gar_1 = FALSE
+            Abre_Comp_Indiv_Gar_1 = TRUE
+            Fecha_Comp_Indiv_Gar_1 = FALSE
 
-            Ava_Comp_Indiv_Gar_3 = FALSE
-            Rec_Comp_Indiv_Gar_3 = TRUE
+            Abre_Comp_Indiv_Gar_3 = FALSE
+            Fecha_Comp_Indiv_Gar_3 = TRUE
 
-            Ava_Comp_Indiv_Gar_4 = FALSE
-            Rec_Comp_Indiv_Gar_4 = TRUE
+            Abre_Comp_Indiv_Gar_4 = FALSE
+            Fecha_Comp_Indiv_Gar_4 = TRUE
 
-            Ava_Comp_Indiv_Gar_6 = TRUE
-            Rec_Comp_Indiv_Gar_6 = FALSE
+            Abre_Comp_Indiv_Gar_6 = TRUE
+            Fecha_Comp_Indiv_Gar_6 = FALSE
 
             WAIT FOR ( Cil_1_Gar_1_Ava == TRUE )
             WAIT FOR ( Cil_1_Gar_1_Rec == FALSE )
@@ -427,11 +403,8 @@ DEF ConfGarra( )
             WAIT FOR ( Cil_1_Gar_5_Ava == TRUE )
             WAIT FOR ( Cil_1_Gar_5_Rec == FALSE )
             WAIT FOR ( Cil_2_Gar_1_Ava == TRUE )
-            WAIT FOR ( Cil_2_Gar_1_Rec == FALSE )
             WAIT FOR ( Cil_2_Gar_3_Ava == TRUE )
-            WAIT FOR ( Cil_2_Gar_3_Rec == FALSE )
             WAIT FOR ( Cil_2_Gar_5_Ava == TRUE )
-            WAIT FOR ( Cil_2_Gar_5_Rec == FALSE )
             WAIT FOR ( Cil_1_Gar_2_Ava == TRUE )
             WAIT FOR ( Cil_1_Gar_2_Rec == FALSE )
             WAIT FOR ( Cil_1_Gar_4_Ava == TRUE )
@@ -439,23 +412,20 @@ DEF ConfGarra( )
             WAIT FOR ( Cil_1_Gar_6_Ava == TRUE )
             WAIT FOR ( Cil_1_Gar_6_Rec == FALSE )
             WAIT FOR ( Cil_2_Gar_2_Ava == TRUE )
-            WAIT FOR ( Cil_2_Gar_2_Rec == FALSE )
             WAIT FOR ( Cil_2_Gar_4_Ava == TRUE )
-            WAIT FOR ( Cil_2_Gar_4_Rec == FALSE )
             WAIT FOR ( Cil_2_Gar_6_Ava == TRUE )
-            WAIT FOR ( Cil_2_Gar_6_Rec == FALSE )
-            WAIT FOR ( Cil_Comp_Triplo_A_Ava == TRUE )
-            WAIT FOR ( Cil_Comp_Triplo_A_Rec == FALSE )
-            WAIT FOR ( Cil_Comp_Triplo_B_Ava == TRUE )
-            WAIT FOR ( Cil_Comp_Triplo_B_Rec == FALSE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_1_Ava == TRUE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_1_Rec == FALSE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_3_Ava == FALSE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_3_Rec == TRUE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_4_Ava == FALSE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_4_Rec == TRUE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_6_Ava == TRUE )
-            WAIT FOR ( Cil_Comp_Indiv_Gr_6_Rec == FALSE )
+            WAIT FOR ( Cil_Comp_Triplo_A_Aber == TRUE )
+            WAIT FOR ( Cil_Comp_Triplo_A_Fech == FALSE )
+            WAIT FOR ( Cil_Comp_Triplo_B_Aber == TRUE )
+            WAIT FOR ( Cil_Comp_Triplo_B_Fech == FALSE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_1_Aber == TRUE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_1_Fech == FALSE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_3_Aber == FALSE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_3_Fech == TRUE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_4_Aber == FALSE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_4_Fech == TRUE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_6_Aber == TRUE )
+            WAIT FOR ( Cil_Comp_Indiv_Gr_6_Fech == FALSE )
       ENDSWITCH
       WAIT SEC 1
    ENDIF

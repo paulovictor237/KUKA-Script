@@ -91,11 +91,11 @@ int matriz_pontos_str(std::ifstream &My_Job_src,std::ofstream &TMatriz_src,std::
         if (!My_Job_src.good())break;
       }
       TMatriz_src<<"MatrizPontos[Pallet_"<<pallet[1]<<",Prdt_"<<produto << "," << contador << "].";
-      TMatriz_src<<"App1Place = "<<pallet<<"_"<<produto<<"_"<<contador<<"_"<<"App1"<<endl;
+      TMatriz_src<<"XApp1Place = "<<pallet<<"_"<<produto<<"_"<<contador<<"_"<<"App1"<<endl;
       TMatriz_src<<"MatrizPontos[Pallet_"<<pallet[1]<<",Prdt_"<<produto << "," << contador << "].";
-      TMatriz_src<<"App2Place = "<<pallet<<"_"<<produto<<"_"<<contador<<"_"<<"App2"<<endl;
+      TMatriz_src<<"XApp2Place = "<<pallet<<"_"<<produto<<"_"<<contador<<"_"<<"App2"<<endl;
       TMatriz_src<<"MatrizPontos[Pallet_"<<pallet[1]<<",Prdt_"<<produto << "," << contador << "].";
-      TMatriz_src<<"Place = "<<pallet<<"_"<<produto<<"_"<<contador<<"_"<<"Place"<<endl;
+      TMatriz_src<<"XPlace = "<<pallet<<"_"<<produto<<"_"<<contador<<"_"<<"Place"<<endl;
       TMatriz_src<<";ENDFOLD" << endl;
 
       OffsetPlace(TMatriz_src,pallet,produto,contador);

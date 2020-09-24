@@ -27,11 +27,8 @@ DEF FechaGarra( )
             WAIT FOR ( Cil_1_Gar_6_Ava == FALSE )
             WAIT FOR ( Cil_1_Gar_6_Rec == TRUE )
             WAIT FOR ( Cil_2_Gar_2_Ava == FALSE )
-            WAIT FOR ( Cil_2_Gar_2_Rec == TRUE )
             WAIT FOR ( Cil_2_Gar_4_Ava == FALSE )
-            WAIT FOR ( Cil_2_Gar_4_Rec == TRUE )
             WAIT FOR ( Cil_2_Gar_6_Ava == FALSE )
-            WAIT FOR ( Cil_2_Gar_6_Rec == TRUE )
       ENDSWITCH
       WAIT SEC 1
    ENDIF
