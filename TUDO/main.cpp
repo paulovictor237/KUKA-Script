@@ -34,6 +34,11 @@ std::ofstream TMatriz_dat ("out/TMatriz.dat", std::ofstream::out);
 std::ofstream TPallet_src ("out/TPallet.src", std::ofstream::out);
 std::ofstream TPallet_dat ("out/TPallet.dat", std::ofstream::out);
 
+std::ofstream Aux1TMatriz_src ("auxiliar/aux1TMatriz.src", std::ofstream::out);
+std::ofstream Aux1TMatriz_dat ("auxiliar/aux1TMatriz.dat", std::ofstream::out);
+std::ofstream Aux2TMatriz_src ("auxiliar/aux2TMatriz.src", std::ofstream::out);
+std::ofstream Aux2TMatriz_dat ("auxiliar/aux2TMatriz.dat", std::ofstream::out);
+
 std::ofstream config_dat("out/config.dat", std::ofstream::out);
 
 void init_all(void){
@@ -124,8 +129,16 @@ int main(int argc, char **argv)
       pallet=split_string(entrada,"[_()]+",1);//pallet
       produto=split_string(entrada,"[_()]+",2);//produto
       entrada=split_string(entrada,"[ ()]+",1);//produto
-      contador_src =matriz_pontos_str(My_Job_src,TMatriz_src,pallet,produto,NumLayers);
-      contador_dat =matriz_pontos_dat(My_Job_dat,TMatriz_dat,pallet,produto,entrada);
+      if(pallet[1]=='1')
+      {
+        contador_src =matriz_pontos_str(My_Job_src,Aux1TMatriz_src,pallet,produto,NumLayers);
+        contador_dat =matriz_pontos_dat(My_Job_dat,Aux1TMatriz_dat,pallet,produto,entrada);
+      }
+      else
+      {
+        contador_src =matriz_pontos_str(My_Job_src,Aux2TMatriz_src,pallet,produto,NumLayers);
+        contador_dat =matriz_pontos_dat(My_Job_dat,Aux2TMatriz_dat,pallet,produto,entrada);
+      }
       PlacesCamada = contador_dat/NumLayers;
       MaxMatrizK = contador_dat;
       cout << "NumPlaces/NumLayers: " << PlacesCamada<< endl;
@@ -145,6 +158,14 @@ int main(int argc, char **argv)
       cout << "=========================" << endl; 
     }
   }
+  //SEPARA OS PALLETS NA MATRIZ
+  Aux1TMatriz_src.close();
+  Aux1TMatriz_dat.close();
+  Aux2TMatriz_src.close();
+  Aux2TMatriz_dat.close();
+  copy_file(TMatriz_src,"auxiliar/aux1TMatriz.src","auxiliar/aux2TMatriz.src");
+  copy_file(TMatriz_dat,"auxiliar/aux1TMatriz.dat","auxiliar/aux2TMatriz.dat");
+
   pallet_src(My_Job_src,TPallet_src,MaxPallets);
   pick(My_Job_dat,TReceita_dat);
   config.MaxCamadas=MaxCamadas;
