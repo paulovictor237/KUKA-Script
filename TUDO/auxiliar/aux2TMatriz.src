@@ -1,5 +1,6 @@
 ;FOLD Pallet 2 - Produto 51Aero1
 ;FOLD PLACE 1
+;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_2,Prdt_51Aero1,1].NumCaixas = 3
 MatrizPontos[Pallet_2,Prdt_51Aero1,1].PickOp = 1
 MatrizPontos[Pallet_2,Prdt_51Aero1,1].ConfGarraOp = 0
@@ -10,6 +11,7 @@ MatrizPontos[Pallet_2,Prdt_51Aero1,1].SkipSobeRelativo = False
 MatrizPontos[Pallet_2,Prdt_51Aero1,1].App1Place = P2_51Aero1_1_App1
 MatrizPontos[Pallet_2,Prdt_51Aero1,1].App2Place = P2_51Aero1_1_App2
 MatrizPontos[Pallet_2,Prdt_51Aero1,1].Place = P2_51Aero1_1_Place
+;ENDFOLD
 ;FOLD OffsetPlace 
 MatrizPontos[Pallet_2,Prdt_51Aero1,1].OffsetPlace.X = 0
 MatrizPontos[Pallet_2,Prdt_51Aero1,1].OffsetPlace.Y = 0
@@ -21,6 +23,7 @@ MatrizPontos[Pallet_2,Prdt_51Aero1,1].OffsetPlace.C = 0
 ;ENDFOLD
 
 ;FOLD PLACE 2
+;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_2,Prdt_51Aero1,2].NumCaixas = 3
 MatrizPontos[Pallet_2,Prdt_51Aero1,2].PickOp = 1
 MatrizPontos[Pallet_2,Prdt_51Aero1,2].ConfGarraOp = 0
@@ -31,6 +34,7 @@ MatrizPontos[Pallet_2,Prdt_51Aero1,2].SkipSobeRelativo = False
 MatrizPontos[Pallet_2,Prdt_51Aero1,2].App1Place = P2_51Aero1_2_App1
 MatrizPontos[Pallet_2,Prdt_51Aero1,2].App2Place = P2_51Aero1_2_App2
 MatrizPontos[Pallet_2,Prdt_51Aero1,2].Place = P2_51Aero1_2_Place
+;ENDFOLD
 ;FOLD OffsetPlace 
 MatrizPontos[Pallet_2,Prdt_51Aero1,2].OffsetPlace.X = 0
 MatrizPontos[Pallet_2,Prdt_51Aero1,2].OffsetPlace.Y = 0
@@ -42,6 +46,7 @@ MatrizPontos[Pallet_2,Prdt_51Aero1,2].OffsetPlace.C = 0
 ;ENDFOLD
 
 ;FOLD PLACE 3
+;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_2,Prdt_51Aero1,3].NumCaixas = 3
 MatrizPontos[Pallet_2,Prdt_51Aero1,3].PickOp = 1
 MatrizPontos[Pallet_2,Prdt_51Aero1,3].ConfGarraOp = 0
@@ -52,6 +57,7 @@ MatrizPontos[Pallet_2,Prdt_51Aero1,3].SkipSobeRelativo = False
 MatrizPontos[Pallet_2,Prdt_51Aero1,3].App1Place = P2_51Aero1_3_App1
 MatrizPontos[Pallet_2,Prdt_51Aero1,3].App2Place = P2_51Aero1_3_App2
 MatrizPontos[Pallet_2,Prdt_51Aero1,3].Place = P2_51Aero1_3_Place
+;ENDFOLD
 ;FOLD OffsetPlace 
 MatrizPontos[Pallet_2,Prdt_51Aero1,3].OffsetPlace.X = 0
 MatrizPontos[Pallet_2,Prdt_51Aero1,3].OffsetPlace.Y = 0
@@ -62,10 +68,15 @@ MatrizPontos[Pallet_2,Prdt_51Aero1,3].OffsetPlace.C = 0
 ;ENDFOLD
 ;ENDFOLD
 
-;ENDFOLD 
+;ENDFOLD
+;FOLD Pallet 2 - Produto 51Aero1 [ Layer INFO ]
+;LAYER 1: 1 ate 1
+;LAYER 2: 2 ate 2
+;ENDFOLD
 
 ;FOLD Pallet 2 - Produto 21Aero1
 ;FOLD PLACE 1
+;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_2,Prdt_21Aero1,1].NumCaixas = 4
 MatrizPontos[Pallet_2,Prdt_21Aero1,1].PickOp = 1
 MatrizPontos[Pallet_2,Prdt_21Aero1,1].ConfGarraOp = 0
@@ -76,6 +87,7 @@ MatrizPontos[Pallet_2,Prdt_21Aero1,1].SkipSobeRelativo = False
 MatrizPontos[Pallet_2,Prdt_21Aero1,1].App1Place = P2_21Aero1_1_App1
 MatrizPontos[Pallet_2,Prdt_21Aero1,1].App2Place = P2_21Aero1_1_App2
 MatrizPontos[Pallet_2,Prdt_21Aero1,1].Place = P2_21Aero1_1_Place
+;ENDFOLD
 ;FOLD OffsetPlace 
 MatrizPontos[Pallet_2,Prdt_21Aero1,1].OffsetPlace.X = 0
 MatrizPontos[Pallet_2,Prdt_21Aero1,1].OffsetPlace.Y = 0
@@ -87,6 +99,7 @@ MatrizPontos[Pallet_2,Prdt_21Aero1,1].OffsetPlace.C = 0
 ;ENDFOLD
 
 ;FOLD PLACE 2
+;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_2,Prdt_21Aero1,2].NumCaixas = 4
 MatrizPontos[Pallet_2,Prdt_21Aero1,2].PickOp = 1
 MatrizPontos[Pallet_2,Prdt_21Aero1,2].ConfGarraOp = 0
@@ -97,6 +110,7 @@ MatrizPontos[Pallet_2,Prdt_21Aero1,2].SkipSobeRelativo = False
 MatrizPontos[Pallet_2,Prdt_21Aero1,2].App1Place = P2_21Aero1_2_App1
 MatrizPontos[Pallet_2,Prdt_21Aero1,2].App2Place = P2_21Aero1_2_App2
 MatrizPontos[Pallet_2,Prdt_21Aero1,2].Place = P2_21Aero1_2_Place
+;ENDFOLD
 ;FOLD OffsetPlace 
 MatrizPontos[Pallet_2,Prdt_21Aero1,2].OffsetPlace.X = 0
 MatrizPontos[Pallet_2,Prdt_21Aero1,2].OffsetPlace.Y = 0
@@ -108,6 +122,7 @@ MatrizPontos[Pallet_2,Prdt_21Aero1,2].OffsetPlace.C = 0
 ;ENDFOLD
 
 ;FOLD PLACE 3
+;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_2,Prdt_21Aero1,3].NumCaixas = 4
 MatrizPontos[Pallet_2,Prdt_21Aero1,3].PickOp = 1
 MatrizPontos[Pallet_2,Prdt_21Aero1,3].ConfGarraOp = 0
@@ -118,6 +133,7 @@ MatrizPontos[Pallet_2,Prdt_21Aero1,3].SkipSobeRelativo = False
 MatrizPontos[Pallet_2,Prdt_21Aero1,3].App1Place = P2_21Aero1_3_App1
 MatrizPontos[Pallet_2,Prdt_21Aero1,3].App2Place = P2_21Aero1_3_App2
 MatrizPontos[Pallet_2,Prdt_21Aero1,3].Place = P2_21Aero1_3_Place
+;ENDFOLD
 ;FOLD OffsetPlace 
 MatrizPontos[Pallet_2,Prdt_21Aero1,3].OffsetPlace.X = 0
 MatrizPontos[Pallet_2,Prdt_21Aero1,3].OffsetPlace.Y = 0
@@ -128,10 +144,15 @@ MatrizPontos[Pallet_2,Prdt_21Aero1,3].OffsetPlace.C = 0
 ;ENDFOLD
 ;ENDFOLD
 
-;ENDFOLD 
+;ENDFOLD
+;FOLD Pallet 2 - Produto 21Aero1 [ Layer INFO ]
+;LAYER 1: 1 ate 1
+;LAYER 2: 2 ate 2
+;ENDFOLD
 
 ;FOLD Pallet 2 - Produto 111CC
 ;FOLD PLACE 1
+;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_2,Prdt_111CC,1].NumCaixas = 3
 MatrizPontos[Pallet_2,Prdt_111CC,1].PickOp = 1
 MatrizPontos[Pallet_2,Prdt_111CC,1].ConfGarraOp = 1
@@ -142,6 +163,7 @@ MatrizPontos[Pallet_2,Prdt_111CC,1].SkipSobeRelativo = False
 MatrizPontos[Pallet_2,Prdt_111CC,1].App1Place = P2_111CC_1_App1
 MatrizPontos[Pallet_2,Prdt_111CC,1].App2Place = P2_111CC_1_App2
 MatrizPontos[Pallet_2,Prdt_111CC,1].Place = P2_111CC_1_Place
+;ENDFOLD
 ;FOLD OffsetPlace 
 MatrizPontos[Pallet_2,Prdt_111CC,1].OffsetPlace.X = 0
 MatrizPontos[Pallet_2,Prdt_111CC,1].OffsetPlace.Y = 0
@@ -153,6 +175,7 @@ MatrizPontos[Pallet_2,Prdt_111CC,1].OffsetPlace.C = 0
 ;ENDFOLD
 
 ;FOLD PLACE 2
+;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_2,Prdt_111CC,2].NumCaixas = 3
 MatrizPontos[Pallet_2,Prdt_111CC,2].PickOp = 1
 MatrizPontos[Pallet_2,Prdt_111CC,2].ConfGarraOp = 1
@@ -163,6 +186,7 @@ MatrizPontos[Pallet_2,Prdt_111CC,2].SkipSobeRelativo = False
 MatrizPontos[Pallet_2,Prdt_111CC,2].App1Place = P2_111CC_2_App1
 MatrizPontos[Pallet_2,Prdt_111CC,2].App2Place = P2_111CC_2_App2
 MatrizPontos[Pallet_2,Prdt_111CC,2].Place = P2_111CC_2_Place
+;ENDFOLD
 ;FOLD OffsetPlace 
 MatrizPontos[Pallet_2,Prdt_111CC,2].OffsetPlace.X = 0
 MatrizPontos[Pallet_2,Prdt_111CC,2].OffsetPlace.Y = 0
@@ -174,6 +198,7 @@ MatrizPontos[Pallet_2,Prdt_111CC,2].OffsetPlace.C = 0
 ;ENDFOLD
 
 ;FOLD PLACE 3
+;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_2,Prdt_111CC,3].NumCaixas = 3
 MatrizPontos[Pallet_2,Prdt_111CC,3].PickOp = 1
 MatrizPontos[Pallet_2,Prdt_111CC,3].ConfGarraOp = 1
@@ -184,6 +209,7 @@ MatrizPontos[Pallet_2,Prdt_111CC,3].SkipSobeRelativo = False
 MatrizPontos[Pallet_2,Prdt_111CC,3].App1Place = P2_111CC_3_App1
 MatrizPontos[Pallet_2,Prdt_111CC,3].App2Place = P2_111CC_3_App2
 MatrizPontos[Pallet_2,Prdt_111CC,3].Place = P2_111CC_3_Place
+;ENDFOLD
 ;FOLD OffsetPlace 
 MatrizPontos[Pallet_2,Prdt_111CC,3].OffsetPlace.X = 0
 MatrizPontos[Pallet_2,Prdt_111CC,3].OffsetPlace.Y = 0
@@ -194,5 +220,9 @@ MatrizPontos[Pallet_2,Prdt_111CC,3].OffsetPlace.C = 0
 ;ENDFOLD
 ;ENDFOLD
 
-;ENDFOLD 
+;ENDFOLD
+;FOLD Pallet 2 - Produto 111CC [ Layer INFO ]
+;LAYER 1: 1 ate 1
+;LAYER 2: 2 ate 2
+;ENDFOLD
 

@@ -60,7 +60,7 @@ void end_all(void){
 }
 
 int MaxPallets=2;
-int MaxCamadas=8;
+int MaxCamadas=12;
 
 int main(int argc, char **argv)
 {
@@ -185,5 +185,10 @@ int main(int argc, char **argv)
   TPallet_src.close();
   My_Job_src.close();
   My_Job_dat.close();
+  
+  cout << "\033[1;44m" <<  "╔═══════════════════════════════════════════════════════╗" << "\033[0m"<<endl;
+  cout << "\033[1;44m" <<  "║                          FIM                          ║" << "\033[0m"<<endl;
+  cout << "\033[1;44m" <<  "╚═══════════════════════════════════════════════════════╝" << "\033[0m"<<endl;
+
   return 0;
 }

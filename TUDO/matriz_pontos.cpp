@@ -62,9 +62,12 @@ int matriz_pontos_str(std::ifstream &My_Job_src,std::ofstream &TMatriz_src,std::
     if(entrada.find("PontoPlace") !=std::string::npos)
     {
       contador++;
+
       TMatriz_src<<";FOLD PLACE " << contador << endl;
       getline(My_Job_src,entrada);
       getline(My_Job_src,entrada);
+      //cabesalho
+      TMatriz_src<<";FOLD PROPRIEDADES " << endl;
       while(entrada.find("FOLD")==std::string::npos){
         TMatriz_src<<"MatrizPontos[Pallet_"<<pallet[1]<<",Prdt_"<<produto << "," << contador << "]." << entrada << endl;
         getline(My_Job_src,entrada);
@@ -76,7 +79,10 @@ int matriz_pontos_str(std::ifstream &My_Job_src,std::ofstream &TMatriz_src,std::
       TMatriz_src<<"App2Place = "<<pallet<<"_"<<produto<<"_"<<contador<<"_"<<"App2"<<endl;
       TMatriz_src<<"MatrizPontos[Pallet_"<<pallet[1]<<",Prdt_"<<produto << "," << contador << "].";
       TMatriz_src<<"Place = "<<pallet<<"_"<<produto<<"_"<<contador<<"_"<<"Place"<<endl;
+      TMatriz_src<<";ENDFOLD" << endl;
+
       OffsetPlace(TMatriz_src,pallet,produto,contador);
+
       TMatriz_src<<";ENDFOLD" << endl;
       TMatriz_src<< endl;
       // ofs << "MatrizPontos[1," << contador << "]." << IndexacaoVH << endl;
