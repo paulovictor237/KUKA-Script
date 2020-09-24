@@ -27,12 +27,12 @@ using namespace std;
 #include "comum.h"
 #include "garra.h"
 
-std::ofstream TReceita_src("out/TReceita.src",std::ofstream::out);
-std::ofstream TReceita_dat("out/TReceita.dat",std::ofstream::out);
-std::ofstream TMatriz_src ("out/TMatriz.src", std::ofstream::out);
-std::ofstream TMatriz_dat ("out/TMatriz.dat", std::ofstream::out);
-std::ofstream TPallet_src ("out/TPallet.src", std::ofstream::out);
-std::ofstream TPallet_dat ("out/TPallet.dat", std::ofstream::out);
+std::ofstream TReceita_src("out/INIT/TReceita.src",std::ofstream::out);
+std::ofstream TReceita_dat("out/INIT/TReceita.dat",std::ofstream::out);
+std::ofstream TMatriz_src ("out/INIT/TMatriz.src", std::ofstream::out);
+std::ofstream TMatriz_dat ("out/INIT/TMatriz.dat", std::ofstream::out);
+std::ofstream TPallet_src ("out/INIT/TPallet.src", std::ofstream::out);
+std::ofstream TPallet_dat ("out/INIT/TPallet.dat", std::ofstream::out);
 
 std::ofstream Aux1TMatriz_src ("auxiliar/aux1TMatriz.src", std::ofstream::out);
 std::ofstream Aux1TMatriz_dat ("auxiliar/aux1TMatriz.dat", std::ofstream::out);
@@ -68,12 +68,12 @@ int Camadas = 0;
 int main(int argc, char **argv)
 {
 //# +---------------------------------------------------------------------------------------------------------------------------------------------------<< 
-  //system("clear");
+  system("clear");
   // system("cls");
   cout << "# PROGRAMA INICIADO #"<<endl;
-  cout << "Relatorio gerado em [ output.md ]"<<endl;
+  cout << "Relatorio gerado em [ out/Relatorio/Relatorio.md ]"<<endl;
 
-  std::ofstream out("out_relatorio/output.md");
+  std::ofstream out("out/Relatorio/Relatorio.md");
   std::streambuf *coutbuf = std::cout.rdbuf(); //save old buf
   std::cout.rdbuf(out.rdbuf()); //redirect std::cout to out.txt!
 

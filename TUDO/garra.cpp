@@ -58,7 +58,7 @@ class Cilindro atribuir(std::vector<class Cilindro> Vcilindro,std::string entrad
 int tudo(std::ifstream &My_Job_src,std::vector<class Cilindro> &Vcilindro,std::string name){
   My_Job_src.clear();
   My_Job_src.seekg(0);
-  std::ofstream ofs ("out/"+name+".src", std::ofstream::out);
+  std::ofstream ofs ("out/Garra/"+name+".src", std::ofstream::out);
   prefixo(ofs,name,name);
   class Cilindro cilindro;
   std::string entrada;
@@ -108,7 +108,7 @@ int tudo(std::ifstream &My_Job_src,std::vector<class Cilindro> &Vcilindro,std::s
 }
 void mapear(std::vector<class Cilindro> &cilindro){
 
-  std::ifstream inFile("My_Job/mapa.md"); 
+  std::ifstream inFile("My_Job/Garra.md"); 
   if(!inFile) {
     cout << "Arquivo não foi encontrado.\n";
     return;
@@ -138,8 +138,8 @@ void mapear(std::vector<class Cilindro> &cilindro){
 int GarraNoWait(std::ifstream &My_Job_src,std::vector<class Cilindro> &Vcilindro,std::string name){
   My_Job_src.clear();
   My_Job_src.seekg(0);
-  std::ofstream ConfGarra_NoWait("out/"+name+"_NoWait.src", std::ofstream::out);
-  std::ofstream ConfGarra_Wait ("out/"+name+"_Wait.src",  std::ofstream::out);
+  std::ofstream ConfGarra_NoWait("out/Garra/"+name+"_NoWait.src", std::ofstream::out);
+  std::ofstream ConfGarra_Wait ("out/Garra/"+name+"_Wait.src",  std::ofstream::out);
   prefixo(ConfGarra_NoWait,name+"_NoWait",name);
   prefixo(ConfGarra_Wait,name+"_Wait",name);
 
