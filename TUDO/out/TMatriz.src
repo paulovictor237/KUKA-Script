@@ -63,7 +63,11 @@ MatrizPontos[Pallet_1,Prdt_51Aero1,3].OffsetPlace.C = 0
 ;ENDFOLD
 ;ENDFOLD
 
-;ENDFOLD 
+;ENDFOLD
+;FOLD Pallet 1 - Produto 51Aero1 [ Layer INFO ]
+;LAYER 1: 1 ate 1
+;LAYER 2: 2 ate 2
+;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 21Aero1
 ;FOLD PLACE 1
@@ -129,7 +133,11 @@ MatrizPontos[Pallet_1,Prdt_21Aero1,3].OffsetPlace.C = 0
 ;ENDFOLD
 ;ENDFOLD
 
-;ENDFOLD 
+;ENDFOLD
+;FOLD Pallet 1 - Produto 21Aero1 [ Layer INFO ]
+;LAYER 1: 1 ate 1
+;LAYER 2: 2 ate 2
+;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 111CC
 ;FOLD PLACE 1
@@ -195,7 +203,11 @@ MatrizPontos[Pallet_1,Prdt_111CC,3].OffsetPlace.C = 0
 ;ENDFOLD
 ;ENDFOLD
 
-;ENDFOLD 
+;ENDFOLD
+;FOLD Pallet 1 - Produto 111CC [ Layer INFO ]
+;LAYER 1: 1 ate 1
+;LAYER 2: 2 ate 2
+;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 171KitKat1
 ;FOLD PLACE 1
@@ -282,7 +294,11 @@ MatrizPontos[Pallet_1,Prdt_171KitKat1,4].OffsetPlace.C = 0
 ;ENDFOLD
 ;ENDFOLD
 
-;ENDFOLD 
+;ENDFOLD
+;FOLD Pallet 1 - Produto 171KitKat1 [ Layer INFO ]
+;LAYER 1: 1 ate 2
+;LAYER 2: 3 ate 4
+;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 211KitKat1
 ;FOLD PLACE 1
@@ -348,7 +364,11 @@ MatrizPontos[Pallet_1,Prdt_211KitKat1,3].OffsetPlace.C = 0
 ;ENDFOLD
 ;ENDFOLD
 
-;ENDFOLD 
+;ENDFOLD
+;FOLD Pallet 1 - Produto 211KitKat1 [ Layer INFO ]
+;LAYER 1: 1 ate 1
+;LAYER 2: 2 ate 2
+;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 220KitKat1
 ;FOLD PLACE 1
@@ -414,7 +434,11 @@ MatrizPontos[Pallet_1,Prdt_220KitKat1,3].OffsetPlace.C = 0
 ;ENDFOLD
 ;ENDFOLD
 
-;ENDFOLD 
+;ENDFOLD
+;FOLD Pallet 1 - Produto 220KitKat1 [ Layer INFO ]
+;LAYER 1: 1 ate 1
+;LAYER 2: 2 ate 2
+;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 240All1
 ;FOLD PLACE 1
@@ -480,7 +504,11 @@ MatrizPontos[Pallet_1,Prdt_240All1,3].OffsetPlace.C = 0
 ;ENDFOLD
 ;ENDFOLD
 
-;ENDFOLD 
+;ENDFOLD
+;FOLD Pallet 1 - Produto 240All1 [ Layer INFO ]
+;LAYER 1: 1 ate 1
+;LAYER 2: 2 ate 2
+;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 300All1
 ;FOLD PLACE 1
@@ -567,7 +595,11 @@ MatrizPontos[Pallet_1,Prdt_300All1,4].OffsetPlace.C = 0
 ;ENDFOLD
 ;ENDFOLD
 
-;ENDFOLD 
+;ENDFOLD
+;FOLD Pallet 1 - Produto 300All1 [ Layer INFO ]
+;LAYER 1: 1 ate 2
+;LAYER 2: 3 ate 4
+;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 320BP1
 ;FOLD PLACE 1
@@ -633,7 +665,11 @@ MatrizPontos[Pallet_1,Prdt_320BP1,3].OffsetPlace.C = 0
 ;ENDFOLD
 ;ENDFOLD
 
-;ENDFOLD 
+;ENDFOLD
+;FOLD Pallet 1 - Produto 320BP1 [ Layer INFO ]
+;LAYER 1: 1 ate 1
+;LAYER 2: 2 ate 2
+;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 330BP1
 ;FOLD PLACE 1
@@ -678,7 +714,11 @@ MatrizPontos[Pallet_1,Prdt_330BP1,2].OffsetPlace.C = 0
 ;ENDFOLD
 ;ENDFOLD
 
-;ENDFOLD 
+;ENDFOLD
+;FOLD Pallet 1 - Produto 330BP1 [ Layer INFO ]
+;LAYER 1: 1 ate 1
+;LAYER 2: 2 ate 2
+;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 370BP1
 ;FOLD PLACE 1
@@ -723,7 +763,11 @@ MatrizPontos[Pallet_1,Prdt_370BP1,2].OffsetPlace.C = 0
 ;ENDFOLD
 ;ENDFOLD
 
-;ENDFOLD 
+;ENDFOLD
+;FOLD Pallet 1 - Produto 370BP1 [ Layer INFO ]
+;LAYER 1: 1 ate 1
+;LAYER 2: 2 ate 2
+;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 360BP1
 ;FOLD PLACE 1
@@ -747,7 +791,10 @@ MatrizPontos[Pallet_1,Prdt_360BP1,1].OffsetPlace.C = 0
 ;ENDFOLD
 ;ENDFOLD
 
-;ENDFOLD 
+;ENDFOLD
+;FOLD Pallet 1 - Produto 360BP1 [ Layer INFO ]
+;LAYER 1: 1 ate 1
+;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 340BP1
 ;FOLD PLACE 1
@@ -792,7 +839,11 @@ MatrizPontos[Pallet_1,Prdt_340BP1,2].OffsetPlace.C = 0
 ;ENDFOLD
 ;ENDFOLD
 
-;ENDFOLD 
+;ENDFOLD
+;FOLD Pallet 1 - Produto 340BP1 [ Layer INFO ]
+;LAYER 1: 1 ate 1
+;LAYER 2: 2 ate 2
+;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 51Aero2
 ;FOLD PLACE 1
@@ -858,7 +909,11 @@ MatrizPontos[Pallet_1,Prdt_51Aero2,3].OffsetPlace.C = 0
 ;ENDFOLD
 ;ENDFOLD
 
-;ENDFOLD 
+;ENDFOLD
+;FOLD Pallet 1 - Produto 51Aero2 [ Layer INFO ]
+;LAYER 1: 1 ate 1
+;LAYER 2: 2 ate 2
+;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 21Aero2
 ;FOLD PLACE 1
@@ -924,6 +979,10 @@ MatrizPontos[Pallet_1,Prdt_21Aero2,3].OffsetPlace.C = 0
 ;ENDFOLD
 ;ENDFOLD
 
-;ENDFOLD 
+;ENDFOLD
+;FOLD Pallet 1 - Produto 21Aero2 [ Layer INFO ]
+;LAYER 1: 1 ate 1
+;LAYER 2: 2 ate 2
+;ENDFOLD
 
 END 

@@ -83,8 +83,17 @@ int matriz_pontos_str(std::ifstream &My_Job_src,std::ofstream &TMatriz_src,std::
     }
     // cout << entrada << endl;
   }
-  TMatriz_src << ";ENDFOLD \n" << endl;
-  // // cout << "Numero de pontos: " << contador << endl;
+  TMatriz_src << ";ENDFOLD" << endl;
+
+  //FOLD Layer
+  TMatriz_src << ";FOLD Pallet " <<pallet[1]<<" - Produto "<< produto  << " [ Layer INFO ]"<< endl;
+  for (int i=0;i<NumLayers;i++){
+    TMatriz_src << ";LAYER "<<i+1<<": "<<contador/NumLayers*i+1 << " ate " << contador/NumLayers*(i+1) << endl;
+  }
+  TMatriz_src << ";ENDFOLD" << endl;
+  TMatriz_src << endl;
+  //FOLD Layer
+
   if(ERROR_NumLayers) cout << "\033[1;31m" <<  "ERROR: " << "NumLayers" << "\033[0m"<<endl;
   cout << "NumPlaces SRC: " << contador<< endl;
   return contador;
@@ -104,8 +113,8 @@ int matriz_pontos_dat(std::ifstream &My_Job_dat,std::ofstream &TMatriz_dat,std::
   int Confere=0;
   int ConfereINT;
   double ConfereDOUBLE;
+  TMatriz_dat << ";FOLD Pallet " <<pallet[1]<<" - Produto "<< produto << endl;
 
-  TMatriz_dat << ";FOLD " <<pallet<<" "<< produto << endl;
   while (!My_Job_dat.eof())
   {
     getline(My_Job_dat,entrada);
@@ -118,6 +127,9 @@ int matriz_pontos_dat(std::ifstream &My_Job_dat,std::ofstream &TMatriz_dat,std::
         if(entrada.find("E6POS") !=std::string::npos)
         {
           Confere++;
+          if(tipo_place==1){
+            TMatriz_dat<<";FOLD PLACE " << contador << endl;
+          }
           posicao=split_string(entrada,"[=]+",1);
           TMatriz_dat<<"E6POS ";
           TMatriz_dat<<pallet<<"_"<<produto<<"_"<<contador<<"_";
@@ -137,7 +149,10 @@ int matriz_pontos_dat(std::ifstream &My_Job_dat,std::ofstream &TMatriz_dat,std::
               NumPontos++;
               break;
           }
-          TMatriz_dat<<" = "<<posicao<<(tipo_place==1?"\n":"")<<endl; 
+          TMatriz_dat<<" = "<<posicao<<endl;
+          if(tipo_place==1){
+            TMatriz_dat<<";ENDFOLD\n" << endl; 
+          }
         }
       }
     }
@@ -145,7 +160,18 @@ int matriz_pontos_dat(std::ifstream &My_Job_dat,std::ofstream &TMatriz_dat,std::
   ConfereINT = Confere/3;
   ConfereDOUBLE = Confere*1.0/3;//(double)10/(double)3;
   if(ConfereDOUBLE!=ConfereINT) cout << "\033[1;31m" <<  "ERROR: " << "Pontos incompletos" << "\033[0m"<<endl;
-  TMatriz_dat << ";ENDFOLD \n" << endl;
+  TMatriz_dat << ";ENDFOLD" << endl;
+  TMatriz_dat << endl;
+  
+  // //FOLD Layer
+  // TMatriz_dat << ";FOLD Pallet " <<pallet[1]<<" - Produto "<< produto  << " [ Layer INFO ]"<< endl;
+  // for (int i=0;i<NumLayers;i++){
+  //   TMatriz_dat << ";LAYER "<<i+1<<": "<<contador/NumLayers*i+1 << " ate " << contador/NumLayers*(i+1) << endl;
+  // }
+  // TMatriz_dat << ";ENDFOLD" << endl;
+  // TMatriz_dat << endl;
+  // //FOLD Layer
+  
   cout << "NumPlaces DAT: " << NumPontos<< endl;
   return NumPontos;
 }
