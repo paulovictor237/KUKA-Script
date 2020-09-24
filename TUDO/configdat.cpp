@@ -13,6 +13,8 @@ using namespace std;
 #include "configdat.h"
 
 void Config::imprime(std::ofstream &config_dat){
+  config_dat<<";FOLD ENUM E DECLARACAO DAS STRUCS\n"<<endl;
+  
   config_dat<<";FOLD ENUM Pallet"<<endl; 
   for (int i=0;i<MaxPallets;i++)config_dat<< "CONST INT Pallet_"<<i+1<<" = "<<i+1<<endl;
   config_dat<<";ENDFOLD\n"<<endl; 
@@ -38,6 +40,8 @@ void Config::imprime(std::ofstream &config_dat){
   config_dat<<"CONST INT MaxMatrizJ="<<MaxMatrizJ<<";[acompanha o MaxReceitas]"<<endl;
   config_dat<<"CONST INT MaxMatrizK="<<MaxMatrizK<<";[numero Maximo de Pontos]"<<endl;
   config_dat<<"DECL GLOBAL DefMatriz MatrizPontos["<<MaxMatrizI<<","<<MaxMatrizJ<<","<<MaxMatrizK<<"];[MaxMatrizI,MaxMatrizJ,MaxMatrizK]"<<endl;
+  config_dat<<";ENDFOLD\n"<<endl;
+
   config_dat<<";ENDFOLD\n"<<endl;
 }
 

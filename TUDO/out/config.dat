@@ -1,3 +1,5 @@
+;FOLD ENUM E DECLARACAO DAS STRUCS
+
 ;FOLD ENUM Pallet
 CONST INT Pallet_1 = 1
 CONST INT Pallet_2 = 2
@@ -43,5 +45,7 @@ CONST INT MaxMatrizI=2;[numero de pallets por receita]
 CONST INT MaxMatrizJ=23;[acompanha o MaxReceitas]
 CONST INT MaxMatrizK=16;[numero Maximo de Pontos]
 DECL GLOBAL DefMatriz MatrizPontos[2,23,16];[MaxMatrizI,MaxMatrizJ,MaxMatrizK]
+;ENDFOLD
+
 ;ENDFOLD
 
