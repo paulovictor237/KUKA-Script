@@ -42,20 +42,20 @@ void Config::imprime(std::ofstream &config_dat){
 }
 
 void Config::cout_print(void){
-  cout <<  "+--------------- Rotina config.dat ---------------+" << endl;
-  cout <<  "===================================" << endl;
+  cout <<  "# >> Rotina config.dat  <<" << endl;
+  cout <<  "\n-----------------------------\n" << endl;
   cout<<"CONST INT MaxPallets="<<MaxPallets<<endl;
   cout<<"StrPallet[MaxPallets]"<<endl;
-  cout <<  "===================================" << endl;
+  cout <<  "\n-----------------------------\n" << endl;
   cout<<"CONST INT MaxReceitas="<<MaxReceitas<<endl;
   cout<<"CONST INT MaxCamadas="<<MaxCamadas<<endl;
   cout<<"StrReceita[MaxReceitas]"<<endl;
   cout<<"StrReceitaLayer[MaxReceitas,MaxCamadas]"<<endl;
-  cout <<  "===================================" << endl;
+  cout <<  "\n-----------------------------\n" << endl;
   cout<<"CONST INT MaxMatrizI="<<MaxMatrizI<<";[numero de pallets por receita]"<<endl;
   cout<<"CONST INT MaxMatrizJ="<<MaxMatrizJ<<";[acompanha o MaxReceitas]"<<endl;
   cout<<"CONST INT MaxMatrizK="<<MaxMatrizK<<";[numero Maximo de Pontos]"<<endl;
   cout<<"MatrizPontos[MaxMatrizI,MaxMatrizJ,MaxMatrizK]"<<endl;
-  cout <<  "===================================" << endl;
+  cout <<  "\n-----------------------------\n" << endl;
 }
 

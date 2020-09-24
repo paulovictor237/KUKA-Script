@@ -38,7 +38,7 @@ void data_tool(std::ifstream &My_Job_src,std::ofstream &TPallet_src){
 }
 
 void pallet_src(std::ifstream &My_Job_src,std::ofstream &TPallet_src,int MaxPallets){
-  cout <<  "+--------------- Rotina Pallet ---------------+" << endl;  
+  cout <<  "# >> Rotina Pallet << " << endl;  
   int i=1;
   int j=1;
 

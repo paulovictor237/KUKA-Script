@@ -47,7 +47,7 @@ void Receita::imprime(std::ofstream &ofs){
 
 int pick(std::ifstream &My_Job_dat,std::ofstream &TReceita_dat)
 {
-  cout <<  "+--------------- Rotina Pick ---------------+" << endl;
+  cout <<  "# >> Rotina Pick << " << endl;
   //error
   bool ERROR_pick=true;
 
@@ -83,7 +83,7 @@ int pick(std::ifstream &My_Job_dat,std::ofstream &TReceita_dat)
           TReceita_dat<<"E6POS "<<PickName<<" = "<<posicao<<endl;
         }
       }
-      if(ERROR_pick) cout << "\033[1;31m" <<  "ERROR: " << PickName << "\033[0m"<<endl;
+      if(ERROR_pick) cout << "<span style=\"color:red\">**ERROR: " << PickName << "**</span>"<<endl;
       TReceita_dat<<endl;
     }
   }

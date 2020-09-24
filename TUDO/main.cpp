@@ -1,8 +1,8 @@
-//+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+//# +---------------------------------------------------------------------------------------------------------------------------------------------------<< 
 //             ╔══════════════════════════════════════════════════╗
 //             ║  Copyright (C) 2020 Paulo Victor Duarte          ║
 //             ╚══════════════════════════════════════════════════╝
-//+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+//# +---------------------------------------------------------------------------------------------------------------------------------------------------<< 
 // BIBLIOTECAS C++
 
 // COMPILAR
@@ -67,13 +67,17 @@ int Camadas = 0;
 
 int main(int argc, char **argv)
 {
-//+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-  system("clear");
+//# +---------------------------------------------------------------------------------------------------------------------------------------------------<< 
+  //system("clear");
   // system("cls");
-  cout << "\033[1;44m" <<  "╔═══════════════════════════════════════════════════════╗" << "\033[0m"<<endl;
-  cout << "\033[1;44m" <<  "║                   PROGRAMA INICIADO                   ║" << "\033[0m"<<endl;
-  cout << "\033[1;44m" <<  "╚═══════════════════════════════════════════════════════╝" << "\033[0m"<<endl;
-  
+  cout << "# PROGRAMA INICIADO #"<<endl;
+  cout << "Relatorio gerado em [ output.md ]"<<endl;
+
+  std::ofstream out("out_relatorio/output.md");
+  std::streambuf *coutbuf = std::cout.rdbuf(); //save old buf
+  std::cout.rdbuf(out.rdbuf()); //redirect std::cout to out.txt!
+
+  cout << "# $ >> PROGRAMA INICIADO << $"<<endl;
   cout << "Valores de inicializacao" << endl; 
   if(argc==3){
     MaxPallets=atoi(argv[1]);
@@ -117,8 +121,8 @@ int main(int argc, char **argv)
 
   // ## TReceita -> cria o Receita src e dat
   // antes de imprimir (PlacesCamada/layers)
-  cout <<  "+--------------- Rotina Receitas ---------------+" << endl;
-  cout << "=========================" << endl;
+  cout <<  "# >> Rotina Receitas <<" << endl;
+  cout << "\n-----------------------------\n" << endl;
   while (!My_Job_src.eof())
   {
     getline(My_Job_src,entrada);
@@ -145,7 +149,7 @@ int main(int argc, char **argv)
       PlacesCamada = contador_dat/NumLayers;
       MaxMatrizK = contador_dat;
       cout << "NumPlaces/NumLayers: " << PlacesCamada<< endl;
-      if(contador_src!=contador_dat) cout << "\033[1;31m" <<  "ERROR: " << "NumPlaces SRC != NumPlaces DAT" << "\033[0m"<<endl;
+      if(contador_src!=contador_dat) cout << "<span style=\"color:red\">**ERROR: " << "NumPlaces SRC != NumPlaces DAT" << "**</span>"<<endl;
       config.MaxMatrizK=MaxMatrizK>config.MaxMatrizK?MaxMatrizK:config.MaxMatrizK;
       if(std::find(config.ENUM_RECEITA.begin(), config.ENUM_RECEITA.end(),produto) == config.ENUM_RECEITA.end())
       {
@@ -160,7 +164,7 @@ int main(int argc, char **argv)
         config.MaxReceitas++;
         config.MaxMatrizJ++;
       }
-      cout << "=========================" << endl; 
+      cout << "\n-----------------------------\n" << endl; 
     }
   }
   //SEPARA OS PALLETS NA MATRIZ
@@ -191,9 +195,6 @@ int main(int argc, char **argv)
   My_Job_src.close();
   My_Job_dat.close();
   
-  cout << "\033[1;44m" <<  "╔═══════════════════════════════════════════════════════╗" << "\033[0m"<<endl;
-  cout << "\033[1;44m" <<  "║                          FIM                          ║" << "\033[0m"<<endl;
-  cout << "\033[1;44m" <<  "╚═══════════════════════════════════════════════════════╝" << "\033[0m"<<endl;
-
+  cout << "# $ >> FIM << $"<<endl;
   return 0;
 }

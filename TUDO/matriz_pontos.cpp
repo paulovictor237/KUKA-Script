@@ -118,17 +118,17 @@ int matriz_pontos_str(std::ifstream &My_Job_src,std::ofstream &TMatriz_src,std::
   //FOLD Layer
 
   if(ERROR_AlturaCaixa){
-    cout << "\033[1;31m" <<  "ERROR: " << "AlturaCaixa" << "\033[0m"<<endl;
+    cout << "<span style=\"color:red\">**ERROR: " << "AlturaCaixa" << "**</span>"<<endl;
   }else{
     cout << "AlturaCaixa: " << AlturaCaixa<< endl;
   }
   if(ERROR_Camadas){
-    cout << "\033[1;31m" <<  "ERROR: " << "Camadas" << "\033[0m"<<endl;
+    cout << "<span style=\"color:red\">**ERROR: " << "Camadas" << "**</span>"<<endl;
   }else{
     cout << "Camadas: " << Camadas<< endl;
   }
   if(ERROR_NumLayers){
-    cout << "\033[1;31m" <<  "ERROR: " << "NumLayers" << "\033[0m"<<endl;
+    cout << "<span style=\"color:red\">**ERROR: " << "NumLayers" << "**</span>"<<endl;
   }else{
     cout <<"NumLayers: "<<NumLayers << endl;
     // cout << "NumPlaces/NumLayers: " << contador/NumLayers<< endl;
@@ -198,7 +198,7 @@ int matriz_pontos_dat(std::ifstream &My_Job_dat,std::ofstream &TMatriz_dat,std::
   }
   ConfereINT = Confere/3;
   ConfereDOUBLE = Confere*1.0/3;//(double)10/(double)3;
-  if(ConfereDOUBLE!=ConfereINT) cout << "\033[1;31m" <<  "ERROR: " << "Pontos incompletos" << "\033[0m"<<endl;
+  if(ConfereDOUBLE!=ConfereINT) cout << "<span style=\"color:red\">**ERROR: " << "Pontos incompletos" << "**</span>"<<endl;
   TMatriz_dat << ";ENDFOLD" << endl;
   TMatriz_dat << endl;
   
