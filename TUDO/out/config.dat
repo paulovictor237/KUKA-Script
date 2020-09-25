@@ -37,9 +37,9 @@ CONST INT MaxPallets=2
 DECL GLOBAL DefPallet StrPallet[2];[MaxPallets]
 ;---------- StrReceita[MaxReceitas] ----------
 CONST INT MaxReceitas=23
-CONST INT MaxCamadas=12
+CONST INT MaxCamadas=9
 DECL GLOBAL DefStrReceita StrReceita[23];[MaxReceitas]
-INT  StrReceitaLayer[23,12];[MaxReceitas,MaxCamadas]
+INT  StrReceitaLayer[23,9];[MaxReceitas,MaxCamadas]
 ;---------- MatrizPontos[MaxMatrizI,MaxMatrizJ,MaxMatrizK] ----------
 CONST INT MaxMatrizI=2;[numero de pallets por receita]
 CONST INT MaxMatrizJ=23;[acompanha o MaxReceitas]

@@ -72,7 +72,7 @@ int matriz_pontos_str(std::ifstream &My_Job_src,std::ofstream &TMatriz_src,std::
   //int NumLayers = 2;
   NumLayers=1;
   AlturaCaixa = 0;
-  Camadas = 12;
+  Camadas = 1;
   // variaveis  
   int contador=0;
   std::string entrada="";

@@ -60,7 +60,7 @@ void end_all(void){
 }
 
 int MaxPallets=2;
-int MaxCamadas=12;
+int MaxCamadas=0;
 
 int AlturaCaixa = 0;
 int Camadas = 0;
@@ -79,12 +79,10 @@ int main(int argc, char **argv)
 
   cout << "# $ >> PROGRAMA INICIADO << $"<<endl;
   cout << "Valores de inicializacao" << endl; 
-  if(argc==3){
+  if(argc==2){
     MaxPallets=atoi(argv[1]);
-    MaxCamadas=atoi(argv[2]);
   }
   cout << "MaxPallets = " << MaxPallets << endl;
-  cout << "MaxCamadas = " << MaxCamadas << endl;
   
   // variaveis
   int MaxMatrizK;
@@ -148,9 +146,14 @@ int main(int argc, char **argv)
       }
       PlacesCamada = contador_dat/NumLayers;
       MaxMatrizK = contador_dat;
+      MaxCamadas = Camadas;
       cout << "NumPlaces/NumLayers: " << PlacesCamada<< endl;
       if(contador_src!=contador_dat) cout << "<span style=\"color:red\">**ERROR: " << "NumPlaces SRC != NumPlaces DAT" << "**</span>"<<endl;
+      
       config.MaxMatrizK=MaxMatrizK>config.MaxMatrizK?MaxMatrizK:config.MaxMatrizK;
+
+      config.MaxCamadas=MaxCamadas>config.MaxCamadas?MaxCamadas:config.MaxCamadas;
+
       if(std::find(config.ENUM_RECEITA.begin(), config.ENUM_RECEITA.end(),produto) == config.ENUM_RECEITA.end())
       {
         // ## TPallet -> cria o receita src e dat
