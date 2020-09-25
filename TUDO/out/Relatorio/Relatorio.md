@@ -1,6 +1,6 @@
 # $ >> PROGRAMA INICIADO << $
 Valores de inicializacao
-MaxPallets = 2
+MaxPallets=2
 # >> Rotina Garra << 
 Numero de ConfGarra: 6
 Numero de AbreGarra: 7
@@ -583,8 +583,8 @@ StrPallet[MaxPallets]
 
 -----------------------------
 
-CONST INT MaxReceitas=23
-CONST INT MaxCamadas=4
+CONST INT MaxReceitas=26
+CONST INT MaxCamadas=12
 StrReceita[MaxReceitas]
 StrReceitaLayer[MaxReceitas,MaxCamadas]
 

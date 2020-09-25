@@ -55,30 +55,30 @@ void pallet_src(std::ifstream &My_Job_src,std::ofstream &TPallet_src,int MaxPall
   TPallet_src << "    ;FOLD Iniciar Opcoes de Esteira" << endl;
   j=i;
   for (i=1;i<MaxPallets+1;i++){
-    TPallet_src << "       BaseEsteira"<< i <<" = BASE_DATA["<< j++ <<"]" << endl;
+    TPallet_src << "       BaseEsteira"<< i <<"=BASE_DATA["<< j++ <<"]" << endl;
   }
   TPallet_src << "    ;ENDFOLD\n" << endl;
 
   TPallet_src << "    ;FOLD OffSetPallet" << endl;
   for (i=1;i<MaxPallets+1;i++){
-    TPallet_src << "       StrPallet[" << i << "].OffSetPallet.X = 0" << endl;
-    TPallet_src << "       StrPallet[" << i << "].OffSetPallet.Y = 0" << endl;
-    TPallet_src << "       StrPallet[" << i << "].OffSetPallet.Z = 0" << endl;
-    TPallet_src << "       StrPallet[" << i << "].OffSetPallet.A = 0" << endl;
-    TPallet_src << "       StrPallet[" << i << "].OffSetPallet.B = 0" << endl;
-    TPallet_src << "       StrPallet[" << i << "].OffSetPallet.C = 0" << endl;
+    TPallet_src << "       StrPallet[" << i << "].OffSetPallet.X=0" << endl;
+    TPallet_src << "       StrPallet[" << i << "].OffSetPallet.Y=0" << endl;
+    TPallet_src << "       StrPallet[" << i << "].OffSetPallet.Z=0" << endl;
+    TPallet_src << "       StrPallet[" << i << "].OffSetPallet.A=0" << endl;
+    TPallet_src << "       StrPallet[" << i << "].OffSetPallet.B=0" << endl;
+    TPallet_src << "       StrPallet[" << i << "].OffSetPallet.C=0" << endl;
     TPallet_src << endl;
   }
   TPallet_src << "    ;ENDFOLD\n" << endl;
 
   TPallet_src << "    ;FOLD OffsetEsteira" << endl;
   for (i=1;i<MaxPallets+1;i++){
-    TPallet_src << "       OffsetEsteira"<< i <<".X = 0" << endl;
-    TPallet_src << "       OffsetEsteira"<< i <<".Y = 0" << endl;
-    TPallet_src << "       OffsetEsteira"<< i <<".Z = 0" << endl;
-    TPallet_src << "       OffsetEsteira"<< i <<".A = 0" << endl;
-    TPallet_src << "       OffsetEsteira"<< i <<".B = 0" << endl;
-    TPallet_src << "       OffsetEsteira"<< i <<".C = 0" << endl;
+    TPallet_src << "       OffsetEsteira"<< i <<".X=0" << endl;
+    TPallet_src << "       OffsetEsteira"<< i <<".Y=0" << endl;
+    TPallet_src << "       OffsetEsteira"<< i <<".Z=0" << endl;
+    TPallet_src << "       OffsetEsteira"<< i <<".A=0" << endl;
+    TPallet_src << "       OffsetEsteira"<< i <<".B=0" << endl;
+    TPallet_src << "       OffsetEsteira"<< i <<".C=0" << endl;
     TPallet_src << endl;
   }
   TPallet_src << "    ;ENDFOLD\n" << endl;

@@ -28,22 +28,22 @@ this->nome=nome;
 void Receita::imprime(std::ofstream &ofs){
   std::stringstream aux;
   ofs<<";FOLD Produto "<< nome << endl;
-  ofs<<"  StrReceita[Prdt_"<< nome << "].OffsetProduto.X = 0"<< endl;
-  ofs<<"  StrReceita[Prdt_"<< nome << "].OffsetProduto.Y = 0"<< endl;
-  ofs<<"  StrReceita[Prdt_"<< nome << "].OffsetProduto.Z = 0"<< endl;
-  ofs<<"  StrReceita[Prdt_"<< nome << "].OffsetProduto.A = 0"<< endl;
-  ofs<<"  StrReceita[Prdt_"<< nome << "].OffsetProduto.B = 0"<< endl;
-  ofs<<"  StrReceita[Prdt_"<< nome << "].OffsetProduto.C = 0"<< endl;
+  ofs<<"  StrReceita[Prdt_"<< nome << "].OffsetProduto.X=0"<< endl;
+  ofs<<"  StrReceita[Prdt_"<< nome << "].OffsetProduto.Y=0"<< endl;
+  ofs<<"  StrReceita[Prdt_"<< nome << "].OffsetProduto.Z=0"<< endl;
+  ofs<<"  StrReceita[Prdt_"<< nome << "].OffsetProduto.A=0"<< endl;
+  ofs<<"  StrReceita[Prdt_"<< nome << "].OffsetProduto.B=0"<< endl;
+  ofs<<"  StrReceita[Prdt_"<< nome << "].OffsetProduto.C=0"<< endl;
 
-  ofs<<"  StrReceita[Prdt_"<< nome << "].AlturaCaixa = "<<AlturaCaixa << endl;
-  ofs<<"  StrReceita[Prdt_"<< nome << "].PlacesCamada = " << PlacesCamada << endl;
-  ofs<<"  StrReceita[Prdt_"<< nome << "].layers = "<< layers << endl;
-  ofs<<"  StrReceita[Prdt_"<< nome << "].Camadas = "<< Camadas << endl;
+  ofs<<"  StrReceita[Prdt_"<< nome << "].AlturaCaixa="<<AlturaCaixa << endl;
+  ofs<<"  StrReceita[Prdt_"<< nome << "].PlacesCamada=" << PlacesCamada << endl;
+  ofs<<"  StrReceita[Prdt_"<< nome << "].Layers="<< Layers << endl;
+  ofs<<"  StrReceita[Prdt_"<< nome << "].Camadas="<< Camadas << endl;
   for (int i=0;i<Camadas;i++){
-    // ofs<<"  StrReceitaLayer[Prdt_"<< nome <<","<<i+1<<"] = 1" << endl;
-    ofs<<"  StrReceitaLayer[Prdt_"<< nome <<","<<i+1<<"] = "<< ((layers>1&&i>0&&i%2==1)?"2":"1") << endl;
+    // ofs<<"  StrReceitaLayer[Prdt_"<< nome <<","<<i+1<<"]=1" << endl;
+    ofs<<"  StrReceitaLayer[Prdt_"<< nome <<","<<i+1<<"]="<< ((Layers>1&&i>0&&i%2==1)?"2":"1") << endl;
   }
-  ofs<<";ENDFOLD" << endl;
+  ofs<<";ENDFOLD\n" << endl;
   return;
 }
 
@@ -82,7 +82,7 @@ int pick(std::ifstream &My_Job_dat,std::ofstream &TReceita_dat)
           cout << "Pick encontrado: " << PickName <<endl;
           // cout << entrada<<endl;
           posicao=split_string(entrada,"[=]+",1);
-          TReceita_dat<<"GLOBAL E6POS "<<PickName<<" = "<<posicao<<endl;
+          TReceita_dat<<"DECL GLOBAL E6POS "<<PickName<<"="<<posicao<<endl;
         }
       }
       if(ERROR_pick) cout << "<span style=\"color:red\">**ERROR: " << PickName << "**</span>"<<endl;

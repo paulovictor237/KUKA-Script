@@ -16,17 +16,17 @@ int OffsetPlace(std::ofstream &TMatriz_src,std::string pallet,std::string produt
 {
   TMatriz_src<<";FOLD OffsetPlace " << endl;
   TMatriz_src<<"MatrizPontos[Pallet_"<<pallet[1]<<",Prdt_"<<produto << "," << contador << "].";
-  TMatriz_src<<"OffsetPlace.X = 0"<< endl;
+  TMatriz_src<<"OffsetPlace.X=0"<< endl;
   TMatriz_src<<"MatrizPontos[Pallet_"<<pallet[1]<<",Prdt_"<<produto << "," << contador << "].";
-  TMatriz_src<<"OffsetPlace.Y = 0"<< endl;
+  TMatriz_src<<"OffsetPlace.Y=0"<< endl;
   TMatriz_src<<"MatrizPontos[Pallet_"<<pallet[1]<<",Prdt_"<<produto << "," << contador << "].";
-  TMatriz_src<<"OffsetPlace.Z = 0"<< endl;
+  TMatriz_src<<"OffsetPlace.Z=0"<< endl;
   TMatriz_src<<"MatrizPontos[Pallet_"<<pallet[1]<<",Prdt_"<<produto << "," << contador << "].";
-  TMatriz_src<<"OffsetPlace.A = 0"<< endl;
+  TMatriz_src<<"OffsetPlace.A=0"<< endl;
   TMatriz_src<<"MatrizPontos[Pallet_"<<pallet[1]<<",Prdt_"<<produto << "," << contador << "].";
-  TMatriz_src<<"OffsetPlace.B = 0"<< endl;
+  TMatriz_src<<"OffsetPlace.B=0"<< endl;
   TMatriz_src<<"MatrizPontos[Pallet_"<<pallet[1]<<",Prdt_"<<produto << "," << contador << "].";
-  TMatriz_src<<"OffsetPlace.C = 0"<< endl;
+  TMatriz_src<<"OffsetPlace.C=0"<< endl;
   TMatriz_src<<";ENDFOLD" << endl;
   return 0;
 }
@@ -65,14 +65,14 @@ int matriz_pontos_str(std::ifstream &My_Job_src,std::ofstream &TMatriz_src,std::
   bool ERROR_NumLayers=true;
   bool ERROR_AlturaCaixa=true;
   bool ERROR_Camadas=true;
-  bool layer1 = false;
+  bool layer1=false;
   bool layer2;
   int i=0;
   //outras
-  //int NumLayers = 2;
+  //int NumLayers=2;
   NumLayers=1;
-  AlturaCaixa = 0;
-  Camadas = 1;
+  AlturaCaixa=0;
+  Camadas=1;
   // variaveis  
   int contador=0;
   std::string entrada="";
@@ -82,8 +82,8 @@ int matriz_pontos_str(std::ifstream &My_Job_src,std::ofstream &TMatriz_src,std::
   cout << "Produto: " << produto << endl;
 
   // contador de places e numero de Layers
-  std::streampos  length = My_Job_src.tellg();
-  int FinalContador =  contador_places(My_Job_src,NumLayers);
+  std::streampos  length=My_Job_src.tellg();
+  int FinalContador= contador_places(My_Job_src,NumLayers);
   My_Job_src.seekg (length);
 
   //FOLD Layer
@@ -139,11 +139,11 @@ int matriz_pontos_str(std::ifstream &My_Job_src,std::ofstream &TMatriz_src,std::
         if (!My_Job_src.good())break;
       }
       TMatriz_src<<"MatrizPontos[Pallet_"<<pallet[1]<<",Prdt_"<<produto << "," << contador << "].";
-      TMatriz_src<<"XApp1Place = "<<pallet<<"_"<<produto<<"_"<<contador<<"_"<<"App1"<<endl;
+      TMatriz_src<<"XApp1Place="<<pallet<<"_"<<produto<<"_"<<contador<<"_"<<"App1"<<endl;
       TMatriz_src<<"MatrizPontos[Pallet_"<<pallet[1]<<",Prdt_"<<produto << "," << contador << "].";
-      TMatriz_src<<"XApp2Place = "<<pallet<<"_"<<produto<<"_"<<contador<<"_"<<"App2"<<endl;
+      TMatriz_src<<"XApp2Place="<<pallet<<"_"<<produto<<"_"<<contador<<"_"<<"App2"<<endl;
       TMatriz_src<<"MatrizPontos[Pallet_"<<pallet[1]<<",Prdt_"<<produto << "," << contador << "].";
-      TMatriz_src<<"XPlace = "<<pallet<<"_"<<produto<<"_"<<contador<<"_"<<"Place"<<endl;
+      TMatriz_src<<"XPlace="<<pallet<<"_"<<produto<<"_"<<contador<<"_"<<"Place"<<endl;
       TMatriz_src<<";ENDFOLD" << endl;
 
       OffsetPlace(TMatriz_src,pallet,produto,contador);
@@ -196,8 +196,8 @@ std::string abaixa_z(std::string entrada,int AlturaCaixa)
     stream_aux<<",";
   }
   //alteracao
-  aux = split_string(split[2],"[ ]+",1); ;
-  Z = std::stod(aux);
+  aux=split_string(split[2],"[ ]+",1); ;
+  Z=std::stod(aux);
   // cout.precision(17);
   // cout <<"@@@@@@@@@@@@ " <<  aux << endl;
   // cout << "z: " << Z << endl;
@@ -246,10 +246,10 @@ int matriz_pontos_dat(std::ifstream &My_Job_dat,std::ofstream &TMatriz_dat,std::
             TMatriz_dat<<";FOLD PLACE " << contador << endl;
           }
           if (NumPontos>(Camadas/NumLayers+1)&& NumLayers>1){
-            entrada = abaixa_z(entrada,AlturaCaixa);
+            entrada=abaixa_z(entrada,AlturaCaixa);
           }
           posicao=split_string(entrada,"[=]+",1);
-          TMatriz_dat<<"E6POS ";
+          TMatriz_dat<<"DECL E6POS ";
           TMatriz_dat<<pallet<<"_"<<produto<<"_"<<contador<<"_";
           switch(tipo_place) {
             case 1:
@@ -267,7 +267,7 @@ int matriz_pontos_dat(std::ifstream &My_Job_dat,std::ofstream &TMatriz_dat,std::
               NumPontos++;
               break;
           }
-          TMatriz_dat<<" = "<<posicao<<endl;
+          TMatriz_dat<<"="<<posicao<<endl;
           if(tipo_place==1){
             TMatriz_dat<<";ENDFOLD\n" << endl; 
           }
@@ -275,8 +275,8 @@ int matriz_pontos_dat(std::ifstream &My_Job_dat,std::ofstream &TMatriz_dat,std::
       }
     }
   }
-  ConfereINT = Confere/3;
-  ConfereDOUBLE = Confere*1.0/3;//(double)10/(double)3;
+  ConfereINT=Confere/3;
+  ConfereDOUBLE=Confere*1.0/3;//(double)10/(double)3;
   if(ConfereDOUBLE!=ConfereINT) cout << "<span style=\"color:red\">**ERROR: " << "Pontos incompletos" << "**</span>"<<endl;
   TMatriz_dat << ";ENDFOLD" << endl;
   TMatriz_dat << endl;

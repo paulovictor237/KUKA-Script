@@ -13,16 +13,21 @@ using namespace std;
 #include "configdat.h"
 
 void Config::imprime(std::ofstream &config_dat){
+  //adicionar numero a mais por seguranca
+  MaxCamadas=MaxCamadas + 3;
+  MaxReceitas=MaxReceitas + 3;
+
+  //inicia prints
   config_dat<<";FOLD ENUM E DECLARACAO DAS STRUCS\n"<<endl;
   
   config_dat<<";FOLD ENUM Pallet"<<endl; 
-  for (int i=0;i<MaxPallets;i++)config_dat<< "CONST INT Pallet_"<<i+1<<" = "<<i+1<<endl;
+  for (int i=0;i<MaxPallets;i++)config_dat<< "CONST INT Pallet_"<<i+1<<"="<<i+1<<endl;
   config_dat<<";ENDFOLD\n"<<endl; 
 
 
-  int contador = 1;
+  int contador=1;
   config_dat<<";FOLD ENUM RECEITA"<<endl; 
-  for (auto &outt : ENUM_RECEITA)config_dat<< "CONST INT Prdt_"<<outt<<" = "<<(contador++)<<endl;
+  for (auto &outt : ENUM_RECEITA)config_dat<< "CONST INT Prdt_"<<outt<<"="<<(contador++)<<endl;
   config_dat<<";ENDFOLD\n"<<endl; 
 
 
@@ -34,7 +39,7 @@ void Config::imprime(std::ofstream &config_dat){
   config_dat<<"CONST INT MaxReceitas="<<MaxReceitas<<endl;
   config_dat<<"CONST INT MaxCamadas="<<MaxCamadas<<endl;
   config_dat<<"DECL GLOBAL DefStrReceita StrReceita["<<MaxReceitas<<"];[MaxReceitas]"<<endl;
-  config_dat<<"INT  StrReceitaLayer["<<MaxReceitas<<","<<MaxCamadas<<"];[MaxReceitas,MaxCamadas]"<<endl;
+  config_dat<<"DECL GLOBAL INT StrReceitaLayer["<<MaxReceitas<<","<<MaxCamadas<<"];[MaxReceitas,MaxCamadas]"<<endl;
   config_dat<<";---------- MatrizPontos[MaxMatrizI,MaxMatrizJ,MaxMatrizK] ----------"<<endl;
   config_dat<<"CONST INT MaxMatrizI="<<MaxMatrizI<<";[numero de pallets por receita]"<<endl;
   config_dat<<"CONST INT MaxMatrizJ="<<MaxMatrizJ<<";[acompanha o MaxReceitas]"<<endl;

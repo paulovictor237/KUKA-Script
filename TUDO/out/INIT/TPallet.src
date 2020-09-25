@@ -14,41 +14,41 @@ DEF TPallet()
     ;ENDFOLD
 
     ;FOLD Iniciar Opcoes de Esteira
-       BaseEsteira1 = BASE_DATA[3]
-       BaseEsteira2 = BASE_DATA[4]
+       BaseEsteira1=BASE_DATA[3]
+       BaseEsteira2=BASE_DATA[4]
     ;ENDFOLD
 
     ;FOLD OffSetPallet
-       StrPallet[1].OffSetPallet.X = 0
-       StrPallet[1].OffSetPallet.Y = 0
-       StrPallet[1].OffSetPallet.Z = 0
-       StrPallet[1].OffSetPallet.A = 0
-       StrPallet[1].OffSetPallet.B = 0
-       StrPallet[1].OffSetPallet.C = 0
+       StrPallet[1].OffSetPallet.X=0
+       StrPallet[1].OffSetPallet.Y=0
+       StrPallet[1].OffSetPallet.Z=0
+       StrPallet[1].OffSetPallet.A=0
+       StrPallet[1].OffSetPallet.B=0
+       StrPallet[1].OffSetPallet.C=0
 
-       StrPallet[2].OffSetPallet.X = 0
-       StrPallet[2].OffSetPallet.Y = 0
-       StrPallet[2].OffSetPallet.Z = 0
-       StrPallet[2].OffSetPallet.A = 0
-       StrPallet[2].OffSetPallet.B = 0
-       StrPallet[2].OffSetPallet.C = 0
+       StrPallet[2].OffSetPallet.X=0
+       StrPallet[2].OffSetPallet.Y=0
+       StrPallet[2].OffSetPallet.Z=0
+       StrPallet[2].OffSetPallet.A=0
+       StrPallet[2].OffSetPallet.B=0
+       StrPallet[2].OffSetPallet.C=0
 
     ;ENDFOLD
 
     ;FOLD OffsetEsteira
-       OffsetEsteira1.X = 0
-       OffsetEsteira1.Y = 0
-       OffsetEsteira1.Z = 0
-       OffsetEsteira1.A = 0
-       OffsetEsteira1.B = 0
-       OffsetEsteira1.C = 0
+       OffsetEsteira1.X=0
+       OffsetEsteira1.Y=0
+       OffsetEsteira1.Z=0
+       OffsetEsteira1.A=0
+       OffsetEsteira1.B=0
+       OffsetEsteira1.C=0
 
-       OffsetEsteira2.X = 0
-       OffsetEsteira2.Y = 0
-       OffsetEsteira2.Z = 0
-       OffsetEsteira2.A = 0
-       OffsetEsteira2.B = 0
-       OffsetEsteira2.C = 0
+       OffsetEsteira2.X=0
+       OffsetEsteira2.Y=0
+       OffsetEsteira2.Z=0
+       OffsetEsteira2.A=0
+       OffsetEsteira2.B=0
+       OffsetEsteira2.C=0
 
     ;ENDFOLD
 

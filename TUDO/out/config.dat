@@ -1,34 +1,34 @@
 ;FOLD ENUM E DECLARACAO DAS STRUCS
 
 ;FOLD ENUM Pallet
-CONST INT Pallet_1 = 1
-CONST INT Pallet_2 = 2
+CONST INT Pallet_1=1
+CONST INT Pallet_2=2
 ;ENDFOLD
 
 ;FOLD ENUM RECEITA
-CONST INT Prdt_9Aero = 1
-CONST INT Prdt_5Aero = 2
-CONST INT Prdt_2Aero = 3
-CONST INT Prdt_11CoffeCrisp = 4
-CONST INT Prdt_17KitKat = 5
-CONST INT Prdt_19KitKat = 6
-CONST INT Prdt_20KitKat = 7
-CONST INT Prdt_21KitKat = 8
-CONST INT Prdt_23Smarties = 9
-CONST INT Prdt_22KitKat = 10
-CONST INT Prdt_24a28All = 11
-CONST INT Prdt_30All = 12
-CONST INT Prdt_16CoffeCrisp = 13
-CONST INT Prdt_10CoffeCrisp = 14
-CONST INT Prdt_1Aero = 15
-CONST INT Prdt_15CoffeCrisp = 16
-CONST INT Prdt_7Aero = 17
-CONST INT Prdt_32BarPacking = 18
-CONST INT Prdt_33BarPacking = 19
-CONST INT Prdt_37BarPacking = 20
-CONST INT Prdt_36BarPacking = 21
-CONST INT Prdt_34BarPacking = 22
-CONST INT Prdt_35BarPacking = 23
+CONST INT Prdt_9Aero=1
+CONST INT Prdt_5Aero=2
+CONST INT Prdt_2Aero=3
+CONST INT Prdt_11CoffeCrisp=4
+CONST INT Prdt_17KitKat=5
+CONST INT Prdt_19KitKat=6
+CONST INT Prdt_20KitKat=7
+CONST INT Prdt_21KitKat=8
+CONST INT Prdt_23Smarties=9
+CONST INT Prdt_22KitKat=10
+CONST INT Prdt_24a28All=11
+CONST INT Prdt_30All=12
+CONST INT Prdt_16CoffeCrisp=13
+CONST INT Prdt_10CoffeCrisp=14
+CONST INT Prdt_1Aero=15
+CONST INT Prdt_15CoffeCrisp=16
+CONST INT Prdt_7Aero=17
+CONST INT Prdt_32BarPacking=18
+CONST INT Prdt_33BarPacking=19
+CONST INT Prdt_37BarPacking=20
+CONST INT Prdt_36BarPacking=21
+CONST INT Prdt_34BarPacking=22
+CONST INT Prdt_35BarPacking=23
 ;ENDFOLD
 
 ;FOLD STR
@@ -36,10 +36,10 @@ CONST INT Prdt_35BarPacking = 23
 CONST INT MaxPallets=2
 DECL GLOBAL DefPallet StrPallet[2];[MaxPallets]
 ;---------- StrReceita[MaxReceitas] ----------
-CONST INT MaxReceitas=23
-CONST INT MaxCamadas=4
-DECL GLOBAL DefStrReceita StrReceita[23];[MaxReceitas]
-INT  StrReceitaLayer[23,4];[MaxReceitas,MaxCamadas]
+CONST INT MaxReceitas=26
+CONST INT MaxCamadas=12
+DECL GLOBAL DefStrReceita StrReceita[26];[MaxReceitas]
+DECL GLOBAL INT StrReceitaLayer[26,12];[MaxReceitas,MaxCamadas]
 ;---------- MatrizPontos[MaxMatrizI,MaxMatrizJ,MaxMatrizK] ----------
 CONST INT MaxMatrizI=2;[numero de pallets por receita]
 CONST INT MaxMatrizJ=23;[acompanha o MaxReceitas]

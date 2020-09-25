@@ -62,8 +62,8 @@ void end_all(void){
 int MaxPallets=2;
 int MaxCamadas=0;
 
-int AlturaCaixa = 0;
-int Camadas = 0;
+int AlturaCaixa=0;
+int Camadas=0;
 
 int main(int argc, char **argv)
 {
@@ -74,7 +74,7 @@ int main(int argc, char **argv)
   cout << "Relatorio gerado em [ out/Relatorio/Relatorio.md ]"<<endl;
 
   std::ofstream out("out/Relatorio/Relatorio.md");
-  std::streambuf *coutbuf = std::cout.rdbuf(); //save old buf
+  std::streambuf *coutbuf=std::cout.rdbuf(); //save old buf
   std::cout.rdbuf(out.rdbuf()); //redirect std::cout to out.txt!
 
   cout << "# $ >> PROGRAMA INICIADO << $"<<endl;
@@ -82,7 +82,7 @@ int main(int argc, char **argv)
   if(argc==2){
     MaxPallets=atoi(argv[1]);
   }
-  cout << "MaxPallets = " << MaxPallets << endl;
+  cout << "MaxPallets=" << MaxPallets << endl;
   
   // variaveis
   int MaxMatrizK;
@@ -115,10 +115,10 @@ int main(int argc, char **argv)
   // começa procurando os MatrizPontos
   // !encontra o Produto
   // PlacesCamada++;
-  // layers++;
+  // Layers++;
 
   // ## TReceita -> cria o Receita src e dat
-  // antes de imprimir (PlacesCamada/layers)
+  // antes de imprimir (PlacesCamada/Layers)
   cout <<  "# >> Rotina Receitas <<" << endl;
   cout << "\n-----------------------------\n" << endl;
   while (!My_Job_src.eof())
@@ -144,26 +144,26 @@ int main(int argc, char **argv)
         contador_src =matriz_pontos_str(My_Job_src,Aux2TMatriz_src,pallet,produto,NumLayers,AlturaCaixa,Camadas);
         contador_dat =matriz_pontos_dat(My_Job_dat,Aux2TMatriz_dat,pallet,produto,entrada,NumLayers,AlturaCaixa,Camadas);
       }
-      PlacesCamada = contador_dat/NumLayers;
-      MaxMatrizK = contador_dat;
-      MaxCamadas = Camadas;
+      PlacesCamada=contador_dat/NumLayers;
+      MaxMatrizK=contador_dat;
+      MaxCamadas=Camadas;
       cout << "NumPlaces/NumLayers: " << PlacesCamada<< endl;
       if(contador_src!=contador_dat) cout << "<span style=\"color:red\">**ERROR: " << "NumPlaces SRC != NumPlaces DAT" << "**</span>"<<endl;
       
-      config.MaxMatrizK=MaxMatrizK>config.MaxMatrizK?MaxMatrizK:config.MaxMatrizK;
+      config.MaxMatrizK=(MaxMatrizK>config.MaxMatrizK)?MaxMatrizK:config.MaxMatrizK;
 
-      config.MaxCamadas=MaxCamadas>config.MaxCamadas?MaxCamadas:config.MaxCamadas;
+      config.MaxCamadas=(MaxCamadas>config.MaxCamadas)?MaxCamadas:config.MaxCamadas;
 
       if(std::find(config.ENUM_RECEITA.begin(), config.ENUM_RECEITA.end(),produto) == config.ENUM_RECEITA.end())
       {
         // ## TPallet -> cria o receita src e dat
         // coloca as testeiras e os pallets
         config.ENUM_RECEITA.push_back(produto);
-        aux_receita.nome = produto;
-        aux_receita.AlturaCaixa = AlturaCaixa;
-        aux_receita.Camadas = Camadas;
+        aux_receita.nome=produto;
+        aux_receita.AlturaCaixa=AlturaCaixa;
+        aux_receita.Camadas=Camadas;
         aux_receita.PlacesCamada=PlacesCamada;
-        aux_receita.layers = NumLayers;
+        aux_receita.Layers=NumLayers;
         receitas.push_back(aux_receita);
         config.MaxReceitas++;
         config.MaxMatrizJ++;
@@ -181,7 +181,6 @@ int main(int argc, char **argv)
 
   pallet_src(My_Job_src,TPallet_src,MaxPallets);
   pick(My_Job_dat,TReceita_dat);
-  config.MaxCamadas=MaxCamadas;
   config.MaxPallets=MaxPallets;
   config.MaxMatrizI=MaxPallets;
   config.imprime(config_dat);

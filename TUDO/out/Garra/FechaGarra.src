@@ -2,23 +2,23 @@ DEF FechaGarra( )
    IF (OperarVazio==FALSE) THEN
       SWITCH FechaGarraOp
          CASE 0
-            Ava_Cil_1_Gar_2 = FALSE
-            Rec_Cil_1_Gar_2 = TRUE
+            Ava_Cil_1_Gar_2=FALSE
+            Rec_Cil_1_Gar_2=TRUE
 
-            Ava_Cil_1_Gar_4 = FALSE
-            Rec_Cil_1_Gar_4 = TRUE
+            Ava_Cil_1_Gar_4=FALSE
+            Rec_Cil_1_Gar_4=TRUE
 
-            Ava_Cil_1_Gar_6 = FALSE
-            Rec_Cil_1_Gar_6 = TRUE
+            Ava_Cil_1_Gar_6=FALSE
+            Rec_Cil_1_Gar_6=TRUE
 
-            Ava_Cil_2_Gar_2 = FALSE
-            Rec_Cil_2_Gar_2 = TRUE
+            Ava_Cil_2_Gar_2=FALSE
+            Rec_Cil_2_Gar_2=TRUE
 
-            Ava_Cil_2_Gar_4 = FALSE
-            Rec_Cil_2_Gar_4 = TRUE
+            Ava_Cil_2_Gar_4=FALSE
+            Rec_Cil_2_Gar_4=TRUE
 
-            Ava_Cil_2_Gar_6 = FALSE
-            Rec_Cil_2_Gar_6 = TRUE
+            Ava_Cil_2_Gar_6=FALSE
+            Rec_Cil_2_Gar_6=TRUE
 
             WAIT FOR ( Cil_1_Gar_2_Ava == FALSE )
             WAIT FOR ( Cil_1_Gar_2_Rec == TRUE )

@@ -38,8 +38,8 @@ void sufixo(std::ofstream &ofs){
 }
 
 void Cilindro::imprime(std::ofstream &ofs){
-  ofs<<"            "<<avanca<<" = " << valor<< endl;
-  ofs<<"            "<<recua<<" = " << (!valor.find("T")?"FALSE":"TRUE") << endl;
+  ofs<<"            "<<avanca<<"=" << valor<< endl;
+  ofs<<"            "<<recua<<"=" << (!valor.find("T")?"FALSE":"TRUE") << endl;
   ofs << endl;
   return;
 }
@@ -213,11 +213,11 @@ int garra_exe(std::ifstream &My_Job_src)
   std::vector<class Cilindro> cilindro;
   mapear(cilindro);
   GarraNoWait(My_Job_src,cilindro,"ConfGarra");
-  contador = tudo(My_Job_src,cilindro,"ConfGarra");
+  contador=tudo(My_Job_src,cilindro,"ConfGarra");
   cout << "Numero de ConfGarra: " << contador << endl;
-  contador = tudo(My_Job_src,cilindro,"AbreGarra");
+  contador=tudo(My_Job_src,cilindro,"AbreGarra");
   cout << "Numero de AbreGarra: " << contador << endl;
-  contador = tudo(My_Job_src,cilindro,"FechaGarra");
+  contador=tudo(My_Job_src,cilindro,"FechaGarra");
   cout << "Numero de FechaGarra: " << contador << endl;
   return 0;
 }
