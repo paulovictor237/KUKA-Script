@@ -31,6 +31,32 @@ int OffsetPlace(std::ofstream &TMatriz_src,std::string pallet,std::string produt
   return 0;
 }
 
+int contador_places(std::ifstream &My_Job_src,int &NumLayers)
+{
+  std::string entrada="";
+  int contador=0;
+  bool ERROR_NumLayers=true;
+  while(entrada.find("END")!=0)
+  {
+    getline(My_Job_src,entrada);
+    if (!My_Job_src.good())break;
+
+    if(entrada.find("NumLayers") !=std::string::npos && ERROR_NumLayers==true)
+    {
+      ERROR_NumLayers=false;
+      NumLayers=std::stoi(split_string(entrada,"[^0-9]+",1));
+      // cout <<"1@@@@@@@@@@NumLayers: "<<NumLayers << endl;
+    }
+
+    if(entrada.find(";FOLD ; ## PontoPlace ##") !=std::string::npos)
+    {
+      contador++;
+      getline(My_Job_src,entrada);
+    }
+  }
+  return contador;
+}
+
 
 
 int matriz_pontos_str(std::ifstream &My_Job_src,std::ofstream &TMatriz_src,std::string pallet,std::string produto,int &NumLayers,int &AlturaCaixa,int &Camadas)
@@ -39,20 +65,38 @@ int matriz_pontos_str(std::ifstream &My_Job_src,std::ofstream &TMatriz_src,std::
   bool ERROR_NumLayers=true;
   bool ERROR_AlturaCaixa=true;
   bool ERROR_Camadas=true;
+  bool layer1 = false;
+  bool layer2;
+  int i=0;
   //outras
   //int NumLayers = 2;
   NumLayers=1;
   AlturaCaixa = 0;
   Camadas = 12;
   // variaveis  
-  int contador=0;;
-
+  int contador=0;
   std::string entrada="";
 
   TMatriz_src << ";FOLD Pallet " <<pallet[1]<<" - Produto "<< produto << endl;
   cout << "Pallet:  " << pallet << endl;
   cout << "Produto: " << produto << endl;
 
+  // contador de places e numero de Layers
+  std::streampos  length = My_Job_src.tellg();
+  int FinalContador =  contador_places(My_Job_src,NumLayers);
+  My_Job_src.seekg (length);
+
+  //FOLD Layer
+  // TMatriz_src << ";FOLD [ Layer INFO ]"<< endl;
+  // for (int i=0;i<NumLayers;i++){
+  //   TMatriz_src << ";LAYER "<<i+1<<": "<<FinalContador/NumLayers*i+1 << " ate " << FinalContador/NumLayers*(i+1) << endl;
+  // }
+  // TMatriz_src << ";ENDFOLD" << endl;
+  // TMatriz_src << endl;
+  //FOLD Layer
+  i=0;
+  TMatriz_src << ";FOLD LAYER "<<i+1<<": PLACE "<<FinalContador/NumLayers*i+1 << " ate " << FinalContador/NumLayers*(i+1) << endl;
+  i++;
   while(entrada.find("END")!=0){
     getline(My_Job_src,entrada);
     if (!My_Job_src.good())break;
@@ -76,10 +120,14 @@ int matriz_pontos_str(std::ifstream &My_Job_src,std::ofstream &TMatriz_src,std::
       // cout <<"Camadas: "<<Camadas << endl;
     }
 
-    if(entrada.find("PontoPlace") !=std::string::npos)
+    if(entrada.find(";FOLD ; ## PontoPlace ##") !=std::string::npos)
     {
       contador++;
-
+      if (contador==(FinalContador/NumLayers*i+1)&& NumLayers>1){
+        TMatriz_src << ";ENDFOLD"<< endl;
+        TMatriz_src << ";FOLD LAYER "<<i+1<<": PLACE "<<FinalContador/NumLayers*i+1 << " ate " << FinalContador/NumLayers*(i+1) << endl;
+        i++;
+      }
       TMatriz_src<<";FOLD PLACE " << contador << endl;
       getline(My_Job_src,entrada);
       getline(My_Job_src,entrada);
@@ -107,15 +155,7 @@ int matriz_pontos_str(std::ifstream &My_Job_src,std::ofstream &TMatriz_src,std::
     // cout << entrada << endl;
   }
   TMatriz_src << ";ENDFOLD" << endl;
-
-  //FOLD Layer
-  TMatriz_src << ";FOLD Pallet " <<pallet[1]<<" - Produto "<< produto  << " [ Layer INFO ]"<< endl;
-  for (int i=0;i<NumLayers;i++){
-    TMatriz_src << ";LAYER "<<i+1<<": "<<contador/NumLayers*i+1 << " ate " << contador/NumLayers*(i+1) << endl;
-  }
-  TMatriz_src << ";ENDFOLD" << endl;
-  TMatriz_src << endl;
-  //FOLD Layer
+  TMatriz_src << ";ENDFOLD\n" << endl;
 
   if(ERROR_AlturaCaixa){
     cout << "<span style=\"color:red\">**ERROR: " << "AlturaCaixa" << "**</span>"<<endl;

@@ -1,4 +1,5 @@
 ;FOLD Pallet 1 - Produto 9Aero
+;FOLD LAYER 1: PLACE 1 ate 2
 ;FOLD PLACE 1
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_9Aero,1].NumCaixas = 4
@@ -50,11 +51,10 @@ MatrizPontos[Pallet_1,Prdt_9Aero,2].OffsetPlace.C = 0
 ;ENDFOLD
 
 ;ENDFOLD
-;FOLD Pallet 1 - Produto 9Aero [ Layer INFO ]
-;LAYER 1: 1 ate 2
 ;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 5Aero
+;FOLD LAYER 1: PLACE 1 ate 3
 ;FOLD PLACE 1
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_5Aero,1].NumCaixas = 3
@@ -131,11 +131,10 @@ MatrizPontos[Pallet_1,Prdt_5Aero,3].OffsetPlace.C = 0
 ;ENDFOLD
 
 ;ENDFOLD
-;FOLD Pallet 1 - Produto 5Aero [ Layer INFO ]
-;LAYER 1: 1 ate 3
 ;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 2Aero
+;FOLD LAYER 1: PLACE 1 ate 3
 ;FOLD PLACE 1
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_2Aero,1].NumCaixas = 4
@@ -212,11 +211,10 @@ MatrizPontos[Pallet_1,Prdt_2Aero,3].OffsetPlace.C = 0
 ;ENDFOLD
 
 ;ENDFOLD
-;FOLD Pallet 1 - Produto 2Aero [ Layer INFO ]
-;LAYER 1: 1 ate 3
 ;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 11CoffeCrisp
+;FOLD LAYER 1: PLACE 1 ate 3
 ;FOLD PLACE 1
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_11CoffeCrisp,1].NumCaixas = 3
@@ -293,11 +291,10 @@ MatrizPontos[Pallet_1,Prdt_11CoffeCrisp,3].OffsetPlace.C = 0
 ;ENDFOLD
 
 ;ENDFOLD
-;FOLD Pallet 1 - Produto 11CoffeCrisp [ Layer INFO ]
-;LAYER 1: 1 ate 3
 ;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 17KitKat
+;FOLD LAYER 1: PLACE 1 ate 4
 ;FOLD PLACE 1
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_17KitKat,1].NumCaixas = 3
@@ -399,11 +396,10 @@ MatrizPontos[Pallet_1,Prdt_17KitKat,4].OffsetPlace.C = 0
 ;ENDFOLD
 
 ;ENDFOLD
-;FOLD Pallet 1 - Produto 17KitKat [ Layer INFO ]
-;LAYER 1: 1 ate 4
 ;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 19KitKat
+;FOLD LAYER 1: PLACE 1 ate 6
 ;FOLD PLACE 1
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_19KitKat,1].NumCaixas = 1
@@ -554,6 +550,8 @@ MatrizPontos[Pallet_1,Prdt_19KitKat,6].OffsetPlace.C = 0
 ;ENDFOLD
 ;ENDFOLD
 
+;ENDFOLD
+;FOLD LAYER 2: PLACE 7 ate 12
 ;FOLD PLACE 7
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_19KitKat,7].NumCaixas = 1
@@ -705,12 +703,10 @@ MatrizPontos[Pallet_1,Prdt_19KitKat,12].OffsetPlace.C = 0
 ;ENDFOLD
 
 ;ENDFOLD
-;FOLD Pallet 1 - Produto 19KitKat [ Layer INFO ]
-;LAYER 1: 1 ate 6
-;LAYER 2: 7 ate 12
 ;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 20KitKat
+;FOLD LAYER 1: PLACE 1 ate 3
 ;FOLD PLACE 1
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_20KitKat,1].NumCaixas = 4
@@ -787,11 +783,10 @@ MatrizPontos[Pallet_1,Prdt_20KitKat,3].OffsetPlace.C = 0
 ;ENDFOLD
 
 ;ENDFOLD
-;FOLD Pallet 1 - Produto 20KitKat [ Layer INFO ]
-;LAYER 1: 1 ate 3
 ;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 21KitKat
+;FOLD LAYER 1: PLACE 1 ate 3
 ;FOLD PLACE 1
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_21KitKat,1].NumCaixas = 4
@@ -868,11 +863,10 @@ MatrizPontos[Pallet_1,Prdt_21KitKat,3].OffsetPlace.C = 0
 ;ENDFOLD
 
 ;ENDFOLD
-;FOLD Pallet 1 - Produto 21KitKat [ Layer INFO ]
-;LAYER 1: 1 ate 3
 ;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 23Smarties
+;FOLD LAYER 1: PLACE 1 ate 4
 ;FOLD PLACE 1
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_23Smarties,1].NumCaixas = 2
@@ -973,6 +967,8 @@ MatrizPontos[Pallet_1,Prdt_23Smarties,4].OffsetPlace.C = 0
 ;ENDFOLD
 ;ENDFOLD
 
+;ENDFOLD
+;FOLD LAYER 2: PLACE 5 ate 8
 ;FOLD PLACE 5
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_23Smarties,5].NumCaixas = 2
@@ -1074,12 +1070,10 @@ MatrizPontos[Pallet_1,Prdt_23Smarties,8].OffsetPlace.C = 0
 ;ENDFOLD
 
 ;ENDFOLD
-;FOLD Pallet 1 - Produto 23Smarties [ Layer INFO ]
-;LAYER 1: 1 ate 4
-;LAYER 2: 5 ate 8
 ;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 22KitKat
+;FOLD LAYER 1: PLACE 1 ate 4
 ;FOLD PLACE 1
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_22KitKat,1].NumCaixas = 2
@@ -1180,6 +1174,8 @@ MatrizPontos[Pallet_1,Prdt_22KitKat,4].OffsetPlace.C = 0
 ;ENDFOLD
 ;ENDFOLD
 
+;ENDFOLD
+;FOLD LAYER 2: PLACE 5 ate 8
 ;FOLD PLACE 5
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_22KitKat,5].NumCaixas = 4
@@ -1281,12 +1277,10 @@ MatrizPontos[Pallet_1,Prdt_22KitKat,8].OffsetPlace.C = 0
 ;ENDFOLD
 
 ;ENDFOLD
-;FOLD Pallet 1 - Produto 22KitKat [ Layer INFO ]
-;LAYER 1: 1 ate 4
-;LAYER 2: 5 ate 8
 ;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 24a28All
+;FOLD LAYER 1: PLACE 1 ate 3
 ;FOLD PLACE 1
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_24a28All,1].NumCaixas = 5
@@ -1363,11 +1357,10 @@ MatrizPontos[Pallet_1,Prdt_24a28All,3].OffsetPlace.C = 0
 ;ENDFOLD
 
 ;ENDFOLD
-;FOLD Pallet 1 - Produto 24a28All [ Layer INFO ]
-;LAYER 1: 1 ate 3
 ;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 30All
+;FOLD LAYER 1: PLACE 1 ate 4
 ;FOLD PLACE 1
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_30All,1].NumCaixas = 4
@@ -1469,11 +1462,10 @@ MatrizPontos[Pallet_1,Prdt_30All,4].OffsetPlace.C = 0
 ;ENDFOLD
 
 ;ENDFOLD
-;FOLD Pallet 1 - Produto 30All [ Layer INFO ]
-;LAYER 1: 1 ate 4
 ;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 16CoffeCrisp
+;FOLD LAYER 1: PLACE 1 ate 4
 ;FOLD PLACE 1
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,1].NumCaixas = 2
@@ -1574,6 +1566,8 @@ MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,4].OffsetPlace.C = 0
 ;ENDFOLD
 ;ENDFOLD
 
+;ENDFOLD
+;FOLD LAYER 2: PLACE 5 ate 8
 ;FOLD PLACE 5
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,5].NumCaixas = 4
@@ -1675,12 +1669,10 @@ MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,8].OffsetPlace.C = 0
 ;ENDFOLD
 
 ;ENDFOLD
-;FOLD Pallet 1 - Produto 16CoffeCrisp [ Layer INFO ]
-;LAYER 1: 1 ate 4
-;LAYER 2: 5 ate 8
 ;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 10CoffeCrisp
+;FOLD LAYER 1: PLACE 1 ate 4
 ;FOLD PLACE 1
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_10CoffeCrisp,1].NumCaixas = 1
@@ -1781,6 +1773,8 @@ MatrizPontos[Pallet_1,Prdt_10CoffeCrisp,4].OffsetPlace.C = 0
 ;ENDFOLD
 ;ENDFOLD
 
+;ENDFOLD
+;FOLD LAYER 2: PLACE 5 ate 8
 ;FOLD PLACE 5
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_10CoffeCrisp,5].NumCaixas = 1
@@ -1882,18 +1876,15 @@ MatrizPontos[Pallet_1,Prdt_10CoffeCrisp,8].OffsetPlace.C = 0
 ;ENDFOLD
 
 ;ENDFOLD
-;FOLD Pallet 1 - Produto 10CoffeCrisp [ Layer INFO ]
-;LAYER 1: 1 ate 4
-;LAYER 2: 5 ate 8
 ;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 15CoffeCrisp
+;FOLD LAYER 1: PLACE 1 ate 0
 ;ENDFOLD
-;FOLD Pallet 1 - Produto 15CoffeCrisp [ Layer INFO ]
-;LAYER 1: 1 ate 0
 ;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 7Aero
+;FOLD LAYER 1: PLACE 1 ate 1
 ;FOLD PLACE 1
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_7Aero,1].NumCaixas = 3
@@ -1917,6 +1908,8 @@ MatrizPontos[Pallet_1,Prdt_7Aero,1].OffsetPlace.C = 0
 ;ENDFOLD
 ;ENDFOLD
 
+;ENDFOLD
+;FOLD LAYER 2: PLACE 2 ate 2
 ;FOLD PLACE 2
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_7Aero,2].NumCaixas = 3
@@ -1940,6 +1933,8 @@ MatrizPontos[Pallet_1,Prdt_7Aero,2].OffsetPlace.C = 0
 ;ENDFOLD
 ;ENDFOLD
 
+;ENDFOLD
+;FOLD LAYER 3: PLACE 3 ate 3
 ;FOLD PLACE 3
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_7Aero,3].NumCaixas = 3
@@ -1964,12 +1959,10 @@ MatrizPontos[Pallet_1,Prdt_7Aero,3].OffsetPlace.C = 0
 ;ENDFOLD
 
 ;ENDFOLD
-;FOLD Pallet 1 - Produto 7Aero [ Layer INFO ]
-;LAYER 1: 1 ate 1
-;LAYER 2: 2 ate 2
 ;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 32BarPacking
+;FOLD LAYER 1: PLACE 1 ate 3
 ;FOLD PLACE 1
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_32BarPacking,1].NumCaixas = 3
@@ -2046,11 +2039,10 @@ MatrizPontos[Pallet_1,Prdt_32BarPacking,3].OffsetPlace.C = 0
 ;ENDFOLD
 
 ;ENDFOLD
-;FOLD Pallet 1 - Produto 32BarPacking [ Layer INFO ]
-;LAYER 1: 1 ate 3
 ;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 33BarPacking
+;FOLD LAYER 1: PLACE 1 ate 2
 ;FOLD PLACE 1
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_33BarPacking,1].NumCaixas = 3
@@ -2102,11 +2094,10 @@ MatrizPontos[Pallet_1,Prdt_33BarPacking,2].OffsetPlace.C = 0
 ;ENDFOLD
 
 ;ENDFOLD
-;FOLD Pallet 1 - Produto 33BarPacking [ Layer INFO ]
-;LAYER 1: 1 ate 2
 ;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 37BarPacking
+;FOLD LAYER 1: PLACE 1 ate 2
 ;FOLD PLACE 1
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_37BarPacking,1].NumCaixas = 3
@@ -2158,11 +2149,10 @@ MatrizPontos[Pallet_1,Prdt_37BarPacking,2].OffsetPlace.C = 0
 ;ENDFOLD
 
 ;ENDFOLD
-;FOLD Pallet 1 - Produto 37BarPacking [ Layer INFO ]
-;LAYER 1: 1 ate 2
 ;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 36BarPacking
+;FOLD LAYER 1: PLACE 1 ate 1
 ;FOLD PLACE 1
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_36BarPacking,1].NumCaixas = 3
@@ -2189,11 +2179,10 @@ MatrizPontos[Pallet_1,Prdt_36BarPacking,1].OffsetPlace.C = 0
 ;ENDFOLD
 
 ;ENDFOLD
-;FOLD Pallet 1 - Produto 36BarPacking [ Layer INFO ]
-;LAYER 1: 1 ate 1
 ;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 34BarPacking
+;FOLD LAYER 1: PLACE 1 ate 2
 ;FOLD PLACE 1
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_34BarPacking,1].NumCaixas = 1
@@ -2245,11 +2234,10 @@ MatrizPontos[Pallet_1,Prdt_34BarPacking,2].OffsetPlace.C = 0
 ;ENDFOLD
 
 ;ENDFOLD
-;FOLD Pallet 1 - Produto 34BarPacking [ Layer INFO ]
-;LAYER 1: 1 ate 2
 ;ENDFOLD
 
 ;FOLD Pallet 1 - Produto 35BarPacking
+;FOLD LAYER 1: PLACE 1 ate 3
 ;FOLD PLACE 1
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_35BarPacking,1].NumCaixas = 1
@@ -2326,7 +2314,5 @@ MatrizPontos[Pallet_1,Prdt_35BarPacking,3].OffsetPlace.C = 0
 ;ENDFOLD
 
 ;ENDFOLD
-;FOLD Pallet 1 - Produto 35BarPacking [ Layer INFO ]
-;LAYER 1: 1 ate 3
 ;ENDFOLD
 

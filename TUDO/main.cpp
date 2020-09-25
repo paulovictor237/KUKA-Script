@@ -68,7 +68,7 @@ int Camadas = 0;
 int main(int argc, char **argv)
 {
 //# +---------------------------------------------------------------------------------------------------------------------------------------------------<< 
-  system("clear");
+  //system("clear");
   // system("cls");
   cout << "# PROGRAMA INICIADO #"<<endl;
   cout << "Relatorio gerado em [ out/Relatorio/Relatorio.md ]"<<endl;
