@@ -37,9 +37,11 @@ void Receita::imprime(std::ofstream &ofs){
 
   ofs<<"  StrReceita[Prdt_"<< nome << "].AlturaCaixa = "<<AlturaCaixa << endl;
   ofs<<"  StrReceita[Prdt_"<< nome << "].PlacesCamada = " << PlacesCamada << endl;
+  ofs<<"  StrReceita[Prdt_"<< nome << "].layers = "<< layers << endl;
   ofs<<"  StrReceita[Prdt_"<< nome << "].Camadas = "<< Camadas << endl;
   for (int i=0;i<Camadas;i++){
-      ofs<<"  StrReceitaLayer[Prdt_"<< nome <<","<<i+1<<"] = 1" << endl;
+    // ofs<<"  StrReceitaLayer[Prdt_"<< nome <<","<<i+1<<"] = 1" << endl;
+    ofs<<"  StrReceitaLayer[Prdt_"<< nome <<","<<i+1<<"] = "<< ((layers>1&&i>0&&i%2==1)?"2":"1") << endl;
   }
   ofs<<";ENDFOLD" << endl;
   return;

@@ -163,6 +163,7 @@ int main(int argc, char **argv)
         aux_receita.AlturaCaixa = AlturaCaixa;
         aux_receita.Camadas = Camadas;
         aux_receita.PlacesCamada=PlacesCamada;
+        aux_receita.layers = NumLayers;
         receitas.push_back(aux_receita);
         config.MaxReceitas++;
         config.MaxMatrizJ++;

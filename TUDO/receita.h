@@ -14,7 +14,7 @@ public:
   int PlacesCamada=0;
   int AlturaCaixa = 0;
   int Camadas = 0;
-  int layers=3;
+  int layers=0;
 public:
   Receita(std::string nome);
   void imprime(std::ofstream &ofs);
