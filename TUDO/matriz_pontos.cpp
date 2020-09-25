@@ -69,6 +69,10 @@ int matriz_pontos_str(std::ifstream &My_Job_src,std::ofstream &TMatriz_src,std::
   bool layer2;
   int i=0;
   //outras
+  bool PickOp_passou=false;
+  int PickOp=0;
+  bool AbreGarraOp_passou=false;
+  int AbreGarraOp=0;
   //int NumLayers=2;
   NumLayers=1;
   AlturaCaixa=0;
@@ -134,6 +138,15 @@ int matriz_pontos_str(std::ifstream &My_Job_src,std::ofstream &TMatriz_src,std::
       //cabesalho
       TMatriz_src<<";FOLD PROPRIEDADES " << endl;
       while(entrada.find("FOLD")==std::string::npos){
+        if(entrada.find("PickOp") !=std::string::npos){
+          PickOp_passou=true;
+          PickOp= std::stoi(split_string(entrada,"[^0-9]+",1));
+        }
+        if(entrada.find("AbreGarraOp") !=std::string::npos)
+        {
+          AbreGarraOp_passou=true;
+          AbreGarraOp = std::stoi(split_string(entrada,"[^0-9]+",1));
+        }
         TMatriz_src<<"MatrizPontos[Pallet_"<<pallet[1]<<",Prdt_"<<produto << "," << contador << "]." << entrada << endl;
         getline(My_Job_src,entrada);
         if (!My_Job_src.good())break;
@@ -151,6 +164,24 @@ int matriz_pontos_str(std::ifstream &My_Job_src,std::ofstream &TMatriz_src,std::
       TMatriz_src<<";ENDFOLD" << endl;
       TMatriz_src<< endl;
       // ofs << "MatrizPontos[1," << contador << "]." << IndexacaoVH << endl;
+    }
+    if(entrada.find("Pick_") !=std::string::npos)
+    {
+      int aux_pick = std::stoi(split_string(entrada,"[_()]+",4));
+      if(PickOp!=aux_pick){
+        cout << "<span style=\"color:red\">**ERROR: " << "PickOp: " << "**</span>";
+        cout <<"MatrizPontos[Pallet_"<<pallet[1]<<",Prdt_"<<produto << "," << contador << "].PickOp = { ";
+        cout << PickOp << " } deveria ser: { " << aux_pick << " }"<< endl;
+      } 
+    }
+    if(entrada.find("AbreGarra") !=std::string::npos)
+    {
+      int aux_abregarra = std::stoi(split_string(entrada,"[^0-9]+",1));
+      if(AbreGarraOp!=aux_abregarra){
+        cout << "<span style=\"color:red\">**ERROR: " << "AbreGarra: " << "**</span>";
+        cout <<"MatrizPontos[Pallet_"<<pallet[1]<<",Prdt_"<<produto << "," << contador << "].AbreGarraOp = { ";
+        cout << AbreGarraOp << " } deveria ser: { " << aux_abregarra << " }"<< endl;
+      } 
     }
     // cout << entrada << endl;
   }

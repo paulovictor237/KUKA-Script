@@ -12,6 +12,8 @@ Numero de FechaGarra: 1
 DEF Mtrz_P1_9Aero()
 Pallet:  P1
 Produto: 9Aero
+<span style="color:red">**ERROR: PickOp: **</span>MatrizPontos[Pallet_1,Prdt_9Aero,1].PickOp = { 4 } deveria ser: { 3 }
+<span style="color:red">**ERROR: PickOp: **</span>MatrizPontos[Pallet_1,Prdt_9Aero,2].PickOp = { 4 } deveria ser: { 3 }
 AlturaCaixa: 191
 Camadas: 6
 NumLayers: 1
@@ -480,6 +482,8 @@ NumPlaces/NumLayers: 2
 DEF Mtrz_P2_9Aero()
 Pallet:  P2
 Produto: 9Aero
+<span style="color:red">**ERROR: PickOp: **</span>MatrizPontos[Pallet_2,Prdt_9Aero,1].PickOp = { 4 } deveria ser: { 3 }
+<span style="color:red">**ERROR: PickOp: **</span>MatrizPontos[Pallet_2,Prdt_9Aero,2].PickOp = { 4 } deveria ser: { 3 }
 AlturaCaixa: 191
 Camadas: 6
 NumLayers: 1

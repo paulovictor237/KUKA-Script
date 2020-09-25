@@ -1,6 +1,5 @@
 DEF TPallet()
     ;FOLD RobRoot, Tools and Bases used
-        $ROBROOT = {x 0,y 0,z 0,a 0,b 0,c 0}
         BASE_DATA[1] = {x -874.43,y -1399.074,z -106.8,a 0,b 0,c 0}
         BASE_DATA[2] = {x -874.43,y 2383.986,z -106,a 0,b 0,c 0}
         BASE_DATA[3] = {x 648.495,y -1967.367,z -106,a 0,b 0,c 0}

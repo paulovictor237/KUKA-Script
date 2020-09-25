@@ -25,9 +25,14 @@ void data_tool(std::ifstream &My_Job_src,std::ofstream &TPallet_src){
       getline(My_Job_src,entrada);
       while(entrada.find("endfold")==std::string::npos)
       {
-        if(entrada.find("BASE_DATA")!=std::string::npos)bases++;
-        if(entrada.find("TOOL_DATA")!=std::string::npos)tools++;
-        TPallet_src<<"       "<<split_string(entrada,"[;]+",1) << endl;
+        if(entrada.find("BASE_DATA")!=std::string::npos){
+          TPallet_src<<"       "<<split_string(entrada,"[;]+",1) << endl;
+          bases++;
+        }
+        if(entrada.find("TOOL_DATA")!=std::string::npos){
+          TPallet_src<<"       "<<split_string(entrada,"[;]+",1) << endl;
+          tools++;
+        }
         getline(My_Job_src,entrada);
       }
       break;
