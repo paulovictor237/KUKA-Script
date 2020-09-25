@@ -178,7 +178,40 @@ int matriz_pontos_str(std::ifstream &My_Job_src,std::ofstream &TMatriz_src,std::
   return contador;
 }
 
-int matriz_pontos_dat(std::ifstream &My_Job_dat,std::ofstream &TMatriz_dat,std::string pallet,std::string produto,std::string produto_cmplt)
+std::string abaixa_z(std::string entrada,int AlturaCaixa)
+{
+  double Z=0;
+  std::stringstream stream_aux;
+  vector<std::string> split;
+  std::string aux;
+  stream_aux.str("");
+  split.clear();
+
+  split=split_string(entrada,"[,]+");
+  for(int i=0;i<2;i++){
+    stream_aux<<split[i];
+    stream_aux<<",";
+  }
+  //alteracao
+  aux = split_string(split[2],"[ ]+",1); ;
+  Z = std::stod(aux);
+  // cout.precision(17);
+  // cout <<"@@@@@@@@@@@@ " <<  aux << endl;
+  // cout << "z: " << Z << endl;
+  Z=Z-AlturaCaixa;
+  stream_aux<<"Z " << Z <<",";
+  //alteracao
+  for(int i=3;i<13;i++){
+    stream_aux<<split[i];
+    stream_aux<<",";
+  }
+  stream_aux<<split[13];
+
+  return stream_aux.str();
+}
+
+
+int matriz_pontos_dat(std::ifstream &My_Job_dat,std::ofstream &TMatriz_dat,std::string pallet,std::string produto,std::string produto_cmplt,int NumLayers,int AlturaCaixa,int Camadas)
 {
   My_Job_dat.clear();
   My_Job_dat.seekg(0);
@@ -208,6 +241,9 @@ int matriz_pontos_dat(std::ifstream &My_Job_dat,std::ofstream &TMatriz_dat,std::
           Confere++;
           if(tipo_place==1){
             TMatriz_dat<<";FOLD PLACE " << contador << endl;
+          }
+          if (NumPontos>(Camadas/NumLayers+1)&& NumLayers>1){
+            entrada = abaixa_z(entrada,AlturaCaixa);
           }
           posicao=split_string(entrada,"[=]+",1);
           TMatriz_dat<<"E6POS ";
@@ -241,15 +277,6 @@ int matriz_pontos_dat(std::ifstream &My_Job_dat,std::ofstream &TMatriz_dat,std::
   if(ConfereDOUBLE!=ConfereINT) cout << "<span style=\"color:red\">**ERROR: " << "Pontos incompletos" << "**</span>"<<endl;
   TMatriz_dat << ";ENDFOLD" << endl;
   TMatriz_dat << endl;
-  
-  // //FOLD Layer
-  // TMatriz_dat << ";FOLD Pallet " <<pallet[1]<<" - Produto "<< produto  << " [ Layer INFO ]"<< endl;
-  // for (int i=0;i<NumLayers;i++){
-  //   TMatriz_dat << ";LAYER "<<i+1<<": "<<contador/NumLayers*i+1 << " ate " << contador/NumLayers*(i+1) << endl;
-  // }
-  // TMatriz_dat << ";ENDFOLD" << endl;
-  // TMatriz_dat << endl;
-  // //FOLD Layer
   
   cout << "NumPlaces DAT: " << NumPontos<< endl;
   return NumPontos;
