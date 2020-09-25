@@ -173,6 +173,9 @@ int matriz_pontos_str(std::ifstream &My_Job_src,std::ofstream &TMatriz_src,std::
     cout <<"NumLayers: "<<NumLayers << endl;
     // cout << "NumPlaces/NumLayers: " << contador/NumLayers<< endl;
   }
+  if(NumLayers>2){
+    cout << "<span style=\"color:red\">**ERROR: " << "NumLayers > 2" << "**</span>"<<endl;
+  }
   cout << "NumPlaces SRC: " << contador<< endl;
   
   return contador;

@@ -2,7 +2,7 @@
 Valores de inicializacao
 MaxPallets = 2
 # >> Rotina Garra << 
-Numero de ConfGarra: 5
+Numero de ConfGarra: 6
 Numero de AbreGarra: 7
 Numero de FechaGarra: 1
 # >> Rotina Receitas <<
@@ -192,25 +192,24 @@ NumPlaces/NumLayers: 8
 DEF Mtrz_P1_15CoffeCrisp()
 Pallet:  P1
 Produto: 15CoffeCrisp
-<span style="color:red">**ERROR: AlturaCaixa**</span>
-<span style="color:red">**ERROR: Camadas**</span>
-<span style="color:red">**ERROR: NumLayers**</span>
-NumPlaces SRC: 0
-NumPlaces DAT: 0
-NumPlaces/NumLayers: 0
+AlturaCaixa: 256
+Camadas: 4
+NumLayers: 2
+NumPlaces SRC: 14
+NumPlaces DAT: 14
+NumPlaces/NumLayers: 7
 
 -----------------------------
 
 DEF Mtrz_P1_7Aero()
 Pallet:  P1
 Produto: 7Aero
-<span style="color:red">**ERROR: AlturaCaixa**</span>
-<span style="color:red">**ERROR: Camadas**</span>
+AlturaCaixa: 221
+Camadas: 5
 NumLayers: 2
-NumPlaces SRC: 3
-NumPlaces DAT: 4
-NumPlaces/NumLayers: 2
-<span style="color:red">**ERROR: NumPlaces SRC != NumPlaces DAT**</span>
+NumPlaces SRC: 16
+NumPlaces DAT: 16
+NumPlaces/NumLayers: 8
 
 -----------------------------
 
@@ -526,16 +525,35 @@ NumPlaces/NumLayers: 6
 
 -----------------------------
 
+DEF Mtrz_P2_7Aero()
+Pallet:  P2
+Produto: 7Aero
+AlturaCaixa: 221
+Camadas: 5
+NumLayers: 2
+NumPlaces SRC: 16
+NumPlaces DAT: 16
+NumPlaces/NumLayers: 8
+
+-----------------------------
+
+DEF Mtrz_P2_15CoffeCrisp()
+Pallet:  P2
+Produto: 15CoffeCrisp
+AlturaCaixa: 256
+Camadas: 4
+NumLayers: 2
+NumPlaces SRC: 14
+NumPlaces DAT: 14
+NumPlaces/NumLayers: 7
+
+-----------------------------
+
 # >> Rotina Pallet << 
 numero de bases: 4
 numero de bases: 1
 # >> Rotina Pick << 
 Pick encontrado: Pick_E_1_P_1
-<span style="color:red">**ERROR: Pick15_2**</span>
-<span style="color:red">**ERROR: Pick15_3**</span>
-<span style="color:red">**ERROR: Pick15_31**</span>
-<span style="color:red">**ERROR: Pick7_2**</span>
-<span style="color:red">**ERROR: Pick7_2__2_**</span>
 <span style="color:red">**ERROR: PickCaixasSimulador**</span>
 Pick encontrado: Pick_E_1_P_2
 Pick encontrado: Pick_E_1_P_3
@@ -552,6 +570,10 @@ Pick encontrado: Pick_E_2_P_5
 Pick encontrado: Pick_E_2_P_6
 Pick encontrado: Pick_E_2_P_7
 <span style="color:red">**ERROR: PickCaixasSimulador1**</span>
+Pick encontrado: Pick_E_1_P_8
+Pick encontrado: Pick_E_2_P_8
+Pick encontrado: Pick_E_1_P_6_5
+Pick encontrado: Pick_E_2_P_6_5
 # >> Rotina config.dat  <<
 
 -----------------------------
@@ -562,7 +584,7 @@ StrPallet[MaxPallets]
 -----------------------------
 
 CONST INT MaxReceitas=23
-CONST INT MaxCamadas=9
+CONST INT MaxCamadas=4
 StrReceita[MaxReceitas]
 StrReceitaLayer[MaxReceitas,MaxCamadas]
 

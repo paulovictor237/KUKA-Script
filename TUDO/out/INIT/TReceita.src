@@ -268,11 +268,14 @@ DEF TReceita()
   StrReceita[Prdt_15CoffeCrisp].OffsetProduto.A = 0
   StrReceita[Prdt_15CoffeCrisp].OffsetProduto.B = 0
   StrReceita[Prdt_15CoffeCrisp].OffsetProduto.C = 0
-  StrReceita[Prdt_15CoffeCrisp].AlturaCaixa = 0
-  StrReceita[Prdt_15CoffeCrisp].PlacesCamada = 0
-  StrReceita[Prdt_15CoffeCrisp].layers = 1
-  StrReceita[Prdt_15CoffeCrisp].Camadas = 1
+  StrReceita[Prdt_15CoffeCrisp].AlturaCaixa = 256
+  StrReceita[Prdt_15CoffeCrisp].PlacesCamada = 7
+  StrReceita[Prdt_15CoffeCrisp].layers = 2
+  StrReceita[Prdt_15CoffeCrisp].Camadas = 4
   StrReceitaLayer[Prdt_15CoffeCrisp,1] = 1
+  StrReceitaLayer[Prdt_15CoffeCrisp,2] = 2
+  StrReceitaLayer[Prdt_15CoffeCrisp,3] = 1
+  StrReceitaLayer[Prdt_15CoffeCrisp,4] = 2
 ;ENDFOLD
 ;FOLD Produto 7Aero
   StrReceita[Prdt_7Aero].OffsetProduto.X = 0
@@ -281,11 +284,15 @@ DEF TReceita()
   StrReceita[Prdt_7Aero].OffsetProduto.A = 0
   StrReceita[Prdt_7Aero].OffsetProduto.B = 0
   StrReceita[Prdt_7Aero].OffsetProduto.C = 0
-  StrReceita[Prdt_7Aero].AlturaCaixa = 0
-  StrReceita[Prdt_7Aero].PlacesCamada = 2
+  StrReceita[Prdt_7Aero].AlturaCaixa = 221
+  StrReceita[Prdt_7Aero].PlacesCamada = 8
   StrReceita[Prdt_7Aero].layers = 2
-  StrReceita[Prdt_7Aero].Camadas = 1
+  StrReceita[Prdt_7Aero].Camadas = 5
   StrReceitaLayer[Prdt_7Aero,1] = 1
+  StrReceitaLayer[Prdt_7Aero,2] = 2
+  StrReceitaLayer[Prdt_7Aero,3] = 1
+  StrReceitaLayer[Prdt_7Aero,4] = 2
+  StrReceitaLayer[Prdt_7Aero,5] = 1
 ;ENDFOLD
 ;FOLD Produto 32BarPacking
   StrReceita[Prdt_32BarPacking].OffsetProduto.X = 0

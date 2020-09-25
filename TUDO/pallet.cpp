@@ -27,7 +27,7 @@ void data_tool(std::ifstream &My_Job_src,std::ofstream &TPallet_src){
       {
         if(entrada.find("BASE_DATA")!=std::string::npos)bases++;
         if(entrada.find("TOOL_DATA")!=std::string::npos)tools++;
-        TPallet_src<<"       "<<entrada << endl;
+        TPallet_src<<"       "<<split_string(entrada,"[;]+",1) << endl;
         getline(My_Job_src,entrada);
       }
       break;
