@@ -71,9 +71,9 @@ int main(int argc, char **argv)
   //system("clear");
   // system("cls");
   cout << "# PROGRAMA INICIADO #"<<endl;
-  cout << "Relatorio gerado em [ out/Relatorio/Relatorio.md ]"<<endl;
+  cout << "Relatorio gerado em [ Relatorio/Relatorio.md ]"<<endl;
 
-  std::ofstream out("out/Relatorio/Relatorio.md");
+  std::ofstream out("Relatorio/Relatorio.md");
   std::streambuf *coutbuf=std::cout.rdbuf(); //save old buf
   std::cout.rdbuf(out.rdbuf()); //redirect std::cout to out.txt!
 

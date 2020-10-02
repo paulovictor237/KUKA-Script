@@ -26,9 +26,9 @@ vector<string> split_string(std::string tokenString,string delim){
 int main()
 {
   // string a ser separada
-  string tokenString { "Pick_E_1_P_3()" };
+  string tokenString { "DECL E6POS XP17TBTT={X 1100.19089,Y -381.19558,Z 914.55891,A -180,B 0,C -180,S 2,T 2,E1 0,E2 0,E3 0,E4 0,E5 0,E6 0}" };
 
-  vector<string> tokens=split_string(tokenString,"[_()]+");
+  vector<string> tokens=split_string(tokenString,",T");
 
   int i=0;
   system("clear");
@@ -36,6 +36,10 @@ int main()
     cout << "[" << i << "]"<< "-> " << token << "\n";
     i++;
   }
+  std::string teste = split_string(tokenString,",T")[0] + "}" ;
+  cout << endl;
+  cout << tokenString << endl;
+  cout << teste << endl;
   // cout << "* [" << tokens[2] << "]\n";
   return 0;
 }

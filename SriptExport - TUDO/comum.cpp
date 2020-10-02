@@ -29,6 +29,11 @@ vector<string> split_string(std::string tokenString,string delim){
   return tokens;
 }
 
+std::string ponto_remove_turn(std::string entrada)
+{
+  std::string aux = split_string(entrada,",T")[0] + "}";
+  return aux;
+}
 
 int copy_file(std::ofstream &out,std::string in1,std::string in2)
 {
