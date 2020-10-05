@@ -298,6 +298,7 @@ int matriz_pontos_dat(std::ifstream &My_Job_dat,std::ofstream &TMatriz_dat,std::
               NumPontos++;
               break;
           }
+          //posicao = ponto_remove_turn(posicao);
           TMatriz_dat<<"="<<posicao<<endl;
           if(tipo_place==1){
             TMatriz_dat<<";ENDFOLD\n" << endl; 

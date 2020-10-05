@@ -82,6 +82,7 @@ int pick(std::ifstream &My_Job_dat,std::ofstream &TReceita_dat)
           cout << "Pick encontrado: " << PickName <<endl;
           // cout << entrada<<endl;
           posicao=split_string(entrada,"[=]+",1);
+          //posicao = ponto_remove_turn(posicao);
           TReceita_dat<<"DECL GLOBAL E6POS "<<PickName<<"="<<posicao<<endl;
         }
       }
