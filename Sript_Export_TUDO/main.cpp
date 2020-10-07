@@ -137,12 +137,12 @@ int main(int argc, char **argv)
       if(pallet[1]=='1')
       {
         contador_src =matriz_pontos_str(My_Job_src,Aux1TMatriz_src,pallet,produto,NumLayers,AlturaCaixa,Camadas);
-        contador_dat =matriz_pontos_dat(My_Job_dat,Aux1TMatriz_dat,pallet,produto,entrada,NumLayers,AlturaCaixa,Camadas);
+        contador_dat =matriz_pontos_dat(My_Job_dat,Aux1TMatriz_dat,pallet,produto,entrada,NumLayers,AlturaCaixa,Camadas,contador_src);
       }
       else
       {
         contador_src =matriz_pontos_str(My_Job_src,Aux2TMatriz_src,pallet,produto,NumLayers,AlturaCaixa,Camadas);
-        contador_dat =matriz_pontos_dat(My_Job_dat,Aux2TMatriz_dat,pallet,produto,entrada,NumLayers,AlturaCaixa,Camadas);
+        contador_dat =matriz_pontos_dat(My_Job_dat,Aux2TMatriz_dat,pallet,produto,entrada,NumLayers,AlturaCaixa,Camadas,contador_src);
       }
       PlacesCamada=contador_dat/NumLayers;
       MaxMatrizK=contador_dat;

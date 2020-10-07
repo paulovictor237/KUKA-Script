@@ -12,8 +12,6 @@ Numero de FechaGarra: 1
 DEF Mtrz_P1_9Aero()
 Pallet:  P1
 Produto: 9Aero
-<span style="color:red">**ERROR: PickOp: **</span>MatrizPontos[Pallet_1,Prdt_9Aero,1].PickOp = { 4 } deveria ser: { 3 }
-<span style="color:red">**ERROR: PickOp: **</span>MatrizPontos[Pallet_1,Prdt_9Aero,2].PickOp = { 4 } deveria ser: { 3 }
 AlturaCaixa: 191
 Camadas: 6
 NumLayers: 1
@@ -482,8 +480,6 @@ NumPlaces/NumLayers: 2
 DEF Mtrz_P2_9Aero()
 Pallet:  P2
 Produto: 9Aero
-<span style="color:red">**ERROR: PickOp: **</span>MatrizPontos[Pallet_2,Prdt_9Aero,1].PickOp = { 4 } deveria ser: { 3 }
-<span style="color:red">**ERROR: PickOp: **</span>MatrizPontos[Pallet_2,Prdt_9Aero,2].PickOp = { 4 } deveria ser: { 3 }
 AlturaCaixa: 191
 Camadas: 6
 NumLayers: 1
@@ -557,18 +553,16 @@ NumPlaces/NumLayers: 7
 numero de bases: 4
 numero de bases: 1
 # >> Rotina Pick << 
-Pick encontrado: Pick_E_1_P_1
+Pick encontrado: Pick_E_2_P_1
 <span style="color:red">**ERROR: PickCaixasSimulador**</span>
 Pick encontrado: Pick_E_1_P_2
-Pick encontrado: Pick_E_1_P_3
+Pick encontrado: Pick_E_2_P_3
 Pick encontrado: Pick_E_1_P_6
 Pick encontrado: Pick_E_1_P_4
 Pick encontrado: Pick_E_1_P_5
-Pick encontrado: Pick_E_2_P_1
+Pick encontrado: Pick_E_1_P_1
 Pick encontrado: Pick_E_2_P_2
-Pick encontrado: Pick_E_1_P_2_3
-Pick encontrado: Pick_E_2_P_2_3
-Pick encontrado: Pick_E_2_P_3
+Pick encontrado: Pick_E_1_P_3
 Pick encontrado: Pick_E_2_P_4
 Pick encontrado: Pick_E_2_P_5
 Pick encontrado: Pick_E_2_P_6
@@ -576,6 +570,10 @@ Pick encontrado: Pick_E_2_P_7
 <span style="color:red">**ERROR: PickCaixasSimulador1**</span>
 Pick encontrado: Pick_E_1_P_8
 Pick encontrado: Pick_E_2_P_8
+Pick encontrado: Pick_E_1_P_10
+Pick encontrado: Pick_E_2_P_10
+<span style="color:red">**ERROR: Pick_E_1_P_10_3**</span>
+Pick encontrado: Pick_E_2_P_11
 Pick encontrado: Pick_E_1_P_6_5
 Pick encontrado: Pick_E_2_P_6_5
 # >> Rotina config.dat  <<

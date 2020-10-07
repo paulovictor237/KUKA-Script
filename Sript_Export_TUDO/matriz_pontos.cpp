@@ -245,7 +245,7 @@ std::string abaixa_z(std::string entrada,int AlturaCaixa)
 }
 
 
-int matriz_pontos_dat(std::ifstream &My_Job_dat,std::ofstream &TMatriz_dat,std::string pallet,std::string produto,std::string produto_cmplt,int NumLayers,int AlturaCaixa,int Camadas)
+int matriz_pontos_dat(std::ifstream &My_Job_dat,std::ofstream &TMatriz_dat,std::string pallet,std::string produto,std::string produto_cmplt,int NumLayers,int AlturaCaixa,int Camadas,int NumPlaces_SRC)
 {
   My_Job_dat.clear();
   My_Job_dat.seekg(0);
@@ -276,7 +276,7 @@ int matriz_pontos_dat(std::ifstream &My_Job_dat,std::ofstream &TMatriz_dat,std::
           if(tipo_place==1){
             TMatriz_dat<<";FOLD PLACE " << contador << endl;
           }
-          if (NumPontos>(Camadas/NumLayers+1)&& NumLayers>1){
+          if (NumPontos>((NumPlaces_SRC/NumLayers)-1)&& NumLayers>1){
             entrada=abaixa_z(entrada,AlturaCaixa);
           }
           posicao=split_string(entrada,"[=]+",1);

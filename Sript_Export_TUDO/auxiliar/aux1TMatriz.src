@@ -3,7 +3,7 @@
 ;FOLD PLACE 1
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_9Aero,1].NumCaixas = 4
-MatrizPontos[Pallet_1,Prdt_9Aero,1].PickOp = 4
+MatrizPontos[Pallet_1,Prdt_9Aero,1].PickOp = 3
 MatrizPontos[Pallet_1,Prdt_9Aero,1].ConfGarraOp = 3
 MatrizPontos[Pallet_1,Prdt_9Aero,1].FechaGarraOp = 0
 MatrizPontos[Pallet_1,Prdt_9Aero,1].AbreGarraOp = 0
@@ -28,7 +28,7 @@ MatrizPontos[Pallet_1,Prdt_9Aero,1].OffsetPlace.C=0
 ;FOLD PLACE 2
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_9Aero,2].NumCaixas = 4
-MatrizPontos[Pallet_1,Prdt_9Aero,2].PickOp = 4
+MatrizPontos[Pallet_1,Prdt_9Aero,2].PickOp = 3
 MatrizPontos[Pallet_1,Prdt_9Aero,2].ConfGarraOp = 3
 MatrizPontos[Pallet_1,Prdt_9Aero,2].FechaGarraOp = 0
 MatrizPontos[Pallet_1,Prdt_9Aero,2].AbreGarraOp = 0
@@ -555,7 +555,7 @@ MatrizPontos[Pallet_1,Prdt_19KitKat,6].OffsetPlace.C=0
 ;FOLD PLACE 7
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_19KitKat,7].NumCaixas = 1
-MatrizPontos[Pallet_1,Prdt_19KitKat,7].PickOp = 1
+MatrizPontos[Pallet_1,Prdt_19KitKat,7].PickOp = 10
 MatrizPontos[Pallet_1,Prdt_19KitKat,7].ConfGarraOp = 0
 MatrizPontos[Pallet_1,Prdt_19KitKat,7].FechaGarraOp = 0
 MatrizPontos[Pallet_1,Prdt_19KitKat,7].AbreGarraOp = 0
@@ -580,7 +580,7 @@ MatrizPontos[Pallet_1,Prdt_19KitKat,7].OffsetPlace.C=0
 ;FOLD PLACE 8
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_19KitKat,8].NumCaixas = 1
-MatrizPontos[Pallet_1,Prdt_19KitKat,8].PickOp = 1
+MatrizPontos[Pallet_1,Prdt_19KitKat,8].PickOp = 10
 MatrizPontos[Pallet_1,Prdt_19KitKat,8].ConfGarraOp = 0
 MatrizPontos[Pallet_1,Prdt_19KitKat,8].FechaGarraOp = 0
 MatrizPontos[Pallet_1,Prdt_19KitKat,8].AbreGarraOp = 0
@@ -605,7 +605,7 @@ MatrizPontos[Pallet_1,Prdt_19KitKat,8].OffsetPlace.C=0
 ;FOLD PLACE 9
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_19KitKat,9].NumCaixas = 1
-MatrizPontos[Pallet_1,Prdt_19KitKat,9].PickOp = 1
+MatrizPontos[Pallet_1,Prdt_19KitKat,9].PickOp = 10
 MatrizPontos[Pallet_1,Prdt_19KitKat,9].ConfGarraOp = 0
 MatrizPontos[Pallet_1,Prdt_19KitKat,9].FechaGarraOp = 0
 MatrizPontos[Pallet_1,Prdt_19KitKat,9].AbreGarraOp = 0
@@ -1469,7 +1469,7 @@ MatrizPontos[Pallet_1,Prdt_30All,4].OffsetPlace.C=0
 ;FOLD PLACE 1
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,1].NumCaixas = 2
-MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,1].PickOp = 1
+MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,1].PickOp = 10
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,1].ConfGarraOp = 0
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,1].FechaGarraOp = 0
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,1].AbreGarraOp = 0
@@ -1494,7 +1494,7 @@ MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,1].OffsetPlace.C=0
 ;FOLD PLACE 2
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,2].NumCaixas = 2
-MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,2].PickOp = 1
+MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,2].PickOp = 10
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,2].ConfGarraOp = 0
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,2].FechaGarraOp = 0
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,2].AbreGarraOp = 0
@@ -1519,7 +1519,7 @@ MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,2].OffsetPlace.C=0
 ;FOLD PLACE 3
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,3].NumCaixas = 2
-MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,3].PickOp = 1
+MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,3].PickOp = 10
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,3].ConfGarraOp = 0
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,3].FechaGarraOp = 0
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,3].AbreGarraOp = 0
@@ -1544,7 +1544,7 @@ MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,3].OffsetPlace.C=0
 ;FOLD PLACE 4
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,4].NumCaixas = 4
-MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,4].PickOp = 1
+MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,4].PickOp = 10
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,4].ConfGarraOp = 0
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,4].FechaGarraOp = 0
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,4].AbreGarraOp = 0
@@ -1571,7 +1571,7 @@ MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,4].OffsetPlace.C=0
 ;FOLD PLACE 5
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,5].NumCaixas = 4
-MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,5].PickOp = 1
+MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,5].PickOp = 10
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,5].ConfGarraOp = 0
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,5].FechaGarraOp = 0
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,5].AbreGarraOp = 0
@@ -1596,7 +1596,7 @@ MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,5].OffsetPlace.C=0
 ;FOLD PLACE 6
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,6].NumCaixas = 2
-MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,6].PickOp = 1
+MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,6].PickOp = 10
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,6].ConfGarraOp = 0
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,6].FechaGarraOp = 0
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,6].AbreGarraOp = 0
@@ -1621,7 +1621,7 @@ MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,6].OffsetPlace.C=0
 ;FOLD PLACE 7
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,7].NumCaixas = 2
-MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,7].PickOp = 1
+MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,7].PickOp = 10
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,7].ConfGarraOp = 0
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,7].FechaGarraOp = 0
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,7].AbreGarraOp = 0
@@ -1646,7 +1646,7 @@ MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,7].OffsetPlace.C=0
 ;FOLD PLACE 8
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,8].NumCaixas = 2
-MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,8].PickOp = 1
+MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,8].PickOp = 10
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,8].ConfGarraOp = 0
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,8].FechaGarraOp = 0
 MatrizPontos[Pallet_1,Prdt_16CoffeCrisp,8].AbreGarraOp = 0
@@ -1778,7 +1778,7 @@ MatrizPontos[Pallet_1,Prdt_10CoffeCrisp,4].OffsetPlace.C=0
 ;FOLD PLACE 5
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_10CoffeCrisp,5].NumCaixas = 1
-MatrizPontos[Pallet_1,Prdt_10CoffeCrisp,5].PickOp = 3
+MatrizPontos[Pallet_1,Prdt_10CoffeCrisp,5].PickOp = 10
 MatrizPontos[Pallet_1,Prdt_10CoffeCrisp,5].ConfGarraOp = 3
 MatrizPontos[Pallet_1,Prdt_10CoffeCrisp,5].FechaGarraOp = 0
 MatrizPontos[Pallet_1,Prdt_10CoffeCrisp,5].AbreGarraOp = 0
@@ -1803,7 +1803,7 @@ MatrizPontos[Pallet_1,Prdt_10CoffeCrisp,5].OffsetPlace.C=0
 ;FOLD PLACE 6
 ;FOLD PROPRIEDADES 
 MatrizPontos[Pallet_1,Prdt_10CoffeCrisp,6].NumCaixas = 1
-MatrizPontos[Pallet_1,Prdt_10CoffeCrisp,6].PickOp = 3
+MatrizPontos[Pallet_1,Prdt_10CoffeCrisp,6].PickOp = 10
 MatrizPontos[Pallet_1,Prdt_10CoffeCrisp,6].ConfGarraOp = 3
 MatrizPontos[Pallet_1,Prdt_10CoffeCrisp,6].FechaGarraOp = 0
 MatrizPontos[Pallet_1,Prdt_10CoffeCrisp,6].AbreGarraOp = 0
