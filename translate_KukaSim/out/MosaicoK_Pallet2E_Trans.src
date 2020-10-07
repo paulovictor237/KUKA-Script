@@ -1,0 +1,244 @@
+DEF MosaicoK_Pallet2E()
+
+MatrizPontos[Pallet_2,Produto_K,1].IndexacaoVH = False
+MatrizPontos[Pallet_2,Produto_K,1].NumCaixas = 4
+MatrizPontos[Pallet_2,Produto_K,1].ConfGarraOp =0
+MatrizPontos[Pallet_2,Produto_K,1].PickOp =0
+MatrizPontos[Pallet_2,Produto_K,1].FechaGarraOp =0
+MatrizPontos[Pallet_2,Produto_K,1].AbreGarraOp =0
+MatrizPontos[Pallet_2,Produto_K,1].SkipGoHome =FALSE
+MatrizPontos[Pallet_2,Produto_K,1].SkipSobeRelativo =FALSE
+MatrizPontos[Pallet_2,Produto_K,1].XApp1Place = P2_K_1_App1Place
+MatrizPontos[Pallet_2,Produto_K,1].XApp2Place = P2_K_1_App2Place
+MatrizPontos[Pallet_2,Produto_K,1].XPlace = P2_K_1_Place
+
+MatrizPontos[Pallet_2,Produto_K,2].IndexacaoVH = False
+MatrizPontos[Pallet_2,Produto_K,2].NumCaixas = 4
+MatrizPontos[Pallet_2,Produto_K,2].ConfGarraOp =0
+MatrizPontos[Pallet_2,Produto_K,2].PickOp = 1
+MatrizPontos[Pallet_2,Produto_K,2].FechaGarraOp = 4
+MatrizPontos[Pallet_2,Produto_K,2].AbreGarraOp = 101
+MatrizPontos[Pallet_2,Produto_K,2].SkipGoHome = True
+MatrizPontos[Pallet_2,Produto_K,2].SkipSobeRelativo = False
+MatrizPontos[Pallet_2,Produto_K,2].XApp1Place = P2_K_2_App1Place
+MatrizPontos[Pallet_2,Produto_K,2].XApp2Place = P2_K_2_App2Place
+MatrizPontos[Pallet_2,Produto_K,2].XPlace = P2_K_2_Place
+
+MatrizPontos[Pallet_2,Produto_K,3].IndexacaoVH = False
+MatrizPontos[Pallet_2,Produto_K,3].NumCaixas = 4
+MatrizPontos[Pallet_2,Produto_K,3].ConfGarraOp =0
+MatrizPontos[Pallet_2,Produto_K,3].PickOp = 1
+MatrizPontos[Pallet_2,Produto_K,3].FechaGarraOp = 4
+MatrizPontos[Pallet_2,Produto_K,3].AbreGarraOp = 102
+MatrizPontos[Pallet_2,Produto_K,3].SkipGoHome = False
+MatrizPontos[Pallet_2,Produto_K,3].SkipSobeRelativo = False
+MatrizPontos[Pallet_2,Produto_K,3].XApp1Place = P2_K_3_App1Place
+MatrizPontos[Pallet_2,Produto_K,3].XApp2Place = P2_K_3_App2Place
+MatrizPontos[Pallet_2,Produto_K,3].XPlace = P2_K_3_Place
+
+MatrizPontos[Pallet_2,Produto_K,4].IndexacaoVH = False
+MatrizPontos[Pallet_2,Produto_K,4].NumCaixas = 4
+MatrizPontos[Pallet_2,Produto_K,4].ConfGarraOp =0
+MatrizPontos[Pallet_2,Produto_K,4].PickOp = 1
+MatrizPontos[Pallet_2,Produto_K,4].FechaGarraOp = 4
+MatrizPontos[Pallet_2,Produto_K,4].AbreGarraOp = 102
+MatrizPontos[Pallet_2,Produto_K,4].SkipGoHome = False
+MatrizPontos[Pallet_2,Produto_K,4].SkipSobeRelativo = False
+MatrizPontos[Pallet_2,Produto_K,4].XApp1Place = P2_K_4_App1Place
+MatrizPontos[Pallet_2,Produto_K,4].XApp2Place = P2_K_4_App2Place
+MatrizPontos[Pallet_2,Produto_K,4].XPlace = P2_K_4_Place
+
+MatrizPontos[Pallet_2,Produto_K,5].IndexacaoVH = False
+MatrizPontos[Pallet_2,Produto_K,5].NumCaixas = 4
+MatrizPontos[Pallet_2,Produto_K,5].ConfGarraOp =0
+MatrizPontos[Pallet_2,Produto_K,5].PickOp = 1
+MatrizPontos[Pallet_2,Produto_K,5].FechaGarraOp = 4
+MatrizPontos[Pallet_2,Produto_K,5].AbreGarraOp = 101
+MatrizPontos[Pallet_2,Produto_K,5].SkipGoHome = True
+MatrizPontos[Pallet_2,Produto_K,5].SkipSobeRelativo = False
+MatrizPontos[Pallet_2,Produto_K,5].XApp1Place = P2_K_5_App1Place
+MatrizPontos[Pallet_2,Produto_K,5].XApp2Place = P2_K_5_App2Place
+MatrizPontos[Pallet_2,Produto_K,5].XPlace = P2_K_5_Place
+
+MatrizPontos[Pallet_2,Produto_K,6].IndexacaoVH = False
+MatrizPontos[Pallet_2,Produto_K,6].NumCaixas = 4
+MatrizPontos[Pallet_2,Produto_K,6].ConfGarraOp =0
+MatrizPontos[Pallet_2,Produto_K,6].PickOp = 1
+MatrizPontos[Pallet_2,Produto_K,6].FechaGarraOp = 4
+MatrizPontos[Pallet_2,Produto_K,6].AbreGarraOp = 102
+MatrizPontos[Pallet_2,Produto_K,6].SkipGoHome = False
+MatrizPontos[Pallet_2,Produto_K,6].SkipSobeRelativo = False
+MatrizPontos[Pallet_2,Produto_K,6].XApp1Place = P2_K_6_App1Place
+MatrizPontos[Pallet_2,Produto_K,6].XApp2Place = P2_K_6_App2Place
+MatrizPontos[Pallet_2,Produto_K,6].XPlace = P2_K_6_Place
+
+MatrizPontos[Pallet_2,Produto_K,7].IndexacaoVH = False
+MatrizPontos[Pallet_2,Produto_K,7].NumCaixas = 2
+MatrizPontos[Pallet_2,Produto_K,7].ConfGarraOp =0
+MatrizPontos[Pallet_2,Produto_K,7].PickOp = 1
+MatrizPontos[Pallet_2,Produto_K,7].FechaGarraOp = 4
+MatrizPontos[Pallet_2,Produto_K,7].AbreGarraOp = 102
+MatrizPontos[Pallet_2,Produto_K,7].SkipGoHome = False
+MatrizPontos[Pallet_2,Produto_K,7].SkipSobeRelativo = False
+MatrizPontos[Pallet_2,Produto_K,7].XApp1Place = P2_K_7_App1Place
+MatrizPontos[Pallet_2,Produto_K,7].XApp2Place = P2_K_7_App2Place
+MatrizPontos[Pallet_2,Produto_K,7].XPlace = P2_K_7_Place
+
+MatrizPontos[Pallet_2,Produto_K,8].IndexacaoVH = False
+MatrizPontos[Pallet_2,Produto_K,8].NumCaixas = 2
+MatrizPontos[Pallet_2,Produto_K,8].ConfGarraOp =0
+MatrizPontos[Pallet_2,Produto_K,8].PickOp = 1
+MatrizPontos[Pallet_2,Produto_K,8].FechaGarraOp = 4
+MatrizPontos[Pallet_2,Produto_K,8].AbreGarraOp = 2
+MatrizPontos[Pallet_2,Produto_K,8].SkipGoHome = False
+MatrizPontos[Pallet_2,Produto_K,8].SkipSobeRelativo = False
+MatrizPontos[Pallet_2,Produto_K,8].XApp1Place = P2_K_8_App1Place
+MatrizPontos[Pallet_2,Produto_K,8].XApp2Place = P2_K_8_App2Place
+MatrizPontos[Pallet_2,Produto_K,8].XPlace = P2_K_8_Place
+
+MatrizPontos[Pallet_2,Produto_K,9].IndexacaoVH = False
+MatrizPontos[Pallet_2,Produto_K,9].NumCaixas = 2
+MatrizPontos[Pallet_2,Produto_K,9].ConfGarraOp =0
+MatrizPontos[Pallet_2,Produto_K,9].PickOp = 1
+MatrizPontos[Pallet_2,Produto_K,9].FechaGarraOp = 4
+MatrizPontos[Pallet_2,Produto_K,9].AbreGarraOp = 2
+MatrizPontos[Pallet_2,Produto_K,9].SkipGoHome = False
+MatrizPontos[Pallet_2,Produto_K,9].SkipSobeRelativo = False
+MatrizPontos[Pallet_2,Produto_K,9].XApp1Place = P2_K_9_App1Place
+MatrizPontos[Pallet_2,Produto_K,9].XApp2Place = P2_K_9_App2Place
+MatrizPontos[Pallet_2,Produto_K,9].XPlace = P2_K_9_Place
+
+MatrizPontos[Pallet_2,Produto_K,10].IndexacaoVH = False
+MatrizPontos[Pallet_2,Produto_K,10].NumCaixas = 2
+MatrizPontos[Pallet_2,Produto_K,10].ConfGarraOp =0
+MatrizPontos[Pallet_2,Produto_K,10].PickOp = 1
+MatrizPontos[Pallet_2,Produto_K,10].FechaGarraOp = 4
+MatrizPontos[Pallet_2,Produto_K,10].AbreGarraOp = 2
+MatrizPontos[Pallet_2,Produto_K,10].SkipGoHome = False
+MatrizPontos[Pallet_2,Produto_K,10].SkipSobeRelativo = False
+MatrizPontos[Pallet_2,Produto_K,10].XApp1Place = P2_K_10_App1Place
+MatrizPontos[Pallet_2,Produto_K,10].XApp2Place = P2_K_10_App2Place
+MatrizPontos[Pallet_2,Produto_K,10].XPlace = P2_K_10_Place
+
+MatrizPontos[Pallet_2,Produto_K,11].IndexacaoVH = False
+MatrizPontos[Pallet_2,Produto_K,11].NumCaixas = 4
+MatrizPontos[Pallet_2,Produto_K,11].ConfGarraOp =0
+MatrizPontos[Pallet_2,Produto_K,11].PickOp = 1
+MatrizPontos[Pallet_2,Produto_K,11].FechaGarraOp = 4
+MatrizPontos[Pallet_2,Produto_K,11].AbreGarraOp = 2
+MatrizPontos[Pallet_2,Produto_K,11].SkipGoHome = False
+MatrizPontos[Pallet_2,Produto_K,11].SkipSobeRelativo = False
+MatrizPontos[Pallet_2,Produto_K,11].XApp1Place = P2_K_11_App1Place
+MatrizPontos[Pallet_2,Produto_K,11].XApp2Place = P2_K_11_App2Place
+MatrizPontos[Pallet_2,Produto_K,11].XPlace = P2_K_11_Place
+
+MatrizPontos[Pallet_2,Produto_K,12].IndexacaoVH = False
+MatrizPontos[Pallet_2,Produto_K,12].NumCaixas = 4
+MatrizPontos[Pallet_2,Produto_K,12].ConfGarraOp =0
+MatrizPontos[Pallet_2,Produto_K,12].PickOp = 1
+MatrizPontos[Pallet_2,Produto_K,12].FechaGarraOp = 4
+MatrizPontos[Pallet_2,Produto_K,12].AbreGarraOp = 101
+MatrizPontos[Pallet_2,Produto_K,12].SkipGoHome = True
+MatrizPontos[Pallet_2,Produto_K,12].SkipSobeRelativo = False
+MatrizPontos[Pallet_2,Produto_K,12].XApp1Place = P2_K_12_App1Place
+MatrizPontos[Pallet_2,Produto_K,12].XApp2Place = P2_K_12_App2Place
+MatrizPontos[Pallet_2,Produto_K,12].XPlace = P2_K_12_Place
+
+MatrizPontos[Pallet_2,Produto_K,13].IndexacaoVH = False
+MatrizPontos[Pallet_2,Produto_K,13].NumCaixas = 4
+MatrizPontos[Pallet_2,Produto_K,13].ConfGarraOp =0
+MatrizPontos[Pallet_2,Produto_K,13].PickOp = 1
+MatrizPontos[Pallet_2,Produto_K,13].FechaGarraOp = 4
+MatrizPontos[Pallet_2,Produto_K,13].AbreGarraOp = 102
+MatrizPontos[Pallet_2,Produto_K,13].SkipGoHome = False
+MatrizPontos[Pallet_2,Produto_K,13].SkipSobeRelativo = False
+MatrizPontos[Pallet_2,Produto_K,13].XApp1Place = P2_K_13_App1Place
+MatrizPontos[Pallet_2,Produto_K,13].XApp2Place = P2_K_13_App2Place
+MatrizPontos[Pallet_2,Produto_K,13].XPlace = P2_K_13_Place
+
+MatrizPontos[Pallet_2,Produto_K,14].IndexacaoVH = False
+MatrizPontos[Pallet_2,Produto_K,14].NumCaixas = 4
+MatrizPontos[Pallet_2,Produto_K,14].ConfGarraOp =0
+MatrizPontos[Pallet_2,Produto_K,14].PickOp = 1
+MatrizPontos[Pallet_2,Produto_K,14].FechaGarraOp = 4
+MatrizPontos[Pallet_2,Produto_K,14].AbreGarraOp = 102
+MatrizPontos[Pallet_2,Produto_K,14].SkipGoHome = False
+MatrizPontos[Pallet_2,Produto_K,14].SkipSobeRelativo = False
+MatrizPontos[Pallet_2,Produto_K,14].XApp1Place = P2_K_14_App1Place
+MatrizPontos[Pallet_2,Produto_K,14].XApp2Place = P2_K_14_App2Place
+MatrizPontos[Pallet_2,Produto_K,14].XPlace = P2_K_14_Place
+
+MatrizPontos[Pallet_2,Produto_K,15].IndexacaoVH = False
+MatrizPontos[Pallet_2,Produto_K,15].NumCaixas = 4
+MatrizPontos[Pallet_2,Produto_K,15].ConfGarraOp =0
+MatrizPontos[Pallet_2,Produto_K,15].PickOp = 1
+MatrizPontos[Pallet_2,Produto_K,15].FechaGarraOp = 4
+MatrizPontos[Pallet_2,Produto_K,15].AbreGarraOp = 101
+MatrizPontos[Pallet_2,Produto_K,15].SkipGoHome = True
+MatrizPontos[Pallet_2,Produto_K,15].SkipSobeRelativo = False
+MatrizPontos[Pallet_2,Produto_K,15].XApp1Place = P2_K_15_App1Place
+MatrizPontos[Pallet_2,Produto_K,15].XApp2Place = P2_K_15_App2Place
+MatrizPontos[Pallet_2,Produto_K,15].XPlace = P2_K_15_Place
+
+MatrizPontos[Pallet_2,Produto_K,16].IndexacaoVH = False
+MatrizPontos[Pallet_2,Produto_K,16].NumCaixas = 4
+MatrizPontos[Pallet_2,Produto_K,16].ConfGarraOp =0
+MatrizPontos[Pallet_2,Produto_K,16].PickOp = 1
+MatrizPontos[Pallet_2,Produto_K,16].FechaGarraOp = 4
+MatrizPontos[Pallet_2,Produto_K,16].AbreGarraOp = 102
+MatrizPontos[Pallet_2,Produto_K,16].SkipGoHome = False
+MatrizPontos[Pallet_2,Produto_K,16].SkipSobeRelativo = False
+MatrizPontos[Pallet_2,Produto_K,16].XApp1Place = P2_K_16_App1Place
+MatrizPontos[Pallet_2,Produto_K,16].XApp2Place = P2_K_16_App2Place
+MatrizPontos[Pallet_2,Produto_K,16].XPlace = P2_K_16_Place
+
+MatrizPontos[Pallet_2,Produto_K,17].IndexacaoVH = False
+MatrizPontos[Pallet_2,Produto_K,17].NumCaixas = 2
+MatrizPontos[Pallet_2,Produto_K,17].ConfGarraOp =0
+MatrizPontos[Pallet_2,Produto_K,17].PickOp = 1
+MatrizPontos[Pallet_2,Produto_K,17].FechaGarraOp = 4
+MatrizPontos[Pallet_2,Produto_K,17].AbreGarraOp = 102
+MatrizPontos[Pallet_2,Produto_K,17].SkipGoHome = False
+MatrizPontos[Pallet_2,Produto_K,17].SkipSobeRelativo = False
+MatrizPontos[Pallet_2,Produto_K,17].XApp1Place = P2_K_17_App1Place
+MatrizPontos[Pallet_2,Produto_K,17].XApp2Place = P2_K_17_App2Place
+MatrizPontos[Pallet_2,Produto_K,17].XPlace = P2_K_17_Place
+
+MatrizPontos[Pallet_2,Produto_K,18].IndexacaoVH = False
+MatrizPontos[Pallet_2,Produto_K,18].NumCaixas = 2
+MatrizPontos[Pallet_2,Produto_K,18].ConfGarraOp =0
+MatrizPontos[Pallet_2,Produto_K,18].PickOp = 2
+MatrizPontos[Pallet_2,Produto_K,18].FechaGarraOp = 3
+MatrizPontos[Pallet_2,Produto_K,18].AbreGarraOp = 1
+MatrizPontos[Pallet_2,Produto_K,18].SkipGoHome = False
+MatrizPontos[Pallet_2,Produto_K,18].SkipSobeRelativo = False
+MatrizPontos[Pallet_2,Produto_K,18].XApp1Place = P2_K_18_App1Place
+MatrizPontos[Pallet_2,Produto_K,18].XApp2Place = P2_K_18_App2Place
+MatrizPontos[Pallet_2,Produto_K,18].XPlace = P2_K_18_Place
+
+MatrizPontos[Pallet_2,Produto_K,19].IndexacaoVH = False
+MatrizPontos[Pallet_2,Produto_K,19].NumCaixas = 2
+MatrizPontos[Pallet_2,Produto_K,19].ConfGarraOp =0
+MatrizPontos[Pallet_2,Produto_K,19].PickOp = 2
+MatrizPontos[Pallet_2,Produto_K,19].FechaGarraOp = 3
+MatrizPontos[Pallet_2,Produto_K,19].AbreGarraOp = 1
+MatrizPontos[Pallet_2,Produto_K,19].SkipGoHome = False
+MatrizPontos[Pallet_2,Produto_K,19].SkipSobeRelativo = False
+MatrizPontos[Pallet_2,Produto_K,19].XApp1Place = P2_K_19_App1Place
+MatrizPontos[Pallet_2,Produto_K,19].XApp2Place = P2_K_19_App2Place
+MatrizPontos[Pallet_2,Produto_K,19].XPlace = P2_K_19_Place
+
+MatrizPontos[Pallet_2,Produto_K,20].IndexacaoVH = False
+MatrizPontos[Pallet_2,Produto_K,20].NumCaixas = 2
+MatrizPontos[Pallet_2,Produto_K,20].ConfGarraOp =0
+MatrizPontos[Pallet_2,Produto_K,20].PickOp = 2
+MatrizPontos[Pallet_2,Produto_K,20].FechaGarraOp = 3
+MatrizPontos[Pallet_2,Produto_K,20].AbreGarraOp = 1
+MatrizPontos[Pallet_2,Produto_K,20].SkipGoHome = False
+MatrizPontos[Pallet_2,Produto_K,20].SkipSobeRelativo = False
+MatrizPontos[Pallet_2,Produto_K,20].XApp1Place = P2_K_20_App1Place
+MatrizPontos[Pallet_2,Produto_K,20].XApp2Place = P2_K_20_App2Place
+MatrizPontos[Pallet_2,Produto_K,20].XPlace = P2_K_20_Place
+
+
+END

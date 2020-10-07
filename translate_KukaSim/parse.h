@@ -36,14 +36,14 @@ class Parse
     int count_points, count_local_points;
 
     //Strings 
-    string my_file_name, receita;
+    string my_file_name, receita, Pallet;
     string myfile_src_string, myfile_dat_string; //Input
     string myfile_dat_string_output, myfile_src_string_output; //Output
 
     string sZ1, sZ2, sZ3;
 
     //Const Strings
-    string Init ="P_";
+    string Init ="P";
     const string App_End_1 ="App1Place"; 
     const string App_End_2 = "App2Place";
     const string Place = "Place";
@@ -54,7 +54,7 @@ class Parse
     string IndexacaoVH_val;
     string NumCaixas = "NumCaixas";
     string NumCaixas_val;
-    string ConfGarraPick = "ConfGarraPick";
+    string ConfGarraPick = "ConfGarraOp";
     string ConfGarraPick_val;
     string PickOp = "PickOp";
     string PickOp_val;

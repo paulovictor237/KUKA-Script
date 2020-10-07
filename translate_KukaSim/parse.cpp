@@ -85,7 +85,7 @@ void Parse::Search_and_Save_E6POS()
     
     //Att Init
 
-    Init = Init+receita+"_";
+    Init = Init+Pallet+"_"+receita+"_";
 
     vector<size_t> positions;
     size_t end_of_line;
@@ -222,19 +222,19 @@ void Parse::Search_and_Save_SRC()
 string Parse::Print_Matrix(int count_pto)
 {
     string local_string;
-
-    local_string = local_string+name_matrix+"["+sufix_prod+"_"+receita+","+to_string(count_pto)+"]."+IndexacaoVH+" ="+IndexacaoVH_val+'\n';
-    local_string = local_string+name_matrix+"["+sufix_prod+"_"+receita+","+to_string(count_pto)+"]."+NumCaixas+" ="+NumCaixas_val+'\n';
-    local_string = local_string+name_matrix+"["+sufix_prod+"_"+receita+","+to_string(count_pto)+"]."+ConfGarraPick+" ="+ConfGarraPick_val+'\n';
-    local_string = local_string+name_matrix+"["+sufix_prod+"_"+receita+","+to_string(count_pto)+"]."+PickOp+" ="+PickOp_val+'\n';
-    local_string = local_string+name_matrix+"["+sufix_prod+"_"+receita+","+to_string(count_pto)+"]."+FechaGarraOp+" ="+FechaGarraOp_val+'\n';
-    local_string = local_string+name_matrix+"["+sufix_prod+"_"+receita+","+to_string(count_pto)+"]."+AbreGarraOp+" ="+AbreGarraOp_val+'\n';
-    local_string = local_string+name_matrix+"["+sufix_prod+"_"+receita+","+to_string(count_pto)+"]."+SkipGoHome+" ="+SkipGoHome_val+'\n';
-    local_string = local_string+name_matrix+"["+sufix_prod+"_"+receita+","+to_string(count_pto)+"]."+SkipSobeRelativo+" ="+SkipSobeRelativo_val+'\n';
-    //local_string = local_string+name_matrix+"["+sufix_prod+"_"+receita+","+to_string(count_pto)+"]."+PlacePos+" ="+PlacePos_val+'\n';
-    local_string = local_string+name_matrix+"["+sufix_prod+"_"+receita+","+to_string(count_pto)+"].X"+App_End_1+" = "+Init+to_string(count_pto)+"_"+App_End_1+'\n';
-    local_string = local_string+name_matrix+"["+sufix_prod+"_"+receita+","+to_string(count_pto)+"].X"+App_End_2+" = "+Init+to_string(count_pto)+"_"+App_End_2+'\n';
-    local_string = local_string+name_matrix+"["+sufix_prod+"_"+receita+","+to_string(count_pto)+"].X"+Place+" = "+Init+to_string(count_pto)+"_"+Place+'\n';
+    IndexacaoVH_val = (IndexacaoVH_val=="True")?" True":" False";
+    local_string = local_string+name_matrix+"[Pallet_"+Pallet+","+sufix_prod+"_"+receita+","+to_string(count_pto)+"]."+IndexacaoVH+" ="+IndexacaoVH_val+'\n';
+    local_string = local_string+name_matrix+"[Pallet_"+Pallet+","+sufix_prod+"_"+receita+","+to_string(count_pto)+"]."+NumCaixas+" ="+NumCaixas_val+'\n';
+    local_string = local_string+name_matrix+"[Pallet_"+Pallet+","+sufix_prod+"_"+receita+","+to_string(count_pto)+"]."+ConfGarraPick+" ="+ConfGarraPick_val+'\n';
+    local_string = local_string+name_matrix+"[Pallet_"+Pallet+","+sufix_prod+"_"+receita+","+to_string(count_pto)+"]."+PickOp+" ="+PickOp_val+'\n';
+    local_string = local_string+name_matrix+"[Pallet_"+Pallet+","+sufix_prod+"_"+receita+","+to_string(count_pto)+"]."+FechaGarraOp+" ="+FechaGarraOp_val+'\n';
+    local_string = local_string+name_matrix+"[Pallet_"+Pallet+","+sufix_prod+"_"+receita+","+to_string(count_pto)+"]."+AbreGarraOp+" ="+AbreGarraOp_val+'\n';
+    local_string = local_string+name_matrix+"[Pallet_"+Pallet+","+sufix_prod+"_"+receita+","+to_string(count_pto)+"]."+SkipGoHome+" ="+SkipGoHome_val+'\n';
+    local_string = local_string+name_matrix+"[Pallet_"+Pallet+","+sufix_prod+"_"+receita+","+to_string(count_pto)+"]."+SkipSobeRelativo+" ="+SkipSobeRelativo_val+'\n';
+  //local_string = local_string+name_matrix+"[Pallet_"+Pallet+","+sufix_prod+"_"+receita+","+to_string(count_pto)+"]."+PlacePos+" ="+PlacePos_val+'\n';
+    local_string = local_string+name_matrix+"[Pallet_"+Pallet+","+sufix_prod+"_"+receita+","+to_string(count_pto)+"].X"+App_End_1+" = "+Init+to_string(count_pto)+"_"+App_End_1+'\n';
+    local_string = local_string+name_matrix+"[Pallet_"+Pallet+","+sufix_prod+"_"+receita+","+to_string(count_pto)+"].X"+App_End_2+" = "+Init+to_string(count_pto)+"_"+App_End_2+'\n';
+    local_string = local_string+name_matrix+"[Pallet_"+Pallet+","+sufix_prod+"_"+receita+","+to_string(count_pto)+"].X"+Place+" = "+Init+to_string(count_pto)+"_"+Place+'\n';
 
     return local_string;
 
@@ -449,7 +449,7 @@ bool Parse::Search_Variables(string line) //Almost a getline
 
 void Parse::Save_Outputs_E6POS()
 {
-    ofstream out(my_file_name+"E6POS.dat");
+    ofstream out("out/"+my_file_name+"E6POS.dat");
     out << myfile_dat_string_output;
     out.close();
     
@@ -461,7 +461,7 @@ void Parse::Save_Outputs_E6POS()
 
 void Parse::Save_Outputs_SRC()
 {
-    ofstream out(my_file_name+"_Trans.src");
+    ofstream out("out/"+my_file_name+"_Trans.src");
     out << myfile_src_string_output;
     out.close();
     
@@ -482,11 +482,13 @@ void Parse::initialCheck(int argc, char** argv)
         cout << red << "Necessario 2 entradas (argumentos) para executar o programa."  << def <<endl;
         exit(EXIT_FAILURE);
     }
-    else if(argc==3){
+    else if(argc>2){
+        cout << blue << "ENTROU AQUI!"  << def <<endl;
         cout << blue << "Quantidade de arquivos OK!"  << def <<endl;
         cout << "Arquivo a ser lido: " << argv[1] << ".dat e "<< argv[1]<< ".src " <<  endl;
         my_file_name = argv[1];
         receita = argv[2];
+        Pallet = argv[3];
     }
     else
     {

@@ -30,7 +30,19 @@ vector<string> split_string(std::string tokenString,string delim){
   for (auto token_it = tokens_begin; token_it != tokens_end; token_it++)tokens.push_back(*token_it);
   return tokens;
 }
-
+std::string split_string(std::string tokenString,string delim,int saida){
+  vector<string> tokens;
+  std::regex delimiters {delim};
+  sregex_token_iterator tokens_begin { tokenString.begin(), tokenString.end(), delimiters, -1 };
+  auto tokens_end=sregex_token_iterator {};
+  for (auto token_it=tokens_begin; token_it != tokens_end; token_it++)tokens.push_back(*token_it);
+  return tokens[saida];
+}
+std::string ponto_remove_turn(std::string entrada)
+{
+  std::string aux = split_string(entrada,",T")[0] + "}";
+  return aux;
+}
 void tudo(std::ifstream &inFile,std::string name,std::string T)
 {
   std::ofstream ofs (name+"Out.dat", std::ofstream::out);
@@ -44,20 +56,28 @@ void tudo(std::ifstream &inFile,std::string name,std::string T)
     getline(inFile,entrada);
     if(entrada.find("E6POS") !=std::string::npos)
     {
-      split=split_string(entrada,"[,]+");
-      for(int i=0;i<7;i++){
-        entrada2<<split[i];
-        entrada2<<",";
+      if(T=="r")
+      {
+        entrada=ponto_remove_turn(entrada)+"\n";
+        ofs<<entrada;
       }
-      entrada2<<"T " << T <<",";
-      for(int i=8;i<13;i++){
-        entrada2<<split[i];
-        entrada2<<",";
+      else
+      {
+        split=split_string(entrada,"[,]+");
+        for(int i=0;i<7;i++){
+          entrada2<<split[i];
+          entrada2<<",";
+        }
+        entrada2<<"T " << T <<",";
+        for(int i=8;i<13;i++){
+          entrada2<<split[i];
+          entrada2<<",";
+        }
+        entrada2<<split[13];
+        ofs << entrada2.str() << endl;
+        entrada2.str("");
+        split.clear();
       }
-      entrada2<<split[13];
-      ofs << entrada2.str() << endl;
-      entrada2.str("");
-      split.clear();
     }
     else
     {
