@@ -576,6 +576,25 @@ Pick encontrado: Pick_E_2_P_10
 Pick encontrado: Pick_E_2_P_11
 Pick encontrado: Pick_E_1_P_6_5
 Pick encontrado: Pick_E_2_P_6_5
+# >> Rotina Pick << 
+Pick encontrado: Pick_E_2_P_1
+Pick encontrado: Pick_E_1_P_2
+Pick encontrado: Pick_E_2_P_3
+Pick encontrado: Pick_E_1_P_6
+Pick encontrado: Pick_E_1_P_4
+Pick encontrado: Pick_E_1_P_5
+Pick encontrado: Pick_E_1_P_1
+Pick encontrado: Pick_E_2_P_2
+Pick encontrado: Pick_E_1_P_3
+Pick encontrado: Pick_E_2_P_4
+Pick encontrado: Pick_E_2_P_5
+Pick encontrado: Pick_E_2_P_6
+Pick encontrado: Pick_E_2_P_7
+Pick encontrado: Pick_E_1_P_8
+Pick encontrado: Pick_E_2_P_8
+Pick encontrado: Pick_E_1_P_10
+Pick encontrado: Pick_E_2_P_10
+Pick encontrado: Pick_E_2_P_11
 # >> Rotina config.dat  <<
 
 -----------------------------

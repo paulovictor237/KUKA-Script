@@ -182,7 +182,7 @@ int main(int argc, char **argv)
 
   pallet_src(My_Job_src,TPallet_src,MaxPallets);
   pick(My_Job_dat,TReceita_dat);
-  //funcao_pick_esteira_dat(My_Job_dat);
+  funcao_pick_esteira_dat(My_Job_dat);
   config.MaxPallets=MaxPallets;
   config.MaxMatrizI=MaxPallets;
   config.imprime(config_dat);
