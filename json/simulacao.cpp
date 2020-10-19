@@ -10,19 +10,31 @@
 using namespace std;
 
 #include "comum.h"
+#include "simulacao.h"
+
+void simulacao_maker(std::ofstream &simulacao_src,std::ofstream &simulacao_dat,int pallet,class Receita receita)
+{
+  int i=0;
+  for (auto &outt : receita.all_poses)
+  {
+    i++;
+    simulacao_ponto(simulacao_src,simulacao_dat,i+20,outt,false);
+  }
+  return;
+}
 
 void simulacao_ponto(std::ofstream &src,std::ofstream &dat,int i,class Pose pose,bool type)
 {
   src << "pick()"<< endl;
   if(type)
-{
+  {
     src << ";FOLD PTP P"<<i<<" CONT Vel= 100 % PDATP3 Tool[1] Base[1]   ;%{PE}" << endl;
   }else{
     src << ";FOLD LIN P"<<i<<" CONT Vel= 2 m/s CPDATP3 Tool[1] Base[1]   ;%{PE}" << endl;
   }
   src << ";FOLD Parameters ;%{h}"<< endl;
   if(type)
-{
+  {
     src << ";Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P"<<i<<"; Kuka.BlendingEnabled=True; Kuka.MoveDataPtpName=PDATP3; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP" << endl;
   }else{
     src << ";Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P"<<i<<"; Kuka.BlendingEnabled=True; Kuka.MoveDataName=CPDATP3; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN" << endl;

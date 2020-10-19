@@ -39,44 +39,19 @@ int main(int argc, char **argv)
   cout << "# $ >> PROGRAMA INICIADO << $"<<endl;
   cout << "Valores de inicializacao" << endl; 
 //+------------------------------------------------------------<< 
-  std::ifstream file_in("in/My_Job.json"); 
-
-  std::ofstream simulacao_src("simulacao/simulacao.src",std::ofstream::out);
-  std::ofstream simulacao_dat("simulacao/simulacao.dat",std::ofstream::out);
-
-  std::ofstream TReceita_src("out/INIT/TReceita.src",std::ofstream::out);
-  std::ofstream TReceita_dat("out/INIT/TReceita.dat",std::ofstream::out);
-
-  std::ofstream TMatriz_src ("out/INIT/TMatriz.src", std::ofstream::out);
-  std::ofstream TMatriz_dat ("out/INIT/TMatriz.dat", std::ofstream::out);
-
-  std::ofstream TPallet_src ("out/INIT/TPallet.src", std::ofstream::out);
-  std::ofstream TPallet_dat ("out/INIT/TPallet.dat", std::ofstream::out);
-
-
-  if((!file_in)||(!simulacao_src)||(!simulacao_dat))
-  {
-    //MaxPallets=atoi(argv[1]);
-    cout << "Erro ao abrir os arquivos.\n";
-    return 0;
-  }
-  init_files(simulacao_src,simulacao_dat,"simulacao");
-  init_files(TReceita_src,TReceita_dat,"TReceita");
-  init_files(TMatriz_src,TMatriz_dat,"TMatriz");
-  init_files(TPallet_src,TPallet_dat,"TPallet");
-  //padrao_move(simulacao_src);
-//+------------------------------------------------------------<< 
-  
-
+  //variaveis
   std::string entrada;
   int NumPontos=0;
   int NumLayers=0;
   bool aux_name=false;
 
-  class Pose pose;
-  class Objeto Pallet,Caixa;
+  class Pose pose_aux;
   class Receita receita;
-  
+//+------------------------------------------------------------<<
+  //lê o arquivo
+  std::ifstream file_in("in/My_Job.json");
+  if( !file_in ){cout << "Erro ao abrir os arquivos.\n";return 0;}
+  //faz a coleta dos dados
   while (!file_in.eof())
   {
     if (!file_in.good())break;
@@ -92,25 +67,25 @@ int main(int argc, char **argv)
     if(buscar_chave(entrada,"dimensions"))
     {
       getline(file_in,entrada);
-      Pallet.height = valor(entrada);
+      receita.Pallet.height = valor(entrada);
       getline(file_in,entrada);
-      Pallet.length = valor(entrada);
+      receita.Pallet.length = valor(entrada);
       getline(file_in,entrada);
-      Pallet.width = valor(entrada);
-      cout << "Pallet\n" << Pallet << endl;
+      receita.Pallet.width = valor(entrada);
+      cout << "receita.Pallet\n" << receita.Pallet << endl;
     }
-    //pega valor de caixa
+    //pega valor de receita.Caixa
     if(buscar_chave(entrada,"productDimensions"))
     {
       getline(file_in,entrada);
-      Caixa.width = valor(entrada);
+      receita.Caixa.width = valor(entrada);
       getline(file_in,entrada);
-      Caixa.height = valor(entrada);
+      receita.Caixa.height = valor(entrada);
       getline(file_in,entrada);
-      Caixa.length = valor(entrada);
+      receita.Caixa.length = valor(entrada);
       getline(file_in,entrada);
-      Caixa.weight = valor(entrada);
-      cout << "Caixa\n" << Caixa << endl;
+      receita.Caixa.weight = valor(entrada);
+      cout << "receita.Caixa\n" << receita.Caixa << endl;
     }
     //coleta os layers
     if(buscar_chave(entrada,"layers"))
@@ -134,41 +109,66 @@ int main(int argc, char **argv)
         if(buscar_chave(entrada,"x"))
         {
           NumPontos ++;
-          pose.X=valor(entrada);
+          pose_aux.X=valor(entrada);
           getline(file_in,entrada);
-          pose.Y=valor(entrada);
+          pose_aux.Y=valor(entrada);
           getline(file_in,entrada);
           getline(file_in,entrada);
-          pose.A=valor(entrada);
+          pose_aux.A=valor(entrada);
           getline(file_in,entrada);
-          //pose.B=valor(entrada);
-          //cout << pose << endl;
-          simulacao_ponto(simulacao_src,simulacao_dat,NumPontos+20,pose,false);
+          //pose_aux.B=valor(entrada);
+          //cout << pose_aux << endl;
+          receita.all_poses.push_back(pose_aux);
         }
       }
-      pose.Z=Caixa.height*NumLayers;
+      pose_aux.Z=receita.Caixa.height*NumLayers;
     }
   }
 //+------------------------------------------------------------<< 
+  //abre os arquivos
+  std::ofstream simulacao_src("simulacao/simulacao.src",std::ofstream::out);
+  std::ofstream simulacao_dat("simulacao/simulacao.dat",std::ofstream::out);
+  if( !simulacao_src ){cout << "Erro ao abrir os arquivos.\n";return 0;}
+  if( !simulacao_dat ){cout << "Erro ao abrir os arquivos.\n";return 0;}
+
+  std::ofstream TReceita_src("out/INIT/TReceita.src",std::ofstream::out);
+  std::ofstream TReceita_dat("out/INIT/TReceita.dat",std::ofstream::out);
+  if( !TReceita_src ){cout << "Erro ao abrir os arquivos.\n";return 0;}
+  if( !TReceita_dat ){cout << "Erro ao abrir os arquivos.\n";return 0;}
+
+  std::ofstream TMatriz_src ("out/INIT/TMatriz.src", std::ofstream::out);
+  std::ofstream TMatriz_dat ("out/INIT/TMatriz.dat", std::ofstream::out);
+  if( !TMatriz_src ){cout << "Erro ao abrir os arquivos.\n";return 0;}
+  if( !TMatriz_dat ){cout << "Erro ao abrir os arquivos.\n";return 0;}
+
+  init_files(simulacao_src,simulacao_dat,"simulacao");
+  init_files(TReceita_src,TReceita_dat,"TReceita");
+  init_files(TMatriz_src,TMatriz_dat,"TMatriz");
+  //padrao_move(simulacao_src);
+
+//+------------------------------------------------------------<< 
   //preenche a receita
+  receita.FinalContador=NumPontos;
   receita.PlacesCamada=NumPontos/NumLayers;
-  receita.AlturaCaixa=Caixa.height;
+  receita.AlturaCaixa=receita.Caixa.height;
   receita.Camadas=receita.LayersVector.size();
   receita.Layers=NumLayers;
   receita.imprime(TReceita_src);
 //+------------------------------------------------------------<< 
+  // distribui as informações aos arquivos 
+  int Pallet=1;
+  matriz_maker(TMatriz_src,TMatriz_dat,Pallet,receita);
+  simulacao_maker(simulacao_src,simulacao_dat,Pallet,receita);
+//+------------------------------------------------------------<< 
   end_files(simulacao_src,simulacao_dat);
   end_files(TReceita_src,TReceita_dat);
   end_files(TMatriz_src,TMatriz_dat);
-  end_files(TPallet_src,TPallet_dat);
   simulacao_src.close();
   simulacao_dat.close();
   TReceita_src.close();
   TReceita_dat.close();
   TMatriz_src.close();
   TMatriz_dat.close();
-  TPallet_src.close();
-  TPallet_dat.close();
   file_in.close();
   //Relatorio.close();
   cout << "# $ >> FIM << $"<<endl;

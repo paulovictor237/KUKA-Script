@@ -19,7 +19,9 @@ public:
 class Receita{
 public:
   std::string nome;
-  int PlacesCamada=0,AlturaCaixa=0,Camadas=0,Layers=0;
+  int PlacesCamada=0,AlturaCaixa=0,Camadas=0,Layers=0,FinalContador=0;
+  class Objeto Pallet,Caixa;
+  std::vector<Pose> all_poses;
   std::vector <int> LayersVector;
 public:
   void imprime(std::ofstream &ofs);

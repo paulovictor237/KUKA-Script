@@ -1,2 +1,416 @@
 DEF TMatriz()
+;FOLD Pallet 1 - Produto teste2
+;FOLD LAYER 1: PLACE 1 ate 12
+;FOLD PLACE 1
+;FOLD PROPRIEDADES 
+MatrizPontos[Pallet_1,Prdt_teste2,1].XApp1Place=P1_teste2_1_App1
+MatrizPontos[Pallet_1,Prdt_teste2,1].XApp2Place=P1_teste2_1_App2
+MatrizPontos[Pallet_1,Prdt_teste2,1].XPlace=P1_teste2_1_Place
+;ENDFOLD
+;FOLD OffsetPlace 
+MatrizPontos[Pallet_1,Prdt_teste2,1].OffsetPlace.X=0
+MatrizPontos[Pallet_1,Prdt_teste2,1].OffsetPlace.Y=0
+MatrizPontos[Pallet_1,Prdt_teste2,1].OffsetPlace.Z=0
+MatrizPontos[Pallet_1,Prdt_teste2,1].OffsetPlace.A=0
+MatrizPontos[Pallet_1,Prdt_teste2,1].OffsetPlace.B=0
+MatrizPontos[Pallet_1,Prdt_teste2,1].OffsetPlace.C=0
+;ENDFOLD
+
+;ENDFOLD
+
+;FOLD PLACE 2
+;FOLD PROPRIEDADES 
+MatrizPontos[Pallet_1,Prdt_teste2,2].XApp1Place=P1_teste2_2_App1
+MatrizPontos[Pallet_1,Prdt_teste2,2].XApp2Place=P1_teste2_2_App2
+MatrizPontos[Pallet_1,Prdt_teste2,2].XPlace=P1_teste2_2_Place
+;ENDFOLD
+;FOLD OffsetPlace 
+MatrizPontos[Pallet_1,Prdt_teste2,2].OffsetPlace.X=0
+MatrizPontos[Pallet_1,Prdt_teste2,2].OffsetPlace.Y=0
+MatrizPontos[Pallet_1,Prdt_teste2,2].OffsetPlace.Z=0
+MatrizPontos[Pallet_1,Prdt_teste2,2].OffsetPlace.A=0
+MatrizPontos[Pallet_1,Prdt_teste2,2].OffsetPlace.B=0
+MatrizPontos[Pallet_1,Prdt_teste2,2].OffsetPlace.C=0
+;ENDFOLD
+
+;ENDFOLD
+
+;FOLD PLACE 3
+;FOLD PROPRIEDADES 
+MatrizPontos[Pallet_1,Prdt_teste2,3].XApp1Place=P1_teste2_3_App1
+MatrizPontos[Pallet_1,Prdt_teste2,3].XApp2Place=P1_teste2_3_App2
+MatrizPontos[Pallet_1,Prdt_teste2,3].XPlace=P1_teste2_3_Place
+;ENDFOLD
+;FOLD OffsetPlace 
+MatrizPontos[Pallet_1,Prdt_teste2,3].OffsetPlace.X=0
+MatrizPontos[Pallet_1,Prdt_teste2,3].OffsetPlace.Y=0
+MatrizPontos[Pallet_1,Prdt_teste2,3].OffsetPlace.Z=0
+MatrizPontos[Pallet_1,Prdt_teste2,3].OffsetPlace.A=0
+MatrizPontos[Pallet_1,Prdt_teste2,3].OffsetPlace.B=0
+MatrizPontos[Pallet_1,Prdt_teste2,3].OffsetPlace.C=0
+;ENDFOLD
+
+;ENDFOLD
+
+;FOLD PLACE 4
+;FOLD PROPRIEDADES 
+MatrizPontos[Pallet_1,Prdt_teste2,4].XApp1Place=P1_teste2_4_App1
+MatrizPontos[Pallet_1,Prdt_teste2,4].XApp2Place=P1_teste2_4_App2
+MatrizPontos[Pallet_1,Prdt_teste2,4].XPlace=P1_teste2_4_Place
+;ENDFOLD
+;FOLD OffsetPlace 
+MatrizPontos[Pallet_1,Prdt_teste2,4].OffsetPlace.X=0
+MatrizPontos[Pallet_1,Prdt_teste2,4].OffsetPlace.Y=0
+MatrizPontos[Pallet_1,Prdt_teste2,4].OffsetPlace.Z=0
+MatrizPontos[Pallet_1,Prdt_teste2,4].OffsetPlace.A=0
+MatrizPontos[Pallet_1,Prdt_teste2,4].OffsetPlace.B=0
+MatrizPontos[Pallet_1,Prdt_teste2,4].OffsetPlace.C=0
+;ENDFOLD
+
+;ENDFOLD
+
+;FOLD PLACE 5
+;FOLD PROPRIEDADES 
+MatrizPontos[Pallet_1,Prdt_teste2,5].XApp1Place=P1_teste2_5_App1
+MatrizPontos[Pallet_1,Prdt_teste2,5].XApp2Place=P1_teste2_5_App2
+MatrizPontos[Pallet_1,Prdt_teste2,5].XPlace=P1_teste2_5_Place
+;ENDFOLD
+;FOLD OffsetPlace 
+MatrizPontos[Pallet_1,Prdt_teste2,5].OffsetPlace.X=0
+MatrizPontos[Pallet_1,Prdt_teste2,5].OffsetPlace.Y=0
+MatrizPontos[Pallet_1,Prdt_teste2,5].OffsetPlace.Z=0
+MatrizPontos[Pallet_1,Prdt_teste2,5].OffsetPlace.A=0
+MatrizPontos[Pallet_1,Prdt_teste2,5].OffsetPlace.B=0
+MatrizPontos[Pallet_1,Prdt_teste2,5].OffsetPlace.C=0
+;ENDFOLD
+
+;ENDFOLD
+
+;FOLD PLACE 6
+;FOLD PROPRIEDADES 
+MatrizPontos[Pallet_1,Prdt_teste2,6].XApp1Place=P1_teste2_6_App1
+MatrizPontos[Pallet_1,Prdt_teste2,6].XApp2Place=P1_teste2_6_App2
+MatrizPontos[Pallet_1,Prdt_teste2,6].XPlace=P1_teste2_6_Place
+;ENDFOLD
+;FOLD OffsetPlace 
+MatrizPontos[Pallet_1,Prdt_teste2,6].OffsetPlace.X=0
+MatrizPontos[Pallet_1,Prdt_teste2,6].OffsetPlace.Y=0
+MatrizPontos[Pallet_1,Prdt_teste2,6].OffsetPlace.Z=0
+MatrizPontos[Pallet_1,Prdt_teste2,6].OffsetPlace.A=0
+MatrizPontos[Pallet_1,Prdt_teste2,6].OffsetPlace.B=0
+MatrizPontos[Pallet_1,Prdt_teste2,6].OffsetPlace.C=0
+;ENDFOLD
+
+;ENDFOLD
+
+;FOLD PLACE 7
+;FOLD PROPRIEDADES 
+MatrizPontos[Pallet_1,Prdt_teste2,7].XApp1Place=P1_teste2_7_App1
+MatrizPontos[Pallet_1,Prdt_teste2,7].XApp2Place=P1_teste2_7_App2
+MatrizPontos[Pallet_1,Prdt_teste2,7].XPlace=P1_teste2_7_Place
+;ENDFOLD
+;FOLD OffsetPlace 
+MatrizPontos[Pallet_1,Prdt_teste2,7].OffsetPlace.X=0
+MatrizPontos[Pallet_1,Prdt_teste2,7].OffsetPlace.Y=0
+MatrizPontos[Pallet_1,Prdt_teste2,7].OffsetPlace.Z=0
+MatrizPontos[Pallet_1,Prdt_teste2,7].OffsetPlace.A=0
+MatrizPontos[Pallet_1,Prdt_teste2,7].OffsetPlace.B=0
+MatrizPontos[Pallet_1,Prdt_teste2,7].OffsetPlace.C=0
+;ENDFOLD
+
+;ENDFOLD
+
+;FOLD PLACE 8
+;FOLD PROPRIEDADES 
+MatrizPontos[Pallet_1,Prdt_teste2,8].XApp1Place=P1_teste2_8_App1
+MatrizPontos[Pallet_1,Prdt_teste2,8].XApp2Place=P1_teste2_8_App2
+MatrizPontos[Pallet_1,Prdt_teste2,8].XPlace=P1_teste2_8_Place
+;ENDFOLD
+;FOLD OffsetPlace 
+MatrizPontos[Pallet_1,Prdt_teste2,8].OffsetPlace.X=0
+MatrizPontos[Pallet_1,Prdt_teste2,8].OffsetPlace.Y=0
+MatrizPontos[Pallet_1,Prdt_teste2,8].OffsetPlace.Z=0
+MatrizPontos[Pallet_1,Prdt_teste2,8].OffsetPlace.A=0
+MatrizPontos[Pallet_1,Prdt_teste2,8].OffsetPlace.B=0
+MatrizPontos[Pallet_1,Prdt_teste2,8].OffsetPlace.C=0
+;ENDFOLD
+
+;ENDFOLD
+
+;FOLD PLACE 9
+;FOLD PROPRIEDADES 
+MatrizPontos[Pallet_1,Prdt_teste2,9].XApp1Place=P1_teste2_9_App1
+MatrizPontos[Pallet_1,Prdt_teste2,9].XApp2Place=P1_teste2_9_App2
+MatrizPontos[Pallet_1,Prdt_teste2,9].XPlace=P1_teste2_9_Place
+;ENDFOLD
+;FOLD OffsetPlace 
+MatrizPontos[Pallet_1,Prdt_teste2,9].OffsetPlace.X=0
+MatrizPontos[Pallet_1,Prdt_teste2,9].OffsetPlace.Y=0
+MatrizPontos[Pallet_1,Prdt_teste2,9].OffsetPlace.Z=0
+MatrizPontos[Pallet_1,Prdt_teste2,9].OffsetPlace.A=0
+MatrizPontos[Pallet_1,Prdt_teste2,9].OffsetPlace.B=0
+MatrizPontos[Pallet_1,Prdt_teste2,9].OffsetPlace.C=0
+;ENDFOLD
+
+;ENDFOLD
+
+;FOLD PLACE 10
+;FOLD PROPRIEDADES 
+MatrizPontos[Pallet_1,Prdt_teste2,10].XApp1Place=P1_teste2_10_App1
+MatrizPontos[Pallet_1,Prdt_teste2,10].XApp2Place=P1_teste2_10_App2
+MatrizPontos[Pallet_1,Prdt_teste2,10].XPlace=P1_teste2_10_Place
+;ENDFOLD
+;FOLD OffsetPlace 
+MatrizPontos[Pallet_1,Prdt_teste2,10].OffsetPlace.X=0
+MatrizPontos[Pallet_1,Prdt_teste2,10].OffsetPlace.Y=0
+MatrizPontos[Pallet_1,Prdt_teste2,10].OffsetPlace.Z=0
+MatrizPontos[Pallet_1,Prdt_teste2,10].OffsetPlace.A=0
+MatrizPontos[Pallet_1,Prdt_teste2,10].OffsetPlace.B=0
+MatrizPontos[Pallet_1,Prdt_teste2,10].OffsetPlace.C=0
+;ENDFOLD
+
+;ENDFOLD
+
+;FOLD PLACE 11
+;FOLD PROPRIEDADES 
+MatrizPontos[Pallet_1,Prdt_teste2,11].XApp1Place=P1_teste2_11_App1
+MatrizPontos[Pallet_1,Prdt_teste2,11].XApp2Place=P1_teste2_11_App2
+MatrizPontos[Pallet_1,Prdt_teste2,11].XPlace=P1_teste2_11_Place
+;ENDFOLD
+;FOLD OffsetPlace 
+MatrizPontos[Pallet_1,Prdt_teste2,11].OffsetPlace.X=0
+MatrizPontos[Pallet_1,Prdt_teste2,11].OffsetPlace.Y=0
+MatrizPontos[Pallet_1,Prdt_teste2,11].OffsetPlace.Z=0
+MatrizPontos[Pallet_1,Prdt_teste2,11].OffsetPlace.A=0
+MatrizPontos[Pallet_1,Prdt_teste2,11].OffsetPlace.B=0
+MatrizPontos[Pallet_1,Prdt_teste2,11].OffsetPlace.C=0
+;ENDFOLD
+
+;ENDFOLD
+
+;FOLD PLACE 12
+;FOLD PROPRIEDADES 
+MatrizPontos[Pallet_1,Prdt_teste2,12].XApp1Place=P1_teste2_12_App1
+MatrizPontos[Pallet_1,Prdt_teste2,12].XApp2Place=P1_teste2_12_App2
+MatrizPontos[Pallet_1,Prdt_teste2,12].XPlace=P1_teste2_12_Place
+;ENDFOLD
+;FOLD OffsetPlace 
+MatrizPontos[Pallet_1,Prdt_teste2,12].OffsetPlace.X=0
+MatrizPontos[Pallet_1,Prdt_teste2,12].OffsetPlace.Y=0
+MatrizPontos[Pallet_1,Prdt_teste2,12].OffsetPlace.Z=0
+MatrizPontos[Pallet_1,Prdt_teste2,12].OffsetPlace.A=0
+MatrizPontos[Pallet_1,Prdt_teste2,12].OffsetPlace.B=0
+MatrizPontos[Pallet_1,Prdt_teste2,12].OffsetPlace.C=0
+;ENDFOLD
+
+;ENDFOLD
+
+;ENDFOLD
+;FOLD LAYER 2: PLACE 13 ate 24
+;FOLD PLACE 13
+;FOLD PROPRIEDADES 
+MatrizPontos[Pallet_1,Prdt_teste2,13].XApp1Place=P1_teste2_13_App1
+MatrizPontos[Pallet_1,Prdt_teste2,13].XApp2Place=P1_teste2_13_App2
+MatrizPontos[Pallet_1,Prdt_teste2,13].XPlace=P1_teste2_13_Place
+;ENDFOLD
+;FOLD OffsetPlace 
+MatrizPontos[Pallet_1,Prdt_teste2,13].OffsetPlace.X=0
+MatrizPontos[Pallet_1,Prdt_teste2,13].OffsetPlace.Y=0
+MatrizPontos[Pallet_1,Prdt_teste2,13].OffsetPlace.Z=0
+MatrizPontos[Pallet_1,Prdt_teste2,13].OffsetPlace.A=0
+MatrizPontos[Pallet_1,Prdt_teste2,13].OffsetPlace.B=0
+MatrizPontos[Pallet_1,Prdt_teste2,13].OffsetPlace.C=0
+;ENDFOLD
+
+;ENDFOLD
+
+;FOLD PLACE 14
+;FOLD PROPRIEDADES 
+MatrizPontos[Pallet_1,Prdt_teste2,14].XApp1Place=P1_teste2_14_App1
+MatrizPontos[Pallet_1,Prdt_teste2,14].XApp2Place=P1_teste2_14_App2
+MatrizPontos[Pallet_1,Prdt_teste2,14].XPlace=P1_teste2_14_Place
+;ENDFOLD
+;FOLD OffsetPlace 
+MatrizPontos[Pallet_1,Prdt_teste2,14].OffsetPlace.X=0
+MatrizPontos[Pallet_1,Prdt_teste2,14].OffsetPlace.Y=0
+MatrizPontos[Pallet_1,Prdt_teste2,14].OffsetPlace.Z=0
+MatrizPontos[Pallet_1,Prdt_teste2,14].OffsetPlace.A=0
+MatrizPontos[Pallet_1,Prdt_teste2,14].OffsetPlace.B=0
+MatrizPontos[Pallet_1,Prdt_teste2,14].OffsetPlace.C=0
+;ENDFOLD
+
+;ENDFOLD
+
+;FOLD PLACE 15
+;FOLD PROPRIEDADES 
+MatrizPontos[Pallet_1,Prdt_teste2,15].XApp1Place=P1_teste2_15_App1
+MatrizPontos[Pallet_1,Prdt_teste2,15].XApp2Place=P1_teste2_15_App2
+MatrizPontos[Pallet_1,Prdt_teste2,15].XPlace=P1_teste2_15_Place
+;ENDFOLD
+;FOLD OffsetPlace 
+MatrizPontos[Pallet_1,Prdt_teste2,15].OffsetPlace.X=0
+MatrizPontos[Pallet_1,Prdt_teste2,15].OffsetPlace.Y=0
+MatrizPontos[Pallet_1,Prdt_teste2,15].OffsetPlace.Z=0
+MatrizPontos[Pallet_1,Prdt_teste2,15].OffsetPlace.A=0
+MatrizPontos[Pallet_1,Prdt_teste2,15].OffsetPlace.B=0
+MatrizPontos[Pallet_1,Prdt_teste2,15].OffsetPlace.C=0
+;ENDFOLD
+
+;ENDFOLD
+
+;FOLD PLACE 16
+;FOLD PROPRIEDADES 
+MatrizPontos[Pallet_1,Prdt_teste2,16].XApp1Place=P1_teste2_16_App1
+MatrizPontos[Pallet_1,Prdt_teste2,16].XApp2Place=P1_teste2_16_App2
+MatrizPontos[Pallet_1,Prdt_teste2,16].XPlace=P1_teste2_16_Place
+;ENDFOLD
+;FOLD OffsetPlace 
+MatrizPontos[Pallet_1,Prdt_teste2,16].OffsetPlace.X=0
+MatrizPontos[Pallet_1,Prdt_teste2,16].OffsetPlace.Y=0
+MatrizPontos[Pallet_1,Prdt_teste2,16].OffsetPlace.Z=0
+MatrizPontos[Pallet_1,Prdt_teste2,16].OffsetPlace.A=0
+MatrizPontos[Pallet_1,Prdt_teste2,16].OffsetPlace.B=0
+MatrizPontos[Pallet_1,Prdt_teste2,16].OffsetPlace.C=0
+;ENDFOLD
+
+;ENDFOLD
+
+;FOLD PLACE 17
+;FOLD PROPRIEDADES 
+MatrizPontos[Pallet_1,Prdt_teste2,17].XApp1Place=P1_teste2_17_App1
+MatrizPontos[Pallet_1,Prdt_teste2,17].XApp2Place=P1_teste2_17_App2
+MatrizPontos[Pallet_1,Prdt_teste2,17].XPlace=P1_teste2_17_Place
+;ENDFOLD
+;FOLD OffsetPlace 
+MatrizPontos[Pallet_1,Prdt_teste2,17].OffsetPlace.X=0
+MatrizPontos[Pallet_1,Prdt_teste2,17].OffsetPlace.Y=0
+MatrizPontos[Pallet_1,Prdt_teste2,17].OffsetPlace.Z=0
+MatrizPontos[Pallet_1,Prdt_teste2,17].OffsetPlace.A=0
+MatrizPontos[Pallet_1,Prdt_teste2,17].OffsetPlace.B=0
+MatrizPontos[Pallet_1,Prdt_teste2,17].OffsetPlace.C=0
+;ENDFOLD
+
+;ENDFOLD
+
+;FOLD PLACE 18
+;FOLD PROPRIEDADES 
+MatrizPontos[Pallet_1,Prdt_teste2,18].XApp1Place=P1_teste2_18_App1
+MatrizPontos[Pallet_1,Prdt_teste2,18].XApp2Place=P1_teste2_18_App2
+MatrizPontos[Pallet_1,Prdt_teste2,18].XPlace=P1_teste2_18_Place
+;ENDFOLD
+;FOLD OffsetPlace 
+MatrizPontos[Pallet_1,Prdt_teste2,18].OffsetPlace.X=0
+MatrizPontos[Pallet_1,Prdt_teste2,18].OffsetPlace.Y=0
+MatrizPontos[Pallet_1,Prdt_teste2,18].OffsetPlace.Z=0
+MatrizPontos[Pallet_1,Prdt_teste2,18].OffsetPlace.A=0
+MatrizPontos[Pallet_1,Prdt_teste2,18].OffsetPlace.B=0
+MatrizPontos[Pallet_1,Prdt_teste2,18].OffsetPlace.C=0
+;ENDFOLD
+
+;ENDFOLD
+
+;FOLD PLACE 19
+;FOLD PROPRIEDADES 
+MatrizPontos[Pallet_1,Prdt_teste2,19].XApp1Place=P1_teste2_19_App1
+MatrizPontos[Pallet_1,Prdt_teste2,19].XApp2Place=P1_teste2_19_App2
+MatrizPontos[Pallet_1,Prdt_teste2,19].XPlace=P1_teste2_19_Place
+;ENDFOLD
+;FOLD OffsetPlace 
+MatrizPontos[Pallet_1,Prdt_teste2,19].OffsetPlace.X=0
+MatrizPontos[Pallet_1,Prdt_teste2,19].OffsetPlace.Y=0
+MatrizPontos[Pallet_1,Prdt_teste2,19].OffsetPlace.Z=0
+MatrizPontos[Pallet_1,Prdt_teste2,19].OffsetPlace.A=0
+MatrizPontos[Pallet_1,Prdt_teste2,19].OffsetPlace.B=0
+MatrizPontos[Pallet_1,Prdt_teste2,19].OffsetPlace.C=0
+;ENDFOLD
+
+;ENDFOLD
+
+;FOLD PLACE 20
+;FOLD PROPRIEDADES 
+MatrizPontos[Pallet_1,Prdt_teste2,20].XApp1Place=P1_teste2_20_App1
+MatrizPontos[Pallet_1,Prdt_teste2,20].XApp2Place=P1_teste2_20_App2
+MatrizPontos[Pallet_1,Prdt_teste2,20].XPlace=P1_teste2_20_Place
+;ENDFOLD
+;FOLD OffsetPlace 
+MatrizPontos[Pallet_1,Prdt_teste2,20].OffsetPlace.X=0
+MatrizPontos[Pallet_1,Prdt_teste2,20].OffsetPlace.Y=0
+MatrizPontos[Pallet_1,Prdt_teste2,20].OffsetPlace.Z=0
+MatrizPontos[Pallet_1,Prdt_teste2,20].OffsetPlace.A=0
+MatrizPontos[Pallet_1,Prdt_teste2,20].OffsetPlace.B=0
+MatrizPontos[Pallet_1,Prdt_teste2,20].OffsetPlace.C=0
+;ENDFOLD
+
+;ENDFOLD
+
+;FOLD PLACE 21
+;FOLD PROPRIEDADES 
+MatrizPontos[Pallet_1,Prdt_teste2,21].XApp1Place=P1_teste2_21_App1
+MatrizPontos[Pallet_1,Prdt_teste2,21].XApp2Place=P1_teste2_21_App2
+MatrizPontos[Pallet_1,Prdt_teste2,21].XPlace=P1_teste2_21_Place
+;ENDFOLD
+;FOLD OffsetPlace 
+MatrizPontos[Pallet_1,Prdt_teste2,21].OffsetPlace.X=0
+MatrizPontos[Pallet_1,Prdt_teste2,21].OffsetPlace.Y=0
+MatrizPontos[Pallet_1,Prdt_teste2,21].OffsetPlace.Z=0
+MatrizPontos[Pallet_1,Prdt_teste2,21].OffsetPlace.A=0
+MatrizPontos[Pallet_1,Prdt_teste2,21].OffsetPlace.B=0
+MatrizPontos[Pallet_1,Prdt_teste2,21].OffsetPlace.C=0
+;ENDFOLD
+
+;ENDFOLD
+
+;FOLD PLACE 22
+;FOLD PROPRIEDADES 
+MatrizPontos[Pallet_1,Prdt_teste2,22].XApp1Place=P1_teste2_22_App1
+MatrizPontos[Pallet_1,Prdt_teste2,22].XApp2Place=P1_teste2_22_App2
+MatrizPontos[Pallet_1,Prdt_teste2,22].XPlace=P1_teste2_22_Place
+;ENDFOLD
+;FOLD OffsetPlace 
+MatrizPontos[Pallet_1,Prdt_teste2,22].OffsetPlace.X=0
+MatrizPontos[Pallet_1,Prdt_teste2,22].OffsetPlace.Y=0
+MatrizPontos[Pallet_1,Prdt_teste2,22].OffsetPlace.Z=0
+MatrizPontos[Pallet_1,Prdt_teste2,22].OffsetPlace.A=0
+MatrizPontos[Pallet_1,Prdt_teste2,22].OffsetPlace.B=0
+MatrizPontos[Pallet_1,Prdt_teste2,22].OffsetPlace.C=0
+;ENDFOLD
+
+;ENDFOLD
+
+;FOLD PLACE 23
+;FOLD PROPRIEDADES 
+MatrizPontos[Pallet_1,Prdt_teste2,23].XApp1Place=P1_teste2_23_App1
+MatrizPontos[Pallet_1,Prdt_teste2,23].XApp2Place=P1_teste2_23_App2
+MatrizPontos[Pallet_1,Prdt_teste2,23].XPlace=P1_teste2_23_Place
+;ENDFOLD
+;FOLD OffsetPlace 
+MatrizPontos[Pallet_1,Prdt_teste2,23].OffsetPlace.X=0
+MatrizPontos[Pallet_1,Prdt_teste2,23].OffsetPlace.Y=0
+MatrizPontos[Pallet_1,Prdt_teste2,23].OffsetPlace.Z=0
+MatrizPontos[Pallet_1,Prdt_teste2,23].OffsetPlace.A=0
+MatrizPontos[Pallet_1,Prdt_teste2,23].OffsetPlace.B=0
+MatrizPontos[Pallet_1,Prdt_teste2,23].OffsetPlace.C=0
+;ENDFOLD
+
+;ENDFOLD
+
+;FOLD PLACE 24
+;FOLD PROPRIEDADES 
+MatrizPontos[Pallet_1,Prdt_teste2,24].XApp1Place=P1_teste2_24_App1
+MatrizPontos[Pallet_1,Prdt_teste2,24].XApp2Place=P1_teste2_24_App2
+MatrizPontos[Pallet_1,Prdt_teste2,24].XPlace=P1_teste2_24_Place
+;ENDFOLD
+;FOLD OffsetPlace 
+MatrizPontos[Pallet_1,Prdt_teste2,24].OffsetPlace.X=0
+MatrizPontos[Pallet_1,Prdt_teste2,24].OffsetPlace.Y=0
+MatrizPontos[Pallet_1,Prdt_teste2,24].OffsetPlace.Z=0
+MatrizPontos[Pallet_1,Prdt_teste2,24].OffsetPlace.A=0
+MatrizPontos[Pallet_1,Prdt_teste2,24].OffsetPlace.B=0
+MatrizPontos[Pallet_1,Prdt_teste2,24].OffsetPlace.C=0
+;ENDFOLD
+
+;ENDFOLD
+
+;ENDFOLD
+;ENDFOLD
 END

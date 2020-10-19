@@ -11,7 +11,8 @@ using namespace std;
 
 #include "comum.h"
 
-void ERROR_messege(std::string mensagem){
+void ERROR_messege(std::string mensagem)
+{
   cout << "<span style=\"color:red\">**ERROR: " << mensagem << "**</span>"<<endl;
 }
 
@@ -69,7 +70,7 @@ void end_files(std::ofstream &src,std::ofstream &dat)
 std::string Pose::kuka(void)
 {
   std::stringstream aux;
-  aux << "{X " << X << ",Y " << Y << ",Z " << Z << ",A " << A << ",B 0,C 180,S 2,T 2}" << endl;
+  aux << "{X " << X << ",Y " << Y << ",Z " << Z << ",A " << A << ",B 0,C 180,S 2,T 2}";
   return aux.str();
 }
 
@@ -114,7 +115,7 @@ void Receita::imprime(std::ofstream &ofs)
 
   int i=1;
   for (auto &outt : LayersVector)
-{
+  {
     ofs<<"  StrReceitaLayer[Prdt_"<< nome <<","<<i<<"]="<< outt << endl;
     i++;
   }
