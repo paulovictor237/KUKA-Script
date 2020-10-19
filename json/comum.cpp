@@ -89,6 +89,7 @@ std::ostream &operator<<(std::ostream &os, Pose const &m)
   os << ", Z " << m.Z;
   os << ", A " << m.A;
   os << ", B " << m.B;
+  os << ", C " << m.C;
   os << " }";
   return os;
 }

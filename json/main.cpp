@@ -39,6 +39,30 @@ int main(int argc, char **argv)
   cout << "# $ >> PROGRAMA INICIADO << $"<<endl;
   cout << "Valores de inicializacao" << endl; 
 //+------------------------------------------------------------<< 
+  //configuracoes de inicializacao
+  int Pallet=1;
+  class Pose app;
+  app.X=-60;
+  app.Y=60;
+  app.Z=100;
+  if(argc==2){
+    Pallet = stoi(argv[1]);
+  }
+  if(argc==4){
+    app.X=stod(argv[1]);
+    app.Y=stod(argv[2]);
+    app.Z=stod(argv[3]);
+  }
+  if(argc==5){
+    Pallet = stoi(argv[1]);
+    app.X=stod(argv[2]);
+    app.Y=stod(argv[3]);
+    app.Z=stod(argv[4]);
+  }
+  cout << "Pallet: " << Pallet << endl;
+  cout << "Valor de aproximacao: " << app << endl;
+  cout << "\n-----------------------------\n" << endl;
+//+------------------------------------------------------------<< 
   //variaveis
   std::string entrada;
   int NumPontos=0;
@@ -46,10 +70,6 @@ int main(int argc, char **argv)
   bool aux_name=false;
 
   class Pose pose_aux;
-  class Pose app;
-  app.X=-60;
-  app.Y=60;
-  app.Z=100;
   class Receita receita;
 //+------------------------------------------------------------<<
   //lê o arquivo
@@ -160,7 +180,6 @@ int main(int argc, char **argv)
   receita.imprime(TReceita_src);
 //+------------------------------------------------------------<< 
   // distribui as informações aos arquivos 
-  int Pallet=1;
   matriz_maker(TMatriz_src,TMatriz_dat,Pallet,receita,app);
   simulacao_maker(simulacao_src,simulacao_dat,Pallet,receita,app);
 //+------------------------------------------------------------<< 
