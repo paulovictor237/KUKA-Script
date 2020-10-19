@@ -439,44 +439,4 @@ LIN XP85
 LIN XP86
 ;ENDFOLD
 place()
-pick()
-;FOLD LIN P87 CONT Vel= 2 m/s CPDATP3 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P87; Kuka.BlendingEnabled=True; Kuka.MoveDataName=CPDATP3; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-LIN XP87
-;ENDFOLD
-;FOLD LIN P88 CONT Vel= 2 m/s CPDATP3 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P88; Kuka.BlendingEnabled=True; Kuka.MoveDataName=CPDATP3; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-LIN XP88
-;ENDFOLD
-;FOLD LIN P89 CONT Vel= 2 m/s CPDATP3 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P89; Kuka.BlendingEnabled=True; Kuka.MoveDataName=CPDATP3; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-LIN XP89
-;ENDFOLD
-place()
-pick()
-;FOLD LIN P90 CONT Vel= 2 m/s CPDATP3 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P90; Kuka.BlendingEnabled=True; Kuka.MoveDataName=CPDATP3; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-LIN XP90
-;ENDFOLD
-;FOLD LIN P91 CONT Vel= 2 m/s CPDATP3 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P91; Kuka.BlendingEnabled=True; Kuka.MoveDataName=CPDATP3; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-LIN XP91
-;ENDFOLD
-;FOLD LIN P92 CONT Vel= 2 m/s CPDATP3 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P92; Kuka.BlendingEnabled=True; Kuka.MoveDataName=CPDATP3; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-LIN XP92
-;ENDFOLD
-place()
 END

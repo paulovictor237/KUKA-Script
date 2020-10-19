@@ -125,6 +125,7 @@ int main(int argc, char **argv)
     if(buscar_chave(entrada,"pattern"))
     {
       NumLayers++;
+      pose_aux.Z=receita.Caixa.height*NumLayers;
       while (entrada.find("        }")!=0)
       {
         getline(file_in,entrada);
@@ -145,7 +146,6 @@ int main(int argc, char **argv)
           receita.all_poses.push_back(pose_aux);
         }
       }
-      pose_aux.Z=receita.Caixa.height*NumLayers;
     }
   }
 //+------------------------------------------------------------<< 
