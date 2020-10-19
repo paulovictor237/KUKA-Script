@@ -49,7 +49,15 @@ void imprime_vetor(vector<string> tokens)
 
 double valor(std::string entrada)
 {
-  return stod(split_string(entrada,"[^0-9]+",1));
+  // return stod(split_string(entrada,"[^0-9]+",1));
+  vector<string> aux=split_string(entrada,"[:,]+");
+  //imprime_vetor(aux);
+  if(aux.size()>1)
+  {
+    return stod(aux[1]);
+  }else{
+    return stod(aux[0]);
+  } 
 }
 
 void init_files(std::ofstream &src,std::ofstream &dat,std::string name)

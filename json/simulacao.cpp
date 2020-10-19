@@ -12,20 +12,37 @@ using namespace std;
 #include "comum.h"
 #include "simulacao.h"
 
-void simulacao_maker(std::ofstream &simulacao_src,std::ofstream &simulacao_dat,int pallet,class Receita receita)
+void simulacao_maker(std::ofstream &simulacao_src,std::ofstream &simulacao_dat,int pallet,class Receita receita,class Pose app)
 {
+  class Pose XApp1Place,XApp2Place,XPlace;
   int i=0;
   for (auto &outt : receita.all_poses)
   {
+    //valor compromisso de engenharia
+    //Place
+    XPlace=outt;
+    //App2
+    XApp2Place=outt;
+    XApp2Place.X+=app.X;
+    XApp2Place.Y+=app.Y;
+    XApp2Place.Z+=receita.AlturaCaixa/2;
+    //App1
+    XApp1Place=XApp2Place;
+    XApp1Place.Z+=receita.AlturaCaixa/2+app.Y;
+    simulacao_src << "pick()"<< endl;
     i++;
-    simulacao_ponto(simulacao_src,simulacao_dat,i+20,outt,false);
+    simulacao_ponto(simulacao_src,simulacao_dat,i+20,XApp1Place,false);
+    i++;
+    simulacao_ponto(simulacao_src,simulacao_dat,i+20,XApp2Place,false);
+    i++;
+    simulacao_ponto(simulacao_src,simulacao_dat,i+20,XPlace,false);
+    simulacao_src << "place()"<< endl;
   }
   return;
 }
 
 void simulacao_ponto(std::ofstream &src,std::ofstream &dat,int i,class Pose pose,bool type)
 {
-  src << "pick()"<< endl;
   if(type)
   {
     src << ";FOLD PTP P"<<i<<" CONT Vel= 100 % PDATP3 Tool[1] Base[1]   ;%{PE}" << endl;
@@ -42,7 +59,6 @@ void simulacao_ponto(std::ofstream &src,std::ofstream &dat,int i,class Pose pose
   src << ";ENDFOLD"<< endl;
   src << (type?"PTP":"LIN") <<" XP"<<i<< endl;
   src << ";ENDFOLD"<< endl;
-  src << "place()"<< endl;
 
   dat << "DECL E6POS XP"<<i<<"={X "<<pose.X<<",Y "<<pose.Y<<",Z "<<pose.Z<<",A "<<pose.A<<",B "<<pose.B<<",C 180,S 2,T 2}" << endl;
 }

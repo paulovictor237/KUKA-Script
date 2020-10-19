@@ -13,7 +13,7 @@ using namespace std;
 # include "matriz_pontos.h"
 
 
-void matriz_maker(std::ofstream &TMatriz_src,std::ofstream &TMatriz_dat,int pallet,class Receita receita)
+void matriz_maker(std::ofstream &TMatriz_src,std::ofstream &TMatriz_dat,int pallet,class Receita receita,class Pose app)
 {
   int layer=1;
   int inicial=1;
@@ -36,7 +36,7 @@ void matriz_maker(std::ofstream &TMatriz_src,std::ofstream &TMatriz_dat,int pall
       separa_layers(TMatriz_src,layer,contador,receita.PlacesCamada*layer);
       separa_layers(TMatriz_dat,layer,contador,receita.PlacesCamada*layer);
     }
-    matriz_pontos(TMatriz_src,TMatriz_dat,pallet,contador,receita,outt);
+    matriz_pontos(TMatriz_src,TMatriz_dat,pallet,contador,receita,outt,app);
     contador++;
   }
   TMatriz_src<<";ENDFOLD" << endl;
@@ -73,8 +73,20 @@ void separa_layers(std::ofstream &file,int layer,int inicial,int final)
   file << ";FOLD LAYER "<<layer<<": PLACE "<<inicial << " ate " << final << endl;
 }
 
-void matriz_pontos(std::ofstream &TMatriz_src,std::ofstream &TMatriz_dat,int pallet,int NumPlace,class Receita receita,class Pose pose)
+void matriz_pontos(std::ofstream &TMatriz_src,std::ofstream &TMatriz_dat,int pallet,int NumPlace,class Receita receita,class Pose pose,class Pose app)
 {
+  class Pose XApp1Place,XApp2Place,XPlace;
+  //valor compromisso de engenharia
+  //Place
+  XPlace=pose;
+  //App2
+  XApp2Place=pose;
+  XApp2Place.X+=app.X;
+  XApp2Place.Y+=app.Y;
+  XApp2Place.Z+=receita.AlturaCaixa/2;
+  //App1
+  XApp1Place=XApp2Place;
+  XApp1Place.Z+=(receita.AlturaCaixa/2)+app.Z;
   //+-------------------------- SRC --------------------------+<< 
   TMatriz_src<<";FOLD PLACE " << NumPlace << endl;
     TMatriz_src<<";FOLD PROPRIEDADES " << endl;
@@ -95,9 +107,9 @@ void matriz_pontos(std::ofstream &TMatriz_src,std::ofstream &TMatriz_dat,int pal
 
   //+-------------------------- DAT --------------------------+<<   
   TMatriz_dat<<";FOLD PLACE " << NumPlace << endl;
-  TMatriz_dat<<"DECL E6POS P"<<pallet<<"_"<<receita.nome<<"_"<<NumPlace<<"_"<<"App1"<<"="<<pose.kuka()<<endl;
-  TMatriz_dat<<"DECL E6POS P"<<pallet<<"_"<<receita.nome<<"_"<<NumPlace<<"_"<<"App2"<<"="<<pose.kuka()<<endl;
-  TMatriz_dat<<"DECL E6POS P"<<pallet<<"_"<<receita.nome<<"_"<<NumPlace<<"_"<<"Place"<<"="<<pose.kuka()<<endl;
+  TMatriz_dat<<"DECL E6POS P"<<pallet<<"_"<<receita.nome<<"_"<<NumPlace<<"_"<<"App1"<<"="<<XApp1Place.kuka()<<endl;
+  TMatriz_dat<<"DECL E6POS P"<<pallet<<"_"<<receita.nome<<"_"<<NumPlace<<"_"<<"App2"<<"="<<XApp2Place.kuka()<<endl;
+  TMatriz_dat<<"DECL E6POS P"<<pallet<<"_"<<receita.nome<<"_"<<NumPlace<<"_"<<"Place"<<"="<<XPlace.kuka()<<endl;
   TMatriz_dat<<";ENDFOLD\n" << endl; 
 
   return;

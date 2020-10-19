@@ -3,7 +3,7 @@
 
 class Pose{
 public:
-    double X=0,Y=0,Z=0,A=0,B=0;
+    double X=0,Y=0,Z=0,A=0,B=0,C=0;
 public:
     std::string kuka(void);
     friend std::ostream &operator<<(std::ostream &os, Pose const &m);

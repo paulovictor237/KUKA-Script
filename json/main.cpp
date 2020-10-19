@@ -46,6 +46,10 @@ int main(int argc, char **argv)
   bool aux_name=false;
 
   class Pose pose_aux;
+  class Pose app;
+  app.X=-60;
+  app.Y=60;
+  app.Z=100;
   class Receita receita;
 //+------------------------------------------------------------<<
   //lê o arquivo
@@ -157,8 +161,8 @@ int main(int argc, char **argv)
 //+------------------------------------------------------------<< 
   // distribui as informações aos arquivos 
   int Pallet=1;
-  matriz_maker(TMatriz_src,TMatriz_dat,Pallet,receita);
-  simulacao_maker(simulacao_src,simulacao_dat,Pallet,receita);
+  matriz_maker(TMatriz_src,TMatriz_dat,Pallet,receita,app);
+  simulacao_maker(simulacao_src,simulacao_dat,Pallet,receita,app);
 //+------------------------------------------------------------<< 
   end_files(simulacao_src,simulacao_dat);
   end_files(TReceita_src,TReceita_dat);
