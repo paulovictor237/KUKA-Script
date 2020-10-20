@@ -11,83 +11,88 @@ using namespace std;
 
 #include "comum.h"
 
-void inverte_linhas(std::vector<int> &matriz,int linha,int coluna){
-  int aux[coluna];
-  for (int i=0;i<linha/2;i++){
-    for(int j=0;j<coluna;j++){
-      aux[j]=matriz[i*coluna+j];
-    }
-    for(int j=0;j<coluna;j++){
-      matriz[i*coluna+j]=matriz[(linha-i-1)*coluna+j];
-    }
-    for(int j=0;j<coluna;j++){
-      matriz[(linha-i-1)*coluna+j]=aux[j];
-    }
-  }
-}
-void inverte_colunas(std::vector<int> &matriz,int linha,int coluna){
-
-  for (int i=0;i<linha;i++){
-    for(int j=0;j<coluna/2;j++){
-      int aux1=matriz[i*coluna+j];
-      matriz[i*coluna+j]=matriz[i*coluna+(coluna-j-1)];
-      matriz[i*coluna+(coluna-j-1)]=aux1;
-    }
-  }
-}
-
-void imprime_matriz(std::vector<int> &matriz,int linha,int coluna){
-  for (int i=0;i<linha;i++){
-    for(int j=0;j<coluna;j++){
-      cout << ((matriz[i*coluna+j]<10)?"[ ":"[") << matriz[i*coluna+j] << "]";
-    }
-    cout << endl;
-  }
-  cout << endl;
-}
-
-
-void Receita::quadrante_vector(int quadrante,int coluna)
+void Receita::inverte_coluna(void)
 {
-  cout << coluna << endl;
-  int linha=all_poses.size()/coluna;
-  linha=5;
-  coluna=4;
-  
-  std::vector<int> matriz;
-  int k=0;
-  for(int i=0;i<linha;i++){
-    for(int j=0;j<coluna;j++){
-      matriz.push_back(k);
-      k++;
-    } 
+  std::vector<Pose> aux_1;
+  std::vector<Pose> aux_2;
+  std::vector<Pose> aux_3;
+  double aux2;
+  int inicio=0,fim=0,k=0,j=0,i=0;
+  for(int i=0;i<Layers;i++){
+    while(fim!=PlacesCamada*(i+1)){
+      aux2 =  all_poses[fim].Y;
+      while(aux2 == all_poses[fim].Y){
+        //begin/end
+        aux_1.insert(aux_1.begin(),all_poses[fim]);
+        //cout << " " << all_poses[fim].Y;
+        fim++;
+      }
+      //cout << endl;
+      for (auto &outt : aux_1){
+        aux_2.insert(aux_2.end(),outt);
+      }
+      aux_1.clear();    
+    }
+    for (auto &outt : aux_2){
+      aux_3.push_back(outt);
+    }
+    aux_2.clear();
   }
-  imprime_matriz(matriz,linha,coluna);
-  inverte_colunas(matriz,linha,coluna);
-  imprime_matriz(matriz,linha,coluna);
-  inverte_linhas(matriz,linha,coluna);
-  imprime_matriz(matriz,linha,coluna);
+  all_poses=aux_3;
+}
 
+void Receita::inverte_linha(void)
+{
+  std::vector<Pose> aux_1;
+  std::vector<Pose> aux_2;
+  std::vector<Pose> aux_3;
+  double aux2;
+  int inicio=0,fim=0,k=0,j=0,i=0;
+  for(int i=0;i<Layers;i++){
+    while(fim!=PlacesCamada*(i+1)){
+      aux2 =  all_poses[fim].Y;
+      while(aux2 == all_poses[fim].Y){
+        //begin/end
+        aux_1.insert(aux_1.begin(),all_poses[fim]);
+        //cout << " " << all_poses[fim].Y;
+        fim++;
+      }
+      //cout << endl;
+      for (auto &outt : aux_1){
+        aux_2.insert(aux_2.begin(),outt);
+      }
+      aux_1.clear();    
+    }
+    for (auto &outt : aux_2){
+      aux_3.push_back(outt);
+    }
+    aux_2.clear();
+  }
+  all_poses=aux_3;
+}
+
+
+void Receita::quadrante_vector(int quadrante)
+{
   switch (quadrante){
     case 1:
-      
+      inverte_linha();
+      inverte_coluna();
       break;
     case 2:
-
+      inverte_linha();
       break;
     case 3:
-
+      inverte_coluna();
       break;
     case 4:
-      all_poses=all_poses;
+      //all_poses=all_poses;
       break;
     default:
-      all_poses=all_poses;
+      //all_poses=all_poses;
       break;
   }
-
 }
-
 
 void ERROR_messege(std::string mensagem)
 {
@@ -113,17 +118,6 @@ vector<string> split_string(std::string tokenString,std::string delim)
   for (auto token_it=tokens_begin; token_it != tokens_end; token_it++)tokens.push_back(*token_it);
   return tokens;
 }
-
-void imprime_vetor(vector<string> tokens)
-{
-  int i=0;
-  for (const string& token: tokens)
-{
-    cout << "[" << i << "]"<< "-> " << token << "\n";
-    i++;
-  }
-}
-
 
 double valor(std::string entrada)
 {

@@ -15,14 +15,18 @@ using namespace std;
 void simulacao_maker(std::ofstream &simulacao_src,std::ofstream &simulacao_dat,int pallet,class Receita receita,class Pose app)
 {
   class Pose XApp1Place,XApp2Place,XPlace;
-  int i=0;
+  int i=0,j=0,Layers=0;
   for (auto &outt : receita.all_poses)
   {
     //valor compromisso de engenharia
     //Place
     XPlace=outt;
+    //sobe os layers
+    XPlace.Z+=receita.AlturaCaixa*Layers;
+    if((j+1)%receita.PlacesCamada==0)Layers++;
+    j++;
     //App2
-    XApp2Place=outt;
+    XApp2Place=XPlace;
     XApp2Place.X+=app.X;
     XApp2Place.Y+=app.Y;
     XApp2Place.Z+=receita.AlturaCaixa/2;

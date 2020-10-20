@@ -41,7 +41,7 @@ int main(int argc, char **argv)
 //+------------------------------------------------------------<< 
   //configuracoes de inicializacao
   int Pallet=1;
-  int quadrante=1;
+  int quadrante=4;
   class Pose app;
   //quadrante
   if(argc==2){
@@ -55,23 +55,23 @@ int main(int argc, char **argv)
   }
   switch (quadrante){
     case 1:
-      app.X=(-60);
+      app.X=(+60);
       app.Y=(-60);
       break;
     case 2:
       app.X=(-60);
-      app.Y=(+60);
+      app.Y=(-60);
       break;
     case 3:
       app.X=(+60);
-      app.Y=(-60);
+      app.Y=(+60);
       break;
     case 4:
-      app.X=(+60);
+      app.X=(-60);
       app.Y=(+60);
       break;
     default:
-      app.X=(+60);
+      app.X=(-60);
       app.Y=(+60);
       break;
   }
@@ -87,10 +87,10 @@ int main(int argc, char **argv)
   int NumLayers=0;
   bool aux_name=false;
 
-  int linha_num=0;
-  double linha_valor_Y=0;
-  bool linha_aux1=true;
-  bool linha_aux2=true;
+  int coluna_num=0;
+  double coluna_valor_X=0;
+  bool coluna_aux1=true;
+  bool coluna_aux2=true;
 
   class Pose pose_aux;
   class Receita receita;
@@ -148,7 +148,6 @@ int main(int argc, char **argv)
     if(buscar_chave(entrada,"pattern"))
     {
       NumLayers++;
-      pose_aux.Z=receita.Caixa.height*NumLayers;
       while (entrada.find("        }")!=0)
       {
         getline(file_in,entrada);
@@ -165,18 +164,10 @@ int main(int argc, char **argv)
           pose_aux.A=valor(entrada);
           getline(file_in,entrada);
           //pose_aux.B=valor(entrada);
+          pose_aux.Z=receita.Caixa.height;
+          // pose_aux.Z=receita.Caixa.height*NumLayers;
           //cout << pose_aux << endl;
           receita.all_poses.push_back(pose_aux);
-          //funcao para determinar inversao do quadrante
-          if(linha_aux1){
-            linha_aux1=false;
-            linha_valor_Y=pose_aux.Y;
-          }
-          if(linha_aux2&&pose_aux.Y>linha_valor_Y){
-            linha_aux2=false;
-            linha_num=NumPontos-1;
-            cout << "contador linha" << linha_num << endl;
-          }
         }
       }
     }
@@ -211,7 +202,8 @@ int main(int argc, char **argv)
   receita.Camadas=receita.LayersVector.size();
   receita.Layers=NumLayers;
   receita.imprime(TReceita_src);
-  receita.quadrante_vector(quadrante,linha_num);
+  cout << "coluna_num: " << coluna_num << endl;
+  receita.quadrante_vector(quadrante);
 //+------------------------------------------------------------<< 
   // distribui as informações aos arquivos 
   matriz_maker(TMatriz_src,TMatriz_dat,Pallet,receita,app);
