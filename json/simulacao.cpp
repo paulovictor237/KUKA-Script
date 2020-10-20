@@ -31,23 +31,23 @@ void simulacao_maker(std::ofstream &simulacao_src,std::ofstream &simulacao_dat,i
     XApp1Place.Z+=receita.AlturaCaixa/2+app.Y;
     simulacao_src << "pick()"<< endl;
     i++;
-    simulacao_ponto(simulacao_src,simulacao_dat,i+20,XApp1Place,false);
+    simulacao_ponto(simulacao_src,simulacao_dat,i+20,XApp1Place,false,pallet);
     i++;
-    simulacao_ponto(simulacao_src,simulacao_dat,i+20,XApp2Place,false);
+    simulacao_ponto(simulacao_src,simulacao_dat,i+20,XApp2Place,false,pallet);
     i++;
-    simulacao_ponto(simulacao_src,simulacao_dat,i+20,XPlace,false);
+    simulacao_ponto(simulacao_src,simulacao_dat,i+20,XPlace,false,pallet);
     simulacao_src << "place()"<< endl;
   }
   return;
 }
 
-void simulacao_ponto(std::ofstream &src,std::ofstream &dat,int i,class Pose pose,bool type)
+void simulacao_ponto(std::ofstream &src,std::ofstream &dat,int i,class Pose pose,bool type,int Pallet)
 {
   if(type)
   {
-    src << ";FOLD PTP P"<<i<<" CONT Vel= 100 % PDATP3 Tool[1] Base[1]   ;%{PE}" << endl;
+    src << ";FOLD PTP P"<<i<<" CONT Vel= 100 %  PDATP3 Tool[1] Base["<<Pallet<<"]   ;%{PE}" << endl;
   }else{
-    src << ";FOLD LIN P"<<i<<" CONT Vel= 2 m/s CPDATP3 Tool[1] Base[1]   ;%{PE}" << endl;
+    src << ";FOLD LIN P"<<i<<" CONT Vel= 2 m/s CPDATP3 Tool[1] Base["<<Pallet<<"]   ;%{PE}" << endl;
   }
   src << ";FOLD Parameters ;%{h}"<< endl;
   if(type)

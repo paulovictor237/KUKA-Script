@@ -24,6 +24,7 @@ public:
   std::vector<Pose> all_poses;
   std::vector <int> LayersVector;
 public:
+  void quadrante_vector(int quadrante,int linha_num);
   void imprime(std::ofstream &ofs);
 };
 

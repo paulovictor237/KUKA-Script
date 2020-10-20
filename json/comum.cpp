@@ -11,6 +11,84 @@ using namespace std;
 
 #include "comum.h"
 
+void inverte_linhas(std::vector<int> &matriz,int linha,int coluna){
+  int aux[coluna];
+  for (int i=0;i<linha/2;i++){
+    for(int j=0;j<coluna;j++){
+      aux[j]=matriz[i*coluna+j];
+    }
+    for(int j=0;j<coluna;j++){
+      matriz[i*coluna+j]=matriz[(linha-i-1)*coluna+j];
+    }
+    for(int j=0;j<coluna;j++){
+      matriz[(linha-i-1)*coluna+j]=aux[j];
+    }
+  }
+}
+void inverte_colunas(std::vector<int> &matriz,int linha,int coluna){
+
+  for (int i=0;i<linha;i++){
+    for(int j=0;j<coluna/2;j++){
+      int aux1=matriz[i*coluna+j];
+      matriz[i*coluna+j]=matriz[i*coluna+(coluna-j-1)];
+      matriz[i*coluna+(coluna-j-1)]=aux1;
+    }
+  }
+}
+
+void imprime_matriz(std::vector<int> &matriz,int linha,int coluna){
+  for (int i=0;i<linha;i++){
+    for(int j=0;j<coluna;j++){
+      cout << ((matriz[i*coluna+j]<10)?"[ ":"[") << matriz[i*coluna+j] << "]";
+    }
+    cout << endl;
+  }
+  cout << endl;
+}
+
+
+void Receita::quadrante_vector(int quadrante,int coluna)
+{
+  cout << coluna << endl;
+  int linha=all_poses.size()/coluna;
+  linha=5;
+  coluna=4;
+  
+  std::vector<int> matriz;
+  int k=0;
+  for(int i=0;i<linha;i++){
+    for(int j=0;j<coluna;j++){
+      matriz.push_back(k);
+      k++;
+    } 
+  }
+  imprime_matriz(matriz,linha,coluna);
+  inverte_colunas(matriz,linha,coluna);
+  imprime_matriz(matriz,linha,coluna);
+  inverte_linhas(matriz,linha,coluna);
+  imprime_matriz(matriz,linha,coluna);
+
+  switch (quadrante){
+    case 1:
+      
+      break;
+    case 2:
+
+      break;
+    case 3:
+
+      break;
+    case 4:
+      all_poses=all_poses;
+      break;
+    default:
+      all_poses=all_poses;
+      break;
+  }
+
+}
+
+
 void ERROR_messege(std::string mensagem)
 {
   cout << "<span style=\"color:red\">**ERROR: " << mensagem << "**</span>"<<endl;
