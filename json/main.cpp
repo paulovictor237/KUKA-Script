@@ -114,24 +114,24 @@ int main(int argc, char **argv)
     if(buscar_chave(entrada,"dimensions"))
     {
       getline(file_in,entrada);
-      receita.Pallet.height = valor(entrada);
+      receita.Pallet.height = valor(entrada,2);;
       getline(file_in,entrada);
-      receita.Pallet.length = valor(entrada);
+      receita.Pallet.length = valor(entrada,2);;
       getline(file_in,entrada);
-      receita.Pallet.width = valor(entrada);
+      receita.Pallet.width = valor(entrada,2);;
       cout << "receita.Pallet\n" << receita.Pallet << endl;
     }
     //pega valor de receita.Caixa
     if(buscar_chave(entrada,"productDimensions"))
     {
       getline(file_in,entrada);
-      receita.Caixa.width = valor(entrada);
+      receita.Caixa.width = valor(entrada,2);;
       getline(file_in,entrada);
-      receita.Caixa.height = valor(entrada);
+      receita.Caixa.height = valor(entrada,2);;
       getline(file_in,entrada);
-      receita.Caixa.length = valor(entrada);
+      receita.Caixa.length = valor(entrada,2);;
       getline(file_in,entrada);
-      receita.Caixa.weight = valor(entrada);
+      receita.Caixa.weight = valor(entrada,2);;
       cout << "receita.Caixa\n" << receita.Caixa << endl;
     }
     //coleta os layers
@@ -141,7 +141,7 @@ int main(int argc, char **argv)
       {
         getline(file_in,entrada);
         if (!file_in.good()||buscar_chave(entrada,"]"))break;
-        receita.LayersVector.push_back(valor(entrada));
+        receita.LayersVector.push_back(valor(entrada,3));
       }
     }
     //captura os pontos
@@ -156,14 +156,14 @@ int main(int argc, char **argv)
         if(buscar_chave(entrada,"x"))
         {
           NumPontos ++;
-          pose_aux.X=valor(entrada);
+          pose_aux.X=valor(entrada,2);;
           getline(file_in,entrada);
-          pose_aux.Y=valor(entrada);
+          pose_aux.Y=valor(entrada,2);;
           getline(file_in,entrada);
           getline(file_in,entrada);
-          pose_aux.A=valor(entrada);
+          pose_aux.A=valor(entrada,1);;
           getline(file_in,entrada);
-          //pose_aux.B=valor(entrada);
+          //pose_aux.B=valor(entrada,2);;
           pose_aux.Z=receita.Caixa.height;
           // pose_aux.Z=receita.Caixa.height*NumLayers;
           //cout << pose_aux << endl;

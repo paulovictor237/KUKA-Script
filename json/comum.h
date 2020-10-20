@@ -34,7 +34,7 @@ std::string split_string(std::string tokenString,std::string delim,int saida);
 vector<string> split_string(std::string tokenString,std::string delim);
 void imprime_vetor(vector<string> tokens);
 
-double valor(std::string entrada);
+double valor(std::string entrada,int retorno);
 bool buscar_chave(std::string entrada,std::string chave);
 
 void init_files(std::ofstream &src,std::ofstream &dat,std::string name);
