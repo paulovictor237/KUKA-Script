@@ -152,35 +152,11 @@ void end_files(std::ofstream &src,std::ofstream &dat)
   return;
 }
 
-
 std::string Pose::kuka(void)
 {
   std::stringstream aux;
   aux << "{X " << X << ",Y " << Y << ",Z " << Z << ",A " << A << ",B 0,C 180,S 2,T 2}";
   return aux.str();
-}
-
-std::ostream &operator<<(std::ostream &os, Pose const &m)
-{
-  os << "{ X " << m.X;
-  os << ", Y " << m.Y;
-  os << ", Z " << m.Z;
-  os << ", A " << m.A;
-  os << ", B " << m.B;
-  os << ", C " << m.C;
-  os << " }";
-  return os;
-}
-
-std::ostream &operator<<(std::ostream &os, Objeto const &m)
-{
-  // os << "width : "  << m.width << endl;
-  // os << "length : " << m.length << endl;
-  // os << "height : " << m.height << endl;
-  os << "Dimensoes : "  << m.width << " x " << m.length << " x " << m.height << endl;
-  os << "Peso : " << m.weight << endl;
-
-  return os;
 }
 
 void Receita::imprime(std::ofstream &ofs)
@@ -214,5 +190,53 @@ bool buscar_chave(std::string entrada,std::string chave)
 {
   return entrada.find(chave) !=std::string::npos;
 }
+
+std::ostream &operator<<(std::ostream &os, Pose const &m)
+{
+  os << "{ X " << m.X;
+  os << ", Y " << m.Y;
+  os << ", Z " << m.Z;
+  os << ", A " << m.A;
+  os << ", B " << m.B;
+  os << ", C " << m.C;
+  os << " }";
+  return os;
+}
+
+std::ostream &operator<<(std::ostream &os, Objeto const &m)
+{
+  // os << "width : "  << m.width << endl;
+  // os << "length : " << m.length << endl;
+  // os << "height : " << m.height << endl;
+  os << "Dimensoes : "  << m.width << " x " << m.length << " x " << m.height << endl;
+  os << "Peso : " << m.weight;
+
+  return os;
+}
+
+std::ostream &operator<<(std::ostream &os, Receita const &m)
+{
+  os << "# >> RECEITA <<\n"<< endl;
+  os << "nome: " << m.nome << endl;
+  os << "PlacesCamada: " << m.PlacesCamada << endl;
+  os << "AlturaCaixa: " << m.AlturaCaixa << endl;
+  os << "Camadas: " << m.Camadas << endl;
+  os << "Layers: " << m.Layers << endl;
+  os << "FinalContador: " << m.FinalContador << endl;
+  os << "\n**Caixa**\n" << m.Caixa << endl;
+  os << "\n**Pallet**\n" << m.Pallet << endl;
+  os << "\n**LayersVector**\n";
+  int i=1;
+  for (auto &outt : m.LayersVector){
+    os << (i<10?"[ ":"[") << i++ <<"] { " << outt << " }"<<endl;
+  }
+  os << "\n-----------------------------\n" << endl;
+  os << "# >> POSICOES <<\n"<< endl;
+  i=1;
+  for (auto &outt : m.all_poses) os << (i<10?"[ ":"[") << i++ <<"]" << outt<<endl;
+  os << "\n-----------------------------\n" << endl;
+  return os;
+}
+
 
 

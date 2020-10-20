@@ -28,6 +28,7 @@ public:
   void inverte_linha(void);
   void inverte_coluna(void);
   void imprime(std::ofstream &ofs);
+  friend std::ostream &operator<<(std::ostream &os, Receita const &m);
 };
 
 std::string split_string(std::string tokenString,std::string delim,int saida);

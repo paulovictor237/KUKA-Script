@@ -27,32 +27,34 @@ using namespace std;
 int main(int argc, char **argv)
 {
 //+------------------------------------------------------------<< 
-  //system("clear");
   // system("cls");
-//+------------------------------------------------------------<< 
-  // cout << "# PROGRAMA INICIADO #"<<endl;
-  // std::ofstream Relatorio("Relatorio/Relatorio.md");
-  // std::streambuf *coutbuf=std::cout.rdbuf(); //save old buf
-  // std::cout.rdbuf(Relatorio.rdbuf()); //redirect std::cout to out.txt!
-  // cout << "Relatorio gerado em [ Relatorio/Relatorio.md ]"<<endl;
-//+------------------------------------------------------------<< 
-  cout << "# $ >> PROGRAMA INICIADO << $"<<endl;
-  cout << "Valores de inicializacao" << endl; 
+  system("clear");
 //+------------------------------------------------------------<< 
   //configuracoes de inicializacao
   int Pallet=1;
   int quadrante=4;
   class Pose app;
-  //quadrante
-  if(argc==2){
-    quadrante = stoi(argv[1]);
-    Pallet = quadrante;
-  }
-  //quadrante e force_pallet
+  //Quadrante e Pallet
   if(argc==3){
     quadrante = stoi(argv[1]);
     Pallet = stoi(argv[2]);
+  }else{
+    cout << "Parametros Insuficientes" << endl;
+    return 1;
   }
+//+------------------------------------------------------------<< 
+  cout << "# PROGRAMA INICIADO #"<<endl;
+  cout << "Relatorio gerado em [ Relatorio/Relatorio.md ]"<<endl;
+  std::ofstream Relatorio("Relatorio/Relatorio.md");
+  std::streambuf *coutbuf=std::cout.rdbuf(); //save old buf
+  std::cout.rdbuf(Relatorio.rdbuf()); //redirect std::cout to out.txt!
+//+------------------------------------------------------------<< 
+  cout << "# $ >> PROGRAMA INICIADO << $"<<endl;
+  cout << "# >> OPCOES <<\n"<< endl;
+  cout << "Quadrante: " << Pallet << " | " << "Pallet: " << Pallet << endl;
+  cout << "\n-----------------------------\n" << endl;
+//+------------------------------------------------------------<< 
+  //determina quadrante
   switch (quadrante){
     case 1:
       app.X=(+60);
@@ -76,21 +78,12 @@ int main(int argc, char **argv)
       break;
   }
   app.Z=100;
-  //print
-  cout << "Pallet: " << Pallet << endl;
-  cout << "Valor de aproximacao: " << app << endl;
-  cout << "\n-----------------------------\n" << endl;
 //+------------------------------------------------------------<< 
   //variaveis
   std::string entrada;
   int NumPontos=0;
   int NumLayers=0;
   bool aux_name=false;
-
-  int coluna_num=0;
-  double coluna_valor_X=0;
-  bool coluna_aux1=true;
-  bool coluna_aux2=true;
 
   class Pose pose_aux;
   class Receita receita;
@@ -119,7 +112,6 @@ int main(int argc, char **argv)
       receita.Pallet.length = valor(entrada,2);;
       getline(file_in,entrada);
       receita.Pallet.width = valor(entrada,2);;
-      cout << "receita.Pallet\n" << receita.Pallet << endl;
     }
     //pega valor de receita.Caixa
     if(buscar_chave(entrada,"productDimensions"))
@@ -132,7 +124,6 @@ int main(int argc, char **argv)
       receita.Caixa.length = valor(entrada,2);;
       getline(file_in,entrada);
       receita.Caixa.weight = valor(entrada,2);;
-      cout << "receita.Caixa\n" << receita.Caixa << endl;
     }
     //coleta os layers
     if(buscar_chave(entrada,"layers"))
@@ -202,8 +193,8 @@ int main(int argc, char **argv)
   receita.Camadas=receita.LayersVector.size();
   receita.Layers=NumLayers;
   receita.imprime(TReceita_src);
-  cout << "coluna_num: " << coluna_num << endl;
   receita.quadrante_vector(quadrante);
+  cout << receita << endl;
 //+------------------------------------------------------------<< 
   // distribui as informações aos arquivos 
   matriz_maker(TMatriz_src,TMatriz_dat,Pallet,receita,app);
