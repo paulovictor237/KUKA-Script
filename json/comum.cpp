@@ -17,10 +17,12 @@ void Receita::inverte_coluna(void)
   std::vector<Pose> aux_2;
   std::vector<Pose> aux_3;
   double aux2;
+  // double diferenca=(Caixa.weight<Caixa.length?Caixa.weight:Caixa.length);
   int inicio=0,fim=0,k=0,j=0,i=0;
   for(int i=0;i<Layers;i++){
     while(fim!=PlacesCamada*(i+1)){
       aux2 =  all_poses[fim].Y;
+      //while(!(abs(all_poses[fim].Y) < abs(aux2)-diferenca|| abs(aux2)+diferenca< abs(all_poses[fim].Y))){
       while(aux2 == all_poses[fim].Y){
         //begin/end
         aux_1.insert(aux_1.begin(),all_poses[fim]);
