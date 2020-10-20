@@ -12,6 +12,19 @@ using namespace std;
 #include "comum.h"
 # include "matriz_pontos.h"
 
+void add_propriedades(std::ofstream &TMatriz_src,std::stringstream &endereco){
+  std::ifstream file_in("in/PROPRIEDADES.md");
+  if( !file_in ){cout << "Erro ao abrir os arquivos.\n";return;}
+  //faz a coleta dos dados
+  std::string entrada;
+  while (!file_in.eof())
+  {
+    getline(file_in,entrada);
+    if (!file_in.good())break;
+    TMatriz_src<<endereco.str()<<entrada<<endl;
+  }
+}
+
 
 void matriz_maker(std::ofstream &TMatriz_src,std::ofstream &TMatriz_dat,int pallet,class Receita receita,class Pose app)
 {
@@ -48,21 +61,15 @@ void matriz_maker(std::ofstream &TMatriz_src,std::ofstream &TMatriz_dat,int pall
 }
 
 
-int OffsetPlace(std::ofstream &TMatriz_src,int pallet,int NumPlace,class Receita receita)
+int OffsetPlace(std::ofstream &TMatriz_src,std::stringstream &endereco)
 {
   TMatriz_src<<";FOLD OffsetPlace " << endl;
-  TMatriz_src<<"MatrizPontos[Pallet_"<<pallet<<",Prdt_"<<receita.nome << "," << NumPlace << "].";
-  TMatriz_src<<"OffsetPlace.X=0"<< endl;
-  TMatriz_src<<"MatrizPontos[Pallet_"<<pallet<<",Prdt_"<<receita.nome << "," << NumPlace << "].";
-  TMatriz_src<<"OffsetPlace.Y=0"<< endl;
-  TMatriz_src<<"MatrizPontos[Pallet_"<<pallet<<",Prdt_"<<receita.nome << "," << NumPlace << "].";
-  TMatriz_src<<"OffsetPlace.Z=0"<< endl;
-  TMatriz_src<<"MatrizPontos[Pallet_"<<pallet<<",Prdt_"<<receita.nome << "," << NumPlace << "].";
-  TMatriz_src<<"OffsetPlace.A=0"<< endl;
-  TMatriz_src<<"MatrizPontos[Pallet_"<<pallet<<",Prdt_"<<receita.nome << "," << NumPlace << "].";
-  TMatriz_src<<"OffsetPlace.B=0"<< endl;
-  TMatriz_src<<"MatrizPontos[Pallet_"<<pallet<<",Prdt_"<<receita.nome << "," << NumPlace << "].";
-  TMatriz_src<<"OffsetPlace.C=0"<< endl;
+  TMatriz_src<< endereco.str() << "OffsetPlace.X=0"<< endl;
+  TMatriz_src<< endereco.str() << "OffsetPlace.Y=0"<< endl;
+  TMatriz_src<< endereco.str() << "OffsetPlace.Z=0"<< endl;
+  TMatriz_src<< endereco.str() << "OffsetPlace.A=0"<< endl;
+  TMatriz_src<< endereco.str() << "OffsetPlace.B=0"<< endl;
+  TMatriz_src<< endereco.str() << "OffsetPlace.C=0"<< endl;
   TMatriz_src<<";ENDFOLD" << endl;
   return 0;
 }
@@ -87,21 +94,24 @@ void matriz_pontos(std::ofstream &TMatriz_src,std::ofstream &TMatriz_dat,int pal
   //App1
   XApp1Place=XApp2Place;
   XApp1Place.Z+=(receita.AlturaCaixa/2)+app.Z;
-  //+-------------------------- SRC --------------------------+<< 
+  //+-------------------------- SRC --------------------------+<<
+  std::stringstream endereco;
+  endereco.clear(); 
+  endereco <<"MatrizPontos[Pallet_";
+  endereco <<pallet<<",Prdt_";
+  endereco <<receita.nome; 
+  endereco << "," ;
+  endereco << NumPlace;
+  endereco << "].";
+  
   TMatriz_src<<";FOLD PLACE " << NumPlace << endl;
     TMatriz_src<<";FOLD PROPRIEDADES " << endl;
-      //TMatriz_src<<"MatrizPontos[Pallet_"<<pallet<<",Prdt_"<<receita.nome << "," << NumPlace << "]." << entrada << endl;
-      
-      TMatriz_src<<"MatrizPontos[Pallet_"<<pallet<<",Prdt_"<<receita.nome << "," << NumPlace << "].";
-      TMatriz_src<<"XApp1Place=P"<<pallet<<"_"<<receita.nome<<"_"<<NumPlace<<"_"<<"App1"<<endl;
-      
-      TMatriz_src<<"MatrizPontos[Pallet_"<<pallet<<",Prdt_"<<receita.nome << "," << NumPlace << "].";
-      TMatriz_src<<"XApp2Place=P"<<pallet<<"_"<<receita.nome<<"_"<<NumPlace<<"_"<<"App2"<<endl;
-      
-      TMatriz_src<<"MatrizPontos[Pallet_"<<pallet<<",Prdt_"<<receita.nome << "," << NumPlace << "].";
-      TMatriz_src<<"XPlace=P"<<pallet<<"_"<<receita.nome<<"_"<<NumPlace<<"_"<<"Place"<<endl;
+      add_propriedades(TMatriz_src,endereco);
+      TMatriz_src<< endereco.str() <<"XApp1Place=P"<<pallet<<"_"<<receita.nome<<"_"<<NumPlace<<"_"<<"App1"<<endl;
+      TMatriz_src<< endereco.str() <<"XApp2Place=P"<<pallet<<"_"<<receita.nome<<"_"<<NumPlace<<"_"<<"App2"<<endl;
+      TMatriz_src<< endereco.str() <<"XPlace=P"<<pallet<<"_"<<receita.nome<<"_"<<NumPlace<<"_"<<"Place"<<endl;
     TMatriz_src << ";ENDFOLD" << endl;
-      OffsetPlace(TMatriz_src,pallet,NumPlace,receita);
+      OffsetPlace(TMatriz_src,endereco);
       TMatriz_src<< endl;
   TMatriz_src << ";ENDFOLD\n" << endl;
 
