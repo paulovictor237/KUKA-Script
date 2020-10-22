@@ -1,0 +1,4 @@
+/mnt/c/Users/paulo.duarte/Documents/GitKraken/KUKA-Script/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/paulo.duarte/Documents/GitKraken/KUKA-Script/CMakeFiles/edit_cache.dir
+/mnt/c/Users/paulo.duarte/Documents/GitKraken/KUKA-Script/CMakeFiles/run.dir
+/mnt/c/Users/paulo.duarte/Documents/GitKraken/KUKA-Script/CMakeFiles/script_exe.dir
