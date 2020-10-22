@@ -15,18 +15,26 @@ using namespace std;
 int num_pallet = 0;
 int num_pickop = 0;
 
+// split_string(outt,"[_=]+",true);
+// [0]-> DECL E6POS XPick
+// [1]-> E
+// [2]-> 1
+// [3]-> P
+// [4]-> 3
+// [5]-> {X 490.63656,Y 71.25504,Z 1342.80037,A -90,B 0,C -180,S 2,T 2,E1 0,E2 0,E3 0,E4 0,E5 0,E6 0}
+
 std::vector<std::string> pick_esteira_ordenado;
 
 bool myfunction (std::string i,std::string j) {
-  int ii  = stoi(split_string(i,"[_]+",4))*1000 + stoi(split_string(i,"[_]+",6));
-  int jj  = stoi(split_string(j,"[_]+",4))*1000 + stoi(split_string(j,"[_]+",6));
+  int ii  = stoi(split_string(i,"[_=]+",2))*1000 + stoi(split_string(i,"[_=]+",4));
+  int jj  = stoi(split_string(j,"[_=]+",2))*1000 + stoi(split_string(j,"[_=]+",4));
   return (ii<jj); 
 }
 
-void funcao_pick_esteira_src(std::ofstream &pick_esteira_src,string name){
+std::string funcao_pick_esteira_src(string PickName){
   //Pick_E_2_P_1
-  string pallet = split_string(name,"[_]+",2);
-  string pickop = split_string(name,"[_]+",4);
+  string pallet = split_string(PickName,"[_=]+",2);
+  string pickop = split_string(PickName,"[_=]+",4);
 
   int aux_pallet = stoi(pallet);
   int aux_pickop = stoi(pickop);
@@ -34,11 +42,9 @@ void funcao_pick_esteira_src(std::ofstream &pick_esteira_src,string name){
   num_pallet = (aux_pallet>num_pallet)?aux_pallet:num_pallet;
   num_pickop = (aux_pickop>num_pickop)?aux_pickop:num_pickop;
 
-  std::string aux_pick_name= "pick_esteira[Pallet_"+pallet+","+pickop+"] = "+name+"\n";
-  //pick_esteira_src <<aux_pick_name ;
-  pick_esteira_ordenado.push_back(aux_pick_name);
+  std::string aux_pick_name= "pick_esteira[Pallet_"+pallet+","+pickop+"] = "+PickName+"\n";
 
-  return;
+  return aux_pick_name;
 }
 
 
@@ -50,7 +56,6 @@ int funcao_pick_esteira_dat(std::ifstream &My_Job_dat)
   pick_esteira_src << "DEF "   << "Tpick_esteira" << "()" << endl;
   pick_esteira_dat << "DEFDAT "<< "Tpick_esteira" << " PUBLIC" << endl;
 
-  pick_esteira_ordenado.clear();
   cout <<  "# >> Rotina Pick << " << endl;
   //error
   bool ERROR_pick=true;
@@ -61,11 +66,12 @@ int funcao_pick_esteira_dat(std::ifstream &My_Job_dat)
   std::string entrada;
   std::string posicao;
   std::string PickName;
+  
   int tipo_place=1;
   int NumPontos=0;
   int contador=1;
 
-  pick_esteira_dat << ";OPCOES DE PICK\n" << endl;
+  //pick_esteira_dat << ";OPCOES DE PICK" << endl;
   while (!My_Job_dat.eof())
   {
     getline(My_Job_dat,entrada);
@@ -81,14 +87,7 @@ int funcao_pick_esteira_dat(std::ifstream &My_Job_dat)
           if(entrada.find("E6POS") !=std::string::npos && entrada.find(PickName) !=std::string::npos)
           {
             ERROR_pick=false;
-            cout << "Pick encontrado: " << PickName <<endl;
-            // cout << entrada<<endl;
-            posicao=split_string(entrada,"[=]+",1);
-            //posicao = ponto_remove_turn(posicao);
-            pick_esteira_dat<<";FOLD "<<PickName<<endl;
-            pick_esteira_dat<<"DECL GLOBAL E6POS "<<PickName<<"="<<posicao<<endl;
-            pick_esteira_dat << ";ENDFOLD\n" << endl;
-            funcao_pick_esteira_src(pick_esteira_src,PickName);
+            pick_esteira_ordenado.push_back(entrada);
           }
         }
         if(ERROR_pick) cout << "<span style=\"color:red\">**ERROR: " << PickName << "**</span>"<<endl;
@@ -96,8 +95,14 @@ int funcao_pick_esteira_dat(std::ifstream &My_Job_dat)
     }
   }
   //ordena vetor
-  std::sort (pick_esteira_ordenado.begin(), pick_esteira_ordenado.end(), myfunction); 
-  for (auto &outt : pick_esteira_ordenado)pick_esteira_src<< outt;
+  std::sort (pick_esteira_ordenado.begin(),pick_esteira_ordenado.end(), myfunction); 
+  for (auto &outt : pick_esteira_ordenado){
+    PickName=split_string(outt,"[ =]",2);
+    posicao=split_string(outt,"[_=]+",5);
+    cout << "Pick encontrado: " << PickName <<endl;
+    pick_esteira_dat<<"DECL GLOBAL E6POS "<<PickName<<"="<<posicao<<endl;
+    pick_esteira_src << funcao_pick_esteira_src(PickName);
+  }
   //---- END ----
   pick_esteira_src << "END";
   pick_esteira_dat << "ENDDAT";

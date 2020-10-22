@@ -16,7 +16,7 @@ ENDIF
 ;ENDFOLD (INI)
 
 ;FOLD CHECK DAT-FILE GENERATION NUMBER
-  IF APP_GENNUMBER <> 111593 THEN
+  IF APP_GENNUMBER <> 1145125 THEN
     LOOP
       MsgQuit("InconsistenceSRCandDAT",,,,1)
       HALT
@@ -28,7 +28,7 @@ ENDIF
 ;fold Jobinfo
 ;Job information: My_Job
 ;Product : 3.1.0.28172
-;Date: 2020-10-07-11_59
+;Date: 2020-10-21-19_34
 ;Project name: My Project
 ;Author: My Author
 ;Company: My Company
@@ -60,7 +60,6 @@ ENDIF
 ; 23 ShapeFeeder_3 #3
 ; 10 ShapeFeeder_2 #4
 ; 9 ShapeFeeder #4
-; 23 ShapeFeeder_2 #3
 ; 34 ShapeFeeder #4
 ; 33 ShapeFeeder #4
 ; 33BarPacking(3).dwg #2
@@ -92,7 +91,6 @@ ENDIF
 ; 23Smarties(2).dwg #2
 ; 35 ShapeFeeder_1 #3
 ; 35 ShapeFeeder_3 #2
-; 23 ShapeFeeder_2 #2
 ; 19 ShapeFeeder_3 #2
 ; 23 ShapeFeeder_3 #2
 ; 19 ShapeFeeder_4 #2
@@ -160,6 +158,10 @@ ENDIF
 ; 19 ShapeFeeder_31 #2
 ; Pallet 1200x1000 #2
 ; 7217.000.00.00.00_Layout-3D_14.09.2020
+; 9Aero_4.dwg
+; 9Aero_4.dwg #2
+; 23Smarties_4.dwg #2
+; 23Smarties_4.dwg
 ;endfold
 ;fold Axes definitions
 ; Axis1 [-185 185] Rot [deg] (KR 180 R3200 PA #2 : A1)
@@ -179,12 +181,18 @@ ENDIF
 ;endfold
 ;fold HomePositions
 ;endfold
+Mtrz_P1_16CoffeCrisp()
+Mtrz_P1_22KitKat()
+Mtrz_P1_21KitKat()
+Mtrz_P1_20KitKat()
+Mtrz_P1_19KitKat()
+Mtrz_P1_10CoffeCrisp()
+Mtrz_P1_2Aero()
 ;FOLD ; 1 Aero;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: 1 Aero
 ;ENDFOLD
 Mtrz_P2_1Aero()
 ;FOLD ; 2, 3, 4 Aero;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: 2, 3, 4 Aero
 ;ENDFOLD
-Mtrz_P1_2Aero()
 Mtrz_P2_2Aero()
 ;FOLD ; 5, 6 Aero;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: 5, 6 Aero
 ;ENDFOLD
@@ -200,7 +208,6 @@ Mtrz_P1_9Aero()
 Mtrz_P2_9Aero()
 ;FOLD ; 10 Coffe Crisp;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: 10 Coffe Crisp
 ;ENDFOLD
-Mtrz_P1_10CoffeCrisp()
 Mtrz_P2_10CoffeCrisp()
 ;FOLD ; 11 Coffe Crisp;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: 11 Coffe Crisp
 ;ENDFOLD
@@ -212,7 +219,6 @@ Mtrz_P1_15CoffeCrisp()
 Mtrz_P2_15CoffeCrisp()
 ;FOLD ; 16 Coffe Crisp;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: 16 Coffe Crisp
 ;ENDFOLD
-Mtrz_P1_16CoffeCrisp()
 Mtrz_P2_16CoffeCrisp()
 ;FOLD ; 17, 18 KitKat;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: 17, 18 KitKat
 ;ENDFOLD
@@ -220,24 +226,20 @@ Mtrz_P1_17KitKat()
 Mtrz_P2_17KitKat()
 ;FOLD ; 19 KitKat;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: 19 KitKat
 ;ENDFOLD
-Mtrz_P1_19KitKat()
 Mtrz_P2_19KitKat()
 ;FOLD ; 20 KitKat;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: 20 KitKat
 ;ENDFOLD
-Mtrz_P1_20KitKat()
 Mtrz_P2_20KitKat()
 ;FOLD ; 21 KitKat;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: 21 KitKat
 ;ENDFOLD
-Mtrz_P1_21KitKat()
 Mtrz_P2_21KitKat()
 ;FOLD ; 22 KitKat;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: 22 KitKat
 ;ENDFOLD
-Mtrz_P1_22KitKat()
 Mtrz_P2_22KitKat()
 ;FOLD ; 23 Smarties;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: 23 Smarties
 ;ENDFOLD
-Mtrz_P1_23Smarties()
 Mtrz_P2_23Smarties()
+Mtrz_P1_23Smarties()
 ;FOLD PTP P1 CONT Vel= 100 % PDATP88 Tool[1] Base[0]   ;%{PE}
 ;FOLD Parameters ;%{h}
 ;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P1; Kuka.BlendingEnabled=True; Kuka.MoveDataPtpName=PDATP88; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
@@ -255,8 +257,8 @@ END
 DEF Mtrz_P1_9Aero()
 
 NumLayers = 1
-AlturaCaixa = 191
-Camadas = 6
+AlturaCaixa = 273
+Camadas = 4
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 4
@@ -373,6 +375,99 @@ SET_CD_PARAMS (0)
 LIN  XP201  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
+;ENDFOLD
+NumCaixas = 4
+PickOp = 3
+ConfGarraOp = 3
+FechaGarraOp = 0
+AbreGarraOp = 0
+SensoresCaixa = 123456
+TravaGarra = False
+SkipGoHome = False
+SkipSobeRelativo = False
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 209 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:209, 3:, 5:TRUE, 6:
+
+$OUT[209]=TRUE
+;ENDFOLD
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 209 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:209, 3:, 5:FALSE, 6:
+
+$OUT[209]=FALSE
+;ENDFOLD
+Pick_E_1_P_3()
+;FOLD PTP P294  Vel= 100 % PDATP50 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P294; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP50; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP50
+FDAT_ACT=FP294
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP294 
+;ENDFOLD
+;FOLD LIN P295  Vel= 2 m/s CPDATP100 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P295; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP100; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP100
+FDAT_ACT=FP295
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP295  
+;ENDFOLD
+;FOLD LIN P504  Vel= 2 m/s CPDATP101 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P504; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP101; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP101
+FDAT_ACT=FP504
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP504  
+;ENDFOLD
+AbreGarraOp0()
+;FOLD ; Teste Ultima Camada;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Teste Ultima Camada
+;ENDFOLD
+;FOLD PTP P385  Vel= 100 % PDATP50 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P385; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP50; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP50
+FDAT_ACT=FP385
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP385 
+;ENDFOLD
+;FOLD LIN P386  Vel= 2 m/s CPDATP100 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P386; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP100; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP100
+FDAT_ACT=FP386
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP386  
+;ENDFOLD
+;FOLD LIN P534  Vel= 2 m/s CPDATP101 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P534; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP101; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP101
+FDAT_ACT=FP534
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP534  
+;ENDFOLD
 END
 
 
@@ -555,6 +650,41 @@ SET_CD_PARAMS (0)
 LIN  XP24  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; Teste Ultima Camada;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Teste Ultima Camada
+;ENDFOLD
+;FOLD PTP P172  Vel= 100 % PDATP8 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P172; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP8; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP8
+FDAT_ACT=FP172
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP172 
+;ENDFOLD
+;FOLD LIN P173  Vel= 2 m/s CPDATP15 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P173; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP15; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP15
+FDAT_ACT=FP173
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP173  
+;ENDFOLD
+;FOLD LIN P174  Vel= 2 m/s CPDATP16 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P174; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP16; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP16
+FDAT_ACT=FP174
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP174  
+;ENDFOLD
 END
 
 
@@ -569,9 +699,9 @@ NumCaixas = 4
 PickOp = 1
 ConfGarraOp = 0
 FechaGarraOp = 0
-AbreGarraOp = 0
+AbreGarraOp = 1
 SensoresCaixa = 123456
-TravaGarra = False
+TravaGarra = True
 SkipGoHome = False
 SkipSobeRelativo = False
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
@@ -587,49 +717,49 @@ $OUT[202]=TRUE
 $OUT[202]=FALSE
 ;ENDFOLD
 Pick_E_1_P_1()
-;FOLD PTP P5  Vel= 100 % PDATP2 Tool[1] Base[1]   ;%{PE}
+;FOLD PTP P854  Vel= 100 % PDATP2 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P5; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP2; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P854; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP2; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
 ;ENDFOLD
 $BWDSTART = FALSE
 PDAT_ACT=PPDATP2
-FDAT_ACT=FP5
+FDAT_ACT=FP854
 BAS (#PTP_PARAMS,100)
 SET_CD_PARAMS (0)
-PTP XP5 
+PTP XP854 
 ;ENDFOLD
-;FOLD LIN P6  Vel= 2 m/s CPDATP4 Tool[1] Base[1]   ;%{PE}
+;FOLD LIN P855  Vel= 2 m/s CPDATP4 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P6; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP4; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P855; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP4; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
 ;ENDFOLD
 $BWDSTART = FALSE
 LDAT_ACT=LCPDATP4
-FDAT_ACT=FP6
+FDAT_ACT=FP855
 BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
-LIN  XP6  
+LIN  XP855  
 ;ENDFOLD
-;FOLD LIN P7  Vel= 2 m/s CPDATP5 Tool[1] Base[1]   ;%{PE}
+;FOLD LIN P856  Vel= 2 m/s CPDATP5 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P7; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP5; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P856; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP5; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
 ;ENDFOLD
 $BWDSTART = FALSE
 LDAT_ACT=LCPDATP5
-FDAT_ACT=FP7
+FDAT_ACT=FP856
 BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
-LIN  XP7  
+LIN  XP856  
 ;ENDFOLD
-AbreGarraOp0()
+AbreGarraOp1()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 4
 PickOp = 1
 ConfGarraOp = 0
 FechaGarraOp = 0
-AbreGarraOp = 0
+AbreGarraOp = 1
 SensoresCaixa = 123456
-TravaGarra = False
+TravaGarra = True
 SkipGoHome = False
 SkipSobeRelativo = False
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
@@ -678,16 +808,16 @@ BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
 LIN  XP10  
 ;ENDFOLD
-AbreGarraOp0()
+AbreGarraOp1()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 4
 PickOp = 1
 ConfGarraOp = 0
 FechaGarraOp = 0
-AbreGarraOp = 0
+AbreGarraOp = 1
 SensoresCaixa = 123456
-TravaGarra = False
+TravaGarra = True
 SkipGoHome = False
 SkipSobeRelativo = False
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
@@ -703,40 +833,40 @@ $OUT[202]=TRUE
 $OUT[202]=FALSE
 ;ENDFOLD
 Pick_E_1_P_1()
-;FOLD PTP P11  Vel= 100 % PDATP4 Tool[1] Base[1]   ;%{PE}
+;FOLD PTP P857  Vel= 100 % PDATP4 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P11; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP4; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P857; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP4; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
 ;ENDFOLD
 $BWDSTART = FALSE
 PDAT_ACT=PPDATP4
-FDAT_ACT=FP11
+FDAT_ACT=FP857
 BAS (#PTP_PARAMS,100)
 SET_CD_PARAMS (0)
-PTP XP11 
+PTP XP857 
 ;ENDFOLD
-;FOLD LIN P12  Vel= 2 m/s CPDATP8 Tool[1] Base[1]   ;%{PE}
+;FOLD LIN P858  Vel= 2 m/s CPDATP8 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P12; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP8; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P858; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP8; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
 ;ENDFOLD
 $BWDSTART = FALSE
 LDAT_ACT=LCPDATP8
-FDAT_ACT=FP12
+FDAT_ACT=FP858
 BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
-LIN  XP12  
+LIN  XP858  
 ;ENDFOLD
-;FOLD LIN P13  Vel= 2 m/s CPDATP9 Tool[1] Base[1]   ;%{PE}
+;FOLD LIN P859  Vel= 2 m/s CPDATP9 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P13; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP9; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P859; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP9; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
 ;ENDFOLD
 $BWDSTART = FALSE
 LDAT_ACT=LCPDATP9
-FDAT_ACT=FP13
+FDAT_ACT=FP859
 BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
-LIN  XP13  
+LIN  XP859  
 ;ENDFOLD
-AbreGarraOp0()
+AbreGarraOp1()
 END
 
 
@@ -973,6 +1103,41 @@ SET_CD_PARAMS (0)
 LIN  XP71  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; Teste Ultima Camada;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Teste Ultima Camada
+;ENDFOLD
+;FOLD PTP P178  Vel= 100 % PDATP18 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P178; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP18; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP18
+FDAT_ACT=FP178
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP178 
+;ENDFOLD
+;FOLD LIN P179  Vel= 2 m/s CPDATP34 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P179; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP34; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP34
+FDAT_ACT=FP179
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP179  
+;ENDFOLD
+;FOLD LIN P387  Vel= 2 m/s CPDATP35 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P387; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP35; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP35
+FDAT_ACT=FP387
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP387  
+;ENDFOLD
 END
 
 
@@ -1213,6 +1378,41 @@ SET_CD_PARAMS (0)
 LIN  XP60  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; Teste Ultima Camada;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Teste Ultima Camada
+;ENDFOLD
+;FOLD PTP P397  Vel= 100 % PDATP15 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P397; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP15; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP15
+FDAT_ACT=FP397
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP397 
+;ENDFOLD
+;FOLD LIN P398  Vel= 2 m/s CPDATP29 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P398; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP29; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP29
+FDAT_ACT=FP398
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP398  
+;ENDFOLD
+;FOLD LIN P399  Vel= 2 m/s CPDATP28 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P399; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP28; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP28
+FDAT_ACT=FP399
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP399  
+;ENDFOLD
 END
 
 
@@ -1224,27 +1424,27 @@ Camadas = 9
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 1
-PickOp = 6
+PickOp = 10
 ConfGarraOp = 0
 FechaGarraOp = 0
-AbreGarraOp = 0
+AbreGarraOp = 1
 SensoresCaixa = 6
-TravaGarra = False
+TravaGarra = True
 SkipGoHome = False
 SkipSobeRelativo = False
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
 ;ENDFOLD
-;FOLD OUT 220 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:220, 3:, 5:TRUE, 6:
+;FOLD OUT 221 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:221, 3:, 5:TRUE, 6:
 
-$OUT[220]=TRUE
+$OUT[221]=TRUE
 ;ENDFOLD
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
 ;ENDFOLD
-;FOLD OUT 220 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:220, 3:, 5:FALSE, 6:
+;FOLD OUT 221 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:221, 3:, 5:FALSE, 6:
 
-$OUT[220]=FALSE
+$OUT[221]=FALSE
 ;ENDFOLD
-Pick_E_1_P_6()
+Pick_E_1_P_10()
 ;FOLD PTP P15  Vel= 100 % PDATP67 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
 ;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P15; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP67; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
@@ -1278,31 +1478,31 @@ BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
 LIN  XP35  
 ;ENDFOLD
-AbreGarraOp0()
+AbreGarraOp1()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 1
-PickOp = 6
+PickOp = 10
 ConfGarraOp = 0
 FechaGarraOp = 0
-AbreGarraOp = 0
+AbreGarraOp = 1
 SensoresCaixa = 6
-TravaGarra = False
+TravaGarra = True
 SkipGoHome = False
 SkipSobeRelativo = False
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
 ;ENDFOLD
-;FOLD OUT 220 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:220, 3:, 5:TRUE, 6:
+;FOLD OUT 221 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:221, 3:, 5:TRUE, 6:
 
-$OUT[220]=TRUE
+$OUT[221]=TRUE
 ;ENDFOLD
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
 ;ENDFOLD
-;FOLD OUT 220 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:220, 3:, 5:FALSE, 6:
+;FOLD OUT 221 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:221, 3:, 5:FALSE, 6:
 
-$OUT[220]=FALSE
+$OUT[221]=FALSE
 ;ENDFOLD
-Pick_E_1_P_6()
+Pick_E_1_P_10()
 ;FOLD PTP P37  Vel= 100 % PDATP68 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
 ;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P37; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP68; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
@@ -1336,31 +1536,31 @@ BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
 LIN  XP38  
 ;ENDFOLD
-AbreGarraOp0()
+AbreGarraOp1()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 1
-PickOp = 6
+PickOp = 10
 ConfGarraOp = 0
 FechaGarraOp = 0
-AbreGarraOp = 0
+AbreGarraOp = 1
 SensoresCaixa = 6
-TravaGarra = False
+TravaGarra = True
 SkipGoHome = False
 SkipSobeRelativo = False
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
 ;ENDFOLD
-;FOLD OUT 220 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:220, 3:, 5:TRUE, 6:
+;FOLD OUT 221 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:221, 3:, 5:TRUE, 6:
 
-$OUT[220]=TRUE
+$OUT[221]=TRUE
 ;ENDFOLD
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
 ;ENDFOLD
-;FOLD OUT 220 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:220, 3:, 5:FALSE, 6:
+;FOLD OUT 221 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:221, 3:, 5:FALSE, 6:
 
-$OUT[220]=FALSE
+$OUT[221]=FALSE
 ;ENDFOLD
-Pick_E_1_P_6()
+Pick_E_1_P_10()
 ;FOLD PTP P39  Vel= 100 % PDATP69 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
 ;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P39; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP69; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
@@ -1394,7 +1594,7 @@ BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
 LIN  XP41  
 ;ENDFOLD
-AbreGarraOp0()
+AbreGarraOp1()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 4
@@ -1572,27 +1772,27 @@ AbreGarraOp0()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 1
-PickOp = 10
+PickOp = 6
 ConfGarraOp = 0
 FechaGarraOp = 0
-AbreGarraOp = 0
+AbreGarraOp = 1
 SensoresCaixa = 1
-TravaGarra = False
+TravaGarra = True
 SkipGoHome = False
 SkipSobeRelativo = False
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
 ;ENDFOLD
-;FOLD OUT 221 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:221, 3:, 5:TRUE, 6:
+;FOLD OUT 220 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:220, 3:, 5:TRUE, 6:
 
-$OUT[221]=TRUE
+$OUT[220]=TRUE
 ;ENDFOLD
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
 ;ENDFOLD
-;FOLD OUT 221 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:221, 3:, 5:FALSE, 6:
+;FOLD OUT 220 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:220, 3:, 5:FALSE, 6:
 
-$OUT[221]=FALSE
+$OUT[220]=FALSE
 ;ENDFOLD
-Pick_E_1_P_10()
+Pick_E_1_P_6()
 ;FOLD PTP P328  Vel= 100 % PDATP73 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
 ;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P328; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP73; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
@@ -1626,31 +1826,31 @@ BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
 LIN  XP330  
 ;ENDFOLD
-AbreGarraOp0()
+AbreGarraOp1()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 1
-PickOp = 10
+PickOp = 6
 ConfGarraOp = 0
 FechaGarraOp = 0
-AbreGarraOp = 0
+AbreGarraOp = 1
 SensoresCaixa = 1
-TravaGarra = False
+TravaGarra = True
 SkipGoHome = False
 SkipSobeRelativo = False
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
 ;ENDFOLD
-;FOLD OUT 221 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:221, 3:, 5:TRUE, 6:
+;FOLD OUT 220 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:220, 3:, 5:TRUE, 6:
 
-$OUT[221]=TRUE
+$OUT[220]=TRUE
 ;ENDFOLD
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
 ;ENDFOLD
-;FOLD OUT 221 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:221, 3:, 5:FALSE, 6:
+;FOLD OUT 220 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:220, 3:, 5:FALSE, 6:
 
-$OUT[221]=FALSE
+$OUT[220]=FALSE
 ;ENDFOLD
-Pick_E_1_P_10()
+Pick_E_1_P_6()
 ;FOLD PTP P333  Vel= 100 % PDATP74 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
 ;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P333; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP74; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
@@ -1684,31 +1884,31 @@ BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
 LIN  XP331  
 ;ENDFOLD
-AbreGarraOp0()
+AbreGarraOp1()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 1
-PickOp = 10
+PickOp = 6
 ConfGarraOp = 0
 FechaGarraOp = 0
-AbreGarraOp = 0
+AbreGarraOp = 1
 SensoresCaixa = 1
-TravaGarra = False
+TravaGarra = True
 SkipGoHome = False
 SkipSobeRelativo = False
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
 ;ENDFOLD
-;FOLD OUT 221 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:221, 3:, 5:TRUE, 6:
+;FOLD OUT 220 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:220, 3:, 5:TRUE, 6:
 
-$OUT[221]=TRUE
+$OUT[220]=TRUE
 ;ENDFOLD
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
 ;ENDFOLD
-;FOLD OUT 221 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:221, 3:, 5:FALSE, 6:
+;FOLD OUT 220 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:220, 3:, 5:FALSE, 6:
 
-$OUT[221]=FALSE
+$OUT[220]=FALSE
 ;ENDFOLD
-Pick_E_1_P_10()
+Pick_E_1_P_6()
 ;FOLD PTP P334  Vel= 100 % PDATP75 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
 ;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P334; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP75; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
@@ -1742,7 +1942,7 @@ BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
 LIN  XP336  
 ;ENDFOLD
-AbreGarraOp0()
+AbreGarraOp1()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 4
@@ -1931,9 +2131,9 @@ NumCaixas = 4
 PickOp = 1
 ConfGarraOp = 0
 FechaGarraOp = 0
-AbreGarraOp = 0
+AbreGarraOp = 1
 SensoresCaixa = 123456
-TravaGarra = False
+TravaGarra = True
 SkipGoHome = False
 SkipSobeRelativo = False
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
@@ -1982,16 +2182,16 @@ BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
 LIN  XP181  
 ;ENDFOLD
-AbreGarraOp0()
+AbreGarraOp1()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 4
 PickOp = 1
 ConfGarraOp = 0
 FechaGarraOp = 0
-AbreGarraOp = 0
+AbreGarraOp = 1
 SensoresCaixa = 123456
-TravaGarra = False
+TravaGarra = True
 SkipGoHome = False
 SkipSobeRelativo = False
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
@@ -2040,16 +2240,16 @@ BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
 LIN  XP184  
 ;ENDFOLD
-AbreGarraOp0()
+AbreGarraOp1()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 4
 PickOp = 1
 ConfGarraOp = 0
 FechaGarraOp = 0
-AbreGarraOp = 0
+AbreGarraOp = 1
 SensoresCaixa = 123456
-TravaGarra = False
+TravaGarra = True
 SkipGoHome = False
 SkipSobeRelativo = False
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
@@ -2098,7 +2298,7 @@ BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
 LIN  XP185  
 ;ENDFOLD
-AbreGarraOp0()
+AbreGarraOp1()
 END
 
 
@@ -2113,9 +2313,9 @@ NumCaixas = 4
 PickOp = 1
 ConfGarraOp = 0
 FechaGarraOp = 0
-AbreGarraOp = 0
+AbreGarraOp = 1
 SensoresCaixa = 12345
-TravaGarra = False
+TravaGarra = True
 SkipGoHome = False
 SkipSobeRelativo = False
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
@@ -2164,16 +2364,16 @@ BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
 LIN  XP44  
 ;ENDFOLD
-AbreGarraOp0()
+AbreGarraOp1()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 4
 PickOp = 1
 ConfGarraOp = 0
 FechaGarraOp = 0
-AbreGarraOp = 0
+AbreGarraOp = 1
 SensoresCaixa = 12345
-TravaGarra = False
+TravaGarra = True
 SkipGoHome = False
 SkipSobeRelativo = False
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
@@ -2222,16 +2422,16 @@ BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
 LIN  XP47  
 ;ENDFOLD
-AbreGarraOp0()
+AbreGarraOp1()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 4
 PickOp = 1
 ConfGarraOp = 0
 FechaGarraOp = 0
-AbreGarraOp = 0
+AbreGarraOp = 1
 SensoresCaixa = 12345
-TravaGarra = False
+TravaGarra = True
 SkipGoHome = False
 SkipSobeRelativo = False
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
@@ -2280,81 +2480,23 @@ BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
 LIN  XP50  
 ;ENDFOLD
-AbreGarraOp0()
+AbreGarraOp1()
 END
 
 
 DEF Mtrz_P1_23Smarties()
 
-NumLayers = 2
-AlturaCaixa = 255
+NumLayers = 1
+AlturaCaixa = 267
 Camadas = 4
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
-NumCaixas = 2
-PickOp = 4
-ConfGarraOp = 4
+NumCaixas = 4
+PickOp = 3
+ConfGarraOp = 3
 FechaGarraOp = 0
 AbreGarraOp = 0
-SensoresCaixa = 456
-TravaGarra = False
-SkipGoHome = False
-SkipSobeRelativo = False
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 231 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:231, 3:, 5:TRUE, 6:
-
-$OUT[231]=TRUE
-;ENDFOLD
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 231 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:231, 3:, 5:FALSE, 6:
-
-$OUT[231]=FALSE
-;ENDFOLD
-Pick_E_1_P_4()
-;FOLD PTP P170  Vel= 100 % PDATP79 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P170; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP79; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
-;ENDFOLD
-$BWDSTART = FALSE
-PDAT_ACT=PPDATP79
-FDAT_ACT=FP170
-BAS (#PTP_PARAMS,100)
-SET_CD_PARAMS (0)
-PTP XP170 
-;ENDFOLD
-;FOLD LIN P169  Vel= 2 m/s CPDATP159 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P169; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP159; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP159
-FDAT_ACT=FP169
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP169  
-;ENDFOLD
-;FOLD LIN P168  Vel= 2 m/s CPDATP158 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P168; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP158; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP158
-FDAT_ACT=FP168
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP168  
-;ENDFOLD
-AbreGarraOp0()
-;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
-;ENDFOLD
-NumCaixas = 3
-PickOp = 4
-ConfGarraOp = 4
-FechaGarraOp = 0
-AbreGarraOp = 0
-SensoresCaixa = 3456
+SensoresCaixa = 123456
 TravaGarra = False
 SkipGoHome = False
 SkipSobeRelativo = False
@@ -2370,107 +2512,49 @@ $OUT[230]=TRUE
 
 $OUT[230]=FALSE
 ;ENDFOLD
-Pick_E_1_P_4()
-;FOLD PTP P173  Vel= 100 % PDATP80 Tool[1] Base[1]   ;%{PE}
+Pick_E_1_P_3()
+;FOLD PTP P78  Vel= 100 % PDATP5 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P173; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP80; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P78; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP5; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
 ;ENDFOLD
 $BWDSTART = FALSE
-PDAT_ACT=PPDATP80
-FDAT_ACT=FP173
+PDAT_ACT=PPDATP5
+FDAT_ACT=FP78
 BAS (#PTP_PARAMS,100)
 SET_CD_PARAMS (0)
-PTP XP173 
+PTP XP78 
 ;ENDFOLD
-;FOLD LIN P172  Vel= 2 m/s CPDATP161 Tool[1] Base[1]   ;%{PE}
+;FOLD LIN P505  Vel= 2 m/s CPDATP98 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P172; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP161; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P505; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP98; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
 ;ENDFOLD
 $BWDSTART = FALSE
-LDAT_ACT=LCPDATP161
-FDAT_ACT=FP172
+LDAT_ACT=LCPDATP98
+FDAT_ACT=FP505
 BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
-LIN  XP172  
+LIN  XP505  
 ;ENDFOLD
-;FOLD LIN P171  Vel= 2 m/s CPDATP160 Tool[1] Base[1]   ;%{PE}
+;FOLD LIN P506  Vel= 2 m/s CPDATP99 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P171; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP160; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P506; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP99; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
 ;ENDFOLD
 $BWDSTART = FALSE
-LDAT_ACT=LCPDATP160
-FDAT_ACT=FP171
+LDAT_ACT=LCPDATP99
+FDAT_ACT=FP506
 BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
-LIN  XP171  
+LIN  XP506  
 ;ENDFOLD
 AbreGarraOp0()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
-NumCaixas = 2
-PickOp = 4
-ConfGarraOp = 4
+NumCaixas = 4
+PickOp = 3
+ConfGarraOp = 3
 FechaGarraOp = 0
 AbreGarraOp = 0
-SensoresCaixa = 456
-TravaGarra = False
-SkipGoHome = False
-SkipSobeRelativo = False
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 231 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:231, 3:, 5:TRUE, 6:
-
-$OUT[231]=TRUE
-;ENDFOLD
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 231 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:231, 3:, 5:FALSE, 6:
-
-$OUT[231]=FALSE
-;ENDFOLD
-Pick_E_1_P_4()
-;FOLD PTP P176  Vel= 100 % PDATP81 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P176; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP81; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
-;ENDFOLD
-$BWDSTART = FALSE
-PDAT_ACT=PPDATP81
-FDAT_ACT=FP176
-BAS (#PTP_PARAMS,100)
-SET_CD_PARAMS (0)
-PTP XP176 
-;ENDFOLD
-;FOLD LIN P175  Vel= 2 m/s CPDATP163 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P175; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP163; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP163
-FDAT_ACT=FP175
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP175  
-;ENDFOLD
-;FOLD LIN P174  Vel= 2 m/s CPDATP162 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P174; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP162; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP162
-FDAT_ACT=FP174
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP174  
-;ENDFOLD
-AbreGarraOp0()
-;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
-;ENDFOLD
-NumCaixas = 3
-PickOp = 4
-ConfGarraOp = 4
-FechaGarraOp = 0
-AbreGarraOp = 0
-SensoresCaixa = 3456
+SensoresCaixa = 123456
 TravaGarra = False
 SkipGoHome = False
 SkipSobeRelativo = False
@@ -2486,107 +2570,49 @@ $OUT[230]=TRUE
 
 $OUT[230]=FALSE
 ;ENDFOLD
-Pick_E_1_P_4()
-;FOLD PTP P179  Vel= 100 % PDATP82 Tool[1] Base[1]   ;%{PE}
+Pick_E_1_P_3()
+;FOLD PTP P650  Vel= 100 % PDATP50 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P179; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP82; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P650; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP50; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
 ;ENDFOLD
 $BWDSTART = FALSE
-PDAT_ACT=PPDATP82
-FDAT_ACT=FP179
+PDAT_ACT=PPDATP50
+FDAT_ACT=FP650
 BAS (#PTP_PARAMS,100)
 SET_CD_PARAMS (0)
-PTP XP179 
+PTP XP650 
 ;ENDFOLD
-;FOLD LIN P178  Vel= 2 m/s CPDATP165 Tool[1] Base[1]   ;%{PE}
+;FOLD LIN P651  Vel= 2 m/s CPDATP100 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P178; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP165; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P651; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP100; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
 ;ENDFOLD
 $BWDSTART = FALSE
-LDAT_ACT=LCPDATP165
-FDAT_ACT=FP178
+LDAT_ACT=LCPDATP100
+FDAT_ACT=FP651
 BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
-LIN  XP178  
+LIN  XP651  
 ;ENDFOLD
-;FOLD LIN P177  Vel= 2 m/s CPDATP164 Tool[1] Base[1]   ;%{PE}
+;FOLD LIN P652  Vel= 2 m/s CPDATP101 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P177; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP164; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P652; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP101; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
 ;ENDFOLD
 $BWDSTART = FALSE
-LDAT_ACT=LCPDATP164
-FDAT_ACT=FP177
+LDAT_ACT=LCPDATP101
+FDAT_ACT=FP652
 BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
-LIN  XP177  
+LIN  XP652  
 ;ENDFOLD
 AbreGarraOp0()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
-NumCaixas = 2
-PickOp = 5
-ConfGarraOp = 4
+NumCaixas = 4
+PickOp = 3
+ConfGarraOp = 3
 FechaGarraOp = 0
 AbreGarraOp = 0
-SensoresCaixa = 123
-TravaGarra = False
-SkipGoHome = False
-SkipSobeRelativo = False
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 231 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:231, 3:, 5:TRUE, 6:
-
-$OUT[231]=TRUE
-;ENDFOLD
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 231 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:231, 3:, 5:FALSE, 6:
-
-$OUT[231]=FALSE
-;ENDFOLD
-Pick_E_1_P_5()
-;FOLD PTP P397  Vel= 100 % PDATP83 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P397; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP83; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
-;ENDFOLD
-$BWDSTART = FALSE
-PDAT_ACT=PPDATP83
-FDAT_ACT=FP397
-BAS (#PTP_PARAMS,100)
-SET_CD_PARAMS (0)
-PTP XP397 
-;ENDFOLD
-;FOLD LIN P396  Vel= 2 m/s CPDATP167 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P396; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP167; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP167
-FDAT_ACT=FP396
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP396  
-;ENDFOLD
-;FOLD LIN P395  Vel= 2 m/s CPDATP166 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P395; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP166; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP166
-FDAT_ACT=FP395
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP395  
-;ENDFOLD
-AbreGarraOp0()
-;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
-;ENDFOLD
-NumCaixas = 3
-PickOp = 5
-ConfGarraOp = 4
-FechaGarraOp = 0
-AbreGarraOp = 0
-SensoresCaixa = 1234
+SensoresCaixa = 123456
 TravaGarra = False
 SkipGoHome = False
 SkipSobeRelativo = False
@@ -2602,155 +2628,39 @@ $OUT[230]=TRUE
 
 $OUT[230]=FALSE
 ;ENDFOLD
-Pick_E_1_P_5()
-;FOLD PTP P398  Vel= 100 % PDATP83 Tool[1] Base[1]   ;%{PE}
+Pick_E_1_P_3()
+;FOLD PTP P815  Vel= 100 % PDATP50 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P398; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP83; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P815; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP50; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
 ;ENDFOLD
 $BWDSTART = FALSE
-PDAT_ACT=PPDATP83
-FDAT_ACT=FP398
+PDAT_ACT=PPDATP50
+FDAT_ACT=FP815
 BAS (#PTP_PARAMS,100)
 SET_CD_PARAMS (0)
-PTP XP398 
+PTP XP815 
 ;ENDFOLD
-;FOLD LIN P399  Vel= 2 m/s CPDATP167 Tool[1] Base[1]   ;%{PE}
+;FOLD LIN P816  Vel= 2 m/s CPDATP100 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P399; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP167; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P816; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP100; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
 ;ENDFOLD
 $BWDSTART = FALSE
-LDAT_ACT=LCPDATP167
-FDAT_ACT=FP399
+LDAT_ACT=LCPDATP100
+FDAT_ACT=FP816
 BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
-LIN  XP399  
+LIN  XP816  
 ;ENDFOLD
-;FOLD LIN P400  Vel= 2 m/s CPDATP166 Tool[1] Base[1]   ;%{PE}
+;FOLD LIN P817  Vel= 2 m/s CPDATP101 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P400; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP166; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P817; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP101; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
 ;ENDFOLD
 $BWDSTART = FALSE
-LDAT_ACT=LCPDATP166
-FDAT_ACT=FP400
+LDAT_ACT=LCPDATP101
+FDAT_ACT=FP817
 BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
-LIN  XP400  
-;ENDFOLD
-AbreGarraOp0()
-;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
-;ENDFOLD
-NumCaixas = 2
-PickOp = 5
-ConfGarraOp = 4
-FechaGarraOp = 0
-AbreGarraOp = 0
-SensoresCaixa = 123
-TravaGarra = False
-SkipGoHome = False
-SkipSobeRelativo = False
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 231 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:231, 3:, 5:TRUE, 6:
-
-$OUT[231]=TRUE
-;ENDFOLD
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 231 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:231, 3:, 5:FALSE, 6:
-
-$OUT[231]=FALSE
-;ENDFOLD
-Pick_E_1_P_5()
-;FOLD PTP P401  Vel= 100 % PDATP83 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P401; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP83; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
-;ENDFOLD
-$BWDSTART = FALSE
-PDAT_ACT=PPDATP83
-FDAT_ACT=FP401
-BAS (#PTP_PARAMS,100)
-SET_CD_PARAMS (0)
-PTP XP401 
-;ENDFOLD
-;FOLD LIN P402  Vel= 2 m/s CPDATP167 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P402; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP167; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP167
-FDAT_ACT=FP402
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP402  
-;ENDFOLD
-;FOLD LIN P403  Vel= 2 m/s CPDATP166 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P403; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP166; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP166
-FDAT_ACT=FP403
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP403  
-;ENDFOLD
-AbreGarraOp0()
-;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
-;ENDFOLD
-NumCaixas = 3
-PickOp = 5
-ConfGarraOp = 4
-FechaGarraOp = 0
-AbreGarraOp = 0
-SensoresCaixa = 1234
-TravaGarra = False
-SkipGoHome = False
-SkipSobeRelativo = False
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 230 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:230, 3:, 5:TRUE, 6:
-
-$OUT[230]=TRUE
-;ENDFOLD
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 230 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:230, 3:, 5:FALSE, 6:
-
-$OUT[230]=FALSE
-;ENDFOLD
-Pick_E_1_P_5()
-;FOLD PTP P404  Vel= 100 % PDATP83 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P404; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP83; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
-;ENDFOLD
-$BWDSTART = FALSE
-PDAT_ACT=PPDATP83
-FDAT_ACT=FP404
-BAS (#PTP_PARAMS,100)
-SET_CD_PARAMS (0)
-PTP XP404 
-;ENDFOLD
-;FOLD LIN P405  Vel= 2 m/s CPDATP167 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P405; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP167; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP167
-FDAT_ACT=FP405
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP405  
-;ENDFOLD
-;FOLD LIN P406  Vel= 2 m/s CPDATP166 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P406; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP166; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP166
-FDAT_ACT=FP406
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP406  
+LIN  XP817  
 ;ENDFOLD
 AbreGarraOp0()
 END
@@ -2765,7 +2675,7 @@ Camadas = 4
 ;ENDFOLD
 NumCaixas = 2
 PickOp = 2
-ConfGarraOp = 2
+ConfGarraOp = 0
 FechaGarraOp = 0
 AbreGarraOp = 0
 SensoresCaixa = 123
@@ -2784,7 +2694,7 @@ $OUT[222]=TRUE
 
 $OUT[222]=FALSE
 ;ENDFOLD
-Pick_E_1_P_2()
+Pick_E_1_P_2_0()
 ;FOLD PTP P143  Vel= 100 % PDATP36 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
 ;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P143; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP36; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
@@ -2823,7 +2733,7 @@ AbreGarraOp0()
 ;ENDFOLD
 NumCaixas = 2
 PickOp = 2
-ConfGarraOp = 2
+ConfGarraOp = 0
 FechaGarraOp = 0
 AbreGarraOp = 0
 SensoresCaixa = 123
@@ -2842,7 +2752,7 @@ $OUT[222]=TRUE
 
 $OUT[222]=FALSE
 ;ENDFOLD
-Pick_E_1_P_2()
+Pick_E_1_P_2_0()
 ;FOLD PTP P146  Vel= 100 % PDATP37 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
 ;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P146; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP37; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
@@ -2881,7 +2791,7 @@ AbreGarraOp0()
 ;ENDFOLD
 NumCaixas = 2
 PickOp = 2
-ConfGarraOp = 2
+ConfGarraOp = 0
 FechaGarraOp = 0
 AbreGarraOp = 0
 SensoresCaixa = 123
@@ -2900,7 +2810,7 @@ $OUT[222]=TRUE
 
 $OUT[222]=FALSE
 ;ENDFOLD
-Pick_E_1_P_2()
+Pick_E_1_P_2_0()
 ;FOLD PTP P149  Vel= 100 % PDATP38 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
 ;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P149; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP38; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
@@ -2938,12 +2848,12 @@ AbreGarraOp0()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 4
-PickOp = 2
-ConfGarraOp = 2
+PickOp = 6
+ConfGarraOp = 0
 FechaGarraOp = 0
-AbreGarraOp = 0
+AbreGarraOp = 1
 SensoresCaixa = 123456
-TravaGarra = False
+TravaGarra = True
 SkipGoHome = False
 SkipSobeRelativo = False
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
@@ -2958,7 +2868,7 @@ $OUT[223]=TRUE
 
 $OUT[223]=FALSE
 ;ENDFOLD
-Pick_E_1_P_2()
+Pick_E_1_P_6_0()
 ;FOLD PTP P153  Vel= 100 % PDATP44 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
 ;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P153; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP44; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
@@ -2992,70 +2902,12 @@ BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
 LIN  XP167  
 ;ENDFOLD
-AbreGarraOp0()
-;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
-;ENDFOLD
-NumCaixas = 4
-PickOp = 2
-ConfGarraOp = 2
-FechaGarraOp = 0
-AbreGarraOp = 0
-SensoresCaixa = 123456
-TravaGarra = False
-SkipGoHome = False
-SkipSobeRelativo = False
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 223 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:223, 3:, 5:TRUE, 6:
-
-$OUT[223]=TRUE
-;ENDFOLD
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 223 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:223, 3:, 5:FALSE, 6:
-
-$OUT[223]=FALSE
-;ENDFOLD
-Pick_E_1_P_2()
-;FOLD PTP P155  Vel= 100 % PDATP40 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P155; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP40; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
-;ENDFOLD
-$BWDSTART = FALSE
-PDAT_ACT=PPDATP40
-FDAT_ACT=FP155
-BAS (#PTP_PARAMS,100)
-SET_CD_PARAMS (0)
-PTP XP155 
-;ENDFOLD
-;FOLD LIN P156  Vel= 2 m/s CPDATP78 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P156; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP78; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP78
-FDAT_ACT=FP156
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP156  
-;ENDFOLD
-;FOLD LIN P157  Vel= 2 m/s CPDATP79 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P157; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP79; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP79
-FDAT_ACT=FP157
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP157  
-;ENDFOLD
-AbreGarraOp0()
+AbreGarraOp1()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 2
-PickOp = 2
-ConfGarraOp = 2
+PickOp = 6
+ConfGarraOp = 0
 FechaGarraOp = 0
 AbreGarraOp = 0
 SensoresCaixa = 123
@@ -3074,7 +2926,7 @@ $OUT[222]=TRUE
 
 $OUT[222]=FALSE
 ;ENDFOLD
-Pick_E_1_P_2()
+Pick_E_1_P_6_0()
 ;FOLD PTP P158  Vel= 100 % PDATP41 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
 ;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P158; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP41; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
@@ -3112,8 +2964,8 @@ AbreGarraOp0()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 2
-PickOp = 2
-ConfGarraOp = 2
+PickOp = 6
+ConfGarraOp = 0
 FechaGarraOp = 0
 AbreGarraOp = 0
 SensoresCaixa = 123
@@ -3132,7 +2984,7 @@ $OUT[222]=TRUE
 
 $OUT[222]=FALSE
 ;ENDFOLD
-Pick_E_1_P_2()
+Pick_E_1_P_6_0()
 ;FOLD PTP P161  Vel= 100 % PDATP42 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
 ;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P161; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP42; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
@@ -3170,8 +3022,8 @@ AbreGarraOp0()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 2
-PickOp = 2
-ConfGarraOp = 2
+PickOp = 6
+ConfGarraOp = 0
 FechaGarraOp = 0
 AbreGarraOp = 0
 SensoresCaixa = 123
@@ -3190,7 +3042,7 @@ $OUT[222]=TRUE
 
 $OUT[222]=FALSE
 ;ENDFOLD
-Pick_E_1_P_2()
+Pick_E_1_P_6_0()
 ;FOLD PTP P163  Vel= 100 % PDATP43 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
 ;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P163; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP43; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
@@ -3225,6 +3077,64 @@ SET_CD_PARAMS (0)
 LIN  XP166  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
+;ENDFOLD
+NumCaixas = 4
+PickOp = 6
+ConfGarraOp = 0
+FechaGarraOp = 0
+AbreGarraOp = 1
+SensoresCaixa = 123456
+TravaGarra = True
+SkipGoHome = False
+SkipSobeRelativo = False
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 223 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:223, 3:, 5:TRUE, 6:
+
+$OUT[223]=TRUE
+;ENDFOLD
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 223 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:223, 3:, 5:FALSE, 6:
+
+$OUT[223]=FALSE
+;ENDFOLD
+Pick_E_1_P_6_0()
+;FOLD PTP P860  Vel= 100 % PDATP44 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P860; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP44; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP44
+FDAT_ACT=FP860
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP860 
+;ENDFOLD
+;FOLD LIN P861  Vel= 2 m/s CPDATP77 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P861; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP77; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP77
+FDAT_ACT=FP861
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP861  
+;ENDFOLD
+;FOLD LIN P862  Vel= 2 m/s CPDATP86 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P862; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP86; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP86
+FDAT_ACT=FP862
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP862  
+;ENDFOLD
+AbreGarraOp1()
 END
 
 
@@ -4362,8 +4272,8 @@ AbreGarraOp0()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 1
-PickOp = 10
-ConfGarraOp = 3
+PickOp = 6
+ConfGarraOp = 0
 FechaGarraOp = 0
 AbreGarraOp = 0
 SensoresCaixa = 12
@@ -4372,17 +4282,17 @@ SkipGoHome = False
 SkipSobeRelativo = False
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
 ;ENDFOLD
-;FOLD OUT 280 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:280, 3:, 5:TRUE, 6:
+;FOLD OUT 210 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:210, 3:, 5:TRUE, 6:
 
-$OUT[280]=TRUE
+$OUT[210]=TRUE
 ;ENDFOLD
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
 ;ENDFOLD
-;FOLD OUT 280 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:280, 3:, 5:FALSE, 6:
+;FOLD OUT 210 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:210, 3:, 5:FALSE, 6:
 
-$OUT[280]=FALSE
+$OUT[210]=FALSE
 ;ENDFOLD
-Pick_E_1_P_10_3()
+Pick_E_1_P_6()
 ;FOLD PTP P248  Vel= 100 % PDATP63 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
 ;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P248; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP63; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
@@ -4420,8 +4330,8 @@ AbreGarraOp0()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 1
-PickOp = 10
-ConfGarraOp = 3
+PickOp = 6
+ConfGarraOp = 0
 FechaGarraOp = 0
 AbreGarraOp = 0
 SensoresCaixa = 12
@@ -4430,17 +4340,17 @@ SkipGoHome = False
 SkipSobeRelativo = False
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
 ;ENDFOLD
-;FOLD OUT 280 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:280, 3:, 5:TRUE, 6:
+;FOLD OUT 210 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:210, 3:, 5:TRUE, 6:
 
-$OUT[280]=TRUE
+$OUT[210]=TRUE
 ;ENDFOLD
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
 ;ENDFOLD
-;FOLD OUT 280 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:280, 3:, 5:FALSE, 6:
+;FOLD OUT 210 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:210, 3:, 5:FALSE, 6:
 
-$OUT[280]=FALSE
+$OUT[210]=FALSE
 ;ENDFOLD
-Pick_E_1_P_10_3()
+Pick_E_1_P_6()
 ;FOLD PTP P251  Vel= 100 % PDATP64 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
 ;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P251; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP64; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
@@ -5423,6 +5333,419 @@ SET_CD_PARAMS (0)
 LIN  XP769  
 ;ENDFOLD
 AbreGarraOp0()
+HALT
+;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
+;ENDFOLD
+NumCaixas = 5
+PickOp = 7
+ConfGarraOp = 1
+FechaGarraOp = 0
+AbreGarraOp = 2
+SensoresCaixa = 1
+TravaGarra = False
+SkipGoHome = True
+SkipSobeRelativo = True
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 201 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:201, 3:, 5:TRUE, 6:
+
+$OUT[201]=TRUE
+;ENDFOLD
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 201 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:201, 3:, 5:FALSE, 6:
+
+$OUT[201]=FALSE
+;ENDFOLD
+Pick_E_2_P_7()
+;FOLD PTP P827  Vel= 100 % PDATP95 Tool[1] Base[2]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P827; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP95; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP95
+FDAT_ACT=FP827
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP827 
+;ENDFOLD
+;FOLD LIN P828  Vel= 2 m/s CPDATP182 Tool[1] Base[2]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P828; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP182; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP182
+FDAT_ACT=FP828
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP828  
+;ENDFOLD
+;FOLD LIN P829  Vel= 2 m/s CPDATP183 Tool[1] Base[2]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P829; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP183; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP183
+FDAT_ACT=FP829
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP829  
+;ENDFOLD
+AbreGarraOp2()
+;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
+;ENDFOLD
+NumCaixas = 5
+PickOp = 7
+ConfGarraOp = 1
+FechaGarraOp = 0
+AbreGarraOp = 3
+SensoresCaixa = 2
+TravaGarra = False
+SkipGoHome = True
+SkipSobeRelativo = True
+;FOLD LIN P830  Vel= 2 m/s CPDATP184 Tool[1] Base[2]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P830; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP184; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP184
+FDAT_ACT=FP830
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP830  
+;ENDFOLD
+;FOLD LIN P831  Vel= 2 m/s CPDATP185 Tool[1] Base[2]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P831; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP185; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP185
+FDAT_ACT=FP831
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP831  
+;ENDFOLD
+;FOLD LIN P832  Vel= 2 m/s CPDATP183 Tool[1] Base[2]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P832; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP183; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP183
+FDAT_ACT=FP832
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP832  
+;ENDFOLD
+AbreGarraOp3()
+;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
+;ENDFOLD
+NumCaixas = 5
+PickOp = 7
+ConfGarraOp = 1
+FechaGarraOp = 0
+AbreGarraOp = 4
+SensoresCaixa = 3
+TravaGarra = False
+SkipGoHome = True
+SkipSobeRelativo = True
+;FOLD LIN P833  Vel= 2 m/s CPDATP184 Tool[1] Base[2]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P833; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP184; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP184
+FDAT_ACT=FP833
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP833  
+;ENDFOLD
+;FOLD LIN P834  Vel= 2 m/s CPDATP185 Tool[1] Base[2]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P834; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP185; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP185
+FDAT_ACT=FP834
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP834  
+;ENDFOLD
+;FOLD LIN P835  Vel= 2 m/s CPDATP183 Tool[1] Base[2]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P835; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP183; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP183
+FDAT_ACT=FP835
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP835  
+;ENDFOLD
+AbreGarraOp4()
+;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
+;ENDFOLD
+NumCaixas = 5
+PickOp = 7
+ConfGarraOp = 1
+FechaGarraOp = 0
+AbreGarraOp = 5
+SensoresCaixa = 4
+TravaGarra = False
+SkipGoHome = True
+SkipSobeRelativo = True
+;FOLD LIN P836  Vel= 2 m/s CPDATP184 Tool[1] Base[2]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P836; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP184; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP184
+FDAT_ACT=FP836
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP836  
+;ENDFOLD
+;FOLD LIN P837  Vel= 2 m/s CPDATP185 Tool[1] Base[2]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P837; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP185; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP185
+FDAT_ACT=FP837
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP837  
+;ENDFOLD
+;FOLD LIN P838  Vel= 2 m/s CPDATP183 Tool[1] Base[2]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P838; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP183; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP183
+FDAT_ACT=FP838
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP838  
+;ENDFOLD
+AbreGarraOp5()
+;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
+;ENDFOLD
+NumCaixas = 5
+PickOp = 7
+ConfGarraOp = 1
+FechaGarraOp = 0
+AbreGarraOp = 6
+SensoresCaixa = 5
+TravaGarra = False
+SkipGoHome = True
+SkipSobeRelativo = True
+;FOLD LIN P839  Vel= 2 m/s CPDATP184 Tool[1] Base[2]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P839; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP184; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP184
+FDAT_ACT=FP839
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP839  
+;ENDFOLD
+;FOLD LIN P840  Vel= 2 m/s CPDATP185 Tool[1] Base[2]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P840; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP185; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP185
+FDAT_ACT=FP840
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP840  
+;ENDFOLD
+;FOLD LIN P841  Vel= 2 m/s CPDATP183 Tool[1] Base[2]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P841; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP183; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP183
+FDAT_ACT=FP841
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP841  
+;ENDFOLD
+AbreGarraOp6()
+;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
+;ENDFOLD
+NumCaixas = 5
+PickOp = 7
+ConfGarraOp = 1
+FechaGarraOp = 0
+AbreGarraOp = 0
+SensoresCaixa = 12345
+TravaGarra = False
+SkipGoHome = False
+SkipSobeRelativo = False
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 201 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:201, 3:, 5:TRUE, 6:
+
+$OUT[201]=TRUE
+;ENDFOLD
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 201 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:201, 3:, 5:FALSE, 6:
+
+$OUT[201]=FALSE
+;ENDFOLD
+Pick_E_2_P_7()
+;FOLD PTP P74  Vel= 100 % PDATP79 Tool[1] Base[2]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P74; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP79; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP79
+FDAT_ACT=FP74
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP74 
+;ENDFOLD
+;FOLD LIN P73  Vel= 2 m/s CPDATP158 Tool[1] Base[2]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P73; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP158; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP158
+FDAT_ACT=FP73
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP73  
+;ENDFOLD
+;FOLD LIN P826  Vel= 2 m/s CPDATP181 Tool[1] Base[2]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P826; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP181; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP181
+FDAT_ACT=FP826
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP826  
+;ENDFOLD
+AbreGarraOp0()
+;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
+;ENDFOLD
+NumCaixas = 5
+PickOp = 7
+ConfGarraOp = 1
+FechaGarraOp = 0
+AbreGarraOp = 0
+SensoresCaixa = 12345
+TravaGarra = False
+SkipGoHome = False
+SkipSobeRelativo = False
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 201 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:201, 3:, 5:TRUE, 6:
+
+$OUT[201]=TRUE
+;ENDFOLD
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 201 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:201, 3:, 5:FALSE, 6:
+
+$OUT[201]=FALSE
+;ENDFOLD
+Pick_E_2_P_7()
+;FOLD PTP P75  Vel= 100 % PDATP79 Tool[1] Base[2]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P75; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP79; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP79
+FDAT_ACT=FP75
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP75 
+;ENDFOLD
+;FOLD LIN P169  Vel= 2 m/s CPDATP158 Tool[1] Base[2]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P169; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP158; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP158
+FDAT_ACT=FP169
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP169  
+;ENDFOLD
+;FOLD LIN P842  Vel= 2 m/s CPDATP181 Tool[1] Base[2]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P842; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP181; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP181
+FDAT_ACT=FP842
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP842  
+;ENDFOLD
+AbreGarraOp0()
+;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
+;ENDFOLD
+NumCaixas = 5
+PickOp = 7
+ConfGarraOp = 1
+FechaGarraOp = 0
+AbreGarraOp = 0
+SensoresCaixa = 12345
+TravaGarra = False
+SkipGoHome = False
+SkipSobeRelativo = False
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 201 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:201, 3:, 5:TRUE, 6:
+
+$OUT[201]=TRUE
+;ENDFOLD
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 201 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:201, 3:, 5:FALSE, 6:
+
+$OUT[201]=FALSE
+;ENDFOLD
+Pick_E_2_P_7()
+;FOLD PTP P170  Vel= 100 % PDATP79 Tool[1] Base[2]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P170; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP79; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP79
+FDAT_ACT=FP170
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP170 
+;ENDFOLD
+;FOLD LIN P171  Vel= 2 m/s CPDATP158 Tool[1] Base[2]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P171; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP158; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP158
+FDAT_ACT=FP171
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP171  
+;ENDFOLD
+;FOLD LIN P843  Vel= 2 m/s CPDATP181 Tool[1] Base[2]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P843; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP181; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP181
+FDAT_ACT=FP843
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP843  
+;ENDFOLD
+AbreGarraOp0()
 END
 
 
@@ -5545,64 +5868,6 @@ FDAT_ACT=FP369
 BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
 LIN  XP369  
-;ENDFOLD
-AbreGarraOp0()
-;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
-;ENDFOLD
-NumCaixas = 1
-PickOp = 8
-ConfGarraOp = 5
-FechaGarraOp = 0
-AbreGarraOp = 0
-SensoresCaixa = 1
-TravaGarra = False
-SkipGoHome = False
-SkipSobeRelativo = False
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 250 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:250, 3:, 5:TRUE, 6:
-
-$OUT[250]=TRUE
-;ENDFOLD
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 250 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:250, 3:, 5:FALSE, 6:
-
-$OUT[250]=FALSE
-;ENDFOLD
-Pick_E_1_P_8()
-;FOLD PTP P385  Vel= 100 % PDATP99 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P385; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP99; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
-;ENDFOLD
-$BWDSTART = FALSE
-PDAT_ACT=PPDATP99
-FDAT_ACT=FP385
-BAS (#PTP_PARAMS,100)
-SET_CD_PARAMS (0)
-PTP XP385 
-;ENDFOLD
-;FOLD LIN P386  Vel= 2 m/s CPDATP191 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P386; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP191; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP191
-FDAT_ACT=FP386
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP386  
-;ENDFOLD
-;FOLD LIN P387  Vel= 2 m/s CPDATP190 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P387; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP190; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP190
-FDAT_ACT=FP387
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP387  
 ;ENDFOLD
 AbreGarraOp0()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
@@ -5781,7 +6046,7 @@ LIN  XP508
 AbreGarraOp0()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
-NumCaixas = 3
+NumCaixas = 4
 PickOp = 8
 ConfGarraOp = 5
 FechaGarraOp = 0
@@ -5792,107 +6057,49 @@ SkipGoHome = False
 SkipSobeRelativo = False
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
 ;ENDFOLD
-;FOLD OUT 252 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:252, 3:, 5:TRUE, 6:
+;FOLD OUT 250 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:250, 3:, 5:TRUE, 6:
 
-$OUT[252]=TRUE
+$OUT[250]=TRUE
 ;ENDFOLD
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
 ;ENDFOLD
-;FOLD OUT 252 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:252, 3:, 5:FALSE, 6:
+;FOLD OUT 250 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:250, 3:, 5:FALSE, 6:
 
-$OUT[252]=FALSE
+$OUT[250]=FALSE
 ;ENDFOLD
 Pick_E_1_P_8()
-;FOLD PTP P534  Vel= 100 % PDATP101 Tool[1] Base[1]   ;%{PE}
+;FOLD PTP P393  Vel= 100 % PDATP99 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P534; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP101; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P393; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP99; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
 ;ENDFOLD
 $BWDSTART = FALSE
-PDAT_ACT=PPDATP101
-FDAT_ACT=FP534
+PDAT_ACT=PPDATP99
+FDAT_ACT=FP393
 BAS (#PTP_PARAMS,100)
 SET_CD_PARAMS (0)
-PTP XP534 
+PTP XP393 
 ;ENDFOLD
-;FOLD LIN P535  Vel= 2 m/s CPDATP194 Tool[1] Base[1]   ;%{PE}
+;FOLD LIN P395  Vel= 2 m/s CPDATP191 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P535; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP194; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P395; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP191; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
 ;ENDFOLD
 $BWDSTART = FALSE
-LDAT_ACT=LCPDATP194
-FDAT_ACT=FP535
+LDAT_ACT=LCPDATP191
+FDAT_ACT=FP395
 BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
-LIN  XP535  
+LIN  XP395  
 ;ENDFOLD
-;FOLD LIN P536  Vel= 2 m/s CPDATP195 Tool[1] Base[1]   ;%{PE}
+;FOLD LIN P396  Vel= 2 m/s CPDATP190 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P536; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP195; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P396; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP190; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
 ;ENDFOLD
 $BWDSTART = FALSE
-LDAT_ACT=LCPDATP195
-FDAT_ACT=FP536
+LDAT_ACT=LCPDATP190
+FDAT_ACT=FP396
 BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
-LIN  XP536  
-;ENDFOLD
-AbreGarraOp0()
-;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
-;ENDFOLD
-NumCaixas = 1
-PickOp = 6
-ConfGarraOp = 5
-FechaGarraOp = 0
-AbreGarraOp = 0
-SensoresCaixa = 1
-TravaGarra = False
-SkipGoHome = False
-SkipSobeRelativo = False
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 253 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:253, 3:, 5:TRUE, 6:
-
-$OUT[253]=TRUE
-;ENDFOLD
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 253 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:253, 3:, 5:FALSE, 6:
-
-$OUT[253]=FALSE
-;ENDFOLD
-Pick_E_1_P_6_5()
-;FOLD PTP P538  Vel= 100 % PDATP102 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P538; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP102; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
-;ENDFOLD
-$BWDSTART = FALSE
-PDAT_ACT=PPDATP102
-FDAT_ACT=FP538
-BAS (#PTP_PARAMS,100)
-SET_CD_PARAMS (0)
-PTP XP538 
-;ENDFOLD
-;FOLD LIN P555  Vel= 2 m/s CPDATP200 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P555; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP200; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP200
-FDAT_ACT=FP555
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP555  
-;ENDFOLD
-;FOLD LIN P537  Vel= 2 m/s CPDATP196 Tool[1] Base[1]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P537; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP196; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP196
-FDAT_ACT=FP537
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP537  
+LIN  XP396  
 ;ENDFOLD
 AbreGarraOp0()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
@@ -6187,7 +6394,7 @@ LIN  XP562
 AbreGarraOp1()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
-NumCaixas = 3
+NumCaixas = 4
 PickOp = 6
 ConfGarraOp = 5
 FechaGarraOp = 0
@@ -6198,49 +6405,49 @@ SkipGoHome = False
 SkipSobeRelativo = False
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
 ;ENDFOLD
-;FOLD OUT 254 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:254, 3:, 5:TRUE, 6:
+;FOLD OUT 253 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:253, 3:, 5:TRUE, 6:
 
-$OUT[254]=TRUE
+$OUT[253]=TRUE
 ;ENDFOLD
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
 ;ENDFOLD
-;FOLD OUT 254 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:254, 3:, 5:FALSE, 6:
+;FOLD OUT 253 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:253, 3:, 5:FALSE, 6:
 
-$OUT[254]=FALSE
+$OUT[253]=FALSE
 ;ENDFOLD
 Pick_E_1_P_6_5()
-;FOLD PTP P594  Vel= 100 % PDATP104 Tool[1] Base[1]   ;%{PE}
+;FOLD PTP P670  Vel= 100 % PDATP102 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P594; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP104; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P670; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP102; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
 ;ENDFOLD
 $BWDSTART = FALSE
-PDAT_ACT=PPDATP104
-FDAT_ACT=FP594
+PDAT_ACT=PPDATP102
+FDAT_ACT=FP670
 BAS (#PTP_PARAMS,100)
 SET_CD_PARAMS (0)
-PTP XP594 
+PTP XP670 
 ;ENDFOLD
-;FOLD LIN P595  Vel= 2 m/s CPDATP199 Tool[1] Base[1]   ;%{PE}
+;FOLD LIN P671  Vel= 2 m/s CPDATP200 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P595; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP199; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P671; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP200; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
 ;ENDFOLD
 $BWDSTART = FALSE
-LDAT_ACT=LCPDATP199
-FDAT_ACT=FP595
+LDAT_ACT=LCPDATP200
+FDAT_ACT=FP671
 BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
-LIN  XP595  
+LIN  XP671  
 ;ENDFOLD
-;FOLD LIN P596  Vel= 2 m/s CPDATP201 Tool[1] Base[1]   ;%{PE}
+;FOLD LIN P672  Vel= 2 m/s CPDATP196 Tool[1] Base[1]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P596; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP201; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P672; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP196; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
 ;ENDFOLD
 $BWDSTART = FALSE
-LDAT_ACT=LCPDATP201
-FDAT_ACT=FP596
+LDAT_ACT=LCPDATP196
+FDAT_ACT=FP672
 BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
-LIN  XP596  
+LIN  XP672  
 ;ENDFOLD
 AbreGarraOp1()
 END
@@ -12407,8 +12614,8 @@ END
 DEF Mtrz_P2_9Aero()
 
 NumLayers = 1
-AlturaCaixa = 191
-Camadas = 6
+AlturaCaixa = 273
+Camadas = 4
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
 NumCaixas = 4
@@ -12525,80 +12732,80 @@ SET_CD_PARAMS (0)
 LIN  XP663  
 ;ENDFOLD
 AbreGarraOp0()
+;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
+;ENDFOLD
+NumCaixas = 4
+PickOp = 3
+ConfGarraOp = 3
+FechaGarraOp = 0
+AbreGarraOp = 0
+SensoresCaixa = 123456
+TravaGarra = False
+SkipGoHome = False
+SkipSobeRelativo = False
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 209 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:209, 3:, 5:TRUE, 6:
+
+$OUT[209]=TRUE
+;ENDFOLD
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 209 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:209, 3:, 5:FALSE, 6:
+
+$OUT[209]=FALSE
+;ENDFOLD
+Pick_E_2_P_3()
+;FOLD PTP P794  Vel= 100 % PDATP50 Tool[1] Base[2]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P794; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP50; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP50
+FDAT_ACT=FP794
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP794 
+;ENDFOLD
+;FOLD LIN P795  Vel= 2 m/s CPDATP100 Tool[1] Base[2]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P795; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP100; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP100
+FDAT_ACT=FP795
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP795  
+;ENDFOLD
+;FOLD LIN P796  Vel= 2 m/s CPDATP101 Tool[1] Base[2]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P796; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP101; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP101
+FDAT_ACT=FP796
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP796  
+;ENDFOLD
+AbreGarraOp0()
 END
 
 
 DEF Mtrz_P2_23Smarties()
 
-NumLayers = 2
-AlturaCaixa = 255
+NumLayers = 1
+AlturaCaixa = 267
 Camadas = 4
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
-NumCaixas = 2
-PickOp = 4
-ConfGarraOp = 4
+NumCaixas = 4
+PickOp = 3
+ConfGarraOp = 3
 FechaGarraOp = 0
 AbreGarraOp = 0
-SensoresCaixa = 456
-TravaGarra = False
-SkipGoHome = False
-SkipSobeRelativo = False
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 231 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:231, 3:, 5:TRUE, 6:
-
-$OUT[231]=TRUE
-;ENDFOLD
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 231 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:231, 3:, 5:FALSE, 6:
-
-$OUT[231]=FALSE
-;ENDFOLD
-Pick_E_2_P_4()
-;FOLD PTP P393  Vel= 100 % PDATP79 Tool[1] Base[2]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P393; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP79; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
-;ENDFOLD
-$BWDSTART = FALSE
-PDAT_ACT=PPDATP79
-FDAT_ACT=FP393
-BAS (#PTP_PARAMS,100)
-SET_CD_PARAMS (0)
-PTP XP393 
-;ENDFOLD
-;FOLD LIN P425  Vel= 2 m/s CPDATP159 Tool[1] Base[2]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P425; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP159; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP159
-FDAT_ACT=FP425
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP425  
-;ENDFOLD
-;FOLD LIN P670  Vel= 2 m/s CPDATP158 Tool[1] Base[2]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P670; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP158; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP158
-FDAT_ACT=FP670
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP670  
-;ENDFOLD
-AbreGarraOp0()
-;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
-;ENDFOLD
-NumCaixas = 3
-PickOp = 4
-ConfGarraOp = 4
-FechaGarraOp = 0
-AbreGarraOp = 0
-SensoresCaixa = 3456
+SensoresCaixa = 123456
 TravaGarra = False
 SkipGoHome = False
 SkipSobeRelativo = False
@@ -12614,107 +12821,49 @@ $OUT[230]=TRUE
 
 $OUT[230]=FALSE
 ;ENDFOLD
-Pick_E_2_P_4()
-;FOLD PTP P671  Vel= 100 % PDATP80 Tool[1] Base[2]   ;%{PE}
+Pick_E_2_P_3()
+;FOLD PTP P168  Vel= 100 % PDATP5 Tool[1] Base[2]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P671; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP80; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P168; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP5; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
 ;ENDFOLD
 $BWDSTART = FALSE
-PDAT_ACT=PPDATP80
-FDAT_ACT=FP671
+PDAT_ACT=PPDATP5
+FDAT_ACT=FP168
 BAS (#PTP_PARAMS,100)
 SET_CD_PARAMS (0)
-PTP XP671 
+PTP XP168 
 ;ENDFOLD
-;FOLD LIN P672  Vel= 2 m/s CPDATP161 Tool[1] Base[2]   ;%{PE}
+;FOLD LIN P818  Vel= 2 m/s CPDATP98 Tool[1] Base[2]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P672; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP161; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P818; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP98; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
 ;ENDFOLD
 $BWDSTART = FALSE
-LDAT_ACT=LCPDATP161
-FDAT_ACT=FP672
+LDAT_ACT=LCPDATP98
+FDAT_ACT=FP818
 BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
-LIN  XP672  
+LIN  XP818  
 ;ENDFOLD
-;FOLD LIN P673  Vel= 2 m/s CPDATP160 Tool[1] Base[2]   ;%{PE}
+;FOLD LIN P819  Vel= 2 m/s CPDATP99 Tool[1] Base[2]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P673; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP160; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P819; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP99; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
 ;ENDFOLD
 $BWDSTART = FALSE
-LDAT_ACT=LCPDATP160
-FDAT_ACT=FP673
+LDAT_ACT=LCPDATP99
+FDAT_ACT=FP819
 BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
-LIN  XP673  
+LIN  XP819  
 ;ENDFOLD
 AbreGarraOp0()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
-NumCaixas = 2
-PickOp = 4
-ConfGarraOp = 4
+NumCaixas = 4
+PickOp = 3
+ConfGarraOp = 3
 FechaGarraOp = 0
 AbreGarraOp = 0
-SensoresCaixa = 456
-TravaGarra = False
-SkipGoHome = False
-SkipSobeRelativo = False
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 231 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:231, 3:, 5:TRUE, 6:
-
-$OUT[231]=TRUE
-;ENDFOLD
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 231 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:231, 3:, 5:FALSE, 6:
-
-$OUT[231]=FALSE
-;ENDFOLD
-Pick_E_2_P_4()
-;FOLD PTP P674  Vel= 100 % PDATP81 Tool[1] Base[2]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P674; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP81; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
-;ENDFOLD
-$BWDSTART = FALSE
-PDAT_ACT=PPDATP81
-FDAT_ACT=FP674
-BAS (#PTP_PARAMS,100)
-SET_CD_PARAMS (0)
-PTP XP674 
-;ENDFOLD
-;FOLD LIN P675  Vel= 2 m/s CPDATP163 Tool[1] Base[2]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P675; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP163; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP163
-FDAT_ACT=FP675
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP675  
-;ENDFOLD
-;FOLD LIN P676  Vel= 2 m/s CPDATP162 Tool[1] Base[2]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P676; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP162; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP162
-FDAT_ACT=FP676
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP676  
-;ENDFOLD
-AbreGarraOp0()
-;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
-;ENDFOLD
-NumCaixas = 3
-PickOp = 4
-ConfGarraOp = 4
-FechaGarraOp = 0
-AbreGarraOp = 0
-SensoresCaixa = 3456
+SensoresCaixa = 123456
 TravaGarra = False
 SkipGoHome = False
 SkipSobeRelativo = False
@@ -12730,107 +12879,49 @@ $OUT[230]=TRUE
 
 $OUT[230]=FALSE
 ;ENDFOLD
-Pick_E_2_P_4()
-;FOLD PTP P677  Vel= 100 % PDATP82 Tool[1] Base[2]   ;%{PE}
+Pick_E_2_P_3()
+;FOLD PTP P820  Vel= 100 % PDATP50 Tool[1] Base[2]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P677; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP82; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P820; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP50; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
 ;ENDFOLD
 $BWDSTART = FALSE
-PDAT_ACT=PPDATP82
-FDAT_ACT=FP677
+PDAT_ACT=PPDATP50
+FDAT_ACT=FP820
 BAS (#PTP_PARAMS,100)
 SET_CD_PARAMS (0)
-PTP XP677 
+PTP XP820 
 ;ENDFOLD
-;FOLD LIN P678  Vel= 2 m/s CPDATP165 Tool[1] Base[2]   ;%{PE}
+;FOLD LIN P821  Vel= 2 m/s CPDATP100 Tool[1] Base[2]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P678; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP165; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P821; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP100; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
 ;ENDFOLD
 $BWDSTART = FALSE
-LDAT_ACT=LCPDATP165
-FDAT_ACT=FP678
+LDAT_ACT=LCPDATP100
+FDAT_ACT=FP821
 BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
-LIN  XP678  
+LIN  XP821  
 ;ENDFOLD
-;FOLD LIN P679  Vel= 2 m/s CPDATP164 Tool[1] Base[2]   ;%{PE}
+;FOLD LIN P822  Vel= 2 m/s CPDATP101 Tool[1] Base[2]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P679; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP164; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P822; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP101; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
 ;ENDFOLD
 $BWDSTART = FALSE
-LDAT_ACT=LCPDATP164
-FDAT_ACT=FP679
+LDAT_ACT=LCPDATP101
+FDAT_ACT=FP822
 BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
-LIN  XP679  
+LIN  XP822  
 ;ENDFOLD
 AbreGarraOp0()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
-NumCaixas = 2
-PickOp = 5
-ConfGarraOp = 4
+NumCaixas = 4
+PickOp = 3
+ConfGarraOp = 3
 FechaGarraOp = 0
 AbreGarraOp = 0
-SensoresCaixa = 123
-TravaGarra = False
-SkipGoHome = False
-SkipSobeRelativo = False
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 231 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:231, 3:, 5:TRUE, 6:
-
-$OUT[231]=TRUE
-;ENDFOLD
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 231 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:231, 3:, 5:FALSE, 6:
-
-$OUT[231]=FALSE
-;ENDFOLD
-Pick_E_2_P_5()
-;FOLD PTP P75  Vel= 100 % PDATP89 Tool[1] Base[2]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P75; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP89; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
-;ENDFOLD
-$BWDSTART = FALSE
-PDAT_ACT=PPDATP89
-FDAT_ACT=FP75
-BAS (#PTP_PARAMS,100)
-SET_CD_PARAMS (0)
-PTP XP75 
-;ENDFOLD
-;FOLD LIN P74  Vel= 2 m/s CPDATP177 Tool[1] Base[2]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P74; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP177; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP177
-FDAT_ACT=FP74
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP74  
-;ENDFOLD
-;FOLD LIN P73  Vel= 2 m/s CPDATP176 Tool[1] Base[2]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P73; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP176; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP176
-FDAT_ACT=FP73
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP73  
-;ENDFOLD
-AbreGarraOp0()
-;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
-;ENDFOLD
-NumCaixas = 3
-PickOp = 5
-ConfGarraOp = 4
-FechaGarraOp = 0
-AbreGarraOp = 0
-SensoresCaixa = 1234
+SensoresCaixa = 123456
 TravaGarra = False
 SkipGoHome = False
 SkipSobeRelativo = False
@@ -12846,155 +12937,39 @@ $OUT[230]=TRUE
 
 $OUT[230]=FALSE
 ;ENDFOLD
-Pick_E_2_P_5()
-;FOLD PTP P683  Vel= 100 % PDATP83 Tool[1] Base[2]   ;%{PE}
+Pick_E_2_P_3()
+;FOLD PTP P823  Vel= 100 % PDATP50 Tool[1] Base[2]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P683; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP83; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P823; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP50; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
 ;ENDFOLD
 $BWDSTART = FALSE
-PDAT_ACT=PPDATP83
-FDAT_ACT=FP683
+PDAT_ACT=PPDATP50
+FDAT_ACT=FP823
 BAS (#PTP_PARAMS,100)
 SET_CD_PARAMS (0)
-PTP XP683 
+PTP XP823 
 ;ENDFOLD
-;FOLD LIN P684  Vel= 2 m/s CPDATP167 Tool[1] Base[2]   ;%{PE}
+;FOLD LIN P824  Vel= 2 m/s CPDATP100 Tool[1] Base[2]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P684; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP167; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P824; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP100; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
 ;ENDFOLD
 $BWDSTART = FALSE
-LDAT_ACT=LCPDATP167
-FDAT_ACT=FP684
+LDAT_ACT=LCPDATP100
+FDAT_ACT=FP824
 BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
-LIN  XP684  
+LIN  XP824  
 ;ENDFOLD
-;FOLD LIN P685  Vel= 2 m/s CPDATP166 Tool[1] Base[2]   ;%{PE}
+;FOLD LIN P825  Vel= 2 m/s CPDATP101 Tool[1] Base[2]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P685; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP166; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P825; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP101; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
 ;ENDFOLD
 $BWDSTART = FALSE
-LDAT_ACT=LCPDATP166
-FDAT_ACT=FP685
+LDAT_ACT=LCPDATP101
+FDAT_ACT=FP825
 BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
-LIN  XP685  
-;ENDFOLD
-AbreGarraOp0()
-;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
-;ENDFOLD
-NumCaixas = 2
-PickOp = 5
-ConfGarraOp = 4
-FechaGarraOp = 0
-AbreGarraOp = 0
-SensoresCaixa = 123
-TravaGarra = False
-SkipGoHome = False
-SkipSobeRelativo = False
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 231 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:231, 3:, 5:TRUE, 6:
-
-$OUT[231]=TRUE
-;ENDFOLD
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 231 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:231, 3:, 5:FALSE, 6:
-
-$OUT[231]=FALSE
-;ENDFOLD
-Pick_E_2_P_5()
-;FOLD PTP P686  Vel= 100 % PDATP83 Tool[1] Base[2]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P686; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP83; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
-;ENDFOLD
-$BWDSTART = FALSE
-PDAT_ACT=PPDATP83
-FDAT_ACT=FP686
-BAS (#PTP_PARAMS,100)
-SET_CD_PARAMS (0)
-PTP XP686 
-;ENDFOLD
-;FOLD LIN P687  Vel= 2 m/s CPDATP167 Tool[1] Base[2]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P687; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP167; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP167
-FDAT_ACT=FP687
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP687  
-;ENDFOLD
-;FOLD LIN P688  Vel= 2 m/s CPDATP166 Tool[1] Base[2]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P688; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP166; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP166
-FDAT_ACT=FP688
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP688  
-;ENDFOLD
-AbreGarraOp0()
-;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
-;ENDFOLD
-NumCaixas = 3
-PickOp = 5
-ConfGarraOp = 4
-FechaGarraOp = 0
-AbreGarraOp = 0
-SensoresCaixa = 1234
-TravaGarra = False
-SkipGoHome = False
-SkipSobeRelativo = False
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 230 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:230, 3:, 5:TRUE, 6:
-
-$OUT[230]=TRUE
-;ENDFOLD
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 230 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:230, 3:, 5:FALSE, 6:
-
-$OUT[230]=FALSE
-;ENDFOLD
-Pick_E_2_P_5()
-;FOLD PTP P689  Vel= 100 % PDATP83 Tool[1] Base[2]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P689; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP83; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
-;ENDFOLD
-$BWDSTART = FALSE
-PDAT_ACT=PPDATP83
-FDAT_ACT=FP689
-BAS (#PTP_PARAMS,100)
-SET_CD_PARAMS (0)
-PTP XP689 
-;ENDFOLD
-;FOLD LIN P690  Vel= 2 m/s CPDATP167 Tool[1] Base[2]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P690; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP167; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP167
-FDAT_ACT=FP690
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP690  
-;ENDFOLD
-;FOLD LIN P691  Vel= 2 m/s CPDATP166 Tool[1] Base[2]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P691; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP166; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP166
-FDAT_ACT=FP691
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP691  
+LIN  XP825  
 ;ENDFOLD
 AbreGarraOp0()
 END
@@ -15728,64 +15703,6 @@ LIN  XP643
 AbreGarraOp0()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
-NumCaixas = 1
-PickOp = 8
-ConfGarraOp = 5
-FechaGarraOp = 0
-AbreGarraOp = 0
-SensoresCaixa = 1
-TravaGarra = False
-SkipGoHome = False
-SkipSobeRelativo = False
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 250 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:250, 3:, 5:TRUE, 6:
-
-$OUT[250]=TRUE
-;ENDFOLD
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 250 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:250, 3:, 5:FALSE, 6:
-
-$OUT[250]=FALSE
-;ENDFOLD
-Pick_E_2_P_8()
-;FOLD PTP P644  Vel= 100 % PDATP99 Tool[1] Base[2]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P644; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP99; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
-;ENDFOLD
-$BWDSTART = FALSE
-PDAT_ACT=PPDATP99
-FDAT_ACT=FP644
-BAS (#PTP_PARAMS,100)
-SET_CD_PARAMS (0)
-PTP XP644 
-;ENDFOLD
-;FOLD LIN P645  Vel= 2 m/s CPDATP191 Tool[1] Base[2]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P645; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP191; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP191
-FDAT_ACT=FP645
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP645  
-;ENDFOLD
-;FOLD LIN P646  Vel= 2 m/s CPDATP190 Tool[1] Base[2]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P646; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP190; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP190
-FDAT_ACT=FP646
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP646  
-;ENDFOLD
-AbreGarraOp0()
-;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
-;ENDFOLD
 NumCaixas = 2
 PickOp = 8
 ConfGarraOp = 5
@@ -15960,7 +15877,7 @@ LIN  XP669
 AbreGarraOp0()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
-NumCaixas = 3
+NumCaixas = 4
 PickOp = 8
 ConfGarraOp = 5
 FechaGarraOp = 0
@@ -15971,107 +15888,49 @@ SkipGoHome = False
 SkipSobeRelativo = False
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
 ;ENDFOLD
-;FOLD OUT 252 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:252, 3:, 5:TRUE, 6:
+;FOLD OUT 250 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:250, 3:, 5:TRUE, 6:
 
-$OUT[252]=TRUE
+$OUT[250]=TRUE
 ;ENDFOLD
 ;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
 ;ENDFOLD
-;FOLD OUT 252 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:252, 3:, 5:FALSE, 6:
+;FOLD OUT 250 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:250, 3:, 5:FALSE, 6:
 
-$OUT[252]=FALSE
+$OUT[250]=FALSE
 ;ENDFOLD
 Pick_E_2_P_8()
-;FOLD PTP P800  Vel= 100 % PDATP101 Tool[1] Base[2]   ;%{PE}
+;FOLD PTP P673  Vel= 100 % PDATP99 Tool[1] Base[2]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P800; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP101; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P673; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP99; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
 ;ENDFOLD
 $BWDSTART = FALSE
-PDAT_ACT=PPDATP101
-FDAT_ACT=FP800
+PDAT_ACT=PPDATP99
+FDAT_ACT=FP673
 BAS (#PTP_PARAMS,100)
 SET_CD_PARAMS (0)
-PTP XP800 
+PTP XP673 
 ;ENDFOLD
-;FOLD LIN P801  Vel= 2 m/s CPDATP194 Tool[1] Base[2]   ;%{PE}
+;FOLD LIN P674  Vel= 2 m/s CPDATP191 Tool[1] Base[2]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P801; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP194; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P674; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP191; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
 ;ENDFOLD
 $BWDSTART = FALSE
-LDAT_ACT=LCPDATP194
-FDAT_ACT=FP801
+LDAT_ACT=LCPDATP191
+FDAT_ACT=FP674
 BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
-LIN  XP801  
+LIN  XP674  
 ;ENDFOLD
-;FOLD LIN P802  Vel= 2 m/s CPDATP195 Tool[1] Base[2]   ;%{PE}
+;FOLD LIN P675  Vel= 2 m/s CPDATP190 Tool[1] Base[2]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P802; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP195; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P675; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP190; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
 ;ENDFOLD
 $BWDSTART = FALSE
-LDAT_ACT=LCPDATP195
-FDAT_ACT=FP802
+LDAT_ACT=LCPDATP190
+FDAT_ACT=FP675
 BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
-LIN  XP802  
-;ENDFOLD
-AbreGarraOp0()
-;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
-;ENDFOLD
-NumCaixas = 1
-PickOp = 6
-ConfGarraOp = 5
-FechaGarraOp = 0
-AbreGarraOp = 0
-SensoresCaixa = 1
-TravaGarra = False
-SkipGoHome = False
-SkipSobeRelativo = False
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 253 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:253, 3:, 5:TRUE, 6:
-
-$OUT[253]=TRUE
-;ENDFOLD
-;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
-;ENDFOLD
-;FOLD OUT 253 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:253, 3:, 5:FALSE, 6:
-
-$OUT[253]=FALSE
-;ENDFOLD
-Pick_E_2_P_6_5()
-;FOLD PTP P773  Vel= 100 % PDATP102 Tool[1] Base[2]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P773; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP102; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
-;ENDFOLD
-$BWDSTART = FALSE
-PDAT_ACT=PPDATP102
-FDAT_ACT=FP773
-BAS (#PTP_PARAMS,100)
-SET_CD_PARAMS (0)
-PTP XP773 
-;ENDFOLD
-;FOLD LIN P774  Vel= 2 m/s CPDATP200 Tool[1] Base[2]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P774; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP200; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP200
-FDAT_ACT=FP774
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP774  
-;ENDFOLD
-;FOLD LIN P775  Vel= 2 m/s CPDATP196 Tool[1] Base[2]   ;%{PE}
-;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P775; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP196; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
-;ENDFOLD
-$BWDSTART = FALSE
-LDAT_ACT=LCPDATP196
-FDAT_ACT=FP775
-BAS (#CP_PARAMS,2)
-SET_CD_PARAMS (0)
-LIN  XP775  
+LIN  XP675  
 ;ENDFOLD
 AbreGarraOp0()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
@@ -16366,7 +16225,7 @@ LIN  XP790
 AbreGarraOp1()
 ;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
 ;ENDFOLD
-NumCaixas = 3
+NumCaixas = 4
 PickOp = 6
 ConfGarraOp = 5
 FechaGarraOp = 0
@@ -16388,38 +16247,38 @@ $OUT[254]=TRUE
 $OUT[254]=FALSE
 ;ENDFOLD
 Pick_E_2_P_6_5()
-;FOLD PTP P806  Vel= 100 % PDATP104 Tool[1] Base[2]   ;%{PE}
+;FOLD PTP P800  Vel= 100 % PDATP102 Tool[1] Base[2]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P806; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP104; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P800; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP102; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
 ;ENDFOLD
 $BWDSTART = FALSE
-PDAT_ACT=PPDATP104
-FDAT_ACT=FP806
+PDAT_ACT=PPDATP102
+FDAT_ACT=FP800
 BAS (#PTP_PARAMS,100)
 SET_CD_PARAMS (0)
-PTP XP806 
+PTP XP800 
 ;ENDFOLD
-;FOLD LIN P807  Vel= 2 m/s CPDATP199 Tool[1] Base[2]   ;%{PE}
+;FOLD LIN P801  Vel= 2 m/s CPDATP200 Tool[1] Base[2]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P807; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP199; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P801; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP200; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
 ;ENDFOLD
 $BWDSTART = FALSE
-LDAT_ACT=LCPDATP199
-FDAT_ACT=FP807
+LDAT_ACT=LCPDATP200
+FDAT_ACT=FP801
 BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
-LIN  XP807  
+LIN  XP801  
 ;ENDFOLD
-;FOLD LIN P808  Vel= 2 m/s CPDATP201 Tool[1] Base[2]   ;%{PE}
+;FOLD LIN P802  Vel= 2 m/s CPDATP196 Tool[1] Base[2]   ;%{PE}
 ;FOLD Parameters ;%{h}
-;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P808; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP201; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P802; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP196; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
 ;ENDFOLD
 $BWDSTART = FALSE
-LDAT_ACT=LCPDATP201
-FDAT_ACT=FP808
+LDAT_ACT=LCPDATP196
+FDAT_ACT=FP802
 BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
-LIN  XP808  
+LIN  XP802  
 ;ENDFOLD
 AbreGarraOp1()
 END
@@ -16745,5 +16604,1049 @@ FDAT_ACT=FP814
 BAS (#CP_PARAMS,2)
 SET_CD_PARAMS (0)
 LIN  XP814 C_DIS C_DIS
+;ENDFOLD
+END
+
+
+DEF Mtrz_P1_7Aero6()
+
+NumLayers = 2
+AlturaCaixa = 221
+Camadas = 5
+;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
+;ENDFOLD
+NumCaixas = 3
+PickOp = 6
+ConfGarraOp = 0
+FechaGarraOp = 0
+AbreGarraOp = 0
+SensoresCaixa = 564
+TravaGarra = False
+SkipGoHome = False
+SkipSobeRelativo = False
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 207 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:207, 3:, 5:TRUE, 6:
+
+$OUT[207]=TRUE
+;ENDFOLD
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 207 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:207, 3:, 5:FALSE, 6:
+
+$OUT[207]=FALSE
+;ENDFOLD
+Pick_E_1_P_6()
+;FOLD PTP P425  Vel= 100 % PDATP84 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P425; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP84; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP84
+FDAT_ACT=FP425
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP425 
+;ENDFOLD
+;FOLD LIN P535  Vel= 2 m/s CPDATP169 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P535; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP169; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP169
+FDAT_ACT=FP535
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP535  
+;ENDFOLD
+;FOLD LIN P536  Vel= 2 m/s CPDATP168 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P536; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP168; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP168
+FDAT_ACT=FP536
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP536  
+;ENDFOLD
+AbreGarraOp0()
+;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
+;ENDFOLD
+NumCaixas = 3
+PickOp = 6
+ConfGarraOp = 0
+FechaGarraOp = 0
+AbreGarraOp = 0
+SensoresCaixa = 564
+TravaGarra = False
+SkipGoHome = False
+SkipSobeRelativo = False
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 207 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:207, 3:, 5:TRUE, 6:
+
+$OUT[207]=TRUE
+;ENDFOLD
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 207 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:207, 3:, 5:FALSE, 6:
+
+$OUT[207]=FALSE
+;ENDFOLD
+Pick_E_1_P_6()
+;FOLD PTP P537  Vel= 100 % PDATP85 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P537; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP85; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP85
+FDAT_ACT=FP537
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP537 
+;ENDFOLD
+;FOLD LIN P538  Vel= 2 m/s CPDATP171 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P538; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP171; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP171
+FDAT_ACT=FP538
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP538  
+;ENDFOLD
+;FOLD LIN P555  Vel= 2 m/s CPDATP170 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P555; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP170; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP170
+FDAT_ACT=FP555
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP555  
+;ENDFOLD
+AbreGarraOp0()
+;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
+;ENDFOLD
+NumCaixas = 2
+PickOp = 8
+ConfGarraOp = 5
+FechaGarraOp = 0
+AbreGarraOp = 0
+SensoresCaixa = 12
+TravaGarra = False
+SkipGoHome = False
+SkipSobeRelativo = False
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 208 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:208, 3:, 5:TRUE, 6:
+
+$OUT[208]=TRUE
+;ENDFOLD
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 208 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:208, 3:, 5:FALSE, 6:
+
+$OUT[208]=FALSE
+;ENDFOLD
+Pick_E_1_P_8()
+;FOLD PTP P594  Vel= 100 % PDATP86 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P594; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP86; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP86
+FDAT_ACT=FP594
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP594 
+;ENDFOLD
+;FOLD LIN P595  Vel= 2 m/s CPDATP173 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P595; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP173; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP173
+FDAT_ACT=FP595
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP595  
+;ENDFOLD
+;FOLD LIN P596  Vel= 2 m/s CPDATP172 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P596; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP172; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP172
+FDAT_ACT=FP596
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP596  
+;ENDFOLD
+AbreGarraOp0()
+;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
+;ENDFOLD
+NumCaixas = 2
+PickOp = 8
+ConfGarraOp = 5
+FechaGarraOp = 0
+AbreGarraOp = 0
+SensoresCaixa = 12
+TravaGarra = False
+SkipGoHome = False
+SkipSobeRelativo = False
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 208 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:208, 3:, 5:TRUE, 6:
+
+$OUT[208]=TRUE
+;ENDFOLD
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 208 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:208, 3:, 5:FALSE, 6:
+
+$OUT[208]=FALSE
+;ENDFOLD
+Pick_E_1_P_8()
+;FOLD PTP P644  Vel= 100 % PDATP86 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P644; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP86; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP86
+FDAT_ACT=FP644
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP644 
+;ENDFOLD
+;FOLD LIN P645  Vel= 2 m/s CPDATP173 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P645; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP173; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP173
+FDAT_ACT=FP645
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP645  
+;ENDFOLD
+;FOLD LIN P646  Vel= 2 m/s CPDATP172 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P646; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP172; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP172
+FDAT_ACT=FP646
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP646  
+;ENDFOLD
+AbreGarraOp0()
+;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
+;ENDFOLD
+NumCaixas = 3
+PickOp = 8
+ConfGarraOp = 5
+FechaGarraOp = 0
+AbreGarraOp = 1
+SensoresCaixa = 123
+TravaGarra = True
+SkipGoHome = False
+SkipSobeRelativo = False
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 206 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:206, 3:, 5:TRUE, 6:
+
+$OUT[206]=TRUE
+;ENDFOLD
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 206 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:206, 3:, 5:FALSE, 6:
+
+$OUT[206]=FALSE
+;ENDFOLD
+Pick_E_1_P_8()
+;FOLD PTP P400  Vel= 100 % PDATP87 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P400; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP87; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP87
+FDAT_ACT=FP400
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP400 
+;ENDFOLD
+;FOLD LIN P401  Vel= 2 m/s CPDATP175 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P401; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP175; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP175
+FDAT_ACT=FP401
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP401  
+;ENDFOLD
+;FOLD LIN P402  Vel= 2 m/s CPDATP174 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P402; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP174; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP174
+FDAT_ACT=FP402
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP402  
+;ENDFOLD
+AbreGarraOp1()
+;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
+;ENDFOLD
+NumCaixas = 3
+PickOp = 8
+ConfGarraOp = 5
+FechaGarraOp = 0
+AbreGarraOp = 1
+SensoresCaixa = 123
+TravaGarra = True
+SkipGoHome = False
+SkipSobeRelativo = False
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 206 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:206, 3:, 5:TRUE, 6:
+
+$OUT[206]=TRUE
+;ENDFOLD
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 206 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:206, 3:, 5:FALSE, 6:
+
+$OUT[206]=FALSE
+;ENDFOLD
+Pick_E_1_P_8()
+;FOLD PTP P403  Vel= 100 % PDATP87 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P403; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP87; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP87
+FDAT_ACT=FP403
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP403 
+;ENDFOLD
+;FOLD LIN P404  Vel= 2 m/s CPDATP175 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P404; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP175; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP175
+FDAT_ACT=FP404
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP404  
+;ENDFOLD
+;FOLD LIN P405  Vel= 2 m/s CPDATP174 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P405; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP174; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP174
+FDAT_ACT=FP405
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP405  
+;ENDFOLD
+AbreGarraOp1()
+;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
+;ENDFOLD
+NumCaixas = 2
+PickOp = 8
+ConfGarraOp = 5
+FechaGarraOp = 0
+AbreGarraOp = 1
+SensoresCaixa = 12
+TravaGarra = True
+SkipGoHome = False
+SkipSobeRelativo = False
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 208 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:208, 3:, 5:TRUE, 6:
+
+$OUT[208]=TRUE
+;ENDFOLD
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 208 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:208, 3:, 5:FALSE, 6:
+
+$OUT[208]=FALSE
+;ENDFOLD
+Pick_E_1_P_8()
+;FOLD PTP P676  Vel= 100 % PDATP86 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P676; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP86; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP86
+FDAT_ACT=FP676
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP676 
+;ENDFOLD
+;FOLD LIN P677  Vel= 2 m/s CPDATP173 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P677; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP173; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP173
+FDAT_ACT=FP677
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP677  
+;ENDFOLD
+;FOLD LIN P678  Vel= 2 m/s CPDATP172 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P678; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP172; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP172
+FDAT_ACT=FP678
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP678  
+;ENDFOLD
+AbreGarraOp1()
+;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
+;ENDFOLD
+NumCaixas = 2
+PickOp = 8
+ConfGarraOp = 5
+FechaGarraOp = 0
+AbreGarraOp = 1
+SensoresCaixa = 12
+TravaGarra = True
+SkipGoHome = False
+SkipSobeRelativo = False
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 208 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:208, 3:, 5:TRUE, 6:
+
+$OUT[208]=TRUE
+;ENDFOLD
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 208 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:208, 3:, 5:FALSE, 6:
+
+$OUT[208]=FALSE
+;ENDFOLD
+Pick_E_1_P_8()
+;FOLD PTP P679  Vel= 100 % PDATP86 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P679; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP86; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP86
+FDAT_ACT=FP679
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP679 
+;ENDFOLD
+;FOLD LIN P683  Vel= 2 m/s CPDATP173 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P683; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP173; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP173
+FDAT_ACT=FP683
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP683  
+;ENDFOLD
+;FOLD LIN P684  Vel= 2 m/s CPDATP172 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P684; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP172; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP172
+FDAT_ACT=FP684
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP684  
+;ENDFOLD
+AbreGarraOp1()
+;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
+;ENDFOLD
+NumCaixas = 2
+PickOp = 8
+ConfGarraOp = 5
+FechaGarraOp = 0
+AbreGarraOp = 1
+SensoresCaixa = 12
+TravaGarra = True
+SkipGoHome = False
+SkipSobeRelativo = False
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 208 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:208, 3:, 5:TRUE, 6:
+
+$OUT[208]=TRUE
+;ENDFOLD
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 208 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:208, 3:, 5:FALSE, 6:
+
+$OUT[208]=FALSE
+;ENDFOLD
+Pick_E_1_P_8()
+;FOLD PTP P406  Vel= 100 % PDATP96 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P406; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP96; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP96
+FDAT_ACT=FP406
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP406 
+;ENDFOLD
+;FOLD LIN P685  Vel= 2 m/s CPDATP186 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P685; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP186; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP186
+FDAT_ACT=FP685
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP685  
+;ENDFOLD
+;FOLD LIN P686  Vel= 2 m/s CPDATP187 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P686; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP187; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP187
+FDAT_ACT=FP686
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP686  
+;ENDFOLD
+AbreGarraOp1()
+;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
+;ENDFOLD
+NumCaixas = 2
+PickOp = 8
+ConfGarraOp = 5
+FechaGarraOp = 0
+AbreGarraOp = 1
+SensoresCaixa = 12
+TravaGarra = True
+SkipGoHome = False
+SkipSobeRelativo = False
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 208 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:208, 3:, 5:TRUE, 6:
+
+$OUT[208]=TRUE
+;ENDFOLD
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 208 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:208, 3:, 5:FALSE, 6:
+
+$OUT[208]=FALSE
+;ENDFOLD
+Pick_E_1_P_8()
+;FOLD PTP P687  Vel= 100 % PDATP96 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P687; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP96; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP96
+FDAT_ACT=FP687
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP687 
+;ENDFOLD
+;FOLD LIN P688  Vel= 2 m/s CPDATP186 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P688; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP186; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP186
+FDAT_ACT=FP688
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP688  
+;ENDFOLD
+;FOLD LIN P689  Vel= 2 m/s CPDATP187 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P689; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP187; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP187
+FDAT_ACT=FP689
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP689  
+;ENDFOLD
+AbreGarraOp1()
+;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
+;ENDFOLD
+NumCaixas = 3
+PickOp = 8
+ConfGarraOp = 5
+FechaGarraOp = 0
+AbreGarraOp = 0
+SensoresCaixa = 123
+TravaGarra = False
+SkipGoHome = False
+SkipSobeRelativo = False
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 206 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:206, 3:, 5:TRUE, 6:
+
+$OUT[206]=TRUE
+;ENDFOLD
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 206 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:206, 3:, 5:FALSE, 6:
+
+$OUT[206]=FALSE
+;ENDFOLD
+Pick_E_1_P_8()
+;FOLD PTP P690  Vel= 100 % PDATP97 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P690; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP97; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP97
+FDAT_ACT=FP690
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP690 
+;ENDFOLD
+;FOLD LIN P691  Vel= 2 m/s CPDATP188 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P691; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP188; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP188
+FDAT_ACT=FP691
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP691  
+;ENDFOLD
+;FOLD LIN P773  Vel= 2 m/s CPDATP189 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P773; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP189; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP189
+FDAT_ACT=FP773
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP773  
+;ENDFOLD
+AbreGarraOp0()
+;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
+;ENDFOLD
+NumCaixas = 3
+PickOp = 8
+ConfGarraOp = 5
+FechaGarraOp = 0
+AbreGarraOp = 0
+SensoresCaixa = 123
+TravaGarra = False
+SkipGoHome = False
+SkipSobeRelativo = False
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 206 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:206, 3:, 5:TRUE, 6:
+
+$OUT[206]=TRUE
+;ENDFOLD
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 206 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:206, 3:, 5:FALSE, 6:
+
+$OUT[206]=FALSE
+;ENDFOLD
+Pick_E_1_P_8()
+;FOLD PTP P774  Vel= 100 % PDATP97 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P774; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP97; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP97
+FDAT_ACT=FP774
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP774 
+;ENDFOLD
+;FOLD LIN P775  Vel= 2 m/s CPDATP188 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P775; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP188; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP188
+FDAT_ACT=FP775
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP775  
+;ENDFOLD
+;FOLD LIN P806  Vel= 2 m/s CPDATP189 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P806; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP189; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP189
+FDAT_ACT=FP806
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP806  
+;ENDFOLD
+AbreGarraOp0()
+;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
+;ENDFOLD
+NumCaixas = 3
+PickOp = 8
+ConfGarraOp = 5
+FechaGarraOp = 0
+AbreGarraOp = 0
+SensoresCaixa = 123
+TravaGarra = False
+SkipGoHome = False
+SkipSobeRelativo = False
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 206 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:206, 3:, 5:TRUE, 6:
+
+$OUT[206]=TRUE
+;ENDFOLD
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 206 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:206, 3:, 5:FALSE, 6:
+
+$OUT[206]=FALSE
+;ENDFOLD
+Pick_E_1_P_8()
+;FOLD PTP P807  Vel= 100 % PDATP97 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P807; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP97; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP97
+FDAT_ACT=FP807
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP807 
+;ENDFOLD
+;FOLD LIN P808  Vel= 2 m/s CPDATP188 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P808; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP188; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP188
+FDAT_ACT=FP808
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP808  
+;ENDFOLD
+;FOLD LIN P844  Vel= 2 m/s CPDATP189 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P844; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP189; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP189
+FDAT_ACT=FP844
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP844  
+;ENDFOLD
+AbreGarraOp0()
+;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
+;ENDFOLD
+NumCaixas = 3
+PickOp = 8
+ConfGarraOp = 5
+FechaGarraOp = 0
+AbreGarraOp = 0
+SensoresCaixa = 123
+TravaGarra = False
+SkipGoHome = False
+SkipSobeRelativo = False
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 206 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:206, 3:, 5:TRUE, 6:
+
+$OUT[206]=TRUE
+;ENDFOLD
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 206 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:206, 3:, 5:FALSE, 6:
+
+$OUT[206]=FALSE
+;ENDFOLD
+Pick_E_1_P_8()
+;FOLD PTP P845  Vel= 100 % PDATP97 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P845; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP97; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP97
+FDAT_ACT=FP845
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP845 
+;ENDFOLD
+;FOLD LIN P846  Vel= 2 m/s CPDATP188 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P846; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP188; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP188
+FDAT_ACT=FP846
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP846  
+;ENDFOLD
+;FOLD LIN P847  Vel= 2 m/s CPDATP189 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P847; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP189; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP189
+FDAT_ACT=FP847
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP847  
+;ENDFOLD
+AbreGarraOp0()
+;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
+;ENDFOLD
+NumCaixas = 2
+PickOp = 8
+ConfGarraOp = 5
+FechaGarraOp = 0
+AbreGarraOp = 1
+SensoresCaixa = 12
+TravaGarra = True
+SkipGoHome = False
+SkipSobeRelativo = False
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 208 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:208, 3:, 5:TRUE, 6:
+
+$OUT[208]=TRUE
+;ENDFOLD
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 208 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:208, 3:, 5:FALSE, 6:
+
+$OUT[208]=FALSE
+;ENDFOLD
+Pick_E_1_P_8()
+;FOLD PTP P848  Vel= 100 % PDATP86 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P848; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP86; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP86
+FDAT_ACT=FP848
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP848 
+;ENDFOLD
+;FOLD LIN P849  Vel= 2 m/s CPDATP173 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P849; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP173; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP173
+FDAT_ACT=FP849
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP849  
+;ENDFOLD
+;FOLD LIN P850  Vel= 2 m/s CPDATP172 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P850; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP172; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP172
+FDAT_ACT=FP850
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP850  
+;ENDFOLD
+AbreGarraOp1()
+;FOLD ; ## PontoPlace ##;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: ## PontoPlace ##
+;ENDFOLD
+NumCaixas = 2
+PickOp = 8
+ConfGarraOp = 5
+FechaGarraOp = 0
+AbreGarraOp = 1
+SensoresCaixa = 12
+TravaGarra = True
+SkipGoHome = False
+SkipSobeRelativo = False
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 208 ''  State= TRUE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:208, 3:, 5:TRUE, 6:
+
+$OUT[208]=TRUE
+;ENDFOLD
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+;FOLD OUT 208 ''  State= FALSE ;%{PE}%R 5.4.27,%MKUKATPBASIS,%COUT,%VOUTX,%P 2:208, 3:, 5:FALSE, 6:
+
+$OUT[208]=FALSE
+;ENDFOLD
+Pick_E_1_P_8()
+;FOLD PTP P851  Vel= 100 % PDATP86 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P851; Kuka.BlendingEnabled=False; Kuka.MoveDataPtpName=PDATP86; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP86
+FDAT_ACT=FP851
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP851 
+;ENDFOLD
+;FOLD LIN P852  Vel= 2 m/s CPDATP173 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P852; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP173; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP173
+FDAT_ACT=FP852
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP852  
+;ENDFOLD
+;FOLD LIN P853  Vel= 2 m/s CPDATP172 Tool[1] Base[1]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P853; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP172; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP172
+FDAT_ACT=FP853
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP853  
+;ENDFOLD
+AbreGarraOp1()
+END
+
+
+DEF Pick_E_1_P_2_0()
+
+;FOLD PTP P175 CONT Vel= 100 % PDATP1 Tool[1] Base[3]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P175; Kuka.BlendingEnabled=True; Kuka.MoveDataPtpName=PDATP1; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP1
+FDAT_ACT=FP175
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP175 C_DIS
+;ENDFOLD
+ConfGarraOp0()
+;FOLD LIN P176  Vel= 2 m/s CPDATP2 Tool[1] Base[3]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P176; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP2; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP2
+FDAT_ACT=FP176
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP176  
+;ENDFOLD
+;FOLD LIN Pick_E_1_P_7  Vel= 2 m/s CPDATP1 Tool[1] Base[3]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=Pick_E_1_P_7; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP1; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP1
+FDAT_ACT=FPick_E_1_P_7
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XPick_E_1_P_7  
+;ENDFOLD
+FechaGarraOp0()
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+PickCaixasSimulador()
+;FOLD LIN P177 CONT Vel= 2 m/s CPDATP3 Tool[1] Base[3]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P177; Kuka.BlendingEnabled=True; Kuka.MoveDataName=CPDATP3; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP3
+FDAT_ACT=FP177
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP177 C_DIS C_DIS
+;ENDFOLD
+END
+
+
+DEF Pick_E_1_P_6_0()
+
+;FOLD PTP P863 CONT Vel= 100 % PDATP1 Tool[1] Base[3]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P863; Kuka.BlendingEnabled=True; Kuka.MoveDataPtpName=PDATP1; Kuka.VelocityPtp=100; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=PTP
+;ENDFOLD
+$BWDSTART = FALSE
+PDAT_ACT=PPDATP1
+FDAT_ACT=FP863
+BAS (#PTP_PARAMS,100)
+SET_CD_PARAMS (0)
+PTP XP863 C_DIS
+;ENDFOLD
+ConfGarraOp0()
+;FOLD LIN P864  Vel= 2 m/s CPDATP2 Tool[1] Base[3]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P864; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP2; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP2
+FDAT_ACT=FP864
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP864  
+;ENDFOLD
+;FOLD LIN Pick_E_1_P_6_6  Vel= 2 m/s CPDATP1 Tool[1] Base[3]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=Pick_E_1_P_6_6; Kuka.BlendingEnabled=False; Kuka.MoveDataName=CPDATP1; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP1
+FDAT_ACT=FPick_E_1_P_6_6
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XPick_E_1_P_6_6  
+;ENDFOLD
+FechaGarraOp0()
+;FOLD ; Simulador;%{PE}%R 8.5.16,%MKUKATPBASIS,%CCOMMENT,%VNORMAL,%P 2: Simulador
+;ENDFOLD
+PickCaixasSimulador()
+;FOLD LIN P865 CONT Vel= 2 m/s CPDATP3 Tool[1] Base[3]   ;%{PE}
+;FOLD Parameters ;%{h}
+;Params IlfProvider=kukaroboter.basistech.inlineforms.movement.old; Kuka.IsGlobalPoint=False; Kuka.PointName=P865; Kuka.BlendingEnabled=True; Kuka.MoveDataName=CPDATP3; Kuka.VelocityPath=2; Kuka.CurrentCDSetIndex=0; Kuka.MovementParameterFieldEnabled=True; IlfCommand=LIN
+;ENDFOLD
+$BWDSTART = FALSE
+LDAT_ACT=LCPDATP3
+FDAT_ACT=FP865
+BAS (#CP_PARAMS,2)
+SET_CD_PARAMS (0)
+LIN  XP865 C_DIS C_DIS
 ;ENDFOLD
 END

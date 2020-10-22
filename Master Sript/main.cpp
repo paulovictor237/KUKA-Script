@@ -29,11 +29,13 @@ using namespace std;
 #include "garra.h"
 
 std::ofstream TReceita_src("out/INIT/TReceita.src",std::ofstream::out);
-std::ofstream TReceita_dat("out/INIT/TReceita.dat",std::ofstream::out);
+//std::ofstream TReceita_dat("out/INIT/TReceita.dat",std::ofstream::out);
+
 std::ofstream TMatriz_src ("out/INIT/TMatriz.src", std::ofstream::out);
 std::ofstream TMatriz_dat ("out/INIT/TMatriz.dat", std::ofstream::out);
+
 std::ofstream TPallet_src ("out/INIT/TPallet.src", std::ofstream::out);
-std::ofstream TPallet_dat ("out/INIT/TPallet.dat", std::ofstream::out);
+//std::ofstream TPallet_dat ("out/INIT/TPallet.dat", std::ofstream::out);
 
 std::ofstream Aux1TMatriz_src ("auxiliar/aux1TMatriz.src", std::ofstream::out);
 std::ofstream Aux1TMatriz_dat ("auxiliar/aux1TMatriz.dat", std::ofstream::out);
@@ -44,20 +46,24 @@ std::ofstream config_dat("out/config.dat", std::ofstream::out);
 
 void init_all(void){
   prefixo(TReceita_src,"TReceita",false);
-  prefixo(TReceita_dat,"TReceita",true);
+  //prefixo(TReceita_dat,"TReceita",true);
+
   prefixo(TMatriz_src,"TMatriz",false);
   prefixo(TMatriz_dat,"TMatriz",true);
+
   prefixo(TPallet_src,"TPallet",false);
-  prefixo(TPallet_dat,"TPallet",true);
+  //prefixo(TPallet_dat,"TPallet",true);
 }
 
 void end_all(void){
   sufixo(TReceita_src,false);
-  sufixo(TReceita_dat,true);
+  //sufixo(TReceita_dat,true);
+
   sufixo(TMatriz_src,false);
   sufixo(TMatriz_dat,true);
+  
   sufixo(TPallet_src,false);
-  sufixo(TPallet_dat,true);
+  //sufixo(TPallet_dat,true);
 }
 
 int MaxPallets=2;
@@ -181,7 +187,7 @@ int main(int argc, char **argv)
   copy_file(TMatriz_dat,"auxiliar/aux1TMatriz.dat","auxiliar/aux2TMatriz.dat");
 
   pallet_src(My_Job_src,TPallet_src,MaxPallets);
-  pick(My_Job_dat,TReceita_dat);
+  //pick(My_Job_dat,TReceita_dat);
   funcao_pick_esteira_dat(My_Job_dat);
   config.MaxPallets=MaxPallets;
   config.MaxMatrizI=MaxPallets;
@@ -191,11 +197,11 @@ int main(int argc, char **argv)
 
   end_all();
   config_dat.close();
-  TReceita_dat.close();
+  //TReceita_dat.close();
   TReceita_src.close();
   TMatriz_dat.close();
   TMatriz_src.close();
-  TPallet_dat.close();
+  //TPallet_dat.close();
   TPallet_src.close();
   My_Job_src.close();
   My_Job_dat.close();
