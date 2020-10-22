@@ -38,10 +38,10 @@ std::ofstream TMatriz_dat ("file_out/INIT/TMatriz.dat", std::ofstream::out);
 std::ofstream TPallet_src ("file_out/INIT/TPallet.src", std::ofstream::out);
 //std::ofstream TPallet_dat ("file_out/INIT/TPallet.dat", std::ofstream::out);
 
-std::ofstream Aux1TMatriz_src ("Codigo/auxiliar/aux1TMatriz.src", std::ofstream::out);
-std::ofstream Aux1TMatriz_dat ("Codigo/auxiliar/aux1TMatriz.dat", std::ofstream::out);
-std::ofstream Aux2TMatriz_src ("Codigo/auxiliar/aux2TMatriz.src", std::ofstream::out);
-std::ofstream Aux2TMatriz_dat ("Codigo/auxiliar/aux2TMatriz.dat", std::ofstream::out);
+std::ofstream Aux1TMatriz_src ("src/auxiliar/aux1TMatriz.src", std::ofstream::out);
+std::ofstream Aux1TMatriz_dat ("src/auxiliar/aux1TMatriz.dat", std::ofstream::out);
+std::ofstream Aux2TMatriz_src ("src/auxiliar/aux2TMatriz.src", std::ofstream::out);
+std::ofstream Aux2TMatriz_dat ("src/auxiliar/aux2TMatriz.dat", std::ofstream::out);
 
 std::ofstream config_dat("file_out/config.dat", std::ofstream::out);
 
@@ -184,8 +184,8 @@ int main(int argc, char **argv)
   Aux1TMatriz_dat.close();
   Aux2TMatriz_src.close();
   Aux2TMatriz_dat.close();
-  copy_file(TMatriz_src,"auxiliar/aux1TMatriz.src","auxiliar/aux2TMatriz.src");
-  copy_file(TMatriz_dat,"auxiliar/aux1TMatriz.dat","auxiliar/aux2TMatriz.dat");
+  copy_file(TMatriz_src,"src/auxiliar/aux1TMatriz.src","src/auxiliar/aux2TMatriz.src");
+  copy_file(TMatriz_dat,"src/auxiliar/aux1TMatriz.dat","src/auxiliar/aux2TMatriz.dat");
 
   pallet_src(My_Job_src,TPallet_src,MaxPallets);
   //pick(My_Job_dat,TReceita_dat);

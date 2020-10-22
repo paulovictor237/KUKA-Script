@@ -12,13 +12,14 @@ Numero de FechaGarra: 1
 DEF Mtrz_P1_9Aero()
 Pallet:  P1
 Produto: 9Aero
-AlturaCaixa: 273
-Camadas: 4
+<span style="color:red">**ERROR: PickOp: **</span>MatrizPontos[Pallet_1,Prdt_9Aero,1].PickOp = { 4 } deveria ser: { 3 }
+<span style="color:red">**ERROR: PickOp: **</span>MatrizPontos[Pallet_1,Prdt_9Aero,2].PickOp = { 4 } deveria ser: { 3 }
+AlturaCaixa: 191
+Camadas: 6
 NumLayers: 1
-NumPlaces SRC: 3
-NumPlaces DAT: 4
-NumPlaces/NumLayers: 4
-<span style="color:red">**ERROR: NumPlaces SRC != NumPlaces DAT**</span>
+NumPlaces SRC: 2
+NumPlaces DAT: 2
+NumPlaces/NumLayers: 2
 
 -----------------------------
 
@@ -29,9 +30,8 @@ AlturaCaixa: 215
 Camadas: 5
 NumLayers: 1
 NumPlaces SRC: 3
-NumPlaces DAT: 4
-NumPlaces/NumLayers: 4
-<span style="color:red">**ERROR: NumPlaces SRC != NumPlaces DAT**</span>
+NumPlaces DAT: 3
+NumPlaces/NumLayers: 3
 
 -----------------------------
 
@@ -54,9 +54,8 @@ AlturaCaixa: 213
 Camadas: 5
 NumLayers: 1
 NumPlaces SRC: 3
-NumPlaces DAT: 4
-NumPlaces/NumLayers: 4
-<span style="color:red">**ERROR: NumPlaces SRC != NumPlaces DAT**</span>
+NumPlaces DAT: 3
+NumPlaces/NumLayers: 3
 
 -----------------------------
 
@@ -67,9 +66,8 @@ AlturaCaixa: 254
 Camadas: 4
 NumLayers: 1
 NumPlaces SRC: 4
-NumPlaces DAT: 5
-NumPlaces/NumLayers: 5
-<span style="color:red">**ERROR: NumPlaces SRC != NumPlaces DAT**</span>
+NumPlaces DAT: 4
+NumPlaces/NumLayers: 4
 
 -----------------------------
 
@@ -112,12 +110,12 @@ NumPlaces/NumLayers: 3
 DEF Mtrz_P1_23Smarties()
 Pallet:  P1
 Produto: 23Smarties
-AlturaCaixa: 267
+AlturaCaixa: 255
 Camadas: 4
-NumLayers: 1
-NumPlaces SRC: 3
-NumPlaces DAT: 3
-NumPlaces/NumLayers: 3
+NumLayers: 2
+NumPlaces SRC: 8
+NumPlaces DAT: 8
+NumPlaces/NumLayers: 4
 
 -----------------------------
 
@@ -176,8 +174,9 @@ AlturaCaixa: 213
 Camadas: 5
 NumLayers: 2
 NumPlaces SRC: 8
-NumPlaces DAT: 8
-NumPlaces/NumLayers: 4
+NumPlaces DAT: 12
+NumPlaces/NumLayers: 6
+<span style="color:red">**ERROR: NumPlaces SRC != NumPlaces DAT**</span>
 
 -----------------------------
 
@@ -187,9 +186,9 @@ Produto: 1Aero
 AlturaCaixa: 347
 Camadas: 3
 NumLayers: 2
-NumPlaces SRC: 24
-NumPlaces DAT: 24
-NumPlaces/NumLayers: 12
+NumPlaces SRC: 16
+NumPlaces DAT: 16
+NumPlaces/NumLayers: 8
 
 -----------------------------
 
@@ -199,9 +198,9 @@ Produto: 15CoffeCrisp
 AlturaCaixa: 256
 Camadas: 4
 NumLayers: 2
-NumPlaces SRC: 12
-NumPlaces DAT: 12
-NumPlaces/NumLayers: 6
+NumPlaces SRC: 14
+NumPlaces DAT: 14
+NumPlaces/NumLayers: 7
 
 -----------------------------
 
@@ -212,9 +211,8 @@ AlturaCaixa: 221
 Camadas: 5
 NumLayers: 2
 NumPlaces SRC: 16
-NumPlaces DAT: 32
-NumPlaces/NumLayers: 16
-<span style="color:red">**ERROR: NumPlaces SRC != NumPlaces DAT**</span>
+NumPlaces DAT: 16
+NumPlaces/NumLayers: 8
 
 -----------------------------
 
@@ -485,24 +483,26 @@ NumPlaces/NumLayers: 2
 DEF Mtrz_P2_9Aero()
 Pallet:  P2
 Produto: 9Aero
-AlturaCaixa: 273
-Camadas: 4
+<span style="color:red">**ERROR: PickOp: **</span>MatrizPontos[Pallet_2,Prdt_9Aero,1].PickOp = { 4 } deveria ser: { 3 }
+<span style="color:red">**ERROR: PickOp: **</span>MatrizPontos[Pallet_2,Prdt_9Aero,2].PickOp = { 4 } deveria ser: { 3 }
+AlturaCaixa: 191
+Camadas: 6
 NumLayers: 1
-NumPlaces SRC: 3
-NumPlaces DAT: 3
-NumPlaces/NumLayers: 3
+NumPlaces SRC: 2
+NumPlaces DAT: 2
+NumPlaces/NumLayers: 2
 
 -----------------------------
 
 DEF Mtrz_P2_23Smarties()
 Pallet:  P2
 Produto: 23Smarties
-AlturaCaixa: 267
+AlturaCaixa: 255
 Camadas: 4
-NumLayers: 1
-NumPlaces SRC: 3
-NumPlaces DAT: 3
-NumPlaces/NumLayers: 3
+NumLayers: 2
+NumPlaces SRC: 8
+NumPlaces DAT: 8
+NumPlaces/NumLayers: 4
 
 -----------------------------
 
@@ -513,8 +513,9 @@ AlturaCaixa: 213
 Camadas: 5
 NumLayers: 2
 NumPlaces SRC: 8
-NumPlaces DAT: 8
-NumPlaces/NumLayers: 4
+NumPlaces DAT: 12
+NumPlaces/NumLayers: 6
+<span style="color:red">**ERROR: NumPlaces SRC != NumPlaces DAT**</span>
 
 -----------------------------
 
@@ -548,21 +549,35 @@ Produto: 15CoffeCrisp
 AlturaCaixa: 256
 Camadas: 4
 NumLayers: 2
-NumPlaces SRC: 12
-NumPlaces DAT: 12
-NumPlaces/NumLayers: 6
+NumPlaces SRC: 14
+NumPlaces DAT: 14
+NumPlaces/NumLayers: 7
 
 -----------------------------
 
-DEF Mtrz_P1_7Aero6()
+DEF Mtrz_P1_10CoffeCrispNovo()
 Pallet:  P1
-Produto: 7Aero6
-AlturaCaixa: 221
+Produto: 10CoffeCrispNovo
+<span style="color:red">**ERROR: AbreGarra: **</span>MatrizPontos[Pallet_1,Prdt_10CoffeCrispNovo,1].AbreGarraOp = { 6 } deveria ser: { 0 }
+AlturaCaixa: 213
 Camadas: 5
-NumLayers: 2
-NumPlaces SRC: 16
-NumPlaces DAT: 16
-NumPlaces/NumLayers: 8
+NumLayers: 1
+NumPlaces SRC: 4
+NumPlaces DAT: 4
+NumPlaces/NumLayers: 4
+
+-----------------------------
+
+DEF Mtrz_P2_10CoffeCrispNovo()
+Pallet:  P2
+Produto: 10CoffeCrispNovo
+<span style="color:red">**ERROR: AbreGarra: **</span>MatrizPontos[Pallet_2,Prdt_10CoffeCrispNovo,1].AbreGarraOp = { 6 } deveria ser: { 0 }
+AlturaCaixa: 213
+Camadas: 5
+NumLayers: 1
+NumPlaces SRC: 4
+NumPlaces DAT: 4
+NumPlaces/NumLayers: 4
 
 -----------------------------
 
@@ -577,7 +592,6 @@ Pick encontrado: XPick_E_1_P_4
 Pick encontrado: XPick_E_1_P_5
 Pick encontrado: XPick_E_1_P_6
 Pick encontrado: XPick_E_1_P_8
-Pick encontrado: XPick_E_1_P_10
 Pick encontrado: XPick_E_2_P_1
 Pick encontrado: XPick_E_2_P_2
 Pick encontrado: XPick_E_2_P_3
@@ -586,8 +600,6 @@ Pick encontrado: XPick_E_2_P_5
 Pick encontrado: XPick_E_2_P_6
 Pick encontrado: XPick_E_2_P_7
 Pick encontrado: XPick_E_2_P_8
-Pick encontrado: XPick_E_2_P_10
-Pick encontrado: XPick_E_2_P_11
 # >> Rotina config.dat  <<
 
 -----------------------------
@@ -606,7 +618,7 @@ StrReceitaLayer[MaxReceitas,MaxCamadas]
 
 CONST INT MaxMatrizI=2;[numero de pallets por receita]
 CONST INT MaxMatrizJ=24;[acompanha o MaxReceitas]
-CONST INT MaxMatrizK=32;[numero Maximo de Pontos]
+CONST INT MaxMatrizK=16;[numero Maximo de Pontos]
 MatrizPontos[MaxMatrizI,MaxMatrizJ,MaxMatrizK]
 
 -----------------------------

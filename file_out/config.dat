@@ -29,7 +29,7 @@ CONST INT Prdt_37BarPacking=20
 CONST INT Prdt_36BarPacking=21
 CONST INT Prdt_34BarPacking=22
 CONST INT Prdt_35BarPacking=23
-CONST INT Prdt_7Aero6=24
+CONST INT Prdt_10CoffeCrispNovo=24
 ;ENDFOLD
 
 ;FOLD STR
@@ -44,8 +44,8 @@ DECL GLOBAL INT StrReceitaLayer[27,12];[MaxReceitas,MaxCamadas]
 ;---------- MatrizPontos[MaxMatrizI,MaxMatrizJ,MaxMatrizK] ----------
 CONST INT MaxMatrizI=2;[numero de pallets por receita]
 CONST INT MaxMatrizJ=24;[acompanha o MaxReceitas]
-CONST INT MaxMatrizK=32;[numero Maximo de Pontos]
-DECL GLOBAL DefMatriz MatrizPontos[2,24,32];[MaxMatrizI,MaxMatrizJ,MaxMatrizK]
+CONST INT MaxMatrizK=16;[numero Maximo de Pontos]
+DECL GLOBAL DefMatriz MatrizPontos[2,24,16];[MaxMatrizI,MaxMatrizJ,MaxMatrizK]
 ;ENDFOLD
 
 ;ENDFOLD
