@@ -106,33 +106,39 @@ int tudo(std::ifstream &My_Job_src,std::vector<class Cilindro> &Vcilindro,std::s
   ofs.close();
   return contador;
 }
-void mapear(std::vector<class Cilindro> &cilindro){
+void mapear_csv(std::vector<class Cilindro> &cilindro)
+{
 
-  std::ifstream inFile("My_Job/Garra.md"); 
-  if(!inFile) {
-    cout << "Arquivo não foi encontrado.\n";
+    std::ifstream inFile("My_Job/Garra.csv");
+    if (!inFile)
+    {
+        cout << "Arquivo Garra não foi encontrado.\n";
+        return;
+    }
+    string entrada;
+    vector<string> entrada2;
+    class Cilindro aux;
+    getline(inFile, entrada);
+    getline(inFile, entrada);
+    while (!inFile.eof())
+    {
+        getline(inFile, entrada);
+        if (!inFile.good())break;
+        entrada2=split_string(entrada, "[;]+");
+        aux.numero = entrada2[0];
+        aux.avanca = entrada2[1];
+        aux.recua = entrada2[2];
+        aux.SensorAvanca = entrada2[3];
+        aux.SensorRecua = entrada2[4];
+        //inFile >> descartar;
+        cilindro.push_back(aux);
+        entrada2.clear();
+    }
+    // for (auto &out : cilindro){
+    //   cout << out.numero << endl;
+    // }
+    inFile.close();
     return;
-  }
-  string descartar;
-  string entrada;
-  class Cilindro aux;
-  getline(inFile,entrada);
-  getline(inFile,entrada);
-  while (!inFile.eof())
-  { 
-    inFile >> descartar >> aux.numero;
-    inFile >> descartar >> aux.avanca;
-    inFile >> descartar >> aux.recua;
-    inFile >> descartar >> aux.SensorAvanca;
-    inFile >> descartar >> aux.SensorRecua;
-    inFile >> descartar;
-    cilindro.push_back(aux);
-  }
-  // for (auto &out : cilindro){
-  //   cout << out.numero << endl;
-  // }
-  inFile.close();
-  return;
 }
 
 int GarraNoWait(std::ifstream &My_Job_src,std::vector<class Cilindro> &Vcilindro,std::string name){
@@ -211,7 +217,8 @@ int garra_exe(std::ifstream &My_Job_src)
     return 0;
   }
   std::vector<class Cilindro> cilindro;
-  mapear(cilindro);
+  //mapear(cilindro);
+  mapear_csv(cilindro);
   GarraNoWait(My_Job_src,cilindro,"ConfGarra");
   contador=tudo(My_Job_src,cilindro,"ConfGarra");
   cout << "Numero de ConfGarra: " << contador << endl;
