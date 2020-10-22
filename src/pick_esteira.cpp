@@ -47,8 +47,19 @@ std::string funcao_pick_esteira_src(string PickName){
   return aux_pick_name;
 }
 
+void def_pick_esteira(vector<string> vetor,int &NumEsteiras,int &NumPicks) {
+  int NumEsteiras_aux,NumPicks_aux;
+  for(auto outt:vetor){
+    NumEsteiras_aux  = stoi(split_string(outt,"[_=]+",2));
+    NumEsteiras = (NumEsteiras_aux>NumEsteiras?NumEsteiras_aux:NumEsteiras);
+    NumPicks_aux  = stoi(split_string(outt,"[_=]+",4));
+    NumPicks = (NumPicks_aux>NumPicks?NumPicks_aux:NumPicks);
+  }
+  return ; 
+}
 
-int funcao_pick_esteira_dat(std::ifstream &My_Job_dat)
+
+int funcao_pick_esteira_dat(std::ifstream &My_Job_dat,int &NumEsteiras,int &NumPicks)
 {
   std::ofstream pick_esteira_src("file_out/Pick/Tpick_esteira.src",std::ofstream::out);
   std::ofstream pick_esteira_dat("file_out/Pick/Tpick_esteira.dat",std::ofstream::out);
@@ -96,6 +107,9 @@ int funcao_pick_esteira_dat(std::ifstream &My_Job_dat)
   }
   //ordena vetor
   std::sort (pick_esteira_ordenado.begin(),pick_esteira_ordenado.end(), myfunction); 
+
+  def_pick_esteira(pick_esteira_ordenado,NumEsteiras,NumPicks);
+
   for (auto &outt : pick_esteira_ordenado){
     PickName=split_string(outt,"[ =]",2);
     posicao=split_string(outt,"[_=]+",5);

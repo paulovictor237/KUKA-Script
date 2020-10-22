@@ -68,10 +68,6 @@ void end_all(void){
 }
 
 int MaxPallets=2;
-int MaxCamadas=0;
-
-int AlturaCaixa=0;
-int Camadas=0;
 
 int main(int argc, char **argv)
 {
@@ -98,8 +94,11 @@ int main(int argc, char **argv)
   int contador_src;
   int contador_dat;
   int NumLayers;
+  int MaxCamadas=0;
+  int AlturaCaixa=0;
+  int Camadas=0;
   std::vector<class Receita> receitas;
-  class Receita aux_receita("A");
+  class Receita aux_receita;
   class Config config;
   std::string pallet;
   std::string produto;
@@ -189,7 +188,7 @@ int main(int argc, char **argv)
 
   pallet_src(My_Job_src,TPallet_src,MaxPallets);
   //pick(My_Job_dat,TReceita_dat);
-  funcao_pick_esteira_dat(My_Job_dat);
+  funcao_pick_esteira_dat(My_Job_dat,config.NumEsteiras,config.NumPicks);
   config.MaxPallets=MaxPallets;
   config.MaxMatrizI=MaxPallets;
   config.imprime(config_dat);

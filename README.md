@@ -1,6 +1,7 @@
 # Habilitar Linux para Windows 
 
-1.  Abra o PowerShell como **administrador** e digite o código abaixo. Depois de digitar o código espere concluir o comando e em seguida pode fechar o PowerShell .
+1.  Abra o PowerShell como **administrador** e digite o código abaixo. Depois de digitar o código espere concluir o comando.
+2.  Feche o PowerShell e reinicie o computador .
 
 ```
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart

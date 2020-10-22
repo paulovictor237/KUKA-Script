@@ -33,6 +33,8 @@ CONST INT Prdt_10CoffeCrispNovo=24
 ;ENDFOLD
 
 ;FOLD STR
+;---------- StrPallet[MaxPallet][MaxNumPick] ----------
+DECL E6POS pick_esteira[2,8]
 ;---------- StrPallet[MaxPallets] ----------
 CONST INT MaxPallets=2
 DECL GLOBAL DefPallet StrPallet[2];[MaxPallets]

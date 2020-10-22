@@ -32,6 +32,8 @@ void Config::imprime(std::ofstream &config_dat){
 
 
   config_dat<<";FOLD STR"<<endl; 
+  config_dat<<";---------- StrPallet[MaxPallet][MaxNumPick] ----------"<<endl;
+  config_dat<<"DECL E6POS pick_esteira["<<NumEsteiras<<","<<NumPicks<<"]"<<endl;
   config_dat<<";---------- StrPallet[MaxPallets] ----------"<<endl;
   config_dat<<"CONST INT MaxPallets="<<MaxPallets<<endl;
   config_dat<<"DECL GLOBAL DefPallet StrPallet["<<MaxPallets<<"];[MaxPallets]"<<endl;

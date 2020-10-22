@@ -6,6 +6,9 @@ class Config{
 public:
 
 std::vector<std::string> ENUM_RECEITA;
+//";---------- StrPallet[MaxPallet][MaxNumPick] ----------"<<end;
+  int NumEsteiras=0;
+  int NumPicks=0;
 
 // ;------------------ StrPallet[MaxPallets] ------------------
 int MaxPallets=0;

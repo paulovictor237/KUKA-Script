@@ -22,9 +22,6 @@ void sufixo(std::ofstream &ofs,bool dat){
   return;
 }
 
-Receita::Receita(std::string nome){
-this->nome=nome;
-}
 void Receita::imprime(std::ofstream &ofs){
   std::stringstream aux;
   ofs<<";FOLD Produto "<< nome << endl;

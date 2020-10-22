@@ -16,7 +16,6 @@ public:
   int Camadas=0;
   int Layers=0;
 public:
-  Receita(std::string nome);
   void imprime(std::ofstream &ofs);
 };
 

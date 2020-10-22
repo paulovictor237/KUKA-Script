@@ -52,6 +52,30 @@ garra.h
 
 /mnt/c/Users/paulo.duarte/Documents/GitKraken/KUKA-Script/src/pallet.h
 
+/mnt/c/Users/paulo.duarte/Documents/GitKraken/KUKA-Script/src/pick_esteira.cpp
+iostream
+-
+fstream
+-
+iomanip
+-
+algorithm
+-
+math.h
+-
+sstream
+-
+string
+-
+vector
+-
+regex
+-
+comum.h
+/mnt/c/Users/paulo.duarte/Documents/GitKraken/KUKA-Script/src/comum.h
+pick_esteira.h
+/mnt/c/Users/paulo.duarte/Documents/GitKraken/KUKA-Script/src/pick_esteira.h
+
 /mnt/c/Users/paulo.duarte/Documents/GitKraken/KUKA-Script/src/pick_esteira.h
 
 /mnt/c/Users/paulo.duarte/Documents/GitKraken/KUKA-Script/src/receita.h
