@@ -25,10 +25,10 @@ sudo apt install g++ #instala o compilador c++
 
 # Como usar o Script
 
-1. Cole na pasta "My_Job" os arquivos "My_Job.src" e "My_Job .dat"
+1. Cole na pasta "file_in" os arquivos "My_Job.src" e "My_Job .dat"
 2. Também é possível criar o mapa da garra no arquivo "Garra.csv"
-3. Após a execução, os arquivos serão gerados na pasta "out"
-4. Na pasta "Relatório" será gerado o Relatório da execução do script.
+3. Após a execução, os arquivos serão gerados na pasta "file_out"
+4. Na pasta "relatório" será gerado o relatório da execução do script.
 
 # Executando o Script
 
@@ -37,5 +37,5 @@ sudo apt install g++ #instala o compilador c++
 2. Para executar o programa digite o comando abaixo.
 
 ```
- ./executavel
+ ./script_exe
 ```
