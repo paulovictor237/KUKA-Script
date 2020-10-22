@@ -6,7 +6,8 @@
 // BIBLIOTECAS C++
 
 // COMPILAR
-// g++ *.cpp -o executavel -std=c++11 && ./executavel 
+// g++ *.cpp -o executavel -std=c++14 && ./executavel
+// g++ *.cpp -o ../executavel -std=c++14 && .././executavel
 
 #include <iostream>
 #include <fstream>
@@ -37,10 +38,10 @@ std::ofstream TMatriz_dat ("out/INIT/TMatriz.dat", std::ofstream::out);
 std::ofstream TPallet_src ("out/INIT/TPallet.src", std::ofstream::out);
 //std::ofstream TPallet_dat ("out/INIT/TPallet.dat", std::ofstream::out);
 
-std::ofstream Aux1TMatriz_src ("auxiliar/aux1TMatriz.src", std::ofstream::out);
-std::ofstream Aux1TMatriz_dat ("auxiliar/aux1TMatriz.dat", std::ofstream::out);
-std::ofstream Aux2TMatriz_src ("auxiliar/aux2TMatriz.src", std::ofstream::out);
-std::ofstream Aux2TMatriz_dat ("auxiliar/aux2TMatriz.dat", std::ofstream::out);
+std::ofstream Aux1TMatriz_src ("Codigo/auxiliar/aux1TMatriz.src", std::ofstream::out);
+std::ofstream Aux1TMatriz_dat ("Codigo/auxiliar/aux1TMatriz.dat", std::ofstream::out);
+std::ofstream Aux2TMatriz_src ("Codigo/auxiliar/aux2TMatriz.src", std::ofstream::out);
+std::ofstream Aux2TMatriz_dat ("Codigo/auxiliar/aux2TMatriz.dat", std::ofstream::out);
 
 std::ofstream config_dat("out/config.dat", std::ofstream::out);
 
